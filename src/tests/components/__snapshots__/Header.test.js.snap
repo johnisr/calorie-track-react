@@ -26,9 +26,9 @@ ShallowWrapper {
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
-          to="/home"
+          to="/dashboard"
 >
-          Home
+          dashboard
 </NavLink>,
         <NavLink
           activeClassName="active"
@@ -85,11 +85,11 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "active",
           "ariaCurrent": "true",
-          "children": "Home",
-          "to": "/home",
+          "children": "dashboard",
+          "to": "/dashboard",
         },
         "ref": null,
-        "rendered": "Home",
+        "rendered": "dashboard",
         "type": [Function],
       },
       Object {
@@ -176,9 +176,9 @@ ShallowWrapper {
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
-            to="/home"
+            to="/dashboard"
 >
-            Home
+            dashboard
 </NavLink>,
           <NavLink
             activeClassName="active"
@@ -235,11 +235,11 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active",
             "ariaCurrent": "true",
-            "children": "Home",
-            "to": "/home",
+            "children": "dashboard",
+            "to": "/dashboard",
           },
           "ref": null,
-          "rendered": "Home",
+          "rendered": "dashboard",
           "type": [Function],
         },
         Object {

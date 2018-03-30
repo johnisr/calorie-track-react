@@ -14,39 +14,32 @@ class FoodForm extends React.Component {
     };
   }
   handleNameChange = (e) => {
-    this.setState({
-      name: e.target.value,
-    });
+    const name = e.target.value;
+    this.setState(() => ({ name }));
   };
   handleAmountChange = (e) => {
-    this.setState({
-      amount: e.target.value,
-    });
+    const amount = e.target.value;
+    this.setState(() => ({ amount }));
   };
   handleUnitChange = (e) => {
-    this.setState({
-      unit: e.target.value,
-    });
+    const unit = e.target.value;
+    this.setState(() => ({ unit }));
   };
   handleCarbohydratesChange = (e) => {
-    this.setState({
-      carbohydrates: e.target.value,
-    });
+    const carbohydrates = e.target.value;
+    this.setState(() => ({ carbohydrates }));
   };
   handleProteinChange = (e) => {
-    this.setState({
-      protein: e.target.value,
-    });
+    const protein = e.target.value;
+    this.setState(() => ({ protein }));
   };
   handleFatChange = (e) => {
-    this.setState({
-      fat: e.target.value,
-    });
+    const fat = e.target.value;
+    this.setState(() => ({ fat }));
   };
   handleCaloriesChange = (e) => {
-    this.setState({
-      calories: e.target.value,
-    });
+    const calories = e.target.value;
+    this.setState(() => ({ calories }));
   };
   handleSubmit = (e) => {
     e.preventDefault();

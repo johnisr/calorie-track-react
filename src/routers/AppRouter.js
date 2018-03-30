@@ -6,6 +6,7 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
 import Home from '../components/Home';
+import FoodDashboardPage from '../components/FoodDashboardPage';
 import About from '../components/About';
 import Topics from '../components/Topics';
 import CountPage from '../components/CountPage';
@@ -19,7 +20,7 @@ const AppRouter = () => (
     <div>
       <Switch> 
         <PublicRoute exact path="/" component={LoginPage} />
-        <PrivateRoute path="/home" component={Home} />
+        <PrivateRoute path="/dashboard" component={FoodDashboardPage} />
         <PrivateRoute path="/about" component={About} />
         <PrivateRoute path="/topics" component={Topics} />
         <PrivateRoute path="/createFood" component={AddFoodPage} />
