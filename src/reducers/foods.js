@@ -16,6 +16,8 @@ export default (state = foodsDefaultState, action) => {
       });
     case 'REMOVE_FOOD':
       return state.filter(({ id }) => id !== action.id);
+    case 'SET_FOODS':
+      return action.foods;
     default:
       return state;
   }

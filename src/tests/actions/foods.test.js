@@ -2,7 +2,7 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import database from '../../firebase/firebase';
 import foods from '../fixtures/foods';
-import { addFood, startAddFood, editFood, removeFood } from '../../actions/foods';
+import { addFood, startAddFood, editFood, removeFood, setFoods, startSetFoods } from '../../actions/foods';
 
 const createMockStore = configureMockStore([thunk]);
 const uid = 'someuidcreated456';
@@ -69,5 +69,23 @@ test('should setup removeFood action object with provided values', () => {
   expect(action).toEqual({
     type: 'REMOVE_FOOD',
     id: foods[1].id,
+  });
+});
+
+test('should setup set food action object with provided values', () => {
+  const action = setFoods(foods);
+  expect(action).toEqual({
+    type: 'SET_FOODS',
+    foods,
+  });
+});
+
+test('should fetch foods from firebase', async () => {
+  const store = createMockStore(defaultAuthState);
+  await store.dispatch(startSetFoods())
+  const actions = store.getActions();
+  expect(actions[0]).toEqual({
+    type: 'SET_FOODS',
+    foods,
   });
 });

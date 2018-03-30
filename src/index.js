@@ -10,6 +10,7 @@ import configureStore from './store/configureStore';
 import { firebase } from './firebase/firebase';
 
 import { login, logout } from './actions/auth';
+import { startSetFoods } from './actions/foods';
 
 const store = configureStore();
 
@@ -29,13 +30,18 @@ const renderApp = () => {
 
 ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
 
-firebase.auth().onAuthStateChanged((user) => {
+firebase.auth().onAuthStateChanged(async (user) => {
   if (user) {
     // try to fetch food database then render it
     store.dispatch(login(user.uid));
-    renderApp();
-    if (history.location.pathname === '/') {
-      history.push('/dashboard');
+    try {
+      await store.dispatch(startSetFoods());
+      renderApp();
+      if (history.location.pathname === '/') {
+        history.push('/dashboard');
+      }
+    } catch(e) {
+
     }
   } else {
     store.dispatch(logout());

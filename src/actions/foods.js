@@ -38,3 +38,28 @@ export const removeFood = ({ id }) => ({
   type: 'REMOVE_FOOD',
   id,
 });
+
+export const setFoods = foods => ({
+  type: 'SET_FOODS',
+  foods,
+});
+
+export const startSetFoods = () => {
+  return async (dispatch, getState) => {
+    const { uid } = getState().auth;
+
+    try {
+      const snapshot = await database.ref(`users/${uid}/foods`).once('value');
+      const foods = [];
+      snapshot.forEach((food) => {
+        foods.push({
+          id: food.key,
+          ...food.val(),
+        });
+      });
+      dispatch(setFoods(foods));
+    } catch (e) {
+
+    }
+  };
+};

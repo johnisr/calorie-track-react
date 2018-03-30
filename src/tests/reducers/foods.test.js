@@ -31,3 +31,9 @@ test('should not remove a food if given wrong id', () => {
   const state = foodsReducer(foods, action);
   expect(state).toEqual(foods);
 });
+
+test('should set foods', () => {
+  const action = { type: 'SET_FOODS', foods };
+  const state = foodsReducer(undefined, action);
+  expect(state).toEqual(foods);
+});
