@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import FoodForm from './FoodForm';
-import { editFood, removeFood } from '../actions/foods';
+import { startEditFood, removeFood } from '../actions/foods';
 
 export class EditFoodPage extends React.Component {
   handleSubmit = (food) => {
-    this.props.editFood(this.props.food.id, food);
+    this.props.startEditFood(this.props.food.id, food);
     this.props.history.push('/dashboard');
   }
   handleRemove = (food) => {
@@ -37,7 +37,7 @@ const mapStateToProps = (state, props) => ({
   food: state.foods.find(food => food.id === props.match.params.id),
 });
 const mapDispatchToProps = dispatch => ({
-  editFood: (id, updates) => dispatch(editFood(id, updates)),
+  startEditFood: (id, updates) => dispatch(startEditFood(id, updates)),
   removeFood: (food) => dispatch(removeFood(food)),
 });
 

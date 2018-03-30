@@ -34,6 +34,14 @@ export const editFood = (id, updates) => ({
   updates,
 });
 
+export const startEditFood = (id, updates) => {
+  return async (dispatch, getState) => {
+    const { uid } = getState().auth;
+    await database.ref(`users/${uid}/foods/${id}`).update(updates);
+    dispatch(editFood(id, updates));
+  };
+};
+
 export const removeFood = ({ id }) => ({
   type: 'REMOVE_FOOD',
   id,
