@@ -47,6 +47,13 @@ ShallowWrapper {
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
+          to="/createFood"
+>
+          Add Food
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
           to="/count"
 >
           Count
@@ -120,6 +127,20 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "active",
           "ariaCurrent": "true",
+          "children": "Add Food",
+          "to": "/createFood",
+        },
+        "ref": null,
+        "rendered": "Add Food",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
           "children": "Count",
           "to": "/count",
         },
@@ -172,6 +193,13 @@ ShallowWrapper {
             to="/topics"
 >
             Topics
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/createFood"
+>
+            Add Food
 </NavLink>,
           <NavLink
             activeClassName="active"
@@ -240,6 +268,20 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Topics",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Add Food",
+            "to": "/createFood",
+          },
+          "ref": null,
+          "rendered": "Add Food",
           "type": [Function],
         },
         Object {

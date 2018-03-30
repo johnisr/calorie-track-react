@@ -11,7 +11,7 @@ import Topics from '../components/Topics';
 import CountPage from '../components/CountPage';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
-
+import AddFoodPage from '../components/AddFoodPage';
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -22,6 +22,7 @@ const AppRouter = () => (
         <PrivateRoute path="/home" component={Home} />
         <PrivateRoute path="/about" component={About} />
         <PrivateRoute path="/topics" component={Topics} />
+        <PrivateRoute path="/createFood" component={AddFoodPage} />
         <PrivateRoute path="/count" component={CountPage} />
         <PrivateRoute component={NotFoundPage} />
       </Switch>

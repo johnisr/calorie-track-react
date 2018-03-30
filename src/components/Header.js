@@ -9,6 +9,7 @@ export const Header = ({ startLogout }) => (
     <NavLink to='/home' >Home</NavLink>
     <NavLink to='/about' >About</NavLink>
     <NavLink to='/topics' >Topics</NavLink>
+    <NavLink to='/createFood' >Add Food</NavLink>
     <NavLink to='/count' >Count</NavLink>
     <button onClick={startLogout}>Logout</button>
   </header>
