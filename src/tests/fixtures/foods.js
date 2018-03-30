@@ -1,0 +1,28 @@
+export default [{
+  id: '1',
+  name: 'Rice (Jasmine)',
+  amount: 200,
+  unit: 'grams',
+  carbohydrates: 44,
+  protein: 4.2,
+  fat: 0.4,
+  calories: 205,
+}, {
+  id: '2',
+  name: "Chicken Breast",
+  amount: "100",
+  unit: "grams",
+  carbohydrates: "0",
+  protein: "31",
+  fat: "3.6",
+  calories: "165",
+}, {
+  id: '3',
+  name: 'Almonds',
+  amount: 24,
+  unit: 'pieces',
+  carbohydrates: 2.5,
+  protein: 6,
+  fat: 14,
+  calories: 163,
+}];
