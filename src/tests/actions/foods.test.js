@@ -2,7 +2,7 @@ import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import database from '../../firebase/firebase';
 import foods from '../fixtures/foods';
-import { addFood, startAddFood, editFood, removeFood, setFoods, startSetFoods } from '../../actions/foods';
+import { addFood, startAddFood, editFood, startEditFood, removeFood, startRemoveFood, setFoods, startSetFoods } from '../../actions/foods';
 
 const createMockStore = configureMockStore([thunk]);
 const uid = 'someuidcreated456';
@@ -28,7 +28,7 @@ it('should setup addFood action object with provided values', () => {
   });
 });
 
-test('should add food to database and store', async () => {
+it('should add food to database and store', async () => {
   const store = createMockStore(defaultAuthState);
   const foodData = {
     name: 'beef',
@@ -64,7 +64,32 @@ it('should setup editFood action object with provided values', () => {
   });
 });
 
-test('should setup removeFood action object with provided values', () => {
+it('should edit food from database', async () => {
+  const store = createMockStore(defaultAuthState);
+  const { id } = foods[1];
+  const updates = { 
+    name: 'beef',
+    amount: 300,
+    unit: 'grams',
+    protein: 65,
+    carbohydrates: 0,
+    fat: 34,
+    calories: 600,
+  };
+  await store.dispatch(startEditFood(id, updates));
+  const action = store.getActions();
+  expect(action[0]).toEqual({
+    type: 'EDIT_FOOD',
+    id,
+    updates,
+  });
+
+  const snapshot = await database.ref(`users/${uid}/foods/${id}`).once('value');
+  expect(snapshot.val()).toEqual(updates);
+
+});
+
+it('should setup removeFood action object with provided values', () => {
   const action = removeFood(foods[1]);
   expect(action).toEqual({
     type: 'REMOVE_FOOD',
@@ -72,7 +97,21 @@ test('should setup removeFood action object with provided values', () => {
   });
 });
 
-test('should setup set food action object with provided values', () => {
+it('should remove the expense from database', async () => {
+  const store = createMockStore(defaultAuthState);
+  const { id } = foods[1];
+  await store.dispatch(startRemoveFood({ id }));
+  const actions = store.getActions();
+  expect(actions[0]).toEqual({
+    type: 'REMOVE_FOOD',
+    id,
+  });
+
+  const snapshot = await database.ref(`users/${uid}/foods/${id}`).once('value');
+  expect(snapshot.val()).toBeFalsy();
+});
+
+it('should setup set food action object with provided values', () => {
   const action = setFoods(foods);
   expect(action).toEqual({
     type: 'SET_FOODS',
@@ -80,7 +119,7 @@ test('should setup set food action object with provided values', () => {
   });
 });
 
-test('should fetch foods from firebase', async () => {
+it('should fetch foods from firebase', async () => {
   const store = createMockStore(defaultAuthState);
   await store.dispatch(startSetFoods())
   const actions = store.getActions();
