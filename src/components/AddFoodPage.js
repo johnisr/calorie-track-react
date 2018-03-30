@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import FoodForm from './FoodForm';
-import { addFood } from '../actions/foods';
+import { startAddFood } from '../actions/foods';
 
 export class AddFoodPage extends React.Component {
   handleSubmit = (food) => {
-    this.props.addFood({
+    this.props.startAddFood({
       ...food,
     });
     this.props.history.push('/dashboard');
@@ -28,7 +28,7 @@ export class AddFoodPage extends React.Component {
   }
 }
 const mapDispatchToProps = dispatch => ({
-  addFood: food => dispatch(addFood(food)),
+  startAddFood: food => dispatch(startAddFood(food)),
 });
 
 export default connect(undefined, mapDispatchToProps)(AddFoodPage);
