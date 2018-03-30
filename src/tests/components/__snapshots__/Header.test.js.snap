@@ -1,0 +1,283 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    startLogout={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Boilerplate
+</h1>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/home"
+>
+          Home
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/about"
+>
+          About
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/topics"
+>
+          Topics
+</NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/count"
+>
+          Count
+</NavLink>,
+        <button
+          onClick={[Function]}
+>
+          Logout
+</button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Boilerplate",
+        },
+        "ref": null,
+        "rendered": "Boilerplate",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Home",
+          "to": "/home",
+        },
+        "ref": null,
+        "rendered": "Home",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "About",
+          "to": "/about",
+        },
+        "ref": null,
+        "rendered": "About",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Topics",
+          "to": "/topics",
+        },
+        "ref": null,
+        "rendered": "Topics",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Count",
+          "to": "/count",
+        },
+        "ref": null,
+        "rendered": "Count",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Logout",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Logout",
+        "type": "button",
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Boilerplate
+</h1>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/home"
+>
+            Home
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/about"
+>
+            About
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/topics"
+>
+            Topics
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/count"
+>
+            Count
+</NavLink>,
+          <button
+            onClick={[Function]}
+>
+            Logout
+</button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Boilerplate",
+          },
+          "ref": null,
+          "rendered": "Boilerplate",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Home",
+            "to": "/home",
+          },
+          "ref": null,
+          "rendered": "Home",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "About",
+            "to": "/about",
+          },
+          "ref": null,
+          "rendered": "About",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Topics",
+            "to": "/topics",
+          },
+          "ref": null,
+          "rendered": "Topics",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Count",
+            "to": "/count",
+          },
+          "ref": null,
+          "rendered": "Count",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Logout",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Logout",
+          "type": "button",
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
