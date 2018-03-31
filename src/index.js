@@ -12,6 +12,8 @@ import { firebase } from './firebase/firebase';
 import { login, logout } from './actions/auth';
 import { startSetFoods } from './actions/foods';
 
+import Playground from './playground/log';
+
 const store = configureStore();
 
 const jsx = (
