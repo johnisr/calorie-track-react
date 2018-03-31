@@ -3,7 +3,6 @@
   "https_only": true,
   "headers": {
     "/**": {
-      "Strict-Transport-Security": "max-age=7776000",
       "Access-Control-Allow-Origin": "*"
     }
   }
