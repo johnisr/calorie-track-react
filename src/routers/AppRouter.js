@@ -6,9 +6,6 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
 import FoodDashboardPage from '../components/FoodDashboardPage';
-import About from '../components/About';
-import Topics from '../components/Topics';
-import CountPage from '../components/CountPage';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
 import AddFoodPage from '../components/AddFoodPage';
@@ -21,11 +18,8 @@ const AppRouter = () => (
       <Switch> 
         <PublicRoute exact path="/" component={LoginPage} />
         <PrivateRoute path="/dashboard" component={FoodDashboardPage} />
-        <PrivateRoute path="/about" component={About} />
-        <PrivateRoute path="/topics" component={Topics} />
         <PrivateRoute path="/createFood" component={AddFoodPage} />
         <PrivateRoute path="/editFood/:id" component={EditFoodPage} />
-        <PrivateRoute path="/count" component={CountPage} />
         <PrivateRoute component={NotFoundPage} />
       </Switch>
     </div>

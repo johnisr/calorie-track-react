@@ -33,30 +33,9 @@ ShallowWrapper {
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
-          to="/about"
->
-          About
-</NavLink>,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          to="/topics"
->
-          Topics
-</NavLink>,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
           to="/createFood"
 >
           Add Food
-</NavLink>,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          to="/count"
->
-          Count
 </NavLink>,
         <button
           onClick={[Function]}
@@ -99,53 +78,11 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "active",
           "ariaCurrent": "true",
-          "children": "About",
-          "to": "/about",
-        },
-        "ref": null,
-        "rendered": "About",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Topics",
-          "to": "/topics",
-        },
-        "ref": null,
-        "rendered": "Topics",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
           "children": "Add Food",
           "to": "/createFood",
         },
         "ref": null,
         "rendered": "Add Food",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Count",
-          "to": "/count",
-        },
-        "ref": null,
-        "rendered": "Count",
         "type": [Function],
       },
       Object {
@@ -183,30 +120,9 @@ ShallowWrapper {
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
-            to="/about"
->
-            About
-</NavLink>,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            to="/topics"
->
-            Topics
-</NavLink>,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
             to="/createFood"
 >
             Add Food
-</NavLink>,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            to="/count"
->
-            Count
 </NavLink>,
           <button
             onClick={[Function]}
@@ -249,53 +165,11 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active",
             "ariaCurrent": "true",
-            "children": "About",
-            "to": "/about",
-          },
-          "ref": null,
-          "rendered": "About",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Topics",
-            "to": "/topics",
-          },
-          "ref": null,
-          "rendered": "Topics",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
             "children": "Add Food",
             "to": "/createFood",
           },
           "ref": null,
           "rendered": "Add Food",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Count",
-            "to": "/count",
-          },
-          "ref": null,
-          "rendered": "Count",
           "type": [Function],
         },
         Object {

@@ -7,10 +7,7 @@ export const Header = ({ startLogout }) => (
   <header>
     <h1>Boilerplate</h1>
     <NavLink to='/dashboard' >dashboard</NavLink>
-    <NavLink to='/about' >About</NavLink>
-    <NavLink to='/topics' >Topics</NavLink>
     <NavLink to='/createFood' >Add Food</NavLink>
-    <NavLink to='/count' >Count</NavLink>
     <button onClick={startLogout}>Logout</button>
   </header>
 );
