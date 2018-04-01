@@ -100,6 +100,8 @@ store.dispatch(removeLog(logs[1].date));
 store.dispatch(removeLog(logs[0].date));
 store.dispatch(setLogs(logs));
 
+unsubscribe();
+
 // SFC
 const Playground = () => (
   <div>

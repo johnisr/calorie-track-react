@@ -13,6 +13,9 @@ export class EditFoodPage extends React.Component {
     await this.props.startRemoveFood(this.props.food);
     this.props.removeCurrentFood();
   }
+  handleExit = () => {
+    this.props.removeCurrentFood();
+  }
   render() {
     return (
       <div>
@@ -29,6 +32,8 @@ export class EditFoodPage extends React.Component {
                   handleSubmit={this.handleSubmit}
                 />
                 <button onClick={this.handleRemove}>Remove</button>
+                <button onClick={this.handleExit}>Exit</button>
+                
               </div>
             ) : ( 
               <p>Select from List above to Edit Item</p>

@@ -52,6 +52,19 @@ class FoodForm extends React.Component {
     this.props.handleSubmit({
       ...this.state
     });
+    // Clear if AddFood Operation
+    if (this.props.food === undefined) {
+      console.log(true);
+      this.setState({
+        name: '',
+        amount: '',
+        unit: '',
+        carbohydrates: '',
+        protein: '',
+        fat: '',
+        calories: '',
+      });
+    }
   };
 
   render() {

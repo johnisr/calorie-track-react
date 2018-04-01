@@ -8,8 +8,6 @@ import PublicRoute from './PublicRoute';
 import FoodDashboardPage from '../components/FoodDashboardPage';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
-import AddFoodPage from '../components/AddFoodPage';
-import EditFoodPage from '../components/EditFoodPage';
 export const history = createHistory();
 
 const AppRouter = () => (

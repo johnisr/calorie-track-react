@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import { history } from './routers/AppRouter';
 import { Provider } from 'react-redux';
+import { history } from './routers/AppRouter';
 
 import configureStore from './store/configureStore';
 import { firebase } from './firebase/firebase';
@@ -18,7 +18,7 @@ import { startSetFoods } from './actions/foods';
 const store = configureStore();
 
 const jsx = (
-<Provider store={store}>
+  <Provider store={store}>
     <App />
   </Provider>
 );
@@ -35,12 +35,12 @@ ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
 
 firebase.auth().onAuthStateChanged(async (user) => {
   if (user) {
-    // try to fetch food database then render it
     store.dispatch(login(user.uid));
     try {
       await store.dispatch(startSetFoods());
       renderApp();
-      if (history.location.pathname === '/') {
+      const path = history.location.pathname;
+      if (path === '/') {
         history.push('/FoodDashboard');
       }
     } catch(e) {

@@ -21,21 +21,14 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h1>
-          Boilerplate
+          Calorie-Track
 </h1>,
         <NavLink
           activeClassName="active"
           ariaCurrent="true"
-          to="/dashboard"
+          to="/FoodDashboard"
 >
-          dashboard
-</NavLink>,
-        <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          to="/createFood"
->
-          Add Food
+          Food dashboard
 </NavLink>,
         <button
           onClick={[Function]}
@@ -51,10 +44,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Boilerplate",
+          "children": "Calorie-Track",
         },
         "ref": null,
-        "rendered": "Boilerplate",
+        "rendered": "Calorie-Track",
         "type": "h1",
       },
       Object {
@@ -64,25 +57,11 @@ ShallowWrapper {
         "props": Object {
           "activeClassName": "active",
           "ariaCurrent": "true",
-          "children": "dashboard",
-          "to": "/dashboard",
+          "children": "Food dashboard",
+          "to": "/FoodDashboard",
         },
         "ref": null,
-        "rendered": "dashboard",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Add Food",
-          "to": "/createFood",
-        },
-        "ref": null,
-        "rendered": "Add Food",
+        "rendered": "Food dashboard",
         "type": [Function],
       },
       Object {
@@ -108,21 +87,14 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h1>
-            Boilerplate
+            Calorie-Track
 </h1>,
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
-            to="/dashboard"
+            to="/FoodDashboard"
 >
-            dashboard
-</NavLink>,
-          <NavLink
-            activeClassName="active"
-            ariaCurrent="true"
-            to="/createFood"
->
-            Add Food
+            Food dashboard
 </NavLink>,
           <button
             onClick={[Function]}
@@ -138,10 +110,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Boilerplate",
+            "children": "Calorie-Track",
           },
           "ref": null,
-          "rendered": "Boilerplate",
+          "rendered": "Calorie-Track",
           "type": "h1",
         },
         Object {
@@ -151,25 +123,11 @@ ShallowWrapper {
           "props": Object {
             "activeClassName": "active",
             "ariaCurrent": "true",
-            "children": "dashboard",
-            "to": "/dashboard",
+            "children": "Food dashboard",
+            "to": "/FoodDashboard",
           },
           "ref": null,
-          "rendered": "dashboard",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "ariaCurrent": "true",
-            "children": "Add Food",
-            "to": "/createFood",
-          },
-          "ref": null,
-          "rendered": "Add Food",
+          "rendered": "Food dashboard",
           "type": [Function],
         },
         Object {
