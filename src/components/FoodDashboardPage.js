@@ -1,5 +1,7 @@
 import React from 'react';
 import FoodList from './FoodList';
+import EditFoodPage from './EditFoodPage';
+import AddFoodPage from './AddFoodPage';
 
 class FoodDashboardPage extends React.Component {
 
@@ -7,6 +9,8 @@ class FoodDashboardPage extends React.Component {
     return (
       <div>
         <FoodList />
+        <AddFoodPage />
+        <EditFoodPage />
       </div>
     );
   }

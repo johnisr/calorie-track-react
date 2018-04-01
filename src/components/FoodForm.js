@@ -13,6 +13,12 @@ class FoodForm extends React.Component {
       calories: props.food ? props.food.calories : '',
     };
   }
+
+  componentWillReceiveProps(nextProps) {
+    const { name, amount, unit, carbohydrates, protein, fat, calories } = nextProps.food;
+    this.setState({ name, amount, unit, carbohydrates, protein, fat, calories });
+  }
+
   handleNameChange = (e) => {
     const name = e.target.value;
     this.setState(() => ({ name }));

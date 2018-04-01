@@ -8,7 +8,6 @@ export class AddFoodPage extends React.Component {
     this.props.startAddFood({
       ...food,
     });
-    this.props.history.push('/dashboard');
   }
   render() {
     return (

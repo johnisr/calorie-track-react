@@ -12,7 +12,8 @@ import { firebase } from './firebase/firebase';
 import { login, logout } from './actions/auth';
 import { startSetFoods } from './actions/foods';
 
-import Playground from './playground/log';
+// import Playground from './playground/log';
+// import EditFood from './playground/editFood';
 
 const store = configureStore();
 
@@ -40,7 +41,7 @@ firebase.auth().onAuthStateChanged(async (user) => {
       await store.dispatch(startSetFoods());
       renderApp();
       if (history.location.pathname === '/') {
-        history.push('/dashboard');
+        history.push('/FoodDashboard');
       }
     } catch(e) {
 

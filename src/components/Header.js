@@ -5,9 +5,8 @@ import { startLogout } from '../actions/auth';
 
 export const Header = ({ startLogout }) => (
   <header>
-    <h1>Boilerplate</h1>
-    <NavLink to='/dashboard' >dashboard</NavLink>
-    <NavLink to='/createFood' >Add Food</NavLink>
+    <h1>Calorie-Track</h1>
+    <NavLink to='/FoodDashboard' >Food dashboard</NavLink>
     <button onClick={startLogout}>Logout</button>
   </header>
 );
