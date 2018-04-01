@@ -1085,13 +1085,13 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <FoodForm
     food={
         Object {
-            "amount": "100",
-            "calories": "165",
-            "carbohydrates": "0",
-            "fat": "3.6",
+            "amount": 100,
+            "calories": 165,
+            "carbohydrates": 0,
+            "fat": 3.6,
             "id": "2",
             "name": "Chicken Breast",
-            "protein": "31",
+            "protein": 31,
             "unit": "grams",
           }
     }
@@ -1138,7 +1138,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="amount"
                     type="text"
-                    value="100"
+                    value={100}
           />
 </div>,
         <div>
@@ -1170,7 +1170,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="carbohydrates"
                     type="text"
-                    value="0"
+                    value={0}
           />
 </div>,
         <div>
@@ -1185,7 +1185,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="protein"
                     type="text"
-                    value="31"
+                    value={31}
           />
 </div>,
         <div>
@@ -1200,7 +1200,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="fat"
                     type="text"
-                    value="3.6"
+                    value={3.6}
           />
 </div>,
         <div>
@@ -1215,7 +1215,7 @@ ShallowWrapper {
                     onChange={[Function]}
                     placeholder="calories"
                     type="text"
-                    value="165"
+                    value={165}
           />
 </div>,
         <button
@@ -1303,7 +1303,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="amount"
               type="text"
-              value="100"
+              value={100}
 />,
           ],
         },
@@ -1332,7 +1332,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "amount",
               "type": "text",
-              "value": "100",
+              "value": 100,
             },
             "ref": null,
             "rendered": null,
@@ -1415,7 +1415,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="carbohydrates"
               type="text"
-              value="0"
+              value={0}
 />,
           ],
         },
@@ -1444,7 +1444,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "carbohydrates",
               "type": "text",
-              "value": "0",
+              "value": 0,
             },
             "ref": null,
             "rendered": null,
@@ -1470,7 +1470,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="protein"
               type="text"
-              value="31"
+              value={31}
 />,
           ],
         },
@@ -1498,7 +1498,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "protein",
               "type": "text",
-              "value": "31",
+              "value": 31,
             },
             "ref": null,
             "rendered": null,
@@ -1524,7 +1524,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="fat"
               type="text"
-              value="3.6"
+              value={3.6}
 />,
           ],
         },
@@ -1552,7 +1552,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "fat",
               "type": "text",
-              "value": "3.6",
+              "value": 3.6,
             },
             "ref": null,
             "rendered": null,
@@ -1578,7 +1578,7 @@ ShallowWrapper {
               onChange={[Function]}
               placeholder="calories"
               type="text"
-              value="165"
+              value={165}
 />,
           ],
         },
@@ -1606,7 +1606,7 @@ ShallowWrapper {
               "onChange": [Function],
               "placeholder": "calories",
               "type": "text",
-              "value": "165",
+              "value": 165,
             },
             "ref": null,
             "rendered": null,
@@ -1666,7 +1666,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="amount"
                         type="text"
-                        value="100"
+                        value={100}
             />
 </div>,
           <div>
@@ -1698,7 +1698,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="carbohydrates"
                         type="text"
-                        value="0"
+                        value={0}
             />
 </div>,
           <div>
@@ -1713,7 +1713,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="protein"
                         type="text"
-                        value="31"
+                        value={31}
             />
 </div>,
           <div>
@@ -1728,7 +1728,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="fat"
                         type="text"
-                        value="3.6"
+                        value={3.6}
             />
 </div>,
           <div>
@@ -1743,7 +1743,7 @@ ShallowWrapper {
                         onChange={[Function]}
                         placeholder="calories"
                         type="text"
-                        value="165"
+                        value={165}
             />
 </div>,
           <button
@@ -1831,7 +1831,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="amount"
                 type="text"
-                value="100"
+                value={100}
 />,
             ],
           },
@@ -1860,7 +1860,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "amount",
                 "type": "text",
-                "value": "100",
+                "value": 100,
               },
               "ref": null,
               "rendered": null,
@@ -1943,7 +1943,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="carbohydrates"
                 type="text"
-                value="0"
+                value={0}
 />,
             ],
           },
@@ -1972,7 +1972,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "carbohydrates",
                 "type": "text",
-                "value": "0",
+                "value": 0,
               },
               "ref": null,
               "rendered": null,
@@ -1998,7 +1998,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="protein"
                 type="text"
-                value="31"
+                value={31}
 />,
             ],
           },
@@ -2026,7 +2026,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "protein",
                 "type": "text",
-                "value": "31",
+                "value": 31,
               },
               "ref": null,
               "rendered": null,
@@ -2052,7 +2052,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="fat"
                 type="text"
-                value="3.6"
+                value={3.6}
 />,
             ],
           },
@@ -2080,7 +2080,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "fat",
                 "type": "text",
-                "value": "3.6",
+                "value": 3.6,
               },
               "ref": null,
               "rendered": null,
@@ -2106,7 +2106,7 @@ ShallowWrapper {
                 onChange={[Function]}
                 placeholder="calories"
                 type="text"
-                value="165"
+                value={165}
 />,
             ],
           },
@@ -2134,7 +2134,7 @@ ShallowWrapper {
                 "onChange": [Function],
                 "placeholder": "calories",
                 "type": "text",
-                "value": "165",
+                "value": 165,
               },
               "ref": null,
               "rendered": null,

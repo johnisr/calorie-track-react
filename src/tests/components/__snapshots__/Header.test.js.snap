@@ -30,6 +30,13 @@ ShallowWrapper {
 >
           Food dashboard
 </NavLink>,
+        <NavLink
+          activeClassName="active"
+          ariaCurrent="true"
+          to="/LogDashboard"
+>
+          Log dashboard
+</NavLink>,
         <button
           onClick={[Function]}
 >
@@ -67,6 +74,20 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "active",
+          "ariaCurrent": "true",
+          "children": "Log dashboard",
+          "to": "/LogDashboard",
+        },
+        "ref": null,
+        "rendered": "Log dashboard",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": "Logout",
@@ -95,6 +116,13 @@ ShallowWrapper {
             to="/FoodDashboard"
 >
             Food dashboard
+</NavLink>,
+          <NavLink
+            activeClassName="active"
+            ariaCurrent="true"
+            to="/LogDashboard"
+>
+            Log dashboard
 </NavLink>,
           <button
             onClick={[Function]}
@@ -128,6 +156,20 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": "Food dashboard",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "ariaCurrent": "true",
+            "children": "Log dashboard",
+            "to": "/LogDashboard",
+          },
+          "ref": null,
+          "rendered": "Log dashboard",
           "type": [Function],
         },
         Object {

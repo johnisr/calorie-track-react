@@ -7,13 +7,13 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <EditFood
     food={
         Object {
-            "amount": "100",
-            "calories": "165",
-            "carbohydrates": "0",
-            "fat": "3.6",
+            "amount": 100,
+            "calories": 165,
+            "carbohydrates": 0,
+            "fat": 3.6,
             "id": "2",
             "name": "Chicken Breast",
-            "protein": "31",
+            "protein": 31,
             "unit": "grams",
           }
     }
@@ -53,13 +53,13 @@ ShallowWrapper {
           <FoodForm
                     food={
                               Object {
-                                        "amount": "100",
-                                        "calories": "165",
-                                        "carbohydrates": "0",
-                                        "fat": "3.6",
+                                        "amount": 100,
+                                        "calories": 165,
+                                        "carbohydrates": 0,
+                                        "fat": 3.6,
                                         "id": "2",
                                         "name": "Chicken Breast",
-                                        "protein": "31",
+                                        "protein": 31,
                                         "unit": "grams",
                                       }
                     }
@@ -135,13 +135,13 @@ ShallowWrapper {
             <FoodForm
               food={
                             Object {
-                                          "amount": "100",
-                                          "calories": "165",
-                                          "carbohydrates": "0",
-                                          "fat": "3.6",
+                                          "amount": 100,
+                                          "calories": 165,
+                                          "carbohydrates": 0,
+                                          "fat": 3.6,
                                           "id": "2",
                                           "name": "Chicken Breast",
-                                          "protein": "31",
+                                          "protein": 31,
                                           "unit": "grams",
                                         }
               }
@@ -168,13 +168,13 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "food": Object {
-                "amount": "100",
-                "calories": "165",
-                "carbohydrates": "0",
-                "fat": "3.6",
+                "amount": 100,
+                "calories": 165,
+                "carbohydrates": 0,
+                "fat": 3.6,
                 "id": "2",
                 "name": "Chicken Breast",
-                "protein": "31",
+                "protein": 31,
                 "unit": "grams",
               },
               "handleSubmit": [Function],
@@ -239,13 +239,13 @@ ShallowWrapper {
             <FoodForm
                         food={
                                     Object {
-                                                "amount": "100",
-                                                "calories": "165",
-                                                "carbohydrates": "0",
-                                                "fat": "3.6",
+                                                "amount": 100,
+                                                "calories": 165,
+                                                "carbohydrates": 0,
+                                                "fat": 3.6,
                                                 "id": "2",
                                                 "name": "Chicken Breast",
-                                                "protein": "31",
+                                                "protein": 31,
                                                 "unit": "grams",
                                               }
                         }
@@ -321,13 +321,13 @@ ShallowWrapper {
               <FoodForm
                 food={
                                 Object {
-                                                "amount": "100",
-                                                "calories": "165",
-                                                "carbohydrates": "0",
-                                                "fat": "3.6",
+                                                "amount": 100,
+                                                "calories": 165,
+                                                "carbohydrates": 0,
+                                                "fat": 3.6,
                                                 "id": "2",
                                                 "name": "Chicken Breast",
-                                                "protein": "31",
+                                                "protein": 31,
                                                 "unit": "grams",
                                               }
                 }
@@ -354,13 +354,13 @@ ShallowWrapper {
               "nodeType": "class",
               "props": Object {
                 "food": Object {
-                  "amount": "100",
-                  "calories": "165",
-                  "carbohydrates": "0",
-                  "fat": "3.6",
+                  "amount": 100,
+                  "calories": 165,
+                  "carbohydrates": 0,
+                  "fat": 3.6,
                   "id": "2",
                   "name": "Chicken Breast",
-                  "protein": "31",
+                  "protein": 31,
                   "unit": "grams",
                 },
                 "handleSubmit": [Function],

@@ -10,12 +10,12 @@ export default [{
 }, {
   id: '2',
   name: "Chicken Breast",
-  amount: "100",
+  amount: 100,
   unit: "grams",
-  carbohydrates: "0",
-  protein: "31",
-  fat: "3.6",
-  calories: "165",
+  carbohydrates: 0,
+  protein: 31,
+  fat: 3.6,
+  calories: 165,
 }, {
   id: '3',
   name: 'Almonds',

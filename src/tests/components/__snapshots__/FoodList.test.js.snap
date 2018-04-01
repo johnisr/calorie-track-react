@@ -18,13 +18,13 @@ ShallowWrapper {
               "unit": "grams",
             },
             Object {
-              "amount": "100",
-              "calories": "165",
-              "carbohydrates": "0",
-              "fat": "3.6",
+              "amount": 100,
+              "calories": 165,
+              "carbohydrates": 0,
+              "fat": 3.6,
               "id": "2",
               "name": "Chicken Breast",
-              "protein": "31",
+              "protein": 31,
               "unit": "grams",
             },
             Object {
@@ -72,13 +72,13 @@ ShallowWrapper {
 </div>,
         <div>
           <FoodListItem
-                    amount="100"
-                    calories="165"
-                    carbohydrates="0"
-                    fat="3.6"
+                    amount={100}
+                    calories={165}
+                    carbohydrates={0}
+                    fat={3.6}
                     id="2"
                     name="Chicken Breast"
-                    protein="31"
+                    protein={31}
                     unit="grams"
           />
           <button
@@ -173,13 +173,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <FoodListItem
-              amount="100"
-              calories="165"
-              carbohydrates="0"
-              fat="3.6"
+              amount={100}
+              calories={165}
+              carbohydrates={0}
+              fat={3.6}
               id="2"
               name="Chicken Breast"
-              protein="31"
+              protein={31}
               unit="grams"
 />,
             <button
@@ -196,13 +196,13 @@ ShallowWrapper {
             "key": "item 2",
             "nodeType": "function",
             "props": Object {
-              "amount": "100",
-              "calories": "165",
-              "carbohydrates": "0",
-              "fat": "3.6",
+              "amount": 100,
+              "calories": 165,
+              "carbohydrates": 0,
+              "fat": 3.6,
               "id": "2",
               "name": "Chicken Breast",
-              "protein": "31",
+              "protein": 31,
               "unit": "grams",
             },
             "ref": null,
@@ -311,13 +311,13 @@ ShallowWrapper {
 </div>,
           <div>
             <FoodListItem
-                        amount="100"
-                        calories="165"
-                        carbohydrates="0"
-                        fat="3.6"
+                        amount={100}
+                        calories={165}
+                        carbohydrates={0}
+                        fat={3.6}
                         id="2"
                         name="Chicken Breast"
-                        protein="31"
+                        protein={31}
                         unit="grams"
             />
             <button
@@ -412,13 +412,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <FoodListItem
-                amount="100"
-                calories="165"
-                carbohydrates="0"
-                fat="3.6"
+                amount={100}
+                calories={165}
+                carbohydrates={0}
+                fat={3.6}
                 id="2"
                 name="Chicken Breast"
-                protein="31"
+                protein={31}
                 unit="grams"
 />,
               <button
@@ -435,13 +435,13 @@ ShallowWrapper {
               "key": "item 2",
               "nodeType": "function",
               "props": Object {
-                "amount": "100",
-                "calories": "165",
-                "carbohydrates": "0",
-                "fat": "3.6",
+                "amount": 100,
+                "calories": 165,
+                "carbohydrates": 0,
+                "fat": 3.6,
                 "id": "2",
                 "name": "Chicken Breast",
-                "protein": "31",
+                "protein": 31,
                 "unit": "grams",
               },
               "ref": null,

@@ -7,6 +7,7 @@ export const Header = ({ startLogout }) => (
   <header>
     <h1>Calorie-Track</h1>
     <NavLink to='/FoodDashboard' >Food dashboard</NavLink>
+    <NavLink to='/LogDashboard' >Log dashboard</NavLink>
     <button onClick={startLogout}>Logout</button>
   </header>
 );

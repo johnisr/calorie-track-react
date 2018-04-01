@@ -10,7 +10,7 @@ export default [{
     foods[0]
   ],
 }, {
-  date: moment().add(1, 'day').valueOf(),
+  date: moment(0).add(1, 'day').valueOf(),
   weight: 201,
   unit: 'lb',
   foods: [
