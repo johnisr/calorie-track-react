@@ -6,7 +6,7 @@ import foods from '../tests/fixtures/foods';
 // fixtures
 
 const logs = [{
-  date: moment(0),
+  date: moment(0).valueOf(),
   weight: 200,
   unit: 'lb',
   foods: [
@@ -14,7 +14,7 @@ const logs = [{
     foods[0]
   ],
 }, {
-  date: moment().add(1, 'day'),
+  date: moment().add(1, 'day').valueOf(),
   weight: 201,
   unit: 'lb',
   foods: [
@@ -23,7 +23,7 @@ const logs = [{
     foods[2]
   ],
 }, {
-  date: moment(0).subtract(1, 'day'),
+  date: moment(0).subtract(1, 'day').valueOf(),
   weight: 202,
   unit: 'lb',
   foods: [
@@ -61,12 +61,11 @@ const reducer = (state = [], action) => {
       return [...state, action.log];
     }
     case 'REMOVE_LOG': {
-      return state.filter(({ date }) => !date.isSame(action.date));
+      return state.filter(({ date }) => !(date === action.date));
     }
     case 'EDIT_LOG': {
       const newState = state.map((log) => {
-        if (log.date.isSame(action.date)) {
-          console.log('SAME');
+        if (log.date === action.date) {
           return {
             ...log,
             ...action.updates,
