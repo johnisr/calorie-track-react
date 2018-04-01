@@ -1,0 +1,2170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render FoodForm correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FoodForm />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="name"
+          >
+                    Food
+          </label>
+          <input
+                    className="text-input"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="name"
+                    type="text"
+                    value=""
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="amount"
+          >
+                    Amount
+          </label>
+          <input
+                    className="text-input"
+                    name="amount"
+                    onChange={[Function]}
+                    placeholder="amount"
+                    type="text"
+                    value=""
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="unit"
+          >
+                    Unit
+          </label>
+          <input
+                    className="text-input"
+                    name="unit"
+                    onChange={[Function]}
+                    placeholder="unit"
+                    type="text"
+                    value=""
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="carbohydrates"
+          >
+                    Carbohydrates
+          </label>
+          <input
+                    className="text-input"
+                    name="carbohydrates"
+                    onChange={[Function]}
+                    placeholder="carbohydrates"
+                    type="text"
+                    value=""
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="Protein"
+          >
+                    Protein
+          </label>
+          <input
+                    className="text-input"
+                    onChange={[Function]}
+                    placeholder="protein"
+                    type="text"
+                    value=""
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="Fat"
+          >
+                    Fat
+          </label>
+          <input
+                    className="text-input"
+                    onChange={[Function]}
+                    placeholder="fat"
+                    type="text"
+                    value=""
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="Calories"
+          >
+                    Calories
+          </label>
+          <input
+                    className="text-input"
+                    onChange={[Function]}
+                    placeholder="calories"
+                    type="text"
+                    value=""
+          />
+</div>,
+        <button
+          className="button"
+>
+          Submit
+</button>,
+      ],
+      "className": "form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="name"
+>
+              Food
+</label>,
+            <input
+              className="text-input"
+              name="name"
+              onChange={[Function]}
+              placeholder="name"
+              type="text"
+              value=""
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Food",
+              "className": "text-input__label",
+              "htmlFor": "name",
+            },
+            "ref": null,
+            "rendered": "Food",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "name",
+              "onChange": [Function],
+              "placeholder": "name",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="amount"
+>
+              Amount
+</label>,
+            <input
+              className="text-input"
+              name="amount"
+              onChange={[Function]}
+              placeholder="amount"
+              type="text"
+              value=""
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Amount",
+              "className": "text-input__label",
+              "htmlFor": "amount",
+            },
+            "ref": null,
+            "rendered": "Amount",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "amount",
+              "onChange": [Function],
+              "placeholder": "amount",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="unit"
+>
+              Unit
+</label>,
+            <input
+              className="text-input"
+              name="unit"
+              onChange={[Function]}
+              placeholder="unit"
+              type="text"
+              value=""
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Unit",
+              "className": "text-input__label",
+              "htmlFor": "unit",
+            },
+            "ref": null,
+            "rendered": "Unit",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "unit",
+              "onChange": [Function],
+              "placeholder": "unit",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="carbohydrates"
+>
+              Carbohydrates
+</label>,
+            <input
+              className="text-input"
+              name="carbohydrates"
+              onChange={[Function]}
+              placeholder="carbohydrates"
+              type="text"
+              value=""
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Carbohydrates",
+              "className": "text-input__label",
+              "htmlFor": "carbohydrates",
+            },
+            "ref": null,
+            "rendered": "Carbohydrates",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "carbohydrates",
+              "onChange": [Function],
+              "placeholder": "carbohydrates",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="Protein"
+>
+              Protein
+</label>,
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="protein"
+              type="text"
+              value=""
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Protein",
+              "className": "text-input__label",
+              "htmlFor": "Protein",
+            },
+            "ref": null,
+            "rendered": "Protein",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "onChange": [Function],
+              "placeholder": "protein",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="Fat"
+>
+              Fat
+</label>,
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="fat"
+              type="text"
+              value=""
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Fat",
+              "className": "text-input__label",
+              "htmlFor": "Fat",
+            },
+            "ref": null,
+            "rendered": "Fat",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "onChange": [Function],
+              "placeholder": "fat",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="Calories"
+>
+              Calories
+</label>,
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="calories"
+              type="text"
+              value=""
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Calories",
+              "className": "text-input__label",
+              "htmlFor": "Calories",
+            },
+            "ref": null,
+            "rendered": "Calories",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "onChange": [Function],
+              "placeholder": "calories",
+              "type": "text",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Submit",
+          "className": "button",
+        },
+        "ref": null,
+        "rendered": "Submit",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="name"
+            >
+                        Food
+            </label>
+            <input
+                        className="text-input"
+                        name="name"
+                        onChange={[Function]}
+                        placeholder="name"
+                        type="text"
+                        value=""
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="amount"
+            >
+                        Amount
+            </label>
+            <input
+                        className="text-input"
+                        name="amount"
+                        onChange={[Function]}
+                        placeholder="amount"
+                        type="text"
+                        value=""
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="unit"
+            >
+                        Unit
+            </label>
+            <input
+                        className="text-input"
+                        name="unit"
+                        onChange={[Function]}
+                        placeholder="unit"
+                        type="text"
+                        value=""
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="carbohydrates"
+            >
+                        Carbohydrates
+            </label>
+            <input
+                        className="text-input"
+                        name="carbohydrates"
+                        onChange={[Function]}
+                        placeholder="carbohydrates"
+                        type="text"
+                        value=""
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="Protein"
+            >
+                        Protein
+            </label>
+            <input
+                        className="text-input"
+                        onChange={[Function]}
+                        placeholder="protein"
+                        type="text"
+                        value=""
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="Fat"
+            >
+                        Fat
+            </label>
+            <input
+                        className="text-input"
+                        onChange={[Function]}
+                        placeholder="fat"
+                        type="text"
+                        value=""
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="Calories"
+            >
+                        Calories
+            </label>
+            <input
+                        className="text-input"
+                        onChange={[Function]}
+                        placeholder="calories"
+                        type="text"
+                        value=""
+            />
+</div>,
+          <button
+            className="button"
+>
+            Submit
+</button>,
+        ],
+        "className": "form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="name"
+>
+                Food
+</label>,
+              <input
+                className="text-input"
+                name="name"
+                onChange={[Function]}
+                placeholder="name"
+                type="text"
+                value=""
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Food",
+                "className": "text-input__label",
+                "htmlFor": "name",
+              },
+              "ref": null,
+              "rendered": "Food",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "name",
+                "onChange": [Function],
+                "placeholder": "name",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="amount"
+>
+                Amount
+</label>,
+              <input
+                className="text-input"
+                name="amount"
+                onChange={[Function]}
+                placeholder="amount"
+                type="text"
+                value=""
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Amount",
+                "className": "text-input__label",
+                "htmlFor": "amount",
+              },
+              "ref": null,
+              "rendered": "Amount",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "amount",
+                "onChange": [Function],
+                "placeholder": "amount",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="unit"
+>
+                Unit
+</label>,
+              <input
+                className="text-input"
+                name="unit"
+                onChange={[Function]}
+                placeholder="unit"
+                type="text"
+                value=""
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Unit",
+                "className": "text-input__label",
+                "htmlFor": "unit",
+              },
+              "ref": null,
+              "rendered": "Unit",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "unit",
+                "onChange": [Function],
+                "placeholder": "unit",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="carbohydrates"
+>
+                Carbohydrates
+</label>,
+              <input
+                className="text-input"
+                name="carbohydrates"
+                onChange={[Function]}
+                placeholder="carbohydrates"
+                type="text"
+                value=""
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Carbohydrates",
+                "className": "text-input__label",
+                "htmlFor": "carbohydrates",
+              },
+              "ref": null,
+              "rendered": "Carbohydrates",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "carbohydrates",
+                "onChange": [Function],
+                "placeholder": "carbohydrates",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="Protein"
+>
+                Protein
+</label>,
+              <input
+                className="text-input"
+                onChange={[Function]}
+                placeholder="protein"
+                type="text"
+                value=""
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Protein",
+                "className": "text-input__label",
+                "htmlFor": "Protein",
+              },
+              "ref": null,
+              "rendered": "Protein",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "onChange": [Function],
+                "placeholder": "protein",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="Fat"
+>
+                Fat
+</label>,
+              <input
+                className="text-input"
+                onChange={[Function]}
+                placeholder="fat"
+                type="text"
+                value=""
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Fat",
+                "className": "text-input__label",
+                "htmlFor": "Fat",
+              },
+              "ref": null,
+              "rendered": "Fat",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "onChange": [Function],
+                "placeholder": "fat",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="Calories"
+>
+                Calories
+</label>,
+              <input
+                className="text-input"
+                onChange={[Function]}
+                placeholder="calories"
+                type="text"
+                value=""
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Calories",
+                "className": "text-input__label",
+                "htmlFor": "Calories",
+              },
+              "ref": null,
+              "rendered": "Calories",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "onChange": [Function],
+                "placeholder": "calories",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Submit",
+            "className": "button",
+          },
+          "ref": null,
+          "rendered": "Submit",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render Foodfrom with food data 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FoodForm
+    food={
+        Object {
+            "amount": "100",
+            "calories": "165",
+            "carbohydrates": "0",
+            "fat": "3.6",
+            "id": "2",
+            "name": "Chicken Breast",
+            "protein": "31",
+            "unit": "grams",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="name"
+          >
+                    Food
+          </label>
+          <input
+                    className="text-input"
+                    name="name"
+                    onChange={[Function]}
+                    placeholder="name"
+                    type="text"
+                    value="Chicken Breast"
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="amount"
+          >
+                    Amount
+          </label>
+          <input
+                    className="text-input"
+                    name="amount"
+                    onChange={[Function]}
+                    placeholder="amount"
+                    type="text"
+                    value="100"
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="unit"
+          >
+                    Unit
+          </label>
+          <input
+                    className="text-input"
+                    name="unit"
+                    onChange={[Function]}
+                    placeholder="unit"
+                    type="text"
+                    value="grams"
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="carbohydrates"
+          >
+                    Carbohydrates
+          </label>
+          <input
+                    className="text-input"
+                    name="carbohydrates"
+                    onChange={[Function]}
+                    placeholder="carbohydrates"
+                    type="text"
+                    value="0"
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="Protein"
+          >
+                    Protein
+          </label>
+          <input
+                    className="text-input"
+                    onChange={[Function]}
+                    placeholder="protein"
+                    type="text"
+                    value="31"
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="Fat"
+          >
+                    Fat
+          </label>
+          <input
+                    className="text-input"
+                    onChange={[Function]}
+                    placeholder="fat"
+                    type="text"
+                    value="3.6"
+          />
+</div>,
+        <div>
+          <label
+                    className="text-input__label"
+                    htmlFor="Calories"
+          >
+                    Calories
+          </label>
+          <input
+                    className="text-input"
+                    onChange={[Function]}
+                    placeholder="calories"
+                    type="text"
+                    value="165"
+          />
+</div>,
+        <button
+          className="button"
+>
+          Submit
+</button>,
+      ],
+      "className": "form",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="name"
+>
+              Food
+</label>,
+            <input
+              className="text-input"
+              name="name"
+              onChange={[Function]}
+              placeholder="name"
+              type="text"
+              value="Chicken Breast"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Food",
+              "className": "text-input__label",
+              "htmlFor": "name",
+            },
+            "ref": null,
+            "rendered": "Food",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "name",
+              "onChange": [Function],
+              "placeholder": "name",
+              "type": "text",
+              "value": "Chicken Breast",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="amount"
+>
+              Amount
+</label>,
+            <input
+              className="text-input"
+              name="amount"
+              onChange={[Function]}
+              placeholder="amount"
+              type="text"
+              value="100"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Amount",
+              "className": "text-input__label",
+              "htmlFor": "amount",
+            },
+            "ref": null,
+            "rendered": "Amount",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "amount",
+              "onChange": [Function],
+              "placeholder": "amount",
+              "type": "text",
+              "value": "100",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="unit"
+>
+              Unit
+</label>,
+            <input
+              className="text-input"
+              name="unit"
+              onChange={[Function]}
+              placeholder="unit"
+              type="text"
+              value="grams"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Unit",
+              "className": "text-input__label",
+              "htmlFor": "unit",
+            },
+            "ref": null,
+            "rendered": "Unit",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "unit",
+              "onChange": [Function],
+              "placeholder": "unit",
+              "type": "text",
+              "value": "grams",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="carbohydrates"
+>
+              Carbohydrates
+</label>,
+            <input
+              className="text-input"
+              name="carbohydrates"
+              onChange={[Function]}
+              placeholder="carbohydrates"
+              type="text"
+              value="0"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Carbohydrates",
+              "className": "text-input__label",
+              "htmlFor": "carbohydrates",
+            },
+            "ref": null,
+            "rendered": "Carbohydrates",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "name": "carbohydrates",
+              "onChange": [Function],
+              "placeholder": "carbohydrates",
+              "type": "text",
+              "value": "0",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="Protein"
+>
+              Protein
+</label>,
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="protein"
+              type="text"
+              value="31"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Protein",
+              "className": "text-input__label",
+              "htmlFor": "Protein",
+            },
+            "ref": null,
+            "rendered": "Protein",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "onChange": [Function],
+              "placeholder": "protein",
+              "type": "text",
+              "value": "31",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="Fat"
+>
+              Fat
+</label>,
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="fat"
+              type="text"
+              value="3.6"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Fat",
+              "className": "text-input__label",
+              "htmlFor": "Fat",
+            },
+            "ref": null,
+            "rendered": "Fat",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "onChange": [Function],
+              "placeholder": "fat",
+              "type": "text",
+              "value": "3.6",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <label
+              className="text-input__label"
+              htmlFor="Calories"
+>
+              Calories
+</label>,
+            <input
+              className="text-input"
+              onChange={[Function]}
+              placeholder="calories"
+              type="text"
+              value="165"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Calories",
+              "className": "text-input__label",
+              "htmlFor": "Calories",
+            },
+            "ref": null,
+            "rendered": "Calories",
+            "type": "label",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "text-input",
+              "onChange": [Function],
+              "placeholder": "calories",
+              "type": "text",
+              "value": "165",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Submit",
+          "className": "button",
+        },
+        "ref": null,
+        "rendered": "Submit",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="name"
+            >
+                        Food
+            </label>
+            <input
+                        className="text-input"
+                        name="name"
+                        onChange={[Function]}
+                        placeholder="name"
+                        type="text"
+                        value="Chicken Breast"
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="amount"
+            >
+                        Amount
+            </label>
+            <input
+                        className="text-input"
+                        name="amount"
+                        onChange={[Function]}
+                        placeholder="amount"
+                        type="text"
+                        value="100"
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="unit"
+            >
+                        Unit
+            </label>
+            <input
+                        className="text-input"
+                        name="unit"
+                        onChange={[Function]}
+                        placeholder="unit"
+                        type="text"
+                        value="grams"
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="carbohydrates"
+            >
+                        Carbohydrates
+            </label>
+            <input
+                        className="text-input"
+                        name="carbohydrates"
+                        onChange={[Function]}
+                        placeholder="carbohydrates"
+                        type="text"
+                        value="0"
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="Protein"
+            >
+                        Protein
+            </label>
+            <input
+                        className="text-input"
+                        onChange={[Function]}
+                        placeholder="protein"
+                        type="text"
+                        value="31"
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="Fat"
+            >
+                        Fat
+            </label>
+            <input
+                        className="text-input"
+                        onChange={[Function]}
+                        placeholder="fat"
+                        type="text"
+                        value="3.6"
+            />
+</div>,
+          <div>
+            <label
+                        className="text-input__label"
+                        htmlFor="Calories"
+            >
+                        Calories
+            </label>
+            <input
+                        className="text-input"
+                        onChange={[Function]}
+                        placeholder="calories"
+                        type="text"
+                        value="165"
+            />
+</div>,
+          <button
+            className="button"
+>
+            Submit
+</button>,
+        ],
+        "className": "form",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="name"
+>
+                Food
+</label>,
+              <input
+                className="text-input"
+                name="name"
+                onChange={[Function]}
+                placeholder="name"
+                type="text"
+                value="Chicken Breast"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Food",
+                "className": "text-input__label",
+                "htmlFor": "name",
+              },
+              "ref": null,
+              "rendered": "Food",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "name",
+                "onChange": [Function],
+                "placeholder": "name",
+                "type": "text",
+                "value": "Chicken Breast",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="amount"
+>
+                Amount
+</label>,
+              <input
+                className="text-input"
+                name="amount"
+                onChange={[Function]}
+                placeholder="amount"
+                type="text"
+                value="100"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Amount",
+                "className": "text-input__label",
+                "htmlFor": "amount",
+              },
+              "ref": null,
+              "rendered": "Amount",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "amount",
+                "onChange": [Function],
+                "placeholder": "amount",
+                "type": "text",
+                "value": "100",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="unit"
+>
+                Unit
+</label>,
+              <input
+                className="text-input"
+                name="unit"
+                onChange={[Function]}
+                placeholder="unit"
+                type="text"
+                value="grams"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Unit",
+                "className": "text-input__label",
+                "htmlFor": "unit",
+              },
+              "ref": null,
+              "rendered": "Unit",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "unit",
+                "onChange": [Function],
+                "placeholder": "unit",
+                "type": "text",
+                "value": "grams",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="carbohydrates"
+>
+                Carbohydrates
+</label>,
+              <input
+                className="text-input"
+                name="carbohydrates"
+                onChange={[Function]}
+                placeholder="carbohydrates"
+                type="text"
+                value="0"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Carbohydrates",
+                "className": "text-input__label",
+                "htmlFor": "carbohydrates",
+              },
+              "ref": null,
+              "rendered": "Carbohydrates",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "name": "carbohydrates",
+                "onChange": [Function],
+                "placeholder": "carbohydrates",
+                "type": "text",
+                "value": "0",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="Protein"
+>
+                Protein
+</label>,
+              <input
+                className="text-input"
+                onChange={[Function]}
+                placeholder="protein"
+                type="text"
+                value="31"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Protein",
+                "className": "text-input__label",
+                "htmlFor": "Protein",
+              },
+              "ref": null,
+              "rendered": "Protein",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "onChange": [Function],
+                "placeholder": "protein",
+                "type": "text",
+                "value": "31",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="Fat"
+>
+                Fat
+</label>,
+              <input
+                className="text-input"
+                onChange={[Function]}
+                placeholder="fat"
+                type="text"
+                value="3.6"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Fat",
+                "className": "text-input__label",
+                "htmlFor": "Fat",
+              },
+              "ref": null,
+              "rendered": "Fat",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "onChange": [Function],
+                "placeholder": "fat",
+                "type": "text",
+                "value": "3.6",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <label
+                className="text-input__label"
+                htmlFor="Calories"
+>
+                Calories
+</label>,
+              <input
+                className="text-input"
+                onChange={[Function]}
+                placeholder="calories"
+                type="text"
+                value="165"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Calories",
+                "className": "text-input__label",
+                "htmlFor": "Calories",
+              },
+              "ref": null,
+              "rendered": "Calories",
+              "type": "label",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "text-input",
+                "onChange": [Function],
+                "placeholder": "calories",
+                "type": "text",
+                "value": "165",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Submit",
+            "className": "button",
+          },
+          "ref": null,
+          "rendered": "Submit",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

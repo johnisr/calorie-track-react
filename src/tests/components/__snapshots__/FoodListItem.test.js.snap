@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render FoodListItem correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FoodListItem
+    amount={24}
+    calories={163}
+    carbohydrates={2.5}
+    fat={14}
+    id="3"
+    name="Almonds"
+    protein={6}
+    unit="pieces"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p>
+          Almonds
+           - 
+          24
+           
+          pieces
+</p>,
+        <p>
+          Carbs: 
+          2.5
+           Protein: 
+          6
+           Fat: 
+          14
+           Calories: 
+          163
+</p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Almonds",
+            " - ",
+            24,
+            " ",
+            "pieces",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Almonds",
+          " - ",
+          24,
+          " ",
+          "pieces",
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Carbs: ",
+            2.5,
+            " Protein: ",
+            6,
+            " Fat: ",
+            14,
+            " Calories: ",
+            163,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Carbs: ",
+          2.5,
+          " Protein: ",
+          6,
+          " Fat: ",
+          14,
+          " Calories: ",
+          163,
+        ],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            Almonds
+             - 
+            24
+             
+            pieces
+</p>,
+          <p>
+            Carbs: 
+            2.5
+             Protein: 
+            6
+             Fat: 
+            14
+             Calories: 
+            163
+</p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Almonds",
+              " - ",
+              24,
+              " ",
+              "pieces",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Almonds",
+            " - ",
+            24,
+            " ",
+            "pieces",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Carbs: ",
+              2.5,
+              " Protein: ",
+              6,
+              " Fat: ",
+              14,
+              " Calories: ",
+              163,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Carbs: ",
+            2.5,
+            " Protein: ",
+            6,
+            " Fat: ",
+            14,
+            " Calories: ",
+            163,
+          ],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

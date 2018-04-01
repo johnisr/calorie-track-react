@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import FoodForm from './FoodForm';
 import { startAddFood } from '../actions/foods';
 
-export class AddFoodPage extends React.Component {
+export class AddFood extends React.Component {
   handleSubmit = (food) => {
     this.props.startAddFood({
       ...food,
@@ -30,4 +30,4 @@ const mapDispatchToProps = dispatch => ({
   startAddFood: food => dispatch(startAddFood(food)),
 });
 
-export default connect(undefined, mapDispatchToProps)(AddFoodPage);
+export default connect(undefined, mapDispatchToProps)(AddFood);

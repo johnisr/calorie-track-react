@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import FoodListItem from './FoodListItem';
 import { addCurrentFood } from '../actions/currentFood';
 
-class FoodList extends React.Component {
+export class FoodList extends React.Component {
   handleClick(food) {
     this.props.addCurrentFood(food);
   }
