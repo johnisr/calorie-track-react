@@ -16,7 +16,7 @@ export default () => {
      foods: foodsReducer,
      currentFood: currentFoodReducer,
      logs: logsReducer,
-     currentLogs: currentLogReducer,
+     currentLog: currentLogReducer,
    }),
    composeEnhancers(applyMiddleware(thunk))
  );

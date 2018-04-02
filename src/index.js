@@ -15,14 +15,10 @@ import { startSetFoods } from './actions/foods';
 // import Playground from './playground/log';
 // import EditFood from './playground/editFood';
 // import CurrentLog from './playground/currentLog';
-import logs from './tests/fixtures/logs';
-import { addLog } from './actions/logs';
+// import logs from './tests/fixtures/logs';
+// import { addLog } from './actions/logs';
 
 const store = configureStore();
-
-store.dispatch(addLog(logs[0]));
-store.dispatch(addLog(logs[1]));
-store.dispatch(addLog(logs[2]));
 
 const jsx = (
   <Provider store={store}>

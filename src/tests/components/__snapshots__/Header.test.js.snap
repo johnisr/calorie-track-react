@@ -4,7 +4,7 @@ exports[`should render Header correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <Header
     startLogout={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -37,6 +37,11 @@ ShallowWrapper {
 >
           Log dashboard
 </NavLink>,
+        <button
+          onClick={[Function]}
+>
+          Today's Food Log
+</button>,
         <button
           onClick={[Function]}
 >
@@ -90,6 +95,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Today's Food Log",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Today's Food Log",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": "Logout",
           "onClick": [Function],
         },
@@ -124,6 +141,11 @@ ShallowWrapper {
 >
             Log dashboard
 </NavLink>,
+          <button
+            onClick={[Function]}
+>
+            Today's Food Log
+</button>,
           <button
             onClick={[Function]}
 >
@@ -171,6 +193,18 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Log dashboard",
           "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Today's Food Log",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Today's Food Log",
+          "type": "button",
         },
         Object {
           "instance": null,

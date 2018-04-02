@@ -1,3 +1,10 @@
+export const defaultLog = {
+  date: 0,
+  weight: '',
+  unit: '',
+  foods: [],
+};
+
 export const addLog = (log) => ({
   type: 'ADD_LOG',
   log,

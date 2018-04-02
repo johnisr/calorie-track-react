@@ -26,6 +26,16 @@ it('should remove a log', () => {
   expect(state).toEqual({});
 });
 
+it('should edit a log', () => {
+  const updates = { weight: 100, unit: 'kg' };
+  const action = { type: 'EDIT_CURRENT_EDIT_LOG', updates };
+  const state = currentLogReducer(logs[0], action);
+  expect(state).toEqual({
+    ...logs[0],
+    ...updates,
+  });
+});
+
 it('should add food to food log with index', () => {
   const action = { type: 'ADD_FOOD_TO_CURRENT_LOG', food: foods[0] };
   const state = currentLogReducer(emptyState, action);

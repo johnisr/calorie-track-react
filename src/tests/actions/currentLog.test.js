@@ -1,6 +1,8 @@
 import React from 'react';
-import { addCurrentEditLog,
+import { 
+  addCurrentEditLog,
   removeCurrentEditLog,
+  editCurrentEditLog,
   addFoodToCurrentLog,
   addFoodToCurrentLogFromList,
   removeFoodFromCurrentLog,
@@ -21,6 +23,15 @@ it('should setup remove current log action object', () => {
   const action = removeCurrentEditLog();
   expect(action).toEqual({
     type: 'REMOVE_CURRENT_EDIT_LOG',
+  });
+});
+
+it('should setup edit current log action object', () => {
+  const updates = { date: 0, };
+  const action = editCurrentEditLog(updates);
+  expect(action).toEqual({
+    type: 'EDIT_CURRENT_EDIT_LOG',
+    updates,
   });
 });
 

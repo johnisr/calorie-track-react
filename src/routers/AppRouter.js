@@ -9,6 +9,7 @@ import FoodDashboardPage from '../components/FoodDashboardPage';
 import LogDashboardPage from '../components/LogDashboardPage';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/LoginPage';
+import EditLog from '../components/EditLog';
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -18,6 +19,7 @@ const AppRouter = () => (
         <PublicRoute exact path="/" component={LoginPage} />
         <PrivateRoute path="/FoodDashboard" component={FoodDashboardPage} />
         <PrivateRoute path="/LogDashboard" component={LogDashboardPage} />
+        <PrivateRoute path="/EditLog" component={EditLog} />
         <PrivateRoute component={NotFoundPage} />
       </Switch>
     </div>

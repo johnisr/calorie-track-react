@@ -7,6 +7,11 @@ export const removeCurrentEditLog = () => ({
   type: 'REMOVE_CURRENT_EDIT_LOG',
 });
 
+export const editCurrentEditLog = (updates) => ({
+  type: 'EDIT_CURRENT_EDIT_LOG',
+  updates,
+});
+
 export const addFoodToCurrentLog = (food) => ({
   type: 'ADD_FOOD_TO_CURRENT_LOG',
   food,

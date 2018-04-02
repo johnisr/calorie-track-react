@@ -6,6 +6,12 @@ export default (state = {}, action) => {
     case 'REMOVE_CURRENT_EDIT_LOG': {
       return {};
     }
+    case 'EDIT_CURRENT_EDIT_LOG': {
+      return { 
+        ...state,
+        ...action.updates,
+      };
+    }
     case 'ADD_FOOD_TO_CURRENT_LOG': {
       return {
         ...state,
