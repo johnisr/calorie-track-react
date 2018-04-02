@@ -18,7 +18,6 @@ class EditLog extends React.Component {
             <p>Select a Log from Log dashboard to edit</p>
           ) : (
             <div>
-              <FoodList />
               <AddFood />
               <EditFood />
             </div>

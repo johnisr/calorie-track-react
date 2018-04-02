@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FoodList
+    buttonText="Edit This"
     foods={
         Array [
             Object {
@@ -39,6 +40,7 @@ ShallowWrapper {
             },
           ]
     }
+    handleClick={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -67,7 +69,7 @@ ShallowWrapper {
           <button
                     onClick={[Function]}
           >
-                    edit this
+                    Edit This
           </button>
 </div>,
         <div>
@@ -84,7 +86,7 @@ ShallowWrapper {
           <button
                     onClick={[Function]}
           >
-                    edit this
+                    Edit This
           </button>
 </div>,
         <div>
@@ -101,7 +103,7 @@ ShallowWrapper {
           <button
                     onClick={[Function]}
           >
-                    edit this
+                    Edit This
           </button>
 </div>,
       ],
@@ -127,7 +129,7 @@ ShallowWrapper {
             <button
               onClick={[Function]}
 >
-              edit this
+              Edit This
 </button>,
           ],
         },
@@ -156,11 +158,11 @@ ShallowWrapper {
             "key": "button 1",
             "nodeType": "host",
             "props": Object {
-              "children": "edit this",
+              "children": "Edit This",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "edit this",
+            "rendered": "Edit This",
             "type": "button",
           },
         ],
@@ -185,7 +187,7 @@ ShallowWrapper {
             <button
               onClick={[Function]}
 >
-              edit this
+              Edit This
 </button>,
           ],
         },
@@ -214,11 +216,11 @@ ShallowWrapper {
             "key": "button 2",
             "nodeType": "host",
             "props": Object {
-              "children": "edit this",
+              "children": "Edit This",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "edit this",
+            "rendered": "Edit This",
             "type": "button",
           },
         ],
@@ -243,7 +245,7 @@ ShallowWrapper {
             <button
               onClick={[Function]}
 >
-              edit this
+              Edit This
 </button>,
           ],
         },
@@ -272,11 +274,11 @@ ShallowWrapper {
             "key": "button 3",
             "nodeType": "host",
             "props": Object {
-              "children": "edit this",
+              "children": "Edit This",
               "onClick": [Function],
             },
             "ref": null,
-            "rendered": "edit this",
+            "rendered": "Edit This",
             "type": "button",
           },
         ],
@@ -306,7 +308,7 @@ ShallowWrapper {
             <button
                         onClick={[Function]}
             >
-                        edit this
+                        Edit This
             </button>
 </div>,
           <div>
@@ -323,7 +325,7 @@ ShallowWrapper {
             <button
                         onClick={[Function]}
             >
-                        edit this
+                        Edit This
             </button>
 </div>,
           <div>
@@ -340,7 +342,7 @@ ShallowWrapper {
             <button
                         onClick={[Function]}
             >
-                        edit this
+                        Edit This
             </button>
 </div>,
         ],
@@ -366,7 +368,7 @@ ShallowWrapper {
               <button
                 onClick={[Function]}
 >
-                edit this
+                Edit This
 </button>,
             ],
           },
@@ -395,11 +397,11 @@ ShallowWrapper {
               "key": "button 1",
               "nodeType": "host",
               "props": Object {
-                "children": "edit this",
+                "children": "Edit This",
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "edit this",
+              "rendered": "Edit This",
               "type": "button",
             },
           ],
@@ -424,7 +426,7 @@ ShallowWrapper {
               <button
                 onClick={[Function]}
 >
-                edit this
+                Edit This
 </button>,
             ],
           },
@@ -453,11 +455,11 @@ ShallowWrapper {
               "key": "button 2",
               "nodeType": "host",
               "props": Object {
-                "children": "edit this",
+                "children": "Edit This",
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "edit this",
+              "rendered": "Edit This",
               "type": "button",
             },
           ],
@@ -482,7 +484,7 @@ ShallowWrapper {
               <button
                 onClick={[Function]}
 >
-                edit this
+                Edit This
 </button>,
             ],
           },
@@ -511,11 +513,11 @@ ShallowWrapper {
               "key": "button 3",
               "nodeType": "host",
               "props": Object {
-                "children": "edit this",
+                "children": "Edit This",
                 "onClick": [Function],
               },
               "ref": null,
-              "rendered": "edit this",
+              "rendered": "Edit This",
               "type": "button",
             },
           ],
@@ -540,7 +542,9 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FoodList
+    buttonText="Edit This"
     foods={Array []}
+    handleClick={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
