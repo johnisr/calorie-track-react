@@ -5,8 +5,8 @@ import { startEditFood, startRemoveFood } from '../actions/foods';
 import { removeCurrentFood } from '../actions/currentFood';
 
 export class EditFoodFormForFoods extends React.Component {
-  handleSubmit = async (food) => {
-    await this.props.startEditFood(this.props.food.id, food);
+  handleSubmit = async (updates) => {
+    await this.props.startEditFood(this.props.food.id, updates);
     this.props.removeCurrentFood();
   }
   handleRemove = async (food) => {
