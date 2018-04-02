@@ -14,6 +14,7 @@ import { startSetFoods } from './actions/foods';
 
 // import Playground from './playground/log';
 // import EditFood from './playground/editFood';
+// import CurrentLog from './playground/currentLog';
 import logs from './tests/fixtures/logs';
 import { addLog } from './actions/logs';
 

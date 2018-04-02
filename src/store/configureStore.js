@@ -5,6 +5,7 @@ import authReducer from '../reducers/auth';
 import foodsReducer from '../reducers/foods';
 import currentFoodReducer from '../reducers/currentFood';
 import logsReducer from '../reducers/logs';
+import currentLogReducer from '../reducers/currentLog';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -15,6 +16,7 @@ export default () => {
      foods: foodsReducer,
      currentFood: currentFoodReducer,
      logs: logsReducer,
+     currentLogs: currentLogReducer,
    }),
    composeEnhancers(applyMiddleware(thunk))
  );
