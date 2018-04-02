@@ -1,13 +1,13 @@
 import React from 'react';
-import FoodList from './FoodList';
-import EditFood from './EditFood';
-import AddFood from './AddFood';
+import FoodListDisplayFoods from './FoodListDisplayFoods';
+import EditFoodFormForFoods from './EditFoodFormForFoods';
+import AddFoodFormToFoods from './AddFoodFormToFoods';
 
 const FoodDashboardPage = () => (
   <div>
-    <FoodList />
-    <AddFood />
-    <EditFood />
+    <FoodListDisplayFoods />
+    <AddFoodFormToFoods />
+    <EditFoodFormForFoods />
   </div>
 );
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodList from './FoodList';
 import { removeFoodFromCurrentLog } from '../actions/currentLog';
+import FoodListDisplayCurrentLog from './FoodListDisplayCurrentLog';
 
 class CurrentLog extends React.Component {
   handleRemove = (food) => {
@@ -10,12 +10,7 @@ class CurrentLog extends React.Component {
   render() {
     return (
       <div>
-        <h1>Current Log</h1>
-        <FoodList
-          foods={this.props.currentLog.foods}
-          handleClick={this.handleRemove}
-          buttonText={'No Effect'}
-        />
+        <FoodListDisplayCurrentLog />
       </div>
     );
   }

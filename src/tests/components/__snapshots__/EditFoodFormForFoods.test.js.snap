@@ -4,7 +4,7 @@ exports[`should render EditFood 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <EditFood
+  Symbol(enzyme.__unrendered__): <EditFoodFormForFoods
     food={
         Object {
             "amount": 100,

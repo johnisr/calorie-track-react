@@ -4,7 +4,7 @@ exports[`should render AddFood correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <AddFood
+  Symbol(enzyme.__unrendered__): <AddFoodFormToFoods
     startAddFood={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {

@@ -4,7 +4,7 @@ exports[`should render FoodList with foods 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FoodList
+  Symbol(enzyme.__unrendered__): <FoodListDisplayFoods
     foods={
         Array [
             Object {
@@ -53,61 +53,77 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
-          <FoodListItem
-                    amount={200}
-                    calories={205}
-                    carbohydrates={44}
-                    fat={0.4}
-                    id="1"
-                    name="Rice (Jasmine)"
-                    protein={4.2}
-                    unit="grams"
-          />
-          <button
-                    onClick={[Function]}
-          >
-                    Edit This
-          </button>
+        <h3>
+          Foods in Database
+</h3>,
+        Array [
+          <div>
+            <FoodListItem
+                        amount={200}
+                        calories={205}
+                        carbohydrates={44}
+                        fat={0.4}
+                        id="1"
+                        name="Rice (Jasmine)"
+                        protein={4.2}
+                        unit="grams"
+            />
+            <button
+                        onClick={[Function]}
+            >
+                        Edit This
+            </button>
 </div>,
-        <div>
-          <FoodListItem
-                    amount={100}
-                    calories={165}
-                    carbohydrates={0}
-                    fat={3.6}
-                    id="2"
-                    name="Chicken Breast"
-                    protein={31}
-                    unit="grams"
-          />
-          <button
-                    onClick={[Function]}
-          >
-                    Edit This
-          </button>
+          <div>
+            <FoodListItem
+                        amount={100}
+                        calories={165}
+                        carbohydrates={0}
+                        fat={3.6}
+                        id="2"
+                        name="Chicken Breast"
+                        protein={31}
+                        unit="grams"
+            />
+            <button
+                        onClick={[Function]}
+            >
+                        Edit This
+            </button>
 </div>,
-        <div>
-          <FoodListItem
-                    amount={24}
-                    calories={163}
-                    carbohydrates={2.5}
-                    fat={14}
-                    id="3"
-                    name="Almonds"
-                    protein={6}
-                    unit="pieces"
-          />
-          <button
-                    onClick={[Function]}
-          >
-                    Edit This
-          </button>
+          <div>
+            <FoodListItem
+                        amount={24}
+                        calories={163}
+                        carbohydrates={2.5}
+                        fat={14}
+                        id="3"
+                        name="Almonds"
+                        protein={6}
+                        unit="pieces"
+            />
+            <button
+                        onClick={[Function]}
+            >
+                        Edit This
+            </button>
 </div>,
+        ],
       ],
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Foods in Database",
+        },
+        "ref": null,
+        "rendered": "Foods in Database",
+        "type": "h3",
+      },
       Object {
         "instance": null,
         "key": "div 1",
@@ -292,61 +308,77 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
-            <FoodListItem
-                        amount={200}
-                        calories={205}
-                        carbohydrates={44}
-                        fat={0.4}
-                        id="1"
-                        name="Rice (Jasmine)"
-                        protein={4.2}
-                        unit="grams"
-            />
-            <button
-                        onClick={[Function]}
-            >
-                        Edit This
-            </button>
+          <h3>
+            Foods in Database
+</h3>,
+          Array [
+            <div>
+              <FoodListItem
+                            amount={200}
+                            calories={205}
+                            carbohydrates={44}
+                            fat={0.4}
+                            id="1"
+                            name="Rice (Jasmine)"
+                            protein={4.2}
+                            unit="grams"
+              />
+              <button
+                            onClick={[Function]}
+              >
+                            Edit This
+              </button>
 </div>,
-          <div>
-            <FoodListItem
-                        amount={100}
-                        calories={165}
-                        carbohydrates={0}
-                        fat={3.6}
-                        id="2"
-                        name="Chicken Breast"
-                        protein={31}
-                        unit="grams"
-            />
-            <button
-                        onClick={[Function]}
-            >
-                        Edit This
-            </button>
+            <div>
+              <FoodListItem
+                            amount={100}
+                            calories={165}
+                            carbohydrates={0}
+                            fat={3.6}
+                            id="2"
+                            name="Chicken Breast"
+                            protein={31}
+                            unit="grams"
+              />
+              <button
+                            onClick={[Function]}
+              >
+                            Edit This
+              </button>
 </div>,
-          <div>
-            <FoodListItem
-                        amount={24}
-                        calories={163}
-                        carbohydrates={2.5}
-                        fat={14}
-                        id="3"
-                        name="Almonds"
-                        protein={6}
-                        unit="pieces"
-            />
-            <button
-                        onClick={[Function]}
-            >
-                        Edit This
-            </button>
+            <div>
+              <FoodListItem
+                            amount={24}
+                            calories={163}
+                            carbohydrates={2.5}
+                            fat={14}
+                            id="3"
+                            name="Almonds"
+                            protein={6}
+                            unit="pieces"
+              />
+              <button
+                            onClick={[Function]}
+              >
+                            Edit This
+              </button>
 </div>,
+          ],
         ],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Foods in Database",
+          },
+          "ref": null,
+          "rendered": "Foods in Database",
+          "type": "h3",
+        },
         Object {
           "instance": null,
           "key": "div 1",
@@ -539,7 +571,7 @@ exports[`should render foodList with empty message 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FoodList
+  Symbol(enzyme.__unrendered__): <FoodListDisplayFoods
     foods={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -554,36 +586,29 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <p>
-        No Foods
-</p>,
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "No Foods",
-      },
-      "ref": null,
-      "rendered": "No Foods",
-      "type": "p",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <p>
+      "children": Array [
+        <h3>
+          Foods in Database
+</h3>,
+        <p>
           No Foods
 </p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Foods in Database",
+        },
+        "ref": null,
+        "rendered": "Foods in Database",
+        "type": "h3",
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -594,6 +619,49 @@ ShallowWrapper {
         "rendered": "No Foods",
         "type": "p",
       },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Foods in Database
+</h3>,
+          <p>
+            No Foods
+</p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Foods in Database",
+          },
+          "ref": null,
+          "rendered": "Foods in Database",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "No Foods",
+          },
+          "ref": null,
+          "rendered": "No Foods",
+          "type": "p",
+        },
+      ],
       "type": "div",
     },
   ],

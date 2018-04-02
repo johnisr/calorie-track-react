@@ -1,12 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { AddFood } from '../../components/AddFood';
+import { AddFoodFormToFoods } from '../../components/AddFoodFormToFoods';
 import foods from '../fixtures/foods';
 
 let startAddFood, wrapper;
 beforeEach(() => {
   startAddFood = jest.fn();
-  wrapper = shallow(<AddFood startAddFood={startAddFood}/>);
+  wrapper = shallow(<AddFoodFormToFoods startAddFood={startAddFood}/>);
 });
 
 it('should render AddFood correctly', () => {

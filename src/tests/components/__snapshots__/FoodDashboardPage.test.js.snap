@@ -18,9 +18,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Connect(FoodList) />,
-        <Connect(AddFood) />,
-        <Connect(EditFood) />,
+        <Connect(FoodListDisplayFoods) />,
+        <Connect(AddFoodFormToFoods) />,
+        <Connect(EditFoodFormForFoods) />,
       ],
     },
     "ref": null,
@@ -62,9 +62,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Connect(FoodList) />,
-          <Connect(AddFood) />,
-          <Connect(EditFood) />,
+          <Connect(FoodListDisplayFoods) />,
+          <Connect(AddFoodFormToFoods) />,
+          <Connect(EditFoodFormForFoods) />,
         ],
       },
       "ref": null,

@@ -4,7 +4,7 @@ import FoodForm from './FoodForm';
 import { startEditFood, startRemoveFood } from '../actions/foods';
 import { removeCurrentFood } from '../actions/currentFood';
 
-export class EditFood extends React.Component {
+export class EditFoodFormForFoods extends React.Component {
   handleSubmit = async (food) => {
     await this.props.startEditFood(this.props.food.id, food);
     this.props.removeCurrentFood();
@@ -54,4 +54,4 @@ const mapDispatchToProps = dispatch => ({
   removeCurrentFood: () => dispatch(removeCurrentFood()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(EditFood);
+export default connect(mapStateToProps, mapDispatchToProps)(EditFoodFormForFoods);

@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CurrentLog from './CurrentLog';
-import FoodList from './FoodList';
-import AddFood from './AddFood';
-import EditFood from './EditFood';
+// import AddFoodForm from './AddFoodForm';
+// import EditFoodForm from './EditFoodForm';
+import FoodListAddCurrentLog from './FoodListAddCurrentLog';
 import { editCurrentEditLog, addFoodToCurrentLogFromList } from '../actions/currentLog';
 
 class EditLog extends React.Component {
@@ -23,13 +23,7 @@ class EditLog extends React.Component {
           ) : (
             <div>
               <CurrentLog />
-              <FoodList
-                foods={this.props.foods}
-                handleClick={this.handleAddFromList}
-                buttonText={'Add This'}
-              />
-              <AddFood />
-              <EditFood />
+              <FoodListAddCurrentLog />
             </div>
           )
         }

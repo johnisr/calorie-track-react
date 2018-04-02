@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { EditFood } from '../../components/EditFood';
+import { EditFoodFormForFoods } from '../../components/EditFoodFormForFoods';
 import foods from '../fixtures/foods';
 
 let startEditFood, startRemoveFood, removeCurrentFood, wrapper;
@@ -9,7 +9,7 @@ beforeEach(() => {
   startRemoveFood = jest.fn();
   removeCurrentFood = jest.fn();
   wrapper = shallow(
-    <EditFood
+    <EditFoodFormForFoods
     startEditFood={startEditFood}
     startRemoveFood={startRemoveFood}
     removeCurrentFood={removeCurrentFood}

@@ -1,15 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import FoodListItem from './FoodListItem';
-import { addCurrentFood } from '../actions/currentFood';
+import { addFoodToCurrentLogFromList } from '../actions/currentLog';
 
-export class FoodList extends React.Component {
+export class FoodListAddCurrentLog extends React.Component {
   handleClick = (food) => {
-    this.props.addCurrentFood(food);
+    this.props.addFoodToCurrentLogFromList(food);
   }
   render() {
     return (
       <div>
+        <h3>Add Food From Foods Database</h3>
         {
           this.props.foods.length === 0 ? (
             <p>No Foods</p>
@@ -24,7 +25,7 @@ export class FoodList extends React.Component {
                   key={`button ${food.id}`} 
                   onClick={() => this.handleClick(food)}
                 >
-                  Edit This
+                  Add This
                 </button>
               </div>
             ))
@@ -40,7 +41,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  addCurrentFood: (food) => dispatch(addCurrentFood(food)),
+  addFoodToCurrentLogFromList: (food) => dispatch(addFoodToCurrentLogFromList(food)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FoodList);
+export default connect(mapStateToProps, mapDispatchToProps)(FoodListAddCurrentLog);
