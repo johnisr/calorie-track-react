@@ -25,6 +25,9 @@ export default (state = {}, action) => {
       };
     }
     case 'REMOVE_FOOD_FROM_CURRENT_LOG': {
+      if (action.index < 0 || action.index >= state.foods.length) {
+        return state;
+      }
       const newFoods = 
         state.foods.slice(0, action.index)
           .concat(state.foods.slice(action.index + 1));
@@ -37,9 +40,11 @@ export default (state = {}, action) => {
       }
     }
     case 'EDIT_FOOD_FROM_CURRENT_LOG': {
+      if (action.index < 0 || action.index >= state.foods.length) {
+        return state;
+      }
       const newFoods = state.foods.map((food) => {
         if(food.index === action.index) {
-          console.log({...food});
           const newFood = {
             ...food,
             ...action.updates,
