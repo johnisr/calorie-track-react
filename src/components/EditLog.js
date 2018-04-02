@@ -1,9 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CurrentLog from './CurrentLog';
- import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog';
-// import EditFoodForm from './EditFoodForm';
+import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog';
+import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog';
 import FoodListAddCurrentLog from './FoodListAddCurrentLog';
+import { history } from '../routers/AppRouter';
 
 class EditLog extends React.Component {
   isEmpty(obj) {
@@ -18,9 +19,10 @@ class EditLog extends React.Component {
             <p>Select a Log from Log dashboard to edit</p>
           ) : (
             <div>
-              <CurrentLog />
+              <CurrentLog history={history} />
               <FoodListAddCurrentLog />
               <AddFoodFormToCurrentLog />
+              <EditFoodFormForCurrentLog />
             </div>
           )
         }

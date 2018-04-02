@@ -1,9 +1,9 @@
 import React from 'react';
 import LogList from './LogList';
 
-const LogDashboardPage = () => (
+const LogDashboardPage = (props) => (
   <div>
-    <LogList />
+    <LogList history={props.history}/>
   </div>
 );
 

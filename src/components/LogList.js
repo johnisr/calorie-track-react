@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import LogListItem from './LogListItem';
+import { addCurrentEditLog } from '../actions/currentLog';
 
 export class LogList extends React.Component {
   calculateTotal(foods, macro) {
@@ -16,7 +17,11 @@ export class LogList extends React.Component {
     }
     return 0;
   }
-  
+  handleEdit = (date) => {
+    const log = this.props.logs.filter(log => log.date === date)[0];
+    this.props.addCurrentEditLog(log);
+    this.props.history.push('/editlog');
+  }
   render() {
     return (
       <div>
@@ -26,14 +31,17 @@ export class LogList extends React.Component {
             <p>No logs</p>
           ) : (
             this.props.logs.map(log => (
-              <LogListItem
-                key={`item ${log.date}`}
-                totalCalories={this.calculateTotal(log.foods, 'calories')} 
-                totalProtein={this.calculateTotal(log.foods, 'protein')} 
-                totalCarbohydrates={this.calculateTotal(log.foods, 'carbohydrates')} 
-                totalFat={this.calculateTotal(log.foods, 'fat')} 
-                {...log} 
-              />
+              <div>
+                <LogListItem
+                  key={`item ${log.date}`}
+                  totalCalories={this.calculateTotal(log.foods, 'calories')} 
+                  totalProtein={this.calculateTotal(log.foods, 'protein')} 
+                  totalCarbohydrates={this.calculateTotal(log.foods, 'carbohydrates')} 
+                  totalFat={this.calculateTotal(log.foods, 'fat')} 
+                  {...log}
+                />
+                <button onClick={() => this.handleEdit(log.date)}>Edit Food Log</button>
+              </div>
             )
           ))
         }
@@ -46,4 +54,8 @@ const mapStateToProps = (state) => ({
   logs: state.logs,
 });
 
-export default connect(mapStateToProps)(LogList);
+const mapDispatchToProps = (dispatch) => ({
+  addCurrentEditLog: (log) => dispatch(addCurrentEditLog(log)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LogList);

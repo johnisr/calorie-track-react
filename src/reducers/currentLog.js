@@ -26,7 +26,7 @@ export default (state = {}, action) => {
         ...state,
         foods: [
           ...state.foods,
-          {...action.food, index: state.foods.length, multiplier: 1 },
+          {...action.food, index: state.foods.length, multiplier: 1 , base: {...action.food} },
         ],
       };
     }

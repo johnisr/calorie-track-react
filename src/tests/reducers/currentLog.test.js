@@ -45,7 +45,7 @@ it('should add food to food log with index', () => {
 it('should add food to food log with index and multiplier', () => {
   const action = { type: 'ADD_FOOD_TO_CURRENT_LOG_FROM_LIST', food: foods[0] };
   const state = currentLogReducer(emptyState, action);
-  expect(state.foods).toEqual([{ ...foods[0], index: 0, multiplier: 1 }]);
+  expect(state.foods).toEqual([{ ...foods[0], index: 0, multiplier: 1, base: {...foods[0] } }]);
 });
 
 
