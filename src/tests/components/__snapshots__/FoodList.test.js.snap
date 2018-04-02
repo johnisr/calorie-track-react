@@ -5,7 +5,6 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FoodList
-    buttonText="Edit This"
     foods={
         Array [
             Object {
@@ -40,7 +39,6 @@ ShallowWrapper {
             },
           ]
     }
-    handleClick={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -542,9 +540,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <FoodList
-    buttonText="Edit This"
     foods={Array []}
-    handleClick={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

@@ -18,11 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <FoodList
-          buttonText="Edit This"
-          foods={undefined}
-          handleClick={[Function]}
-/>,
+        <Connect(FoodList) />,
         <Connect(AddFood) />,
         <Connect(EditFood) />,
       ],
@@ -32,12 +28,8 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "buttonText": "Edit This",
-          "foods": undefined,
-          "handleClick": [Function],
-        },
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -70,11 +62,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <FoodList
-            buttonText="Edit This"
-            foods={undefined}
-            handleClick={[Function]}
-/>,
+          <Connect(FoodList) />,
           <Connect(AddFood) />,
           <Connect(EditFood) />,
         ],
@@ -84,12 +72,8 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "buttonText": "Edit This",
-            "foods": undefined,
-            "handleClick": [Function],
-          },
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
