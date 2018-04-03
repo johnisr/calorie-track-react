@@ -1088,10 +1088,12 @@ ShallowWrapper {
             "amount": 100,
             "calories": 165,
             "carbohydrates": 0,
+            "createdAt": 1000,
             "fat": 3.6,
             "id": "2",
             "name": "Chicken Breast",
             "protein": 31,
+            "timesUsed": 1,
             "unit": "grams",
           }
     }

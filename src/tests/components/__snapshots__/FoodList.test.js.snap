@@ -11,30 +11,36 @@ ShallowWrapper {
               "amount": 200,
               "calories": 205,
               "carbohydrates": 44,
+              "createdAt": 0,
               "fat": 0.4,
               "id": "1",
               "name": "Rice (Jasmine)",
               "protein": 4.2,
+              "timesUsed": 0,
               "unit": "grams",
             },
             Object {
               "amount": 100,
               "calories": 165,
               "carbohydrates": 0,
+              "createdAt": 1000,
               "fat": 3.6,
               "id": "2",
               "name": "Chicken Breast",
               "protein": 31,
+              "timesUsed": 1,
               "unit": "grams",
             },
             Object {
               "amount": 24,
               "calories": 163,
               "carbohydrates": 2.5,
+              "createdAt": -1000,
               "fat": 14,
               "id": "3",
               "name": "Almonds",
               "protein": 6,
+              "timesUsed": 2,
               "unit": "pieces",
             },
           ]
@@ -62,10 +68,12 @@ ShallowWrapper {
                         amount={200}
                         calories={205}
                         carbohydrates={44}
+                        createdAt={0}
                         fat={0.4}
                         id="1"
                         name="Rice (Jasmine)"
                         protein={4.2}
+                        timesUsed={0}
                         unit="grams"
             />
             <button
@@ -79,10 +87,12 @@ ShallowWrapper {
                         amount={100}
                         calories={165}
                         carbohydrates={0}
+                        createdAt={1000}
                         fat={3.6}
                         id="2"
                         name="Chicken Breast"
                         protein={31}
+                        timesUsed={1}
                         unit="grams"
             />
             <button
@@ -96,10 +106,12 @@ ShallowWrapper {
                         amount={24}
                         calories={163}
                         carbohydrates={2.5}
+                        createdAt={-1000}
                         fat={14}
                         id="3"
                         name="Almonds"
                         protein={6}
+                        timesUsed={2}
                         unit="pieces"
             />
             <button
@@ -134,10 +146,12 @@ ShallowWrapper {
               amount={200}
               calories={205}
               carbohydrates={44}
+              createdAt={0}
               fat={0.4}
               id="1"
               name="Rice (Jasmine)"
               protein={4.2}
+              timesUsed={0}
               unit="grams"
 />,
             <button
@@ -157,10 +171,12 @@ ShallowWrapper {
               "amount": 200,
               "calories": 205,
               "carbohydrates": 44,
+              "createdAt": 0,
               "fat": 0.4,
               "id": "1",
               "name": "Rice (Jasmine)",
               "protein": 4.2,
+              "timesUsed": 0,
               "unit": "grams",
             },
             "ref": null,
@@ -192,10 +208,12 @@ ShallowWrapper {
               amount={100}
               calories={165}
               carbohydrates={0}
+              createdAt={1000}
               fat={3.6}
               id="2"
               name="Chicken Breast"
               protein={31}
+              timesUsed={1}
               unit="grams"
 />,
             <button
@@ -215,10 +233,12 @@ ShallowWrapper {
               "amount": 100,
               "calories": 165,
               "carbohydrates": 0,
+              "createdAt": 1000,
               "fat": 3.6,
               "id": "2",
               "name": "Chicken Breast",
               "protein": 31,
+              "timesUsed": 1,
               "unit": "grams",
             },
             "ref": null,
@@ -250,10 +270,12 @@ ShallowWrapper {
               amount={24}
               calories={163}
               carbohydrates={2.5}
+              createdAt={-1000}
               fat={14}
               id="3"
               name="Almonds"
               protein={6}
+              timesUsed={2}
               unit="pieces"
 />,
             <button
@@ -273,10 +295,12 @@ ShallowWrapper {
               "amount": 24,
               "calories": 163,
               "carbohydrates": 2.5,
+              "createdAt": -1000,
               "fat": 14,
               "id": "3",
               "name": "Almonds",
               "protein": 6,
+              "timesUsed": 2,
               "unit": "pieces",
             },
             "ref": null,
@@ -317,10 +341,12 @@ ShallowWrapper {
                             amount={200}
                             calories={205}
                             carbohydrates={44}
+                            createdAt={0}
                             fat={0.4}
                             id="1"
                             name="Rice (Jasmine)"
                             protein={4.2}
+                            timesUsed={0}
                             unit="grams"
               />
               <button
@@ -334,10 +360,12 @@ ShallowWrapper {
                             amount={100}
                             calories={165}
                             carbohydrates={0}
+                            createdAt={1000}
                             fat={3.6}
                             id="2"
                             name="Chicken Breast"
                             protein={31}
+                            timesUsed={1}
                             unit="grams"
               />
               <button
@@ -351,10 +379,12 @@ ShallowWrapper {
                             amount={24}
                             calories={163}
                             carbohydrates={2.5}
+                            createdAt={-1000}
                             fat={14}
                             id="3"
                             name="Almonds"
                             protein={6}
+                            timesUsed={2}
                             unit="pieces"
               />
               <button
@@ -389,10 +419,12 @@ ShallowWrapper {
                 amount={200}
                 calories={205}
                 carbohydrates={44}
+                createdAt={0}
                 fat={0.4}
                 id="1"
                 name="Rice (Jasmine)"
                 protein={4.2}
+                timesUsed={0}
                 unit="grams"
 />,
               <button
@@ -412,10 +444,12 @@ ShallowWrapper {
                 "amount": 200,
                 "calories": 205,
                 "carbohydrates": 44,
+                "createdAt": 0,
                 "fat": 0.4,
                 "id": "1",
                 "name": "Rice (Jasmine)",
                 "protein": 4.2,
+                "timesUsed": 0,
                 "unit": "grams",
               },
               "ref": null,
@@ -447,10 +481,12 @@ ShallowWrapper {
                 amount={100}
                 calories={165}
                 carbohydrates={0}
+                createdAt={1000}
                 fat={3.6}
                 id="2"
                 name="Chicken Breast"
                 protein={31}
+                timesUsed={1}
                 unit="grams"
 />,
               <button
@@ -470,10 +506,12 @@ ShallowWrapper {
                 "amount": 100,
                 "calories": 165,
                 "carbohydrates": 0,
+                "createdAt": 1000,
                 "fat": 3.6,
                 "id": "2",
                 "name": "Chicken Breast",
                 "protein": 31,
+                "timesUsed": 1,
                 "unit": "grams",
               },
               "ref": null,
@@ -505,10 +543,12 @@ ShallowWrapper {
                 amount={24}
                 calories={163}
                 carbohydrates={2.5}
+                createdAt={-1000}
                 fat={14}
                 id="3"
                 name="Almonds"
                 protein={6}
+                timesUsed={2}
                 unit="pieces"
 />,
               <button
@@ -528,10 +568,12 @@ ShallowWrapper {
                 "amount": 24,
                 "calories": 163,
                 "carbohydrates": 2.5,
+                "createdAt": -1000,
                 "fat": 14,
                 "id": "3",
                 "name": "Almonds",
                 "protein": 6,
+                "timesUsed": 2,
                 "unit": "pieces",
               },
               "ref": null,

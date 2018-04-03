@@ -92,5 +92,7 @@ it('should call onSubmit prop for valid form submission', () => {
     protein: foods[1].protein,
     fat: foods[1].fat,
     calories: foods[1].calories,
+    timesUsed: foods[1].timesUsed,
+    createdAt: foods[1].createdAt,
   });
 });

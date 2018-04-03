@@ -36,8 +36,6 @@ export class FoodListDisplayCurrentLog extends React.Component {
         multiplier,
       };
     }
-    console.log(this.props.foods[index]);
-    console.log(updates);
     this.props.editFoodFromCurrentLog(index, updates);
 
   }

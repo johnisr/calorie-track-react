@@ -10,8 +10,8 @@ const defaultAuthState = { auth: { uid } };
 
 beforeEach((done) => {
   const foodsData = {};
-  foods.forEach(({ id, name, amount, unit, carbohydrates, protein, fat, calories }) => {
-    foodsData[id] = { name, amount, unit, carbohydrates, protein, fat, calories };
+  foods.forEach(({ id, name, amount, unit, carbohydrates, protein, fat, calories, createdAt, timesUsed }) => {
+    foodsData[id] = { name, amount, unit, carbohydrates, protein, fat, calories, createdAt, timesUsed };
   });
   database.ref(`users/${uid}/foods`).set(foodsData).then(() => done());
 });
@@ -75,6 +75,8 @@ it('should edit food from database', async () => {
     carbohydrates: 0,
     fat: 34,
     calories: 600,
+    timesUsed: 10,
+    createdAt: 1111,
   };
   await store.dispatch(startEditFood(id, updates));
   const action = store.getActions();

@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 
 class FoodForm extends React.Component {
   constructor(props) {
@@ -11,6 +12,8 @@ class FoodForm extends React.Component {
       protein: props.food ? props.food.protein : '',
       fat: props.food ? props.food.fat : '',
       calories: props.food ? props.food.calories : '',
+      timesUsed: props.food ? props.food.timesUsed : 0,
+      createdAt: props.food ? moment(props.food.createdAt).valueOf() : 0,
     };
   }
 
@@ -49,12 +52,14 @@ class FoodForm extends React.Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
+    if (this.state.createdAt === 0) {
+      this.setState(() => ({ createdAt: moment().valueOf(), }));
+    };
     this.props.handleSubmit({
-      ...this.state
+      ...this.state,
     });
     // Clear if AddFood Operation
     if (this.props.food === undefined) {
-      console.log(true);
       this.setState({
         name: '',
         amount: '',
@@ -63,6 +68,8 @@ class FoodForm extends React.Component {
         protein: '',
         fat: '',
         calories: '',
+        timesUsed: 0,
+        createdAt: 0,
       });
     }
   };

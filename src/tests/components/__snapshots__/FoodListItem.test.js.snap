@@ -8,10 +8,12 @@ ShallowWrapper {
     amount={24}
     calories={163}
     carbohydrates={2.5}
+    createdAt={-1000}
     fat={14}
     id="3"
     name="Almonds"
     protein={6}
+    timesUsed={2}
     unit="pieces"
 />,
   Symbol(enzyme.__renderer__): Object {

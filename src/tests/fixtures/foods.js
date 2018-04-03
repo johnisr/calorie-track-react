@@ -7,6 +7,8 @@ export default [{
   protein: 4.2,
   fat: 0.4,
   calories: 205,
+  timesUsed: 0,
+  createdAt: 0,
 }, {
   id: '2',
   name: "Chicken Breast",
@@ -16,6 +18,8 @@ export default [{
   protein: 31,
   fat: 3.6,
   calories: 165,
+  timesUsed: 1,
+  createdAt: 1000,
 }, {
   id: '3',
   name: 'Almonds',
@@ -25,4 +29,6 @@ export default [{
   protein: 6,
   fat: 14,
   calories: 163,
+  timesUsed: 2,
+  createdAt: -1000,
 }];
