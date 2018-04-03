@@ -10,5 +10,6 @@ export default (foods, { name, sortBy, maxFoodsShown, offset }) => {
       } else if (sortBy === 'date') {
         return a.createdAt < b.createdAt ? 1 : -1;
       }
-    });
+    })
+    .slice((offset * maxFoodsShown), (offset * maxFoodsShown) + maxFoodsShown);
 }
