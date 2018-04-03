@@ -3,6 +3,7 @@ import moment from 'moment';
 const logsFiltersReducerDefaultState = {
   startDate: moment().startOf('week'),
   endDate: moment().endOf('week'),
+  sortBy: 'oldest',
   maxLogsShown: 7,
   offset: 0,
 };
@@ -13,6 +14,16 @@ export default (state = logsFiltersReducerDefaultState, action) => {
       return {
         ...state,
         startDate: action.startDate,
+      };
+    case 'SORT_BY_OLDEST':
+      return {
+        ...state,
+        sortBy: 'oldest',
+      };
+    case 'SORT_BY_NEWEST':
+      return {
+        ...state,
+        sortBy: 'newest',
       };
     case 'SET_END_DATE':
       return {

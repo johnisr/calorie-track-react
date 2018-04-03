@@ -2,6 +2,8 @@ import moment from 'moment';
 import {
   setStartDate,
   setEndDate,
+  sortByNewest,
+  sortByOldest,
   setMaxLogsShown,
   setLogsOffset,
 } from '../../actions/logsFilters';
@@ -19,6 +21,20 @@ it('should create a setEndDate action object', () => {
   expect(action).toEqual({
     type: 'SET_END_DATE',
     endDate: moment(1000),
+  });
+});
+
+it('should create a sortByNewest action object', () => {
+  const action = sortByNewest();
+  expect(action).toEqual({
+    type: 'SORT_BY_NEWEST',
+  });
+});
+
+it('should create a sortByOldest action object', () => {
+  const action = sortByOldest();
+  expect(action).toEqual({
+    type: 'SORT_BY_OLDEST',
   });
 });
 
