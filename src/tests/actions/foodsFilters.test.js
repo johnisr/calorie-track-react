@@ -3,7 +3,7 @@ import {
   sortByUsage,
   sortByDate,
   setMaxFoodsShown,
-  setOffset,
+  setFoodsOffset,
 } from '../../actions/foodsFilters';
 
 it('should create a setFoodNameFilter action object', () => {
@@ -40,9 +40,9 @@ it('should create a setMaxFoods action object', () => {
 
 it('should create a setOffset action object', () => {
   const offset = 0;
-  const action = setOffset(0);
+  const action = setFoodsOffset(0);
   expect(action).toEqual({
-    type: 'SET_OFFSET',
+    type: 'SET_FOODS_OFFSET',
     offset,
   });
 });

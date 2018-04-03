@@ -44,7 +44,7 @@ it('should set max foods shown filter', () => {
 
 it('should set offset filter', () => {
   const offset = 50;
-  const action = { type: 'SET_OFFSET', offset };
+  const action = { type: 'SET_FOODS_OFFSET', offset };
   const state = foodsFilterReducer(undefined, action);
   expect(state.offset).toBe(offset);
 });

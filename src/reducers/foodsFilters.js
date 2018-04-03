@@ -32,7 +32,7 @@ export default (state = foodsFilterReducerDefaultState, action) => {
         maxFoodsShown: action.max,
       };
     }
-    case 'SET_OFFSET': {
+    case 'SET_FOODS_OFFSET': {
       return {
         ...state,
         offset: action.offset,

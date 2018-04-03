@@ -9,6 +9,8 @@ export default (foods, { name, sortBy, maxFoodsShown, offset }) => {
         return a.timesUsed < b.timesUsed ? 1 : -1;
       } else if (sortBy === 'date') {
         return a.createdAt < b.createdAt ? 1 : -1;
+      } else {
+        return 1;
       }
     });
 }

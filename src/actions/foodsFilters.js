@@ -16,7 +16,7 @@ export const setMaxFoodsShown = (max = 10) => ({
   max,
 });
 
-export const setOffset = (offset = 0) => ({
-  type: 'SET_OFFSET',
+export const setFoodsOffset = (offset = 0) => ({
+  type: 'SET_FOODS_OFFSET',
   offset,
 });

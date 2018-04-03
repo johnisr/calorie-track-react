@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setFoodNameFilter, sortByUsage, sortByDate, setMaxFoodsShown, setOffset } from '../actions/foodsFilters';
+import { setFoodNameFilter, sortByUsage, sortByDate, setMaxFoodsShown, setFoodsOffset } from '../actions/foodsFilters';
 import selectFoods from '../selectors/foods';
 
 export class FoodListFilters extends React.Component {
   handleNameChange = (e) => {
     this.props.setFoodNameFilter(e.target.value);
-    this.props.setOffset(0);
+    this.props.setFoodsOffset(0);
   };
   handleSortChange = (e) => {
     if (e.target.value === 'usage') {
@@ -17,16 +17,16 @@ export class FoodListFilters extends React.Component {
   };
   handleMaxFoodPageChange = (e) => {
     this.props.setMaxFoodsShown(parseInt(e.target.value, 10));
-    this.props.setOffset(0);
+    this.props.setFoodsOffset(0);
   };
   handlePrevPageChange = () => {
-    this.props.setOffset(this.props.filters.offset - 1);
+    this.props.setFoodsOffset(this.props.filters.offset - 1);
   };
   handleNextPageChange = () => {
-    this.props.setOffset(this.props.filters.offset + 1);
+    this.props.setFoodsOffset(this.props.filters.offset + 1);
   };
   handleOffsetChange = (i) => {
-    this.props.setOffset(i);
+    this.props.setFoodsOffset(i);
   }
 
   createPageButtons = () => {
@@ -127,7 +127,7 @@ const mapDispatchToProps = (dispatch) => ({
   sortByUsage: () => dispatch(sortByUsage()),
   sortByDate: () => dispatch(sortByDate()),
   setMaxFoodsShown: (max) => dispatch(setMaxFoodsShown(max)),
-  setOffset: (offset) => dispatch(setOffset(offset)),
+  setFoodsOffset: (offset) => dispatch(setFoodsOffset(offset)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(FoodListFilters);
