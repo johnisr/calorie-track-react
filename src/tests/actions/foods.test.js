@@ -38,6 +38,8 @@ it('should add food to database and store', async () => {
     protein: '22.6',
     fat: '14.4',
     calories: '100',
+    timesUsed: 110,
+    createdAt: 1111,
   };
   await store.dispatch(startAddFood(foodData));
   

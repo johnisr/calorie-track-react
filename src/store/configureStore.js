@@ -6,7 +6,7 @@ import foodsReducer from '../reducers/foods';
 import currentFoodReducer from '../reducers/currentFood';
 import logsReducer from '../reducers/logs';
 import currentLogReducer from '../reducers/currentLog';
-import foodsFilterReducer from '../reducers/foodsFilter';
+import foodsFiltersReducer from '../reducers/foodsFilters';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -15,7 +15,7 @@ export default () => {
    combineReducers({
      auth: authReducer,
      foods: foodsReducer,
-     foodsFilter: foodsFilterReducer,
+     foodsFilters: foodsFiltersReducer,
      currentFood: currentFoodReducer,
      logs: logsReducer,
      currentLog: currentLogReducer,

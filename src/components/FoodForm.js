@@ -13,7 +13,7 @@ class FoodForm extends React.Component {
       fat: props.food ? props.food.fat : '',
       calories: props.food ? props.food.calories : '',
       timesUsed: props.food ? props.food.timesUsed : 0,
-      createdAt: props.food ? moment(props.food.createdAt).valueOf() : 0,
+      createdAt: props.food ? moment(props.food.createdAt) : moment(0),
     };
   }
 
@@ -52,15 +52,20 @@ class FoodForm extends React.Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.createdAt === 0) {
-      this.setState(() => ({ createdAt: moment().valueOf(), }));
-    };
-    this.props.handleSubmit({
-      ...this.state,
-    });
+    if (this.state.createdAt.isSame(moment(0))) {
+      this.props.handleSubmit({
+        ...this.state,
+        createdAt: moment().valueOf(),
+      });
+    } else {
+      this.props.handleSubmit({
+        ...this.state,
+        createdAt: this.state.createdAt.valueOf(),
+      });
+    }
     // Clear if AddFood Operation
     if (this.props.food === undefined) {
-      this.setState({
+      this.setState(() => ({
         name: '',
         amount: '',
         unit: '',
@@ -69,8 +74,8 @@ class FoodForm extends React.Component {
         fat: '',
         calories: '',
         timesUsed: 0,
-        createdAt: 0,
-      });
+        createdAt: moment(0),
+      }));
     }
   };
 

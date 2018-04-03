@@ -1,4 +1,4 @@
-import foodsFilterReducer from '../../reducers/foodsFilter';
+import foodsFilterReducer from '../../reducers/foodsFilters';
 
 it('should setup default filter values', () => {
   const state = foodsFilterReducer(undefined, { type: '@@INIT' });

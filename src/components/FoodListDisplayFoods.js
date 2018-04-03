@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import FoodListItem from './FoodListItem';
 import { addCurrentFood } from '../actions/currentFood';
+import selectFoods from '../selectors/foods';
 
 export class FoodListDisplayFoods extends React.Component {
   handleClick = (food) => {
@@ -37,7 +38,7 @@ export class FoodListDisplayFoods extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  foods: state.foods,
+  foods: selectFoods(state.foods, state.foodsFilters),
 });
 
 const mapDispatchToProps = (dispatch) => ({

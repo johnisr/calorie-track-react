@@ -5,6 +5,7 @@ import { addFoodToCurrentLogFromList } from '../actions/currentLog';
 
 export class FoodListAddCurrentLog extends React.Component {
   handleClick = (food) => {
+    console.log(food);
     this.props.addFoodToCurrentLogFromList(food);
   }
   render() {

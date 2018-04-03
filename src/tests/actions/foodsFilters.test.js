@@ -4,7 +4,7 @@ import {
   sortByDate,
   setMaxFoodsShown,
   setOffset,
-} from '../../actions/foodsFilter';
+} from '../../actions/foodsFilters';
 
 it('should create a setFoodNameFilter action object', () => {
   const name = 'abc';

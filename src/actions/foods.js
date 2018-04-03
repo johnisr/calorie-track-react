@@ -1,5 +1,6 @@
 import uuid from 'uuid';
 import database from '../firebase/firebase';
+import moment from 'moment';
 
 export const addFood = food => ({
   type: 'ADD_FOOD',
@@ -17,8 +18,10 @@ export const startAddFood = (data = {}) => {
       protein = 0,
       fat = 0,
       calories = 0,
+      timesUsed = 0,
+      createdAt = moment(),
     } = data;
-    const food = { name, amount, unit, carbohydrates, protein, fat, calories };
+    const food = { name, amount, unit, carbohydrates, protein, fat, calories, timesUsed, createdAt };
     try {
       const res = await database.ref(`users/${uid}/foods`).push(food);
       dispatch(addFood({ id: res.key, ...food }));
