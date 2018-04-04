@@ -44,6 +44,18 @@ export const editLog = (date, updates) => ({
   updates,
 });
 
+export const startEditLog = (date, updates) => {
+  return async (dispatch, getState) => {
+    const { uid } = getState().auth;
+    try {
+      await database.ref(`users/${uid}/logs/${date}`).update(updates);
+      dispatch(editLog(date, updates));
+    } catch (e) {
+      
+    }
+  };
+};
+
 export const setLogs = (logs) => ({
   type: 'SET_LOGS',
   logs,

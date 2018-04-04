@@ -4,6 +4,7 @@ import CurrentLog from './CurrentLog';
 import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog';
 import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog';
 import FoodListAddCurrentLog from './FoodListAddCurrentLog';
+import FoodListFilters from './FoodListFilters';
 import { history } from '../routers/AppRouter';
 
 class EditLog extends React.Component {
@@ -20,6 +21,7 @@ class EditLog extends React.Component {
           ) : (
             <div>
               <CurrentLog history={history} />
+              <FoodListFilters />
               <FoodListAddCurrentLog />
               <AddFoodFormToCurrentLog />
               <EditFoodFormForCurrentLog />

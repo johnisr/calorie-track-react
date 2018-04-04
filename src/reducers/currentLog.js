@@ -13,22 +13,51 @@ export default (state = {}, action) => {
       };
     }
     case 'ADD_FOOD_TO_CURRENT_LOG': {
-      return {
-        ...state,
-        foods: [
-          ...state.foods,
-          {...action.food, index: state.foods.length },
-        ],
-      };
+      if (state.foods !== undefined) {
+        return {
+          ...state,
+          foods: [
+            ...state.foods,
+            {...action.food, index: state.foods.length },
+          ],
+        };
+      } else {
+        return {
+          ...state,
+          foods: [
+            {...action.food, index: 0 },
+          ],
+        };
+      }
     }
     case 'ADD_FOOD_TO_CURRENT_LOG_FROM_LIST': {
-      return {
-        ...state,
-        foods: [
-          ...state.foods,
-          {...action.food, index: state.foods.length, multiplier: 1 , base: {...action.food} },
-        ],
-      };
+      if (state.foods !== undefined) {
+        return {
+          ...state,
+          foods: [
+            ...state.foods,
+            {...action.food, 
+              index: state.foods.length, 
+              multiplier: 1,
+              base: 
+              {
+                amount: action.food.amount,
+                carbohydrates: action.food.carbohydrates,
+                protein: action.food.protein,
+                fat: action.food.fat,
+                calories: action.food.calories,
+              }
+            },
+          ],
+        };
+      } else {
+        return {
+          ...state,
+          foods: [
+            {...action.food, index: 0, multiplier: 1 , base: {...action.food} },
+          ],
+        };
+      }
     }
     case 'REMOVE_FOOD_FROM_CURRENT_LOG': {
       if (action.index < 0 || action.index >= state.foods.length) {

@@ -2,21 +2,25 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { removeFoodFromCurrentLog, editCurrentEditLog, removeCurrentEditLog } from '../actions/currentLog';
 import FoodListDisplayCurrentLog from './FoodListDisplayCurrentLog';
-import { editLog } from '../actions/logs';
+import { startEditLog } from '../actions/logs';
 import { startEditFood } from '../actions/foods';
 
 class CurrentLog extends React.Component {
   updateTimesUsed() {
-    const oldLog = this.props.logs.filter(log => log.date === this.props.currentLog.date)[0];
     const foodUpdates = {};
+    const oldLog = this.props.logs.filter(log => log.date === this.props.currentLog.date)[0];
     
-    oldLog.foods.forEach((food) => {
-      if (foodUpdates.hasOwnProperty(food.id)) {
-        foodUpdates[food.id] = foodUpdates[food.id] - 1;
-      } else {
-        foodUpdates[food.id] = -1;
-      }
-    });
+    // Check if oldLog.foods exist because firebase doesn't store empty arrays
+    if (oldLog.foods) {
+      oldLog.foods.forEach((food) => {
+        if (foodUpdates.hasOwnProperty(food.id)) {
+          foodUpdates[food.id] = foodUpdates[food.id] - 1;
+        } else {
+          foodUpdates[food.id] = -1;
+        }
+      });
+    };
+    
     this.props.currentLog.foods.forEach((food) => {
       if (foodUpdates.hasOwnProperty(food.id)) {
         foodUpdates[food.id] = foodUpdates[food.id] + 1;
@@ -46,7 +50,7 @@ class CurrentLog extends React.Component {
     this.props.removeFoodFromCurrentLog(food.index);
   };
   handleSubmit = () => {
-    this.props.editLog(this.props.currentLog.date, this.props.currentLog);
+    this.props.startEditLog(this.props.currentLog.date, this.props.currentLog);
     
     this.updateTimesUsed();
     
@@ -97,7 +101,7 @@ const mapDispatchToProps = (dispatch) => ({
   removeFoodFromCurrentLog: (index) =>  dispatch(removeFoodFromCurrentLog(index)),
   editCurrentEditLog: (updates) => dispatch(editCurrentEditLog(updates)),
   removeCurrentEditLog: () => dispatch(removeCurrentEditLog()),
-  editLog: (date, log) => dispatch(editLog(date, log)),
+  startEditLog: (date, log) => dispatch(startEditLog(date, log)),
   startEditFood: (id, addition) => dispatch(startEditFood(id, addition)),
 });
 

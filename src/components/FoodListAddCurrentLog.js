@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import FoodListItem from './FoodListItem';
 import { addFoodToCurrentLogFromList } from '../actions/currentLog';
+import selectFoodsWithPages from '../selectors/foodsWithPages';
 
 export class FoodListAddCurrentLog extends React.Component {
   handleClick = (food) => {
@@ -38,7 +39,7 @@ export class FoodListAddCurrentLog extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  foods: state.foods,
+  foods: selectFoodsWithPages(state.foods, state.foodsFilters),
 });
 
 const mapDispatchToProps = (dispatch) => ({

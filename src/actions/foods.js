@@ -40,8 +40,12 @@ export const editFood = (id, updates) => ({
 export const startEditFood = (id, updates) => {
   return async (dispatch, getState) => {
     const { uid } = getState().auth;
-    await database.ref(`users/${uid}/foods/${id}`).update(updates);
-    dispatch(editFood(id, updates));
+    try {
+      await database.ref(`users/${uid}/foods/${id}`).update(updates);
+      dispatch(editFood(id, updates));
+    } catch (e) {
+      
+    }
   };
 };
 

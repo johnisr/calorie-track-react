@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import database from '../../firebase/firebase';
-import { addLog, removeLog, editLog, setLogs, startAddLog, startSetLogs } from '../../actions/logs';
+import { addLog, removeLog, editLog, setLogs, startAddLog, startSetLogs, startEditLog } from '../../actions/logs';
 import logs from '../fixtures/logs';
 import foods from '../fixtures/foods';
 
@@ -82,5 +82,25 @@ describe('Asynchronous Actions With firebase', () => {
       type: 'SET_LOGS',
       logs,
     });
+  });
+
+  it('should edit logs from database and set edit to store', async () => {
+    const store = createMockStore(defaultAuthState);
+    const { date } = logs[2];
+    const updates = {
+      weight: 100,
+      unit: 'kg',
+    };
+    await store.dispatch(startEditLog(date, updates));
+    const actions = store.getActions();
+    expect(actions[0]).toEqual({
+      type: 'EDIT_LOG',
+      date,
+      updates,
+    });
+
+    const snapshot = await database.ref(`users/${uid}/logs/${date}`).once('value');
+    expect(snapshot.val().weight).toBe(100);
+    expect(snapshot.val().unit).toBe('kg');
   });
 });

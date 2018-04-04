@@ -44,7 +44,7 @@ export class FoodListDisplayCurrentLog extends React.Component {
       <div>
         <h3>Foods in Current Log</h3>
         {
-          this.props.foods.length === 0 ? (
+          this.props.foods === undefined || this.props.foods.length === 0 ? (
             <p>No Foods</p>
           ) : (
             this.props.foods.map(food => (
