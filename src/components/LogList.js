@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import LogListItem from './LogListItem';
 import { addCurrentEditLog } from '../actions/currentLog';
+import selectLogsWithPages from '../selectors/logsWithPages';
 
 export class LogList extends React.Component {
   calculateTotal(foods = [], macro) {
@@ -51,7 +52,7 @@ export class LogList extends React.Component {
 }  
 
 const mapStateToProps = (state) => ({
-  logs: state.logs,
+  logs: selectLogsWithPages(state.logs, state.logsFilters),
 });
 
 const mapDispatchToProps = (dispatch) => ({

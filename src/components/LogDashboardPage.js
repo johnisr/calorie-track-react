@@ -4,6 +4,7 @@ import moment from 'moment';
 import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
 import LogList from './LogList';
+import LogListFilters from './LogListFilters';
 import { addCurrentEditLog } from '../actions/currentLog';
 import { defaultLog, startAddLog } from '../actions/logs';
 
@@ -42,6 +43,7 @@ export class LogDashboardPage extends React.Component {
     return (
       <div>
         <div>
+          <LogListFilters />
           <SingleDatePicker
             date={this.state.date}
             onDateChange={this.onDateChange}
