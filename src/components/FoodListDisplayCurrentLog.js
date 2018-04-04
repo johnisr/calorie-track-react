@@ -7,6 +7,9 @@ export class FoodListDisplayCurrentLog extends React.Component {
   isNumeric = (n) => {
     return !isNaN(parseFloat(n)) && isFinite(n);
   }
+  isNumberWithAtMostTwoDecimals = (str) => {
+    return str.match(/^\d{1,}?(\.\d{0,2})?$/);
+  }
   handleRemove = (index) => {
     this.props.removeFoodFromCurrentLog(index);
   }
@@ -16,6 +19,10 @@ export class FoodListDisplayCurrentLog extends React.Component {
   handleMultiplierChange = (index, e) => {
     const { amount, carbohydrates, protein, fat, calories } = this.props.foods[index].base;
     const multiplier = e.target.value;
+    // if it exists and is not a number, don't update
+    if (multiplier && !this.isNumberWithAtMostTwoDecimals(multiplier)) {
+      return;
+    }
     let updates;
     if (this.isNumeric(multiplier)) {
       updates = {

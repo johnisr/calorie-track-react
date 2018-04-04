@@ -3,8 +3,8 @@ import moment from 'moment';
 
 export const defaultLog = {
   date: 0,
-  weight: '',
-  unit: '',
+  weight: 0,
+  unit: 'lb',
   foods: [],
 };
 

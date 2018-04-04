@@ -30,7 +30,7 @@ class CurrentLog extends React.Component {
         }
       });
     }
-    
+
     if (this.props.foods) {
       this.props.foods.forEach((food) => {
         if (foodUpdates[food.id]) {
@@ -42,16 +42,27 @@ class CurrentLog extends React.Component {
       });
     }
   }
+
+  isNumberWithAtMostTwoDecimals = (str) => {
+    return str.match(/^\d{1,}?(\.\d{0,2})?$/);
+  }
   handleWeightChange = (e) => {
     const weight = e.target.value;
-    this.props.editCurrentEditLog({ weight });
+    if (!weight || this.isNumberWithAtMostTwoDecimals(weight)) {
+      this.props.editCurrentEditLog({ weight });
+    }
   }
-  handleUnitChange = (e) => {
-    const unit = e.target.value;
+  handleLbsSelected = () => {
+    const unit = 'lb';
     this.props.editCurrentEditLog({ unit });
-  };
+  }
+  handleKgsSelected = () => {
+    const unit = 'kg';
+    this.props.editCurrentEditLog({ unit });
+  }
   handleSubmit = () => {
-    this.props.startEditLog(this.props.currentLog.date, this.props.currentLog);
+    const weight = this.props.currentLog.weight !== '' ? parseFloat(this.props.currentLog.weight, 10) : 0;
+    this.props.startEditLog(this.props.currentLog.date, { ...this.props.currentLog, weight });
     
     this.updateTimesUsed();
     
@@ -67,7 +78,6 @@ class CurrentLog extends React.Component {
     this.props.removeCurrentEditLog();
     this.props.history.push('/LogDashboard');
   }
-
   render() {
     return (
       <div>
@@ -81,17 +91,18 @@ class CurrentLog extends React.Component {
             value={this.props.currentLog.weight}
             onChange={this.handleWeightChange} 
           />
-        </div>
-        <div>
-          <label className="text-input__label" htmlFor="unit">unit</label>
-          <input 
-            type="text"
-            name="unit"
-            placeholder="unit"
-            className="text-input"
-            value={this.props.currentLog.unit}
-            onChange={this.handleUnitChange} 
-          />
+          <input type="radio"
+              name="unit"
+              value="lb"
+              onChange={this.handleLbsSelected}
+              checked={this.props.currentLog.unit === "lb"}
+            />lbs
+            <input type="radio"
+              name="unit"
+              value="kg"
+              onChange={this.handleKgsSelected}
+              checked={this.props.currentLog.unit === "kg"}
+            />kgs
         </div>
         <div>
           <FoodListDisplayCurrentLog />
