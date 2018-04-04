@@ -11,6 +11,7 @@ import { firebase } from './firebase/firebase';
 
 import { login, logout } from './actions/auth';
 import { startSetFoods } from './actions/foods';
+import { startSetLogs } from './actions/logs';
 
 // import Playground from './playground/log';
 // import EditFood from './playground/editFood';
@@ -40,7 +41,10 @@ firebase.auth().onAuthStateChanged(async (user) => {
   if (user) {
     store.dispatch(login(user.uid));
     try {
-      await store.dispatch(startSetFoods());
+      await Promise.all([
+        store.dispatch(startSetFoods()),
+        store.dispatch(startSetLogs()),
+      ]);
       renderApp();
       const path = history.location.pathname;
       if (path === '/') {

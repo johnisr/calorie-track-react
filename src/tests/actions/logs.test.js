@@ -1,5 +1,9 @@
-import { addLog, removeLog, editLog, setLogs } from '../../actions/logs';
+import configureMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
+import database from '../../firebase/firebase';
+import { addLog, removeLog, editLog, setLogs, startAddLog, startSetLogs } from '../../actions/logs';
 import logs from '../fixtures/logs';
+import foods from '../fixtures/foods';
 
 test('should setup addLog action object', () => {
   const action = addLog(logs[0]);
@@ -32,4 +36,51 @@ test('should setup setLogs action object', () => {
     type: 'SET_LOGS',
     logs,
   })
+});
+
+describe('Asynchronous Actions With firebase', () => {
+  const createMockStore = configureMockStore([thunk]);
+  const uid = 'someuidcreated456';
+  const defaultAuthState = { auth: { uid } };
+
+  beforeEach((done) => {
+    const logsData = {};
+    logs.forEach(({ date, weight, unit, foods }) => {
+      logsData[date] = { date, weight, unit, foods };
+    });
+    database.ref(`users/${uid}/logs`).set(logsData).then(() => done());
+  });
+
+  it('should add log to database and store', async () => {
+    const store = createMockStore(defaultAuthState);
+    const log = {
+      date: 11111,
+      weight: 300,
+      unit: 'lb',
+      foods: [
+        foods[1],
+        foods[2],
+        foods[0],
+      ],
+    };
+    await store.dispatch(startAddLog(log));
+    
+    const actions = store.getActions();
+    expect(actions[0]).toEqual({
+      type: 'ADD_LOG',
+      log,
+    });
+    const snapshot = await database.ref(`users/${uid}/logs/${log.date}`).once('value');
+    expect(snapshot.val()).toEqual(log);
+  });
+
+  it('should fetch logs from firebase and set them to store', async () => {
+    const store = createMockStore(defaultAuthState);
+    await store.dispatch(startSetLogs());
+    const actions = store.getActions();
+    expect(actions[0]).toEqual({
+      type: 'SET_LOGS',
+      logs,
+    });
+  });
 });

@@ -51,17 +51,17 @@ it('should add food to food log with index and multiplier', () => {
 
 describe('remove / edit food from food log', () => {
   let prevState;
-  // add index to each food in the foods list of each log
+  // add index to each food in the foods list of a log with foods[0], foods[1], foods[2]
   beforeEach(() => {
     const newFoods = [];
-    logs[1].foods.forEach((food, index) => {
+    logs[2].foods.forEach((food, index) => {
       newFoods.push({
         ...food,
         index,
       });
     });
     const newLog = {
-      ...logs[1],
+      ...logs[2],
       foods: newFoods,
     }
     prevState = currentLogReducer(newLog, { type: '@@INIT' });

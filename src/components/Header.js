@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import moment from 'moment';
-import { defaultLog, addLog } from '../actions/logs';
+import { defaultLog, startAddLog } from '../actions/logs';
 import { addCurrentEditLog } from '../actions/currentLog';
 import { startLogout } from '../actions/auth';
 
@@ -16,7 +16,7 @@ export class Header extends React.Component {
         ...defaultLog,
         date: today,
       };
-      this.props.addLog(todayLog);
+      this.props.startAddLog(todayLog);
       this.props.addCurrentEditLog(todayLog);
     } else {
       this.props.addCurrentEditLog(log);
@@ -43,7 +43,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   startLogout: () => dispatch(startLogout()),
-  addLog: (log) => dispatch(addLog(log)),
+  startAddLog: (log) => dispatch(startAddLog(log)),
   addCurrentEditLog: (log) => dispatch(addCurrentEditLog(log)),
 });
 

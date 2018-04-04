@@ -5,7 +5,7 @@ import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
 import LogList from './LogList';
 import { addCurrentEditLog } from '../actions/currentLog';
-import { defaultLog, addLog } from '../actions/logs';
+import { defaultLog, startAddLog } from '../actions/logs';
 
 export class LogDashboardPage extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ export class LogDashboardPage extends React.Component {
         ...defaultLog,
         date,
       };
-      this.props.addLog(newLog);
+      this.props.startAddLog(newLog);
       this.props.addCurrentEditLog(newLog);
     } else {
       this.props.addCurrentEditLog(log);
@@ -63,7 +63,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  addLog: (log) => dispatch(addLog(log)),
+  startAddLog: (log) => dispatch(startAddLog(log)),
   addCurrentEditLog: (log) => dispatch(addCurrentEditLog(log)),
 });
 

@@ -123,7 +123,7 @@ it('should setup set food action object with provided values', () => {
   });
 });
 
-it('should fetch foods from firebase', async () => {
+it('should fetch foods from firebase and set them to store', async () => {
   const store = createMockStore(defaultAuthState);
   await store.dispatch(startSetFoods())
   const actions = store.getActions();

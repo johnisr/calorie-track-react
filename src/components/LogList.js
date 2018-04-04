@@ -4,7 +4,7 @@ import LogListItem from './LogListItem';
 import { addCurrentEditLog } from '../actions/currentLog';
 
 export class LogList extends React.Component {
-  calculateTotal(foods, macro) {
+  calculateTotal(foods = [], macro) {
     if (macro === 'calories') {
       return foods.reduce((prev, curr) => prev + curr.calories, 0);
     } 
@@ -31,7 +31,7 @@ export class LogList extends React.Component {
             <p>No logs</p>
           ) : (
             this.props.logs.map(log => (
-              <div>
+              <div key={`div ${log.date}`}>
                 <LogListItem
                   key={`item ${log.date}`}
                   totalCalories={this.calculateTotal(log.foods, 'calories')} 
@@ -40,7 +40,7 @@ export class LogList extends React.Component {
                   totalFat={this.calculateTotal(log.foods, 'fat')} 
                   {...log}
                 />
-                <button onClick={() => this.handleEdit(log.date)}>Edit Food Log</button>
+                <button key={`button ${log.date}`} onClick={() => this.handleEdit(log.date)}>Edit Food Log</button>
               </div>
             )
           ))
