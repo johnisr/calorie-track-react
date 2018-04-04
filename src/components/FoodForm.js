@@ -16,19 +16,23 @@ class FoodForm extends React.Component {
       createdAt: props.food ? moment(props.food.createdAt) : moment(0),
     };
   }
-
   componentWillReceiveProps(nextProps) {
     const { name, amount, unit, carbohydrates, protein, fat, calories } = nextProps.food;
     this.setState({ name, amount, unit, carbohydrates, protein, fat, calories });
   }
 
+  isNumberWithAtMostTwoDecimals = (str) => {
+    return str.match(/^\d{1,}?(\.\d{0,2})?$/);
+  }
   handleNameChange = (e) => {
     const name = e.target.value;
     this.setState(() => ({ name }));
   };
   handleAmountChange = (e) => {
     const amount = e.target.value;
-    this.setState(() => ({ amount }));
+    if (!amount || this.isNumberWithAtMostTwoDecimals(amount)) {
+      this.setState(() => ({ amount }));
+    }
   };
   handleUnitChange = (e) => {
     const unit = e.target.value;
@@ -36,50 +40,69 @@ class FoodForm extends React.Component {
   };
   handleCarbohydratesChange = (e) => {
     const carbohydrates = e.target.value;
-    this.setState(() => ({ carbohydrates }));
+    if (!carbohydrates || this.isNumberWithAtMostTwoDecimals(carbohydrates)) {
+      this.setState(() => ({ carbohydrates }));
+    }
   };
   handleProteinChange = (e) => {
     const protein = e.target.value;
-    this.setState(() => ({ protein }));
+    if (!protein || this.isNumberWithAtMostTwoDecimals(protein)) {
+      this.setState(() => ({ protein }));
+    }
   };
   handleFatChange = (e) => {
     const fat = e.target.value;
-    this.setState(() => ({ fat }));
+    if (!fat || this.isNumberWithAtMostTwoDecimals(fat)) {
+      this.setState(() => ({ fat }));
+    }
   };
   handleCaloriesChange = (e) => {
     const calories = e.target.value;
-    this.setState(() => ({ calories }));
+    if (!calories || this.isNumberWithAtMostTwoDecimals(calories)) {
+      this.setState(() => ({ calories }));
+    }
   };
+  resetState = () => {
+    this.setState(() => ({
+      name: '',
+      amount: '',
+      unit: '',
+      carbohydrates: '',
+      protein: '',
+      fat: '',
+      calories: '',
+      timesUsed: 0,
+      createdAt: moment(0),
+    }));
+  }
   handleSubmit = (e) => {
     e.preventDefault();
-    if (this.state.createdAt.isSame(moment(0))) {
-      this.props.handleSubmit({
-        ...this.state,
-        createdAt: moment().valueOf(),
-      });
-    } else {
-      this.props.handleSubmit({
-        ...this.state,
-        createdAt: this.state.createdAt.valueOf(),
-      });
+    if (!this.canBeSubmitted()) {
+      return;
     }
-    // Clear if AddFood Operation
-    if (this.props.food === undefined) {
-      this.setState(() => ({
-        name: '',
-        amount: '',
-        unit: '',
-        carbohydrates: '',
-        protein: '',
-        fat: '',
-        calories: '',
-        timesUsed: 0,
-        createdAt: moment(0),
-      }));
-    }
+
+    // Setting defaults, putting them in proper type
+    const createdAt = this.state.createdAt;
+    this.props.handleSubmit({
+      name: this.state.name,
+      unit: this.state.unit,
+      timesUsed: this.state.timesUsed,
+      amount: this.state.amount !== '' ? parseFloat(this.state.amount, 10) : 1,
+      carbohydrates: this.state.carbohydrates !== '' ? parseFloat(this.state.carbohydrates, 10) : 0,
+      protein: this.state.protein !== '' ? parseFloat(this.state.protein, 10) : 0,
+      fat: this.state.fat !== '' ? parseFloat(this.state.fat, 10) : 0,
+      calories: this.state.calories !== '' ? parseFloat(this.state.calories, 10) : 0,
+      createdAt: createdAt.isSame(moment(0)) ?  moment().valueOf() : createdAt.valueOf(),
+    });
+    this.resetState();
   };
+  canBeSubmitted = () => {
+    const { name, unit } = this.state;
+    return name.length > 0 && unit.length > 0;
+  }
 
   render() {
+    const isEnabled = this.canBeSubmitted();
     return (
       <form className="form" onSubmit={this.handleSubmit} >
         <div>
@@ -110,7 +133,7 @@ class FoodForm extends React.Component {
           <label className="text-input__label" htmlFor="Calories">Calories</label>
           <input type="text" className="text-input" placeholder="calories" value={this.state.calories} onChange={this.handleCaloriesChange} />
         </div>
-        <button className="button" >Submit</button>
+        <button className="button" disabled={!isEnabled} >Submit</button>
       </form>
     );
   }

@@ -21,22 +21,26 @@ class CurrentLog extends React.Component {
       });
     };
     
-    this.props.currentLog.foods.forEach((food) => {
-      if (foodUpdates.hasOwnProperty(food.id)) {
-        foodUpdates[food.id] = foodUpdates[food.id] + 1;
-      } else {
-        foodUpdates[food.id] = 1;
-      }
-    });
+    if (this.props.currentLog.foods) {
+      this.props.currentLog.foods.forEach((food) => {
+        if (foodUpdates.hasOwnProperty(food.id)) {
+          foodUpdates[food.id] = foodUpdates[food.id] + 1;
+        } else {
+          foodUpdates[food.id] = 1;
+        }
+      });
+    }
     
-    this.props.foods.forEach((food) => {
-      if (foodUpdates[food.id]) {
-        this.props.startEditFood(
-          food.id, 
-          { timesUsed: food.timesUsed + foodUpdates[food.id] } 
-        );
-      }
-    });
+    if (this.props.foods) {
+      this.props.foods.forEach((food) => {
+        if (foodUpdates[food.id]) {
+          this.props.startEditFood(
+            food.id, 
+            { timesUsed: food.timesUsed + foodUpdates[food.id] } 
+          );
+        }
+      });
+    }
   }
   handleWeightChange = (e) => {
     const weight = e.target.value;

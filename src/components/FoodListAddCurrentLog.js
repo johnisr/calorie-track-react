@@ -6,7 +6,6 @@ import selectFoodsWithPages from '../selectors/foodsWithPages';
 
 export class FoodListAddCurrentLog extends React.Component {
   handleClick = (food) => {
-    console.log(food);
     this.props.addFoodToCurrentLogFromList(food);
   }
   render() {
