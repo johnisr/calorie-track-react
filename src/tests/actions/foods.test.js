@@ -28,7 +28,7 @@ it('should setup addFood action object with provided values', () => {
   });
 });
 
-it('should add food to database and store', async () => {
+it('should add food to database and dispatch add action store', async () => {
   const store = createMockStore(defaultAuthState);
   const foodData = {
     name: 'beef',
@@ -66,7 +66,7 @@ it('should setup editFood action object with provided values', () => {
   });
 });
 
-it('should edit food from database', async () => {
+it('should edit food from database and dispatch edit action to store', async () => {
   const store = createMockStore(defaultAuthState);
   const { id } = foods[1];
   const updates = { 
@@ -101,7 +101,7 @@ it('should setup removeFood action object with provided values', () => {
   });
 });
 
-it('should remove the expense from database', async () => {
+it('should remove the food from database and dispatch remove action to store', async () => {
   const store = createMockStore(defaultAuthState);
   const { id } = foods[1];
   await store.dispatch(startRemoveFood({ id }));

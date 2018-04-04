@@ -38,6 +38,18 @@ export const removeLog = (date) => ({
   date,
 });
 
+export const startRemoveLog = (date) => {
+  return async (dispatch, getState) => {
+    const { uid } = getState().auth;
+    try {
+      await database.ref(`users/${uid}/logs/${date}`).remove();
+      dispatch(removeLog(date));
+    } catch (e) {
+
+    };
+  };
+};
+
 export const editLog = (date, updates) => ({
   type: 'EDIT_LOG',
   date,

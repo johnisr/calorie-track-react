@@ -57,8 +57,12 @@ export const removeFood = ({ id }) => ({
 export const startRemoveFood = ({ id }) => {
   return async (dispatch, getState) => {
     const { uid } = getState().auth;
-    await database.ref(`users/${uid}/foods/${id}`).remove();
-    dispatch(removeFood({ id }));
+    try {
+      await database.ref(`users/${uid}/foods/${id}`).remove();
+      dispatch(removeFood({ id }));
+    } catch (e) {
+      
+    }
   };
 };
 

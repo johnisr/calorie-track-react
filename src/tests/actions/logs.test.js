@@ -1,7 +1,7 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import database from '../../firebase/firebase';
-import { addLog, removeLog, editLog, setLogs, startAddLog, startSetLogs, startEditLog } from '../../actions/logs';
+import { addLog, removeLog, editLog, setLogs, startAddLog, startSetLogs, startEditLog, startRemoveLog } from '../../actions/logs';
 import logs from '../fixtures/logs';
 import foods from '../fixtures/foods';
 
@@ -51,7 +51,7 @@ describe('Asynchronous Actions With firebase', () => {
     database.ref(`users/${uid}/logs`).set(logsData).then(() => done());
   });
 
-  it('should add log to database and store', async () => {
+  it('should add log to database and dispatch action store', async () => {
     const store = createMockStore(defaultAuthState);
     const log = {
       date: 11111,
@@ -84,7 +84,7 @@ describe('Asynchronous Actions With firebase', () => {
     });
   });
 
-  it('should edit logs from database and set edit to store', async () => {
+  it('should edit logs from database and dispatch edit to store', async () => {
     const store = createMockStore(defaultAuthState);
     const { date } = logs[2];
     const updates = {
@@ -102,5 +102,19 @@ describe('Asynchronous Actions With firebase', () => {
     const snapshot = await database.ref(`users/${uid}/logs/${date}`).once('value');
     expect(snapshot.val().weight).toBe(100);
     expect(snapshot.val().unit).toBe('kg');
+  });
+
+  it('should remove logs from database and dispatch remove to store', async () => {
+    const store = createMockStore(defaultAuthState);
+    const { date } = logs[1];
+    await store.dispatch(startRemoveLog(date));
+    const actions = store.getActions();
+    expect(actions[0]).toEqual({
+      type: 'REMOVE_LOG',
+      date,
+    });
+
+    const snapshot = await database.ref(`users/${uid}/foods/${date}`).once('value');
+    expect(snapshot.val()).toBeFalsy();
   });
 });

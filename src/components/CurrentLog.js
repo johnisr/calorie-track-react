@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { removeFoodFromCurrentLog, editCurrentEditLog, removeCurrentEditLog } from '../actions/currentLog';
+import { editCurrentEditLog, removeCurrentEditLog } from '../actions/currentLog';
 import FoodListDisplayCurrentLog from './FoodListDisplayCurrentLog';
-import { startEditLog } from '../actions/logs';
+import { startEditLog, startRemoveLog } from '../actions/logs';
 import { startEditFood } from '../actions/foods';
 
 class CurrentLog extends React.Component {
@@ -46,9 +46,6 @@ class CurrentLog extends React.Component {
     const unit = e.target.value;
     this.props.editCurrentEditLog({ unit });
   };
-  handleRemove = (food) => {
-    this.props.removeFoodFromCurrentLog(food.index);
-  };
   handleSubmit = () => {
     this.props.startEditLog(this.props.currentLog.date, this.props.currentLog);
     
@@ -57,6 +54,16 @@ class CurrentLog extends React.Component {
     this.props.removeCurrentEditLog();
     this.props.history.push('/LogDashboard');
   }
+  handleRemove = () => {
+    this.props.startRemoveLog(this.props.currentLog.date);
+    this.props.removeCurrentEditLog();
+    this.props.history.push('/LogDashboard');
+  }
+  handleExit = () => {
+    this.props.removeCurrentEditLog();
+    this.props.history.push('/LogDashboard');
+  }
+
   render() {
     return (
       <div>
@@ -86,6 +93,8 @@ class CurrentLog extends React.Component {
           <FoodListDisplayCurrentLog />
         </div>
         <button onClick={this.handleSubmit}>Submit</button>
+        <button onClick={this.handleRemove}>Remove</button>
+        <button onClick={this.handleExit}>Exit</button>
       </div>
     );
   }
@@ -98,11 +107,11 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  removeFoodFromCurrentLog: (index) =>  dispatch(removeFoodFromCurrentLog(index)),
   editCurrentEditLog: (updates) => dispatch(editCurrentEditLog(updates)),
   removeCurrentEditLog: () => dispatch(removeCurrentEditLog()),
   startEditLog: (date, log) => dispatch(startEditLog(date, log)),
   startEditFood: (id, addition) => dispatch(startEditFood(id, addition)),
+  startRemoveLog: (date) => dispatch(startRemoveLog(date)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CurrentLog);
