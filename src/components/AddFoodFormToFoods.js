@@ -9,18 +9,20 @@ export class AddFoodFormToFoods extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="page-header">
+      <section className="row">
+        <div className="form">
+          <div className="page-header">
+            <div className="content-container">
+              <h1 className="page-header__title">Add Food</h1>
+            </div>
+          </div>
           <div className="content-container">
-            <h1 className="page-header__title">Add Food</h1>
+            <FoodForm
+              handleSubmit={this.handleSubmit}
+            />
           </div>
         </div>
-        <div className="content-container">
-          <FoodForm
-            handleSubmit={this.handleSubmit}
-          />
-        </div>
-      </div>
+      </section>
     )
   }
 }

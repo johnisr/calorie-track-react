@@ -5,6 +5,7 @@ import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog';
 import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog';
 import FoodListAddCurrentLog from './FoodListAddCurrentLog';
 import FoodListFilters from './FoodListFilters';
+import Header from '../components/Header';
 import { history } from '../routers/AppRouter';
 
 class EditLog extends React.Component {
@@ -14,6 +15,7 @@ class EditLog extends React.Component {
   render() {
     return (
       <div>
+        <Header history={history}/>
         <h1>EDIT FOOD</h1>
         {
           this.isEmpty(this.props.currentLog) ? (

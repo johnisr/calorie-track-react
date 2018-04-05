@@ -72,43 +72,45 @@ export class FoodListFilters extends React.Component {
     const isLastPage = (offset * maxFoodsShown) + maxFoodsShown >= foodsLength;
 
     return (
-      <div>
-        <input 
-          type="text"
-          placeholder="Search Foods"
-          value={this.props.filters.name} 
-          onChange={this.handleNameChange}
-        />
-        <select
-          className="select"
-          value={this.props.filters.sortBy} 
-          onChange={this.handleSortChange}
-        >
-          <option value="usage">Usage</option>
-          <option value="date">Date</option>
-        </select>
-        <select
-          className="select"
-          value={this.props.filters.maxFoodsShown} 
-          onChange={this.handleMaxFoodPageChange}
-        >
-          <option value={10}>10</option>
-          <option value={25}>25</option>
-          <option value={50}>50</option>
-        </select>
-        <button 
-          onClick={this.handlePrevPageChange}
-          disabled={this.props.filters.offset <= 0}
-        >
-          Prev Page
-        </button>
-        {this.createPageButtons()}
-        <button 
-          onClick={this.handleNextPageChange}
-          disabled={isLastPage}
-        >
-          Next Page
-        </button>
+      <div className="row">
+        <div className="filter">
+          <input 
+            type="text"
+            placeholder="Search Foods"
+            value={this.props.filters.name} 
+            onChange={this.handleNameChange}
+          />
+          <select
+            className="select"
+            value={this.props.filters.sortBy} 
+            onChange={this.handleSortChange}
+          >
+            <option value="usage">Usage</option>
+            <option value="date">Date</option>
+          </select>
+          <select
+            className="select"
+            value={this.props.filters.maxFoodsShown} 
+            onChange={this.handleMaxFoodPageChange}
+          >
+            <option value={10}>10</option>
+            <option value={25}>25</option>
+            <option value={50}>50</option>
+          </select>
+          <button 
+            onClick={this.handlePrevPageChange}
+            disabled={this.props.filters.offset <= 0}
+          >
+            Prev Page
+          </button>
+          {this.createPageButtons()}
+          <button 
+            onClick={this.handleNextPageChange}
+            disabled={isLastPage}
+          >
+            Next Page
+          </button>
+        </div>
       </div>
     );
   };

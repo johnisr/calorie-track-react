@@ -7,6 +7,8 @@ import LogList from './LogList';
 import LogListFilters from './LogListFilters';
 import { addCurrentEditLog } from '../actions/currentLog';
 import { defaultLog, startAddLog } from '../actions/logs';
+import Header from '../components/Header';
+import { history } from '../routers/AppRouter';
 
 export class LogDashboardPage extends React.Component {
   constructor(props) {
@@ -43,6 +45,7 @@ export class LogDashboardPage extends React.Component {
     return (
       <div>
         <div>
+          <Header history={history}/>
           <LogListFilters />
           <SingleDatePicker
             date={this.state.date}

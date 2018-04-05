@@ -10,29 +10,31 @@ export class FoodListDisplayFoods extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h3>Foods in Database</h3>
-        {
-          this.props.foods.length === 0 ? (
-            <p>No Foods</p>
-          ) : (
-            this.props.foods.map(food => (
-              <div key={`div ${food.id}`}>
-                <FoodListItem 
-                  key={`item ${food.id}`}
-                  {...food}
-                />
-                <button 
-                  key={`button ${food.id}`} 
-                  onClick={() => this.handleClick(food)}
-                >
-                  Edit This
-                </button>
-              </div>
-            ))
-          )
-        }
-      </div>
+      <section className="row">
+        <div className="listDisplay">
+          <h3>Foods in Database</h3>
+          {
+            this.props.foods.length === 0 ? (
+              <p>No Foods</p>
+            ) : (
+              this.props.foods.map(food => (
+                <div key={`div ${food.id}`}>
+                  <FoodListItem 
+                    key={`item ${food.id}`}
+                    {...food}
+                  />
+                  <button 
+                    key={`button ${food.id}`} 
+                    onClick={() => this.handleClick(food)}
+                  >
+                    Edit This
+                  </button>
+                </div>
+              ))
+            )
+          }
+        </div>
+      </section>
     );
   }
 }

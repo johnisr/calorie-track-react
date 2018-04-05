@@ -7,9 +7,9 @@ $color-secondary: #FF8152;
 $color-secondary-light: #FF672E;
 $color-secondary-dark: #FF4500;
 
-$color-grey-light-1: #e7f0f6;
+$color-grey-light-1: #b4d5eb;
 $color-grey-light-2: #d6e7f2;
-$color-grey-light-2: #b4d5eb;
+$color-grey-light-3: #e7f0f6;
 
 $color-grey-dark-1: #434b51;
 $color-grey-dark-2: #445560;
@@ -18,6 +18,12 @@ $color-grey-dark-3: #46677e;
 // FONT VARIABLES
 $font-primary: 'Open Sans', sans-serif;
 $font-display: 'Roboto', sans-serif;
+
+$font-size-body: 1.6rem;                        //11px
+$font-size-primary: $font-size-body * 2.18;     //24px
+$font-size-secondary: $font-size-body * 1.64;   //18px
+$font-size-tertiary: $font-size-body * 1.45;    //16px
+$font-size-quarternary: $font-size-body * 1.18; //13px
 
 *,
 *::before,
@@ -34,8 +40,22 @@ html {
 
 body {
   color: $color-grey-dark-1;
-  font-weight: 300;
+  font-family: $font-primary;
+  font-size: $font-size-body;
+  font-weight: 400;
   line-height: 1.6;
   background-color: $color-grey-light-1;
-  font-size: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
+    repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }

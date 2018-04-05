@@ -26,13 +26,15 @@ export class Header extends React.Component {
   }
   render() {
     return (
-      <header>
-        <h1>Calorie-Track</h1>
-        <NavLink to='/FoodDashboard' >Food dashboard</NavLink>
-        <NavLink to='/LogDashboard' >Log dashboard</NavLink>
-        <button onClick={this.handleEdit}>Today's Food Log</button>
-        <button onClick={this.props.startLogout}>Logout</button>
-      </header>
+      <div className="row">
+        <header className="header">
+          <h1 className="heading-primary header__title">Calorie-Track</h1>
+          <NavLink className="btn" to='/FoodDashboard' >Food dashboard</NavLink>
+          <NavLink className="btn" to='/LogDashboard' >Log dashboard</NavLink>
+          <button className="btn" onClick={this.handleEdit}>Today's Food Log</button>
+          <button className="btn flex-right-most" onClick={this.props.startLogout}>Logout</button>
+        </header>
+      </div>
     );
   };
 }
