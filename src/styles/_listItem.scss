@@ -1,0 +1,14 @@
+.listItem {
+  
+  display: grid;
+  width: 90%;
+  grid-template-columns: minmax(10rem, 2fr)  repeat(5, minmax(6rem, 1fr));
+  
+
+  &__text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

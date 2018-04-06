@@ -29,24 +29,40 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <p>
+        <p
+          className="listItem__text"
+>
           Almonds
-           - 
+</p>,
+        <p
+          className="listItem__text"
+>
           24
            
           pieces
 </p>,
-        <p>
-          Carbs: 
+        <p
+          className="listItem__text"
+>
           2.5
-           Protein: 
+</p>,
+        <p
+          className="listItem__text"
+>
           6
-           Fat: 
+</p>,
+        <p
+          className="listItem__text"
+>
           14
-           Calories: 
+</p>,
+        <p
+          className="listItem__text"
+>
           163
 </p>,
       ],
+      "className": "listItem",
     },
     "ref": null,
     "rendered": Array [
@@ -55,18 +71,27 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Almonds",
+          "className": "listItem__text",
+        },
+        "ref": null,
+        "rendered": "Almonds",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
-            "Almonds",
-            " - ",
             24,
             " ",
             "pieces",
           ],
+          "className": "listItem__text",
         },
         "ref": null,
         "rendered": Array [
-          "Almonds",
-          " - ",
           24,
           " ",
           "pieces",
@@ -78,28 +103,47 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            "Carbs: ",
-            2.5,
-            " Protein: ",
-            6,
-            " Fat: ",
-            14,
-            " Calories: ",
-            163,
-          ],
+          "children": 2.5,
+          "className": "listItem__text",
         },
         "ref": null,
-        "rendered": Array [
-          "Carbs: ",
-          2.5,
-          " Protein: ",
-          6,
-          " Fat: ",
-          14,
-          " Calories: ",
-          163,
-        ],
+        "rendered": 2.5,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 6,
+          "className": "listItem__text",
+        },
+        "ref": null,
+        "rendered": 6,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 14,
+          "className": "listItem__text",
+        },
+        "ref": null,
+        "rendered": 14,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 163,
+          "className": "listItem__text",
+        },
+        "ref": null,
+        "rendered": 163,
         "type": "p",
       },
     ],
@@ -112,24 +156,40 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <p>
+          <p
+            className="listItem__text"
+>
             Almonds
-             - 
+</p>,
+          <p
+            className="listItem__text"
+>
             24
              
             pieces
 </p>,
-          <p>
-            Carbs: 
+          <p
+            className="listItem__text"
+>
             2.5
-             Protein: 
+</p>,
+          <p
+            className="listItem__text"
+>
             6
-             Fat: 
+</p>,
+          <p
+            className="listItem__text"
+>
             14
-             Calories: 
+</p>,
+          <p
+            className="listItem__text"
+>
             163
 </p>,
         ],
+        "className": "listItem",
       },
       "ref": null,
       "rendered": Array [
@@ -138,18 +198,27 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Almonds",
+            "className": "listItem__text",
+          },
+          "ref": null,
+          "rendered": "Almonds",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
-              "Almonds",
-              " - ",
               24,
               " ",
               "pieces",
             ],
+            "className": "listItem__text",
           },
           "ref": null,
           "rendered": Array [
-            "Almonds",
-            " - ",
             24,
             " ",
             "pieces",
@@ -161,28 +230,47 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              "Carbs: ",
-              2.5,
-              " Protein: ",
-              6,
-              " Fat: ",
-              14,
-              " Calories: ",
-              163,
-            ],
+            "children": 2.5,
+            "className": "listItem__text",
           },
           "ref": null,
-          "rendered": Array [
-            "Carbs: ",
-            2.5,
-            " Protein: ",
-            6,
-            " Fat: ",
-            14,
-            " Calories: ",
-            163,
-          ],
+          "rendered": 2.5,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 6,
+            "className": "listItem__text",
+          },
+          "ref": null,
+          "rendered": 6,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 14,
+            "className": "listItem__text",
+          },
+          "ref": null,
+          "rendered": 14,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 163,
+            "className": "listItem__text",
+          },
+          "ref": null,
+          "rendered": 163,
           "type": "p",
         },
       ],

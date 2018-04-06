@@ -19,117 +19,61 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <h1>
-          Calorie-Track
-</h1>,
+      "children": <header
+        className="header"
+>
+        <h1
+                className="heading-primary header__title"
+        >
+                Calorie-Track
+        </h1>
         <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          to="/FoodDashboard"
->
-          Food dashboard
-</NavLink>,
+                activeClassName="active"
+                ariaCurrent="true"
+                className="btn"
+                to="/FoodDashboard"
+        >
+                Food dashboard
+        </NavLink>
         <NavLink
-          activeClassName="active"
-          ariaCurrent="true"
-          to="/LogDashboard"
->
-          Log dashboard
-</NavLink>,
+                activeClassName="active"
+                ariaCurrent="true"
+                className="btn"
+                to="/LogDashboard"
+        >
+                Log dashboard
+        </NavLink>
         <button
-          onClick={[Function]}
->
-          Today's Food Log
-</button>,
+                className="btn"
+                onClick={[Function]}
+        >
+                Today's Food Log
+        </button>
         <button
-          onClick={[Function]}
->
-          Logout
-</button>,
-      ],
+                className="btn flex-right-end"
+                onClick={[Function]}
+        >
+                Logout
+        </button>
+</header>,
+      "className": "row",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Calorie-Track",
-        },
-        "ref": null,
-        "rendered": "Calorie-Track",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Food dashboard",
-          "to": "/FoodDashboard",
-        },
-        "ref": null,
-        "rendered": "Food dashboard",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeClassName": "active",
-          "ariaCurrent": "true",
-          "children": "Log dashboard",
-          "to": "/LogDashboard",
-        },
-        "ref": null,
-        "rendered": "Log dashboard",
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Today's Food Log",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "Today's Food Log",
-        "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Logout",
-          "onClick": [Function],
-        },
-        "ref": null,
-        "rendered": "Logout",
-        "type": "button",
-      },
-    ],
-    "type": "header",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
+          <h1
+            className="heading-primary header__title"
+>
             Calorie-Track
 </h1>,
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
+            className="btn"
             to="/FoodDashboard"
 >
             Food dashboard
@@ -137,21 +81,25 @@ ShallowWrapper {
           <NavLink
             activeClassName="active"
             ariaCurrent="true"
+            className="btn"
             to="/LogDashboard"
 >
             Log dashboard
 </NavLink>,
           <button
+            className="btn"
             onClick={[Function]}
 >
             Today's Food Log
 </button>,
           <button
+            className="btn flex-right-end"
             onClick={[Function]}
 >
             Logout
 </button>,
         ],
+        "className": "header",
       },
       "ref": null,
       "rendered": Array [
@@ -161,6 +109,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Calorie-Track",
+            "className": "heading-primary header__title",
           },
           "ref": null,
           "rendered": "Calorie-Track",
@@ -174,6 +123,7 @@ ShallowWrapper {
             "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Food dashboard",
+            "className": "btn",
             "to": "/FoodDashboard",
           },
           "ref": null,
@@ -188,6 +138,7 @@ ShallowWrapper {
             "activeClassName": "active",
             "ariaCurrent": "true",
             "children": "Log dashboard",
+            "className": "btn",
             "to": "/LogDashboard",
           },
           "ref": null,
@@ -200,6 +151,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Today's Food Log",
+            "className": "btn",
             "onClick": [Function],
           },
           "ref": null,
@@ -212,6 +164,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Logout",
+            "className": "btn flex-right-end",
             "onClick": [Function],
           },
           "ref": null,
@@ -220,6 +173,171 @@ ShallowWrapper {
         },
       ],
       "type": "header",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <header
+          className="header"
+>
+          <h1
+                    className="heading-primary header__title"
+          >
+                    Calorie-Track
+          </h1>
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="btn"
+                    to="/FoodDashboard"
+          >
+                    Food dashboard
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    ariaCurrent="true"
+                    className="btn"
+                    to="/LogDashboard"
+          >
+                    Log dashboard
+          </NavLink>
+          <button
+                    className="btn"
+                    onClick={[Function]}
+          >
+                    Today's Food Log
+          </button>
+          <button
+                    className="btn flex-right-end"
+                    onClick={[Function]}
+          >
+                    Logout
+          </button>
+</header>,
+        "className": "row",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="heading-primary header__title"
+>
+              Calorie-Track
+</h1>,
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="btn"
+              to="/FoodDashboard"
+>
+              Food dashboard
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              ariaCurrent="true"
+              className="btn"
+              to="/LogDashboard"
+>
+              Log dashboard
+</NavLink>,
+            <button
+              className="btn"
+              onClick={[Function]}
+>
+              Today's Food Log
+</button>,
+            <button
+              className="btn flex-right-end"
+              onClick={[Function]}
+>
+              Logout
+</button>,
+          ],
+          "className": "header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Calorie-Track",
+              "className": "heading-primary header__title",
+            },
+            "ref": null,
+            "rendered": "Calorie-Track",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "Food dashboard",
+              "className": "btn",
+              "to": "/FoodDashboard",
+            },
+            "ref": null,
+            "rendered": "Food dashboard",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "ariaCurrent": "true",
+              "children": "Log dashboard",
+              "className": "btn",
+              "to": "/LogDashboard",
+            },
+            "ref": null,
+            "rendered": "Log dashboard",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Today's Food Log",
+              "className": "btn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Today's Food Log",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Logout",
+              "className": "btn flex-right-end",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Logout",
+            "type": "button",
+          },
+        ],
+        "type": "header",
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

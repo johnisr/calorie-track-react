@@ -32,7 +32,7 @@ export class Header extends React.Component {
           <NavLink className="btn" to='/FoodDashboard' >Food dashboard</NavLink>
           <NavLink className="btn" to='/LogDashboard' >Log dashboard</NavLink>
           <button className="btn" onClick={this.handleEdit}>Today's Food Log</button>
-          <button className="btn flex-right-most" onClick={this.props.startLogout}>Logout</button>
+          <button className="btn flex-right-end" onClick={this.props.startLogout}>Logout</button>
         </header>
       </div>
     );

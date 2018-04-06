@@ -22,9 +22,15 @@
   }
 
   &:active,
-  &:focus {
+  &:focus,
+  &--active {
     outline: none;
     background-color: lighten($color-grey-dark-3, 10%);
+  }
+
+
+  &--page {
+    padding: 0 .5rem;
   }
 
 }

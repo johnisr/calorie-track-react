@@ -1,16 +1,14 @@
 import React from 'react';
-import FoodListDisplayFoods from './FoodListDisplayFoods';
+import FoodsDisplayList from './FoodsDisplayList';
 import EditFoodFormForFoods from './EditFoodFormForFoods';
 import AddFoodFormToFoods from './AddFoodFormToFoods';
-import FoodListFilters from './FoodListFilters';
 import Header from '../components/Header';
 import { history } from '../routers/AppRouter';
 
 const FoodDashboardPage = () => (
   <div className="container">
     <Header history={history}/>
-    <FoodListFilters  />
-    <FoodListDisplayFoods />
+    <FoodsDisplayList />
     <AddFoodFormToFoods />
     <EditFoodFormForFoods  />
   </div>

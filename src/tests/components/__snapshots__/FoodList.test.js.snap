@@ -59,69 +59,117 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h3>
+        <h3
+          className="heading-secondary listDisplay__header"
+>
           Foods in Database
 </h3>,
-        Array [
-          <div>
-            <FoodListItem
-                        amount={200}
-                        calories={205}
-                        carbohydrates={44}
-                        createdAt={0}
-                        fat={0.4}
-                        id="1"
-                        name="Rice (Jasmine)"
-                        protein={4.2}
-                        timesUsed={0}
-                        unit="grams"
-            />
-            <button
-                        onClick={[Function]}
-            >
-                        Edit This
-            </button>
+        <div
+          className="listDisplay__list"
+>
+          <div
+                    className="listDisplay__list-header"
+          >
+                    <p
+                              className="listDisplay__list-title"
+                    >
+                              name
+                    </p>
+                    <p
+                              className="listDisplay__list-title"
+                    >
+                              amount
+                    </p>
+                    <p
+                              className="listDisplay__list-title"
+                    >
+                              carbs
+                    </p>
+                    <p
+                              className="listDisplay__list-title"
+                    >
+                              protein
+                    </p>
+                    <p
+                              className="listDisplay__list-title"
+                    >
+                              fat
+                    </p>
+                    <p
+                              className="listDisplay__list-title"
+                    >
+                              calories
+                    </p>
+          </div>
+          <div
+                    className="listDisplay__list-table"
+          >
+                    <FoodListItem
+                              amount={200}
+                              calories={205}
+                              carbohydrates={44}
+                              createdAt={0}
+                              fat={0.4}
+                              id="1"
+                              name="Rice (Jasmine)"
+                              protein={4.2}
+                              timesUsed={0}
+                              unit="grams"
+                    />
+                    <button
+                              className="btn listDisplay__list-btn flex-right-end"
+                              onClick={[Function]}
+                    >
+                              Edit
+                    </button>
+          </div>
+          <div
+                    className="listDisplay__list-table listDisplay__list-table--even"
+          >
+                    <FoodListItem
+                              amount={100}
+                              calories={165}
+                              carbohydrates={0}
+                              createdAt={1000}
+                              fat={3.6}
+                              id="2"
+                              name="Chicken Breast"
+                              protein={31}
+                              timesUsed={1}
+                              unit="grams"
+                    />
+                    <button
+                              className="btn listDisplay__list-btn flex-right-end"
+                              onClick={[Function]}
+                    >
+                              Edit
+                    </button>
+          </div>
+          <div
+                    className="listDisplay__list-table"
+          >
+                    <FoodListItem
+                              amount={24}
+                              calories={163}
+                              carbohydrates={2.5}
+                              createdAt={-1000}
+                              fat={14}
+                              id="3"
+                              name="Almonds"
+                              protein={6}
+                              timesUsed={2}
+                              unit="pieces"
+                    />
+                    <button
+                              className="btn listDisplay__list-btn flex-right-end"
+                              onClick={[Function]}
+                    >
+                              Edit
+                    </button>
+          </div>
 </div>,
-          <div>
-            <FoodListItem
-                        amount={100}
-                        calories={165}
-                        carbohydrates={0}
-                        createdAt={1000}
-                        fat={3.6}
-                        id="2"
-                        name="Chicken Breast"
-                        protein={31}
-                        timesUsed={1}
-                        unit="grams"
-            />
-            <button
-                        onClick={[Function]}
-            >
-                        Edit This
-            </button>
-</div>,
-          <div>
-            <FoodListItem
-                        amount={24}
-                        calories={163}
-                        carbohydrates={2.5}
-                        createdAt={-1000}
-                        fat={14}
-                        id="3"
-                        name="Almonds"
-                        protein={6}
-                        timesUsed={2}
-                        unit="pieces"
-            />
-            <button
-                        onClick={[Function]}
-            >
-                        Edit This
-            </button>
-</div>,
-        ],
       ],
+      "className": "listDisplay",
     },
     "ref": null,
     "rendered": Array [
@@ -131,6 +179,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Foods in Database",
+          "className": "heading-secondary listDisplay__header",
         },
         "ref": null,
         "rendered": "Foods in Database",
@@ -138,186 +187,427 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "div 1",
+        "key": undefined,
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <FoodListItem
-              amount={200}
-              calories={205}
-              carbohydrates={44}
-              createdAt={0}
-              fat={0.4}
-              id="1"
-              name="Rice (Jasmine)"
-              protein={4.2}
-              timesUsed={0}
-              unit="grams"
-/>,
-            <button
-              onClick={[Function]}
+            <div
+              className="listDisplay__list-header"
 >
-              Edit This
-</button>,
+              <p
+                            className="listDisplay__list-title"
+              >
+                            name
+              </p>
+              <p
+                            className="listDisplay__list-title"
+              >
+                            amount
+              </p>
+              <p
+                            className="listDisplay__list-title"
+              >
+                            carbs
+              </p>
+              <p
+                            className="listDisplay__list-title"
+              >
+                            protein
+              </p>
+              <p
+                            className="listDisplay__list-title"
+              >
+                            fat
+              </p>
+              <p
+                            className="listDisplay__list-title"
+              >
+                            calories
+              </p>
+</div>,
+            Array [
+              <div
+                className="listDisplay__list-table"
+>
+                <FoodListItem
+                                amount={200}
+                                calories={205}
+                                carbohydrates={44}
+                                createdAt={0}
+                                fat={0.4}
+                                id="1"
+                                name="Rice (Jasmine)"
+                                protein={4.2}
+                                timesUsed={0}
+                                unit="grams"
+                />
+                <button
+                                className="btn listDisplay__list-btn flex-right-end"
+                                onClick={[Function]}
+                >
+                                Edit
+                </button>
+</div>,
+              <div
+                className="listDisplay__list-table listDisplay__list-table--even"
+>
+                <FoodListItem
+                                amount={100}
+                                calories={165}
+                                carbohydrates={0}
+                                createdAt={1000}
+                                fat={3.6}
+                                id="2"
+                                name="Chicken Breast"
+                                protein={31}
+                                timesUsed={1}
+                                unit="grams"
+                />
+                <button
+                                className="btn listDisplay__list-btn flex-right-end"
+                                onClick={[Function]}
+                >
+                                Edit
+                </button>
+</div>,
+              <div
+                className="listDisplay__list-table"
+>
+                <FoodListItem
+                                amount={24}
+                                calories={163}
+                                carbohydrates={2.5}
+                                createdAt={-1000}
+                                fat={14}
+                                id="3"
+                                name="Almonds"
+                                protein={6}
+                                timesUsed={2}
+                                unit="pieces"
+                />
+                <button
+                                className="btn listDisplay__list-btn flex-right-end"
+                                onClick={[Function]}
+                >
+                                Edit
+                </button>
+</div>,
+            ],
           ],
+          "className": "listDisplay__list",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "item 1",
-            "nodeType": "function",
-            "props": Object {
-              "amount": 200,
-              "calories": 205,
-              "carbohydrates": 44,
-              "createdAt": 0,
-              "fat": 0.4,
-              "id": "1",
-              "name": "Rice (Jasmine)",
-              "protein": 4.2,
-              "timesUsed": 0,
-              "unit": "grams",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "button 1",
+            "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Edit This",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "Edit This",
-            "type": "button",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": "div 2",
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <FoodListItem
-              amount={100}
-              calories={165}
-              carbohydrates={0}
-              createdAt={1000}
-              fat={3.6}
-              id="2"
-              name="Chicken Breast"
-              protein={31}
-              timesUsed={1}
-              unit="grams"
-/>,
-            <button
-              onClick={[Function]}
+              "children": Array [
+                <p
+                  className="listDisplay__list-title"
 >
-              Edit This
-</button>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "item 2",
-            "nodeType": "function",
-            "props": Object {
-              "amount": 100,
-              "calories": 165,
-              "carbohydrates": 0,
-              "createdAt": 1000,
-              "fat": 3.6,
-              "id": "2",
-              "name": "Chicken Breast",
-              "protein": 31,
-              "timesUsed": 1,
-              "unit": "grams",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "button 2",
-            "nodeType": "host",
-            "props": Object {
-              "children": "Edit This",
-              "onClick": [Function],
-            },
-            "ref": null,
-            "rendered": "Edit This",
-            "type": "button",
-          },
-        ],
-        "type": "div",
-      },
-      Object {
-        "instance": null,
-        "key": "div 3",
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <FoodListItem
-              amount={24}
-              calories={163}
-              carbohydrates={2.5}
-              createdAt={-1000}
-              fat={14}
-              id="3"
-              name="Almonds"
-              protein={6}
-              timesUsed={2}
-              unit="pieces"
-/>,
-            <button
-              onClick={[Function]}
+                  name
+</p>,
+                <p
+                  className="listDisplay__list-title"
 >
-              Edit This
-</button>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "item 3",
-            "nodeType": "function",
-            "props": Object {
-              "amount": 24,
-              "calories": 163,
-              "carbohydrates": 2.5,
-              "createdAt": -1000,
-              "fat": 14,
-              "id": "3",
-              "name": "Almonds",
-              "protein": 6,
-              "timesUsed": 2,
-              "unit": "pieces",
+                  amount
+</p>,
+                <p
+                  className="listDisplay__list-title"
+>
+                  carbs
+</p>,
+                <p
+                  className="listDisplay__list-title"
+>
+                  protein
+</p>,
+                <p
+                  className="listDisplay__list-title"
+>
+                  fat
+</p>,
+                <p
+                  className="listDisplay__list-title"
+>
+                  calories
+</p>,
+              ],
+              "className": "listDisplay__list-header",
             },
             "ref": null,
-            "rendered": null,
-            "type": [Function],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "name",
+                  "className": "listDisplay__list-title",
+                },
+                "ref": null,
+                "rendered": "name",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "amount",
+                  "className": "listDisplay__list-title",
+                },
+                "ref": null,
+                "rendered": "amount",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "carbs",
+                  "className": "listDisplay__list-title",
+                },
+                "ref": null,
+                "rendered": "carbs",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "protein",
+                  "className": "listDisplay__list-title",
+                },
+                "ref": null,
+                "rendered": "protein",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "fat",
+                  "className": "listDisplay__list-title",
+                },
+                "ref": null,
+                "rendered": "fat",
+                "type": "p",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "calories",
+                  "className": "listDisplay__list-title",
+                },
+                "ref": null,
+                "rendered": "calories",
+                "type": "p",
+              },
+            ],
+            "type": "div",
           },
           Object {
             "instance": null,
-            "key": "button 3",
+            "key": "div 1",
             "nodeType": "host",
             "props": Object {
-              "children": "Edit This",
-              "onClick": [Function],
+              "children": Array [
+                <FoodListItem
+                  amount={200}
+                  calories={205}
+                  carbohydrates={44}
+                  createdAt={0}
+                  fat={0.4}
+                  id="1"
+                  name="Rice (Jasmine)"
+                  protein={4.2}
+                  timesUsed={0}
+                  unit="grams"
+/>,
+                <button
+                  className="btn listDisplay__list-btn flex-right-end"
+                  onClick={[Function]}
+>
+                  Edit
+</button>,
+              ],
+              "className": "listDisplay__list-table",
             },
             "ref": null,
-            "rendered": "Edit This",
-            "type": "button",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "item 1",
+                "nodeType": "function",
+                "props": Object {
+                  "amount": 200,
+                  "calories": 205,
+                  "carbohydrates": 44,
+                  "createdAt": 0,
+                  "fat": 0.4,
+                  "id": "1",
+                  "name": "Rice (Jasmine)",
+                  "protein": 4.2,
+                  "timesUsed": 0,
+                  "unit": "grams",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "button 1",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Edit",
+                  "className": "btn listDisplay__list-btn flex-right-end",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Edit",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "div 2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FoodListItem
+                  amount={100}
+                  calories={165}
+                  carbohydrates={0}
+                  createdAt={1000}
+                  fat={3.6}
+                  id="2"
+                  name="Chicken Breast"
+                  protein={31}
+                  timesUsed={1}
+                  unit="grams"
+/>,
+                <button
+                  className="btn listDisplay__list-btn flex-right-end"
+                  onClick={[Function]}
+>
+                  Edit
+</button>,
+              ],
+              "className": "listDisplay__list-table listDisplay__list-table--even",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "item 2",
+                "nodeType": "function",
+                "props": Object {
+                  "amount": 100,
+                  "calories": 165,
+                  "carbohydrates": 0,
+                  "createdAt": 1000,
+                  "fat": 3.6,
+                  "id": "2",
+                  "name": "Chicken Breast",
+                  "protein": 31,
+                  "timesUsed": 1,
+                  "unit": "grams",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "button 2",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Edit",
+                  "className": "btn listDisplay__list-btn flex-right-end",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Edit",
+                "type": "button",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "div 3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <FoodListItem
+                  amount={24}
+                  calories={163}
+                  carbohydrates={2.5}
+                  createdAt={-1000}
+                  fat={14}
+                  id="3"
+                  name="Almonds"
+                  protein={6}
+                  timesUsed={2}
+                  unit="pieces"
+/>,
+                <button
+                  className="btn listDisplay__list-btn flex-right-end"
+                  onClick={[Function]}
+>
+                  Edit
+</button>,
+              ],
+              "className": "listDisplay__list-table",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "item 3",
+                "nodeType": "function",
+                "props": Object {
+                  "amount": 24,
+                  "calories": 163,
+                  "carbohydrates": 2.5,
+                  "createdAt": -1000,
+                  "fat": 14,
+                  "id": "3",
+                  "name": "Almonds",
+                  "protein": 6,
+                  "timesUsed": 2,
+                  "unit": "pieces",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "button 3",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Edit",
+                  "className": "btn listDisplay__list-btn flex-right-end",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Edit",
+                "type": "button",
+              },
+            ],
+            "type": "div",
           },
         ],
         "type": "div",
@@ -332,69 +622,117 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h3>
+          <h3
+            className="heading-secondary listDisplay__header"
+>
             Foods in Database
 </h3>,
-          Array [
-            <div>
-              <FoodListItem
-                            amount={200}
-                            calories={205}
-                            carbohydrates={44}
-                            createdAt={0}
-                            fat={0.4}
-                            id="1"
-                            name="Rice (Jasmine)"
-                            protein={4.2}
-                            timesUsed={0}
-                            unit="grams"
-              />
-              <button
-                            onClick={[Function]}
-              >
-                            Edit This
-              </button>
+          <div
+            className="listDisplay__list"
+>
+            <div
+                        className="listDisplay__list-header"
+            >
+                        <p
+                                    className="listDisplay__list-title"
+                        >
+                                    name
+                        </p>
+                        <p
+                                    className="listDisplay__list-title"
+                        >
+                                    amount
+                        </p>
+                        <p
+                                    className="listDisplay__list-title"
+                        >
+                                    carbs
+                        </p>
+                        <p
+                                    className="listDisplay__list-title"
+                        >
+                                    protein
+                        </p>
+                        <p
+                                    className="listDisplay__list-title"
+                        >
+                                    fat
+                        </p>
+                        <p
+                                    className="listDisplay__list-title"
+                        >
+                                    calories
+                        </p>
+            </div>
+            <div
+                        className="listDisplay__list-table"
+            >
+                        <FoodListItem
+                                    amount={200}
+                                    calories={205}
+                                    carbohydrates={44}
+                                    createdAt={0}
+                                    fat={0.4}
+                                    id="1"
+                                    name="Rice (Jasmine)"
+                                    protein={4.2}
+                                    timesUsed={0}
+                                    unit="grams"
+                        />
+                        <button
+                                    className="btn listDisplay__list-btn flex-right-end"
+                                    onClick={[Function]}
+                        >
+                                    Edit
+                        </button>
+            </div>
+            <div
+                        className="listDisplay__list-table listDisplay__list-table--even"
+            >
+                        <FoodListItem
+                                    amount={100}
+                                    calories={165}
+                                    carbohydrates={0}
+                                    createdAt={1000}
+                                    fat={3.6}
+                                    id="2"
+                                    name="Chicken Breast"
+                                    protein={31}
+                                    timesUsed={1}
+                                    unit="grams"
+                        />
+                        <button
+                                    className="btn listDisplay__list-btn flex-right-end"
+                                    onClick={[Function]}
+                        >
+                                    Edit
+                        </button>
+            </div>
+            <div
+                        className="listDisplay__list-table"
+            >
+                        <FoodListItem
+                                    amount={24}
+                                    calories={163}
+                                    carbohydrates={2.5}
+                                    createdAt={-1000}
+                                    fat={14}
+                                    id="3"
+                                    name="Almonds"
+                                    protein={6}
+                                    timesUsed={2}
+                                    unit="pieces"
+                        />
+                        <button
+                                    className="btn listDisplay__list-btn flex-right-end"
+                                    onClick={[Function]}
+                        >
+                                    Edit
+                        </button>
+            </div>
 </div>,
-            <div>
-              <FoodListItem
-                            amount={100}
-                            calories={165}
-                            carbohydrates={0}
-                            createdAt={1000}
-                            fat={3.6}
-                            id="2"
-                            name="Chicken Breast"
-                            protein={31}
-                            timesUsed={1}
-                            unit="grams"
-              />
-              <button
-                            onClick={[Function]}
-              >
-                            Edit This
-              </button>
-</div>,
-            <div>
-              <FoodListItem
-                            amount={24}
-                            calories={163}
-                            carbohydrates={2.5}
-                            createdAt={-1000}
-                            fat={14}
-                            id="3"
-                            name="Almonds"
-                            protein={6}
-                            timesUsed={2}
-                            unit="pieces"
-              />
-              <button
-                            onClick={[Function]}
-              >
-                            Edit This
-              </button>
-</div>,
-          ],
         ],
+        "className": "listDisplay",
       },
       "ref": null,
       "rendered": Array [
@@ -404,6 +742,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Foods in Database",
+            "className": "heading-secondary listDisplay__header",
           },
           "ref": null,
           "rendered": "Foods in Database",
@@ -411,186 +750,427 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "div 1",
+          "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <FoodListItem
-                amount={200}
-                calories={205}
-                carbohydrates={44}
-                createdAt={0}
-                fat={0.4}
-                id="1"
-                name="Rice (Jasmine)"
-                protein={4.2}
-                timesUsed={0}
-                unit="grams"
-/>,
-              <button
-                onClick={[Function]}
+              <div
+                className="listDisplay__list-header"
 >
-                Edit This
-</button>,
+                <p
+                                className="listDisplay__list-title"
+                >
+                                name
+                </p>
+                <p
+                                className="listDisplay__list-title"
+                >
+                                amount
+                </p>
+                <p
+                                className="listDisplay__list-title"
+                >
+                                carbs
+                </p>
+                <p
+                                className="listDisplay__list-title"
+                >
+                                protein
+                </p>
+                <p
+                                className="listDisplay__list-title"
+                >
+                                fat
+                </p>
+                <p
+                                className="listDisplay__list-title"
+                >
+                                calories
+                </p>
+</div>,
+              Array [
+                <div
+                  className="listDisplay__list-table"
+>
+                  <FoodListItem
+                                    amount={200}
+                                    calories={205}
+                                    carbohydrates={44}
+                                    createdAt={0}
+                                    fat={0.4}
+                                    id="1"
+                                    name="Rice (Jasmine)"
+                                    protein={4.2}
+                                    timesUsed={0}
+                                    unit="grams"
+                  />
+                  <button
+                                    className="btn listDisplay__list-btn flex-right-end"
+                                    onClick={[Function]}
+                  >
+                                    Edit
+                  </button>
+</div>,
+                <div
+                  className="listDisplay__list-table listDisplay__list-table--even"
+>
+                  <FoodListItem
+                                    amount={100}
+                                    calories={165}
+                                    carbohydrates={0}
+                                    createdAt={1000}
+                                    fat={3.6}
+                                    id="2"
+                                    name="Chicken Breast"
+                                    protein={31}
+                                    timesUsed={1}
+                                    unit="grams"
+                  />
+                  <button
+                                    className="btn listDisplay__list-btn flex-right-end"
+                                    onClick={[Function]}
+                  >
+                                    Edit
+                  </button>
+</div>,
+                <div
+                  className="listDisplay__list-table"
+>
+                  <FoodListItem
+                                    amount={24}
+                                    calories={163}
+                                    carbohydrates={2.5}
+                                    createdAt={-1000}
+                                    fat={14}
+                                    id="3"
+                                    name="Almonds"
+                                    protein={6}
+                                    timesUsed={2}
+                                    unit="pieces"
+                  />
+                  <button
+                                    className="btn listDisplay__list-btn flex-right-end"
+                                    onClick={[Function]}
+                  >
+                                    Edit
+                  </button>
+</div>,
+              ],
             ],
+            "className": "listDisplay__list",
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": "item 1",
-              "nodeType": "function",
-              "props": Object {
-                "amount": 200,
-                "calories": 205,
-                "carbohydrates": 44,
-                "createdAt": 0,
-                "fat": 0.4,
-                "id": "1",
-                "name": "Rice (Jasmine)",
-                "protein": 4.2,
-                "timesUsed": 0,
-                "unit": "grams",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "button 1",
+              "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Edit This",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Edit This",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": "div 2",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <FoodListItem
-                amount={100}
-                calories={165}
-                carbohydrates={0}
-                createdAt={1000}
-                fat={3.6}
-                id="2"
-                name="Chicken Breast"
-                protein={31}
-                timesUsed={1}
-                unit="grams"
-/>,
-              <button
-                onClick={[Function]}
+                "children": Array [
+                  <p
+                    className="listDisplay__list-title"
 >
-                Edit This
-</button>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "item 2",
-              "nodeType": "function",
-              "props": Object {
-                "amount": 100,
-                "calories": 165,
-                "carbohydrates": 0,
-                "createdAt": 1000,
-                "fat": 3.6,
-                "id": "2",
-                "name": "Chicken Breast",
-                "protein": 31,
-                "timesUsed": 1,
-                "unit": "grams",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "button 2",
-              "nodeType": "host",
-              "props": Object {
-                "children": "Edit This",
-                "onClick": [Function],
-              },
-              "ref": null,
-              "rendered": "Edit This",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": null,
-          "key": "div 3",
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <FoodListItem
-                amount={24}
-                calories={163}
-                carbohydrates={2.5}
-                createdAt={-1000}
-                fat={14}
-                id="3"
-                name="Almonds"
-                protein={6}
-                timesUsed={2}
-                unit="pieces"
-/>,
-              <button
-                onClick={[Function]}
+                    name
+</p>,
+                  <p
+                    className="listDisplay__list-title"
 >
-                Edit This
-</button>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "item 3",
-              "nodeType": "function",
-              "props": Object {
-                "amount": 24,
-                "calories": 163,
-                "carbohydrates": 2.5,
-                "createdAt": -1000,
-                "fat": 14,
-                "id": "3",
-                "name": "Almonds",
-                "protein": 6,
-                "timesUsed": 2,
-                "unit": "pieces",
+                    amount
+</p>,
+                  <p
+                    className="listDisplay__list-title"
+>
+                    carbs
+</p>,
+                  <p
+                    className="listDisplay__list-title"
+>
+                    protein
+</p>,
+                  <p
+                    className="listDisplay__list-title"
+>
+                    fat
+</p>,
+                  <p
+                    className="listDisplay__list-title"
+>
+                    calories
+</p>,
+                ],
+                "className": "listDisplay__list-header",
               },
               "ref": null,
-              "rendered": null,
-              "type": [Function],
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "name",
+                    "className": "listDisplay__list-title",
+                  },
+                  "ref": null,
+                  "rendered": "name",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "amount",
+                    "className": "listDisplay__list-title",
+                  },
+                  "ref": null,
+                  "rendered": "amount",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "carbs",
+                    "className": "listDisplay__list-title",
+                  },
+                  "ref": null,
+                  "rendered": "carbs",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "protein",
+                    "className": "listDisplay__list-title",
+                  },
+                  "ref": null,
+                  "rendered": "protein",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "fat",
+                    "className": "listDisplay__list-title",
+                  },
+                  "ref": null,
+                  "rendered": "fat",
+                  "type": "p",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "calories",
+                    "className": "listDisplay__list-title",
+                  },
+                  "ref": null,
+                  "rendered": "calories",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
             },
             Object {
               "instance": null,
-              "key": "button 3",
+              "key": "div 1",
               "nodeType": "host",
               "props": Object {
-                "children": "Edit This",
-                "onClick": [Function],
+                "children": Array [
+                  <FoodListItem
+                    amount={200}
+                    calories={205}
+                    carbohydrates={44}
+                    createdAt={0}
+                    fat={0.4}
+                    id="1"
+                    name="Rice (Jasmine)"
+                    protein={4.2}
+                    timesUsed={0}
+                    unit="grams"
+/>,
+                  <button
+                    className="btn listDisplay__list-btn flex-right-end"
+                    onClick={[Function]}
+>
+                    Edit
+</button>,
+                ],
+                "className": "listDisplay__list-table",
               },
               "ref": null,
-              "rendered": "Edit This",
-              "type": "button",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "item 1",
+                  "nodeType": "function",
+                  "props": Object {
+                    "amount": 200,
+                    "calories": 205,
+                    "carbohydrates": 44,
+                    "createdAt": 0,
+                    "fat": 0.4,
+                    "id": "1",
+                    "name": "Rice (Jasmine)",
+                    "protein": 4.2,
+                    "timesUsed": 0,
+                    "unit": "grams",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "button 1",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Edit",
+                    "className": "btn listDisplay__list-btn flex-right-end",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Edit",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "div 2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FoodListItem
+                    amount={100}
+                    calories={165}
+                    carbohydrates={0}
+                    createdAt={1000}
+                    fat={3.6}
+                    id="2"
+                    name="Chicken Breast"
+                    protein={31}
+                    timesUsed={1}
+                    unit="grams"
+/>,
+                  <button
+                    className="btn listDisplay__list-btn flex-right-end"
+                    onClick={[Function]}
+>
+                    Edit
+</button>,
+                ],
+                "className": "listDisplay__list-table listDisplay__list-table--even",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "item 2",
+                  "nodeType": "function",
+                  "props": Object {
+                    "amount": 100,
+                    "calories": 165,
+                    "carbohydrates": 0,
+                    "createdAt": 1000,
+                    "fat": 3.6,
+                    "id": "2",
+                    "name": "Chicken Breast",
+                    "protein": 31,
+                    "timesUsed": 1,
+                    "unit": "grams",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "button 2",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Edit",
+                    "className": "btn listDisplay__list-btn flex-right-end",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Edit",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "div 3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <FoodListItem
+                    amount={24}
+                    calories={163}
+                    carbohydrates={2.5}
+                    createdAt={-1000}
+                    fat={14}
+                    id="3"
+                    name="Almonds"
+                    protein={6}
+                    timesUsed={2}
+                    unit="pieces"
+/>,
+                  <button
+                    className="btn listDisplay__list-btn flex-right-end"
+                    onClick={[Function]}
+>
+                    Edit
+</button>,
+                ],
+                "className": "listDisplay__list-table",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "item 3",
+                  "nodeType": "function",
+                  "props": Object {
+                    "amount": 24,
+                    "calories": 163,
+                    "carbohydrates": 2.5,
+                    "createdAt": -1000,
+                    "fat": 14,
+                    "id": "3",
+                    "name": "Almonds",
+                    "protein": 6,
+                    "timesUsed": 2,
+                    "unit": "pieces",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": "button 3",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Edit",
+                    "className": "btn listDisplay__list-btn flex-right-end",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": "Edit",
+                  "type": "button",
+                },
+              ],
+              "type": "div",
             },
           ],
           "type": "div",
@@ -629,13 +1209,18 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h3>
+        <h3
+          className="heading-secondary listDisplay__header"
+>
           Foods in Database
 </h3>,
-        <p>
+        <p
+          className="heading-secondary listDisplay__header"
+>
           No Foods
 </p>,
       ],
+      "className": "listDisplay",
     },
     "ref": null,
     "rendered": Array [
@@ -645,6 +1230,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Foods in Database",
+          "className": "heading-secondary listDisplay__header",
         },
         "ref": null,
         "rendered": "Foods in Database",
@@ -656,6 +1242,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "No Foods",
+          "className": "heading-secondary listDisplay__header",
         },
         "ref": null,
         "rendered": "No Foods",
@@ -671,13 +1258,18 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h3>
+          <h3
+            className="heading-secondary listDisplay__header"
+>
             Foods in Database
 </h3>,
-          <p>
+          <p
+            className="heading-secondary listDisplay__header"
+>
             No Foods
 </p>,
         ],
+        "className": "listDisplay",
       },
       "ref": null,
       "rendered": Array [
@@ -687,6 +1279,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Foods in Database",
+            "className": "heading-secondary listDisplay__header",
           },
           "ref": null,
           "rendered": "Foods in Database",
@@ -698,6 +1291,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "No Foods",
+            "className": "heading-secondary listDisplay__header",
           },
           "ref": null,
           "rendered": "No Foods",

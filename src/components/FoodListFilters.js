@@ -27,6 +27,7 @@ export class FoodListFilters extends React.Component {
   };
   handleOffsetChange = (i) => {
     this.props.setFoodsOffset(i);
+
   }
 
   createPageButtons = () => {
@@ -56,6 +57,7 @@ export class FoodListFilters extends React.Component {
     for (let i = start; i < end; i++) {
       pageButtons.push(
         <button
+        className={this.props.filters.offset === i ? 'btn btn--page btn--active' : 'btn btn--page'}
         key={i}
         onClick={() => this.handleOffsetChange(i)}
         disabled={i === this.props.filters.offset}
@@ -72,16 +74,19 @@ export class FoodListFilters extends React.Component {
     const isLastPage = (offset * maxFoodsShown) + maxFoodsShown >= foodsLength;
 
     return (
-      <div className="row">
-        <div className="filter">
+      <div className="filter">
+        <div className="filter__search">
           <input 
+            className="filter__input"
             type="text"
             placeholder="Search Foods"
             value={this.props.filters.name} 
             onChange={this.handleNameChange}
           />
+        </div>
+        <div className="filter__options">
           <select
-            className="select"
+            className="filter__select"
             value={this.props.filters.sortBy} 
             onChange={this.handleSortChange}
           >
@@ -89,26 +94,31 @@ export class FoodListFilters extends React.Component {
             <option value="date">Date</option>
           </select>
           <select
-            className="select"
+            className="filter__select"
             value={this.props.filters.maxFoodsShown} 
             onChange={this.handleMaxFoodPageChange}
           >
+            <option value={1}>1</option>
             <option value={10}>10</option>
             <option value={25}>25</option>
             <option value={50}>50</option>
-          </select>
-          <button 
+          </select>        
+        </div>
+        <div className="filter__pages flex-right-end">
+          <button
+            className="btn btn--page"
             onClick={this.handlePrevPageChange}
             disabled={this.props.filters.offset <= 0}
           >
-            Prev Page
+            Prev
           </button>
           {this.createPageButtons()}
-          <button 
+          <button
+            className="btn btn--page"
             onClick={this.handleNextPageChange}
             disabled={isLastPage}
           >
-            Next Page
+            Next
           </button>
         </div>
       </div>

@@ -1,0 +1,48 @@
+.listDisplay {
+  grid-column: col-start 2 / col-end 7;
+
+  &__header {
+    color: $color-grey-dark-1;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  &__list {
+
+    &-header {
+      margin-bottom: 2rem;
+      width: 90%;
+      display: grid;
+      grid-template-columns: minmax(10rem, 2fr)  repeat(5, minmax(6rem, 1fr));
+      
+    }
+  
+    &-title {
+      display: grid;
+      align-items: center;
+
+      font-size: $font-size-quarternary;
+      font-family: $font-display;
+      text-transform: uppercase;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &-table {
+      display: flex;
+
+      &--even {
+        & > :first-child {
+          background-color: $color-grey-light-3;
+        }
+      }
+
+    }
+
+    &-btn {
+      
+      align-self: center;
+    }
+  }
+
+}
