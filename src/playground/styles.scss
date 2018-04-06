@@ -1,0 +1,55 @@
+@import '../styles/base';
+@import '../styles/typography';
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  display: inline-block;
+  margin: 2rem 1rem;
+  padding: 1rem 2rem;
+  color: $color-grey-dark-1;
+  background-color: $color-grey-light-1;
+  cursor: pointer;
+  font-family: $font-display;
+  
+  
+  &:hover {
+    transform: translateY(-3px);
+    background-color: $color-grey-light-2;
+    box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+    
+  }
+  
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+  }
+  
+  &--active {
+    background-color: $color-grey-light-2;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+  }
+
+  &--disabled {
+    opacity: .4;
+    cursor: auto;
+
+    &:hover {
+      transform: none;
+      background-color: $color-grey-light-1;
+      box-shadow: none;
+    }
+
+    &:active {
+      transform: none;
+      box-shadow: none;
+    }
+    
+  }
+}
+
+.tabPanels {
+  margin: 2rem;
+}

@@ -59,3 +59,17 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] 
     repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
+
+.section {
+  &__full-start-end {
+    grid-column: full-start / full-end;
+  }
+
+  &__center-start-end {
+    grid-column: center-start / center-end;
+  }
+
+  &__center-6-start-end {
+    grid-column: col-start 2 / col-end 7;
+  }
+}

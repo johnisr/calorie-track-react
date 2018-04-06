@@ -16,6 +16,8 @@ import { startSetLogs } from './actions/logs';
 // import Playground from './playground/log';
 // import EditFood from './playground/editFood';
 // import CurrentLog from './playground/currentLog';
+// import Tabs from './playground/tabs';
+// import Tabs from './playground/compoundComponentTabs';
 // import logs from './tests/fixtures/logs';
 // import { addLog } from './actions/logs';
 
