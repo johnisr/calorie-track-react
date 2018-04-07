@@ -105,33 +105,44 @@ class FoodForm extends React.Component {
     const isEnabled = this.canBeSubmitted();
     return (
       <form className="form" onSubmit={this.handleSubmit} >
-        <div>
-          <label className="text-input__label" htmlFor="name">Food</label>
-          <input name="name" className="text-input" type="text" placeholder="name" value={this.state.name} onChange={this.handleNameChange} />
+        <div className="form__row">
+          <div className="form__group form__group--50">
+            <input name="name" className="form__input" type="text" placeholder="Food" value={this.state.name} onChange={this.handleNameChange} />
+            <label className="form__label" htmlFor="name">Food</label>
+          </div>
+          <div className="form__group form__group--25">
+            <input type="text" name="amount" placeholder="amount" className="form__input" value={this.state.amount} onChange={this.handleAmountChange} />
+            <label className="form__label" htmlFor="amount">Amount</label>
+          </div>
+          <div className="form__group form__group--25">
+            <input type="text" name="unit" placeholder="unit" className="form__input" value={this.state.unit} onChange={this.handleUnitChange} />
+            <label className="form__label" htmlFor="unit">Unit</label>
+          </div>
+          <div className="form__group">
+          
+          </div>
+
         </div>
-        <div>
-          <label className="text-input__label" htmlFor="amount">Amount</label>
-          <input type="text" name="amount" placeholder="amount" className="text-input" value={this.state.amount} onChange={this.handleAmountChange} />
-        </div>
-        <div>
-          <label className="text-input__label" htmlFor="unit">Unit</label>
-          <input type="text" name="unit" placeholder="unit" className="text-input" value={this.state.unit} onChange={this.handleUnitChange} />
-        </div>
-        <div>
-          <label className="text-input__label" htmlFor="carbohydrates">Carbohydrates</label>
-          <input name="carbohydrates" type="text" className="text-input" placeholder="carbohydrates" value={this.state.carbohydrates} onChange={this.handleCarbohydratesChange} />
-        </div>
-        <div>
-          <label className="text-input__label" htmlFor="Protein">Protein</label>
-          <input type="text" className="text-input" placeholder="protein" value={this.state.protein} onChange={this.handleProteinChange} />
-        </div>
-        <div>
-          <label className="text-input__label" htmlFor="Fat">Fat</label>
-          <input type="text" className="text-input" placeholder="fat" value={this.state.fat} onChange={this.handleFatChange} />
-        </div>
-        <div>
-          <label className="text-input__label" htmlFor="Calories">Calories</label>
-          <input type="text" className="text-input" placeholder="calories" value={this.state.calories} onChange={this.handleCaloriesChange} />
+        <div className="form__row">
+          <div className="form__group form__group--25">
+            <input name="carbohydrates" type="text" className="form__input" placeholder="carbohydrates" value={this.state.carbohydrates} onChange={this.handleCarbohydratesChange} />
+            <label className="form__label" htmlFor="carbohydrates">Carbs</label>
+          </div>
+          <div className="form__group form__group--25">
+            <input type="text" className="form__input" placeholder="protein" value={this.state.protein} onChange={this.handleProteinChange} />
+            <label className="form__label" htmlFor="Protein">Protein</label>
+          </div>
+          <div className="form__group form__group--25">
+            <input type="text" className="form__input" placeholder="fat" value={this.state.fat} onChange={this.handleFatChange} />
+            <label className="form__label" htmlFor="Fat">Fat</label>
+          </div>
+          <div className="form__group form__group--25">
+            <input type="text" className="form__input" placeholder="calories" value={this.state.calories} onChange={this.handleCaloriesChange} />
+            <label className="form__label" htmlFor="Calories">Calories</label>
+          </div>
+
+
+
         </div>
         <button className="button" disabled={!isEnabled} >Submit</button>
       </form>

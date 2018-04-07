@@ -18,6 +18,7 @@ import { startSetLogs } from './actions/logs';
 // import CurrentLog from './playground/currentLog';
 // import Tabs from './playground/tabs';
 // import Tabs from './playground/compoundComponentTabs';
+// import PlayForm from './playground/PlayForm';
 // import logs from './tests/fixtures/logs';
 // import { addLog } from './actions/logs';
 

@@ -1,3 +1,55 @@
 .form {
   
+  &__row {
+    display: flex;
+
+    &:not(:last-child) {
+      margin: 2rem 0;
+      
+    }
+  }
+
+  &__group {
+    
+    
+    &--50 {
+      flex: 0 0  50%;
+    }
+
+    &--25 {
+      flex: 0 0 25%;
+    }
+  }
+  
+  &__input {
+    font-size: $font-size-body;
+    width: 90%;
+    
+    padding: .5rem 1rem;
+
+    border: none;
+    border-bottom: 3px solid transparent;
+    display: block;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
+      border-bottom: 3px solid $color-grey-dark-3;
+    }
+    
+  }
+
+  &__label {
+    display: block;
+    transition: all .3s;
+    margin-left: 1rem;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-3.5rem);
+  }
+
+
 }
