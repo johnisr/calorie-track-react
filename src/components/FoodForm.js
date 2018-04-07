@@ -14,6 +14,13 @@ class FoodForm extends React.Component {
       calories: props.food ? props.food.calories : '',
       timesUsed: props.food ? props.food.timesUsed : 0,
       createdAt: props.food ? moment(props.food.createdAt) : moment(0),
+      labelErrorName : 'Food',
+      labelErrorAmount : 'Amount',
+      labelErrorUnit : 'Unit',
+      labelErrorCarbs : 'Carbs',
+      labelErrorProtein : 'Protein',
+      labelErrorFat : 'Fat',
+      labelErrorCalories : 'Calories',
     };
   }
   componentWillReceiveProps(nextProps) {
@@ -32,6 +39,9 @@ class FoodForm extends React.Component {
     const amount = e.target.value;
     if (!amount || this.isNumberWithAtMostTwoDecimals(amount)) {
       this.setState(() => ({ amount }));
+      this.setState(() => ({ labelErrorAmount: "Amount" }));
+    } else {
+      this.setState(() => ({ labelErrorAmount: "*Numbers Only*" }));
     }
   };
   handleUnitChange = (e) => {
@@ -42,24 +52,36 @@ class FoodForm extends React.Component {
     const carbohydrates = e.target.value;
     if (!carbohydrates || this.isNumberWithAtMostTwoDecimals(carbohydrates)) {
       this.setState(() => ({ carbohydrates }));
+      this.setState(() => ({ labelErrorCarbs: "Carbs" }));
+    } else {
+      this.setState(() => ({ labelErrorCarbs: "Carbs *Number*" }));
     }
   };
   handleProteinChange = (e) => {
     const protein = e.target.value;
     if (!protein || this.isNumberWithAtMostTwoDecimals(protein)) {
       this.setState(() => ({ protein }));
+      this.setState(() => ({ labelErrorProtein: "Protein" }));
+    } else {
+      this.setState(() => ({ labelErrorProtein: "Protein *Number*" }));
     }
   };
   handleFatChange = (e) => {
     const fat = e.target.value;
     if (!fat || this.isNumberWithAtMostTwoDecimals(fat)) {
       this.setState(() => ({ fat }));
+      this.setState(() => ({ labelErrorFat: "Fat" }));
+    } else {
+      this.setState(() => ({ labelErrorFat: "Fat *Number*" }));
     }
   };
   handleCaloriesChange = (e) => {
     const calories = e.target.value;
     if (!calories || this.isNumberWithAtMostTwoDecimals(calories)) {
       this.setState(() => ({ calories }));
+      this.setState(() => ({ labelErrorCalories: "Calories" }));
+    } else {
+      this.setState(() => ({ labelErrorCalories: "Calories *Number*" }));
     }
   };
   resetState = () => {
@@ -108,15 +130,15 @@ class FoodForm extends React.Component {
         <div className="form__row">
           <div className="form__group form__group--50">
             <input name="name" className="form__input" type="text" placeholder="Food" value={this.state.name} onChange={this.handleNameChange} />
-            <label className="form__label" htmlFor="name">Food</label>
+            <label className="form__label" htmlFor="name">{this.state.labelErrorName}</label>
           </div>
           <div className="form__group form__group--25">
-            <input type="text" name="amount" placeholder="amount" className="form__input" value={this.state.amount} onChange={this.handleAmountChange} />
-            <label className="form__label" htmlFor="amount">Amount</label>
+            <input type="text" name="amount" placeholder="Amount" className="form__input" value={this.state.amount} onChange={this.handleAmountChange} />
+            <label className="form__label" htmlFor="amount">{this.state.labelErrorAmount}</label>
           </div>
           <div className="form__group form__group--25">
-            <input type="text" name="unit" placeholder="unit" className="form__input" value={this.state.unit} onChange={this.handleUnitChange} />
-            <label className="form__label" htmlFor="unit">Unit</label>
+            <input type="text" name="unit" placeholder="Unit" className="form__input" value={this.state.unit} onChange={this.handleUnitChange} />
+            <label className="form__label" htmlFor="unit">{this.state.labelErrorUnit}</label>
           </div>
           <div className="form__group">
           
@@ -125,20 +147,20 @@ class FoodForm extends React.Component {
         </div>
         <div className="form__row">
           <div className="form__group form__group--25">
-            <input name="carbohydrates" type="text" className="form__input" placeholder="carbohydrates" value={this.state.carbohydrates} onChange={this.handleCarbohydratesChange} />
-            <label className="form__label" htmlFor="carbohydrates">Carbs</label>
+            <input name="carbohydrates" type="text" className="form__input" placeholder="Carbs" value={this.state.carbohydrates} onChange={this.handleCarbohydratesChange} />
+            <label className="form__label" htmlFor="carbohydrates">{this.state.labelErrorCarbs}</label>
           </div>
           <div className="form__group form__group--25">
-            <input type="text" className="form__input" placeholder="protein" value={this.state.protein} onChange={this.handleProteinChange} />
-            <label className="form__label" htmlFor="Protein">Protein</label>
+            <input type="text" className="form__input" placeholder="Protein" value={this.state.protein} onChange={this.handleProteinChange} />
+            <label className="form__label" htmlFor="Protein">{this.state.labelErrorProtein}</label>
           </div>
           <div className="form__group form__group--25">
-            <input type="text" className="form__input" placeholder="fat" value={this.state.fat} onChange={this.handleFatChange} />
-            <label className="form__label" htmlFor="Fat">Fat</label>
+            <input type="text" className="form__input" placeholder="Fat" value={this.state.fat} onChange={this.handleFatChange} />
+            <label className="form__label" htmlFor="Fat">{this.state.labelErrorFat}</label>
           </div>
           <div className="form__group form__group--25">
-            <input type="text" className="form__input" placeholder="calories" value={this.state.calories} onChange={this.handleCaloriesChange} />
-            <label className="form__label" htmlFor="Calories">Calories</label>
+            <input type="text" className="form__input" placeholder="Calories" value={this.state.calories} onChange={this.handleCaloriesChange} />
+            <label className="form__label" htmlFor="Calories">{this.state.labelErrorCalories}</label>
           </div>
 
 

@@ -51,5 +51,11 @@
     transform: translateY(-3.5rem);
   }
 
+  &__input:focus + &__label {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
 
 }
