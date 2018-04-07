@@ -1,0 +1,29 @@
+.pane {
+
+  &__title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__warning {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(5rem, 1fr));
+    margin: 1rem 0;
+    grid-gap: 2rem;
+    
+    & > * {
+      &:first-child {
+        grid-column: 3 / 4;
+      }
+
+      &:last-child {
+        grid-column: 4 / 5;
+      }
+    }
+  }
+}

@@ -43,21 +43,27 @@ export class LogDashboardPage extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div>
-          <Header history={history}/>
-          <LogListFilters />
-          <SingleDatePicker
-            date={this.state.date}
-            onDateChange={this.onDateChange}
-            focused={this.state.calendarFocused}
-            onFocusChange={this.onFocusChange}
-            numberOfMonths={1}
-            isOutsideRange={() => false}
-          />
-          <button onClick={this.handleCreate}>Create Log</button>
+      <div className="container">
+        <div className="row">
+          <section className="section__full-start-end">
+            <Header history={history}/>
+          </section>
+          <section className="section__center-start-end">
+            <LogListFilters />
+          </section>
+          <section className="section__center-start-end">
+            <SingleDatePicker
+              date={this.state.date}
+              onDateChange={this.onDateChange}
+              focused={this.state.calendarFocused}
+              onFocusChange={this.onFocusChange}
+              numberOfMonths={1}
+              isOutsideRange={() => false}
+            />
+            <button onClick={this.handleCreate}>Create Log</button>
+            <LogList history={this.props.history}/>
+          </section>
         </div>
-        <LogList history={this.props.history}/>
       </div>
     );
   }

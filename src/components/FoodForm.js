@@ -257,7 +257,7 @@ class FoodForm extends React.Component {
 
         </div>
         <div className="form__row">
-          <div className="form__group--center">
+          <div className="form__group--right">
             <button className={isEnabled ? "btn btn--form" : "btn btn--form btn--disabled"} >Submit</button>
           </div>
         </div>

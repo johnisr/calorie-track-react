@@ -56,7 +56,6 @@ export class Tabs extends React.Component {
     this.setState({ activeIndex });
   }
   componentWillReceiveProps = (nextProps) => {
-    console.log('receiving props');
     const { activeIndex } = nextProps;
     this.setState({ activeIndex });
   }
