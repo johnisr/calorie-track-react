@@ -28,6 +28,26 @@
     background-color: lighten($color-grey-dark-3, 10%);
   }
 
+  &--form {
+    padding: 1rem 2rem;
+  }
+
+  &--disabled {
+    opacity: .5;
+    cursor: auto;
+    background-color: $color-grey-dark-3;
+
+    &:hover {
+      background-color: $color-grey-dark-3;
+    }
+
+    &:active,
+    &:focus,
+    &--active {
+      background-color: $color-grey-dark-3;
+    }
+  }
+
 
   &--page {
     padding: 0 .5rem;
