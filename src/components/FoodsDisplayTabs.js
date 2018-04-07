@@ -5,25 +5,21 @@ import EditFoodFormForFoods from './EditFoodFormForFoods';
 import AddFoodFormToFoods from './AddFoodFormToFoods';
 
 const FoodsDisplayTabs = (props) => (
-  <div className="row">
-    <div className="section__center-6-start-end margin-bottom-small">
-      <Tabs activeIndex={props.activeIndex}>
-        <TabList>
-          <Tab>Add</Tab>
-          <Tab>Edit</Tab>
-        </TabList>
+  <Tabs activeIndex={props.activeIndex}>
+    <TabList>
+      <Tab>Add</Tab>
+      <Tab>Edit</Tab>
+    </TabList>
 
-        <TabPanels>
-          <TabPanel>
-            <AddFoodFormToFoods />
-          </TabPanel>
-          <TabPanel>
-            <EditFoodFormForFoods />
-          </TabPanel>
-        </TabPanels>
-      </Tabs>
-    </div>
-  </div>
+    <TabPanels>
+      <TabPanel>
+        <AddFoodFormToFoods />
+      </TabPanel>
+      <TabPanel>
+        <EditFoodFormForFoods />
+      </TabPanel>
+    </TabPanels>
+  </Tabs>
 );
 
 const mapStateToProps = (state, props) => ({

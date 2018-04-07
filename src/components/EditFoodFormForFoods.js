@@ -18,30 +18,28 @@ export class EditFoodFormForFoods extends React.Component {
   }
   render() {
     return (
-      <section className="row">
-        <div className="form">
-          <div className="page-header">
-            <div className="content-container">
-              <h1 className="page-header__title">Edit Food</h1>
-            </div>
+      <div className="form">
+        <div className="page-header">
+          <div className="content-container">
+            <h1 className="page-header__title">Edit Food</h1>
           </div>
-            {
-              (this.props.food.id !== '') ? (
-                <div className="content-container">
-                  <FoodForm
-                    food={this.props.food}
-                    handleSubmit={this.handleSubmit}
-                  />
-                  <button onClick={this.handleRemove}>Remove</button>
-                  <button onClick={this.handleExit}>Exit</button>
-                  
-                </div>
-              ) : ( 
-                <p>Select from List above to Edit Item</p>
-              )
-            }
         </div>
-      </section>
+          {
+            (this.props.food.id !== '') ? (
+              <div className="content-container">
+                <FoodForm
+                  food={this.props.food}
+                  handleSubmit={this.handleSubmit}
+                />
+                <button onClick={this.handleRemove}>Remove</button>
+                <button onClick={this.handleExit}>Exit</button>
+                
+              </div>
+            ) : ( 
+              <p>Select from List above to Edit Item</p>
+            )
+          }
+      </div>
     )
   }
 }
