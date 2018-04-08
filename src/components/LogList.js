@@ -91,7 +91,7 @@ export class LogList extends React.Component {
                   numberOfMonths={1}
                   isOutsideRange={() => false}
                 />
-            <button className="btn logList__btn" onClick={this.handleCreate}>Create Log</button>
+            <button className="btn logList__btn" onClick={this.handleCreate}>Create</button>
 
           </div>
 
