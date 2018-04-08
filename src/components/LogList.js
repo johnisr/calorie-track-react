@@ -1,10 +1,29 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import 'react-dates/initialize';
+import { SingleDatePicker } from 'react-dates';
+import moment from 'moment';
 import LogListItem from './LogListItem';
 import { addCurrentEditLog } from '../actions/currentLog';
+import { defaultLog, startAddLog } from '../actions/logs';
 import selectLogsWithPages from '../selectors/logsWithPages';
 
 export class LogList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      calendarFocused: false,
+      date: moment(),
+    };
+  }
+  onDateChange = (date) => {
+    if (date) {
+      this.setState(() => ({ date }));
+    }
+  }
+  onFocusChange = ({ focused }) => { 
+    this.setState(() => ({ calendarFocused: focused }));
+  }
   calculateTotal(foods = [], macro) {
     if (macro === 'calories') {
       return foods.reduce((prev, curr) => prev + curr.calories, 0);
@@ -23,28 +42,78 @@ export class LogList extends React.Component {
     this.props.addCurrentEditLog(log);
     this.props.history.push('/editlog');
   }
+  handleCreate = () => {
+    const date = this.state.date.startOf('day').valueOf();
+    const log = this.props.logs.filter(log => log.date === date)[0];
+    if (!log) {
+      const newLog = {
+        ...defaultLog,
+        date,
+      };
+      this.props.startAddLog(newLog);
+      this.props.addCurrentEditLog(newLog);
+    } else {
+      this.props.addCurrentEditLog(log);
+    }
+    this.props.history.push('/editlog');
+  }
+  createTable = () => (
+    this.props.logs.map((log, index) => (
+      <div 
+        key={`div ${log.date}`}
+        className={index % 2 === 0 ? 
+          "listDisplay__list-table" : 
+          "listDisplay__list-table listDisplay__list-table--even"}
+      >
+        <LogListItem
+          key={`item ${log.date}`}
+          totalCalories={this.calculateTotal(log.foods, 'calories')} 
+          totalProtein={this.calculateTotal(log.foods, 'protein')} 
+          totalCarbohydrates={this.calculateTotal(log.foods, 'carbohydrates')} 
+          totalFat={this.calculateTotal(log.foods, 'fat')} 
+          {...log}
+        />
+        <button className="btn logList__btn" key={`button ${log.date}`} onClick={() => this.handleEdit(log.date)}>Edit</button>
+      </div>
+    ))
+  )
   render() {
     return (
       <div>
-        <h1>Log List</h1>
-        {
-          this.props.logs === 0 ? (
-            <p>No logs</p>
-          ) : (
-            this.props.logs.map(log => (
-              <div key={`div ${log.date}`}>
-                <LogListItem
-                  key={`item ${log.date}`}
-                  totalCalories={this.calculateTotal(log.foods, 'calories')} 
-                  totalProtein={this.calculateTotal(log.foods, 'protein')} 
-                  totalCarbohydrates={this.calculateTotal(log.foods, 'carbohydrates')} 
-                  totalFat={this.calculateTotal(log.foods, 'fat')} 
-                  {...log}
+        <div className="logList__header">
+          <h1 className="heading-secondary logList__title">Log List</h1>
+          <div className="logList__date">
+            <SingleDatePicker
+                  date={this.state.date}
+                  onDateChange={this.onDateChange}
+                  focused={this.state.calendarFocused}
+                  onFocusChange={this.onFocusChange}
+                  numberOfMonths={1}
+                  isOutsideRange={() => false}
                 />
-                <button key={`button ${log.date}`} onClick={() => this.handleEdit(log.date)}>Edit Food Log</button>
+            <button className="btn logList__btn" onClick={this.handleCreate}>Create Log</button>
+
+          </div>
+
+        </div>
+        {
+          this.props.logs.length === 0 ? (
+            <p className="heading-secondary listDisplay__header">No logs</p>
+          ) : (
+            <div>
+              <div className="listDisplay__list">
+                <div className="listDisplay__list-header">
+                  <p className="listDisplay__list-title">Date</p>
+                  <p className="listDisplay__list-title">Weight</p>
+                  <p className="listDisplay__list-title">carbs</p>
+                  <p className="listDisplay__list-title">protein</p>
+                  <p className="listDisplay__list-title">fat</p>
+                  <p className="listDisplay__list-title">calories</p>
+                </div>
+                {this.createTable()}
               </div>
-            )
-          ))
+            </div>
+          )
         }
       </div>
     );
@@ -56,6 +125,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
+  startAddLog: (log) => dispatch(startAddLog(log)),
   addCurrentEditLog: (log) => dispatch(addCurrentEditLog(log)),
 });
 

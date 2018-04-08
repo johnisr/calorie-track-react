@@ -1,10 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import CurrentLog from './CurrentLog';
-import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog';
-import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog';
-import FoodListAddCurrentLog from './FoodListAddCurrentLog';
-import FoodListFilters from './FoodListFilters';
+import EditLogTabs from './EditLogTabs';
 import Header from '../components/Header';
 import { history } from '../routers/AppRouter';
 
@@ -14,19 +11,30 @@ class EditLog extends React.Component {
   }
   render() {
     return (
-      <div>
-        <Header history={history}/>
-        <h1>EDIT FOOD</h1>
+      <div className="container">
+        <div className="row">
+          <section className="section__full-start-end">
+            <Header history={history}/>
+          </section>
+          <section className="section__center-start-end">
+            <h1>EDIT FOOD</h1>
+          </section>
+        </div>
         {
           this.isEmpty(this.props.currentLog) ? (
-            <p>Select a Log from Log dashboard to edit</p>
+            <div className="row">
+              <section className="section__center-start-end">
+                <p>Select a Log from Log dashboard to edit</p>
+              </section>
+            </div>
           ) : (
-            <div>
-              <CurrentLog history={history} />
-              <FoodListFilters />
-              <FoodListAddCurrentLog />
-              <AddFoodFormToCurrentLog />
-              <EditFoodFormForCurrentLog />
+            <div className="row">
+              <section className="section__center-start-end">
+                <CurrentLog history={history} />
+              </section>
+              <section className="section__center-start-end">
+                <EditLogTabs />
+              </section>
             </div>
           )
         }

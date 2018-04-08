@@ -63,6 +63,7 @@ export class FoodListFilters extends React.Component {
     for (let i = start; i < end; i++) {
       pageButtons.push(
         <button
+        className={this.props.filters.offset === i ? 'btn btn--page btn--active' : 'btn btn--page'}
         key={i}
         onClick={() => this.handleOffsetChange(i)}
         disabled={i === this.props.filters.offset}
@@ -79,7 +80,7 @@ export class FoodListFilters extends React.Component {
     const isLastPage = (offset * maxLogsShown) + maxLogsShown >= logsLength;
 
     return (
-      <div>
+      <div className="logsFilter">
         <DateRangePicker 
           startDate={this.props.filters.startDate}
           startDateId={'startDate'}
@@ -92,36 +93,42 @@ export class FoodListFilters extends React.Component {
           isOutsideRange={() => false}
           showClearDates={true}
         />
-        <select
-          className="select"
-          value={this.props.filters.sortBy} 
-          onChange={this.handleSortChange}
-        >
-          <option value="newest">newest</option>
-          <option value="oldest">oldest</option>
-        </select>
-        <select
-          className="select"
-          value={this.props.filters.maxLogsShown} 
-          onChange={this.handleMaxLogsPageChange}
-        >
-          <option value={7}>7</option>
-          <option value={14}>14</option>
-          <option value={31}>31</option>
-        </select>
-        <button 
-          onClick={this.handlePrevPageChange}
-          disabled={this.props.filters.offset <= 0}
-        >
-          Prev Page
-        </button>
-        {this.createPageButtons()}
-        <button 
-          onClick={this.handleNextPageChange}
-          disabled={isLastPage}
-        >
-          Next Page
-        </button>
+        <div className="logsFilter__options">
+          <select
+            className="logsFilter__select"
+            value={this.props.filters.sortBy} 
+            onChange={this.handleSortChange}
+          >
+            <option value="newest">newest</option>
+            <option value="oldest">oldest</option>
+          </select>
+          <select
+            className="logsFilter__select"
+            value={this.props.filters.maxLogsShown} 
+            onChange={this.handleMaxLogsPageChange}
+          >
+            <option value={7}>7</option>
+            <option value={14}>14</option>
+            <option value={31}>31</option>
+          </select>
+        </div>
+        <div className="foodsFilter__pages flex-right-end">
+          <button
+            className={offset <= 0 ? "btn btn--page btn--disabled" : "btn btn--page"}
+            onClick={this.handlePrevPageChange}
+            disabled={this.props.filters.offset <= 0}
+          >
+            Prev Page
+          </button>
+          {this.createPageButtons()}
+          <button 
+            className={isLastPage ? "btn btn--page btn--disabled" : "btn btn--page"}
+            onClick={this.handleNextPageChange}
+            disabled={isLastPage}
+          >
+            Next Page
+          </button>
+        </div>
       </div>
     );
   };

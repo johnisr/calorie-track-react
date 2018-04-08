@@ -11,9 +11,11 @@ export class FoodListDisplayCurrentLog extends React.Component {
     return str.match(/^\d{1,}?(\.\d{0,2})?$/);
   }
   handleRemove = (index) => {
+    this.props.editCurrentEditLog({ editFoodIndex: undefined });
     this.props.removeFoodFromCurrentLog(index);
   }
-  handleEdit = (editFoodIndex) => {
+  handleEdit = async (editFoodIndex) => {
+    await this.props.editCurrentEditLog({ editFoodIndex: undefined });
     this.props.editCurrentEditLog({ editFoodIndex });
   }
   handleMultiplierChange = (index, e) => {
@@ -44,7 +46,6 @@ export class FoodListDisplayCurrentLog extends React.Component {
       };
     }
     this.props.editFoodFromCurrentLog(index, updates);
-
   }
   render() {
     return (

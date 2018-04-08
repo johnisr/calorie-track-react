@@ -28,9 +28,9 @@ export class Header extends React.Component {
     return (
       <header className="header">
         <h1 className="heading-primary header__title">Calorie-Track</h1>
-        <NavLink className="btn" to='/FoodDashboard' >Food dashboard</NavLink>
-        <NavLink className="btn" to='/LogDashboard' >Log dashboard</NavLink>
-        <button className="btn" onClick={this.handleEdit}>Today's Food Log</button>
+        <NavLink className="btn" to='/FoodDashboard' >Foods</NavLink>
+        <NavLink className="btn" to='/LogDashboard' >Logs</NavLink>
+        <button className="btn" onClick={this.handleEdit}>Today's Log</button>
         <button className="btn flex-right-end" onClick={this.props.startLogout}>Logout</button>
       </header>
     );

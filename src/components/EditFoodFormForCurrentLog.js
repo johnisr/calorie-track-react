@@ -46,7 +46,7 @@ export class EditFoodFormForCurrentLog extends React.Component {
 
 const mapStateToProps = (state, props) => ({
   index: state.currentLog.editFoodIndex,
-  food: props.index !== undefined ? state.currentLog.foods[state.currentLog.editFoodIndex] : undefined,
+  food: state.currentLog.editFoodIndex !== undefined ? state.currentLog.foods[state.currentLog.editFoodIndex] : undefined,
 });
 const mapDispatchToProps = dispatch => ({
   editCurrentEditLog: (updates) => dispatch(editCurrentEditLog(updates)),

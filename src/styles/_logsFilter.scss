@@ -1,9 +1,8 @@
-.filter {
+.logsFilter {
   grid-column: center-start / center-end;
-  height: 6rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
 
   background-color: $color-grey-dark-2;
   display: flex;

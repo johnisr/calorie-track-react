@@ -1,0 +1,25 @@
+.logList {
+  
+  &__header {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__title {
+    
+  }
+
+  &__date {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__btn {
+    padding: 0;
+  }
+}

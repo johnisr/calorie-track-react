@@ -74,19 +74,19 @@ export class FoodListFilters extends React.Component {
     const isLastPage = (offset * maxFoodsShown) + maxFoodsShown >= foodsLength;
 
     return (
-      <div className="filter">
-        <div className="filter__search">
+      <div className="foodsFilter">
+        <div className="foodsFilter__search">
           <input 
-            className="filter__input"
+            className="foodsFilter__input"
             type="text"
             placeholder="Search Foods"
             value={this.props.filters.name} 
             onChange={this.handleNameChange}
           />
         </div>
-        <div className="filter__options">
+        <div className="foodsFilter__options">
           <select
-            className="filter__select"
+            className="foodsFilter__select"
             value={this.props.filters.sortBy} 
             onChange={this.handleSortChange}
           >
@@ -94,7 +94,7 @@ export class FoodListFilters extends React.Component {
             <option value="date">Date</option>
           </select>
           <select
-            className="filter__select"
+            className="foodsFilter__select"
             value={this.props.filters.maxFoodsShown} 
             onChange={this.handleMaxFoodPageChange}
           >
@@ -104,17 +104,17 @@ export class FoodListFilters extends React.Component {
             <option value={50}>50</option>
           </select>        
         </div>
-        <div className="filter__pages flex-right-end">
+        <div className="foodsFilter__pages flex-right-end">
           <button
-            className="btn btn--page"
+            className={offset <= 0 ? "btn btn--page btn--disabled" : "btn btn--page"}
             onClick={this.handlePrevPageChange}
-            disabled={this.props.filters.offset <= 0}
+            disabled={offset <= 0}
           >
             Prev
           </button>
           {this.createPageButtons()}
           <button
-            className="btn btn--page"
+            className={isLastPage ? "btn btn--page btn--disabled" : "btn btn--page"}
             onClick={this.handleNextPageChange}
             disabled={isLastPage}
           >
