@@ -26,6 +26,10 @@
       text-transform: uppercase;
       justify-content: center;
       align-items: center;
+      
+      @media only screen and (max-width: $bp-small) {
+        font-size: $font-size-body;
+      }
     }
   
     &-table {

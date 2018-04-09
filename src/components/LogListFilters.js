@@ -119,7 +119,7 @@ export class FoodListFilters extends React.Component {
             onClick={this.handlePrevPageChange}
             disabled={this.props.filters.offset <= 0}
           >
-            Prev Page
+            Prev
           </button>
           {this.createPageButtons()}
           <button 
@@ -127,7 +127,7 @@ export class FoodListFilters extends React.Component {
             onClick={this.handleNextPageChange}
             disabled={isLastPage}
           >
-            Next Page
+            Next
           </button>
         </div>
       </div>
