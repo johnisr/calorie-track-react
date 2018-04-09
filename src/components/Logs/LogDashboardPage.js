@@ -1,8 +1,8 @@
 import React from 'react';
-import LogList from './LogList';
-import LogListFilters from './LogListFilters';
-import Header from '../components/Header';
-import { history } from '../routers/AppRouter';
+import LogList from '../LogList';
+import LogListFilters from '../LogListFilters';
+import Header from '../Header/Header';
+import { history } from '../../routers/AppRouter';
 
 export const LogDashboardPage = () => (
   <div className="container">

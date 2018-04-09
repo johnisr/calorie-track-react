@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import CurrentLog from './CurrentLog';
-import EditLogTabs from './EditLogTabs';
-import Header from '../components/Header';
-import { history } from '../routers/AppRouter';
+import CurrentLog from '../CurrentLog';
+import EditLogTabs from '../EditLogTabs';
+import Header from '../Header/Header';
+import { history } from '../../routers/AppRouter';
 
 class EditLog extends React.Component {
   isEmpty(obj) {

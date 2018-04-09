@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import moment from 'moment';
-import { defaultLog, startAddLog } from '../actions/logs';
-import { addCurrentEditLog } from '../actions/currentLog';
-import { startLogout } from '../actions/auth';
+import { defaultLog, startAddLog } from '../../actions/logs';
+import { addCurrentEditLog } from '../../actions/currentLog';
+import { startLogout } from '../../actions/auth';
 
 
 export class Header extends React.Component {

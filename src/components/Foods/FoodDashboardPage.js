@@ -1,9 +1,9 @@
 import React from 'react';
-import FoodListDisplayFoods from './FoodListDisplayFoods';
-import FoodListFilters from './FoodListFilters';
-import FoodsDisplayTabs from './FoodsDisplayTabs';
-import Header from '../components/Header';
-import { history } from '../routers/AppRouter';
+import FoodListDisplayFoods from '../FoodListDisplayFoods';
+import FoodListFilters from '../FoodListFilters';
+import FoodsDisplayTabs from '../FoodsDisplayTabs';
+import Header from '../Header/Header';
+import { history } from '../../routers/AppRouter';
 
 const FoodDashboardPage = () => (
   <div className="container">
