@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import CurrentLog from '../CurrentLog';
-import EditLogTabs from '../EditLogTabs';
+import CurrentLog from './CurrentLog/CurrentLog';
+import EditLogTabs from './EditLogTabs/EditLogTabs';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
 

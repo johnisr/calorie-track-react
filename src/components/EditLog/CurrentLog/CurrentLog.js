@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { editCurrentEditLog, removeCurrentEditLog } from '../actions/currentLog';
-import FoodListDisplayCurrentLog from './FoodListDisplayCurrentLog';
-import { startEditLog, startRemoveLog } from '../actions/logs';
-import { startEditFood } from '../actions/foods';
+import { editCurrentEditLog, removeCurrentEditLog } from '../../../actions/currentLog';
+import FoodListDisplayCurrentLog from './FoodListDisplayCurrentLog/FoodListDisplayCurrentLog';
+import { startEditLog, startRemoveLog } from '../../../actions/logs';
+import { startEditFood } from '../../../actions/foods';
 
 class CurrentLog extends React.Component {
   updateTimesUsed() {

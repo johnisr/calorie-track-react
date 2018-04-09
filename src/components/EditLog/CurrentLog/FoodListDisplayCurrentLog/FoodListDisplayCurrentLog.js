@@ -1,7 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import LogFoodListItem from './LogFoodListItem';
-import { removeFoodFromCurrentLog, editCurrentEditLog, editFoodFromCurrentLog } from '../actions/currentLog';
+import LogFoodListItem from '../../../LogFoodListItem';
+import {
+  removeFoodFromCurrentLog,
+  editCurrentEditLog,
+  editFoodFromCurrentLog
+} from '../../../../actions/currentLog';
 
 export class FoodListDisplayCurrentLog extends React.Component {
   isNumeric = (n) => {

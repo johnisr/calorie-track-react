@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Tabs, TabList, Tab, TabPanels, TabPanel} from './Tabs';
-import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog';
-import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog';
-import FoodListAddCurrentLog from './FoodListAddCurrentLog';
-import FoodListFilters from './FoodListFilters';
+import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs';
+import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog/AddFoodFormToCurrentLog';
+import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog/EditFoodFormForCurrentLog';
+import FoodListAddCurrentLog from './FoodListAddCurrentLog/FoodListAddCurrentLog';
+import FoodListFilters from '../../FoodListFilters';
 
 const EditLogTabs = (props) => (
   <Tabs activeIndex={props.activeIndex}>

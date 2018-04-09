@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodForm from './FoodForm';
-import { addFoodToCurrentLog } from '../actions/currentLog';
+import FoodForm from '../../../FoodForm';
+import { addFoodToCurrentLog } from '../../../../actions/currentLog';
 
 export class AddFoodFormToCurrentLog extends React.Component {
   handleSubmit = (food) => {
