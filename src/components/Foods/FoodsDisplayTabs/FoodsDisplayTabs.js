@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Tabs, TabList, Tab, TabPanels, TabPanel} from './Tabs';
-import EditFoodFormForFoods from './EditFoodFormForFoods';
-import AddFoodFormToFoods from './AddFoodFormToFoods';
+import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs';
+import EditFoodFormForFoods from './EditFoodFormForFoods/EditFoodFormForFoods';
+import AddFoodFormToFoods from './AddFoodFormToFoods/AddFoodFormToFoods';
 
 const FoodsDisplayTabs = (props) => (
   <Tabs activeIndex={props.activeIndex}>

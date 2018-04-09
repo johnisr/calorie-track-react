@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodListItem from './FoodListItem';
-import { addCurrentFood, removeCurrentFood } from '../actions/currentFood';
-import selectFoodsWithPages from '../selectors/foodsWithPages';
+import FoodListItem from '../../FoodListItem';
+import { addCurrentFood, removeCurrentFood } from '../../../actions/currentFood';
+import selectFoodsWithPages from '../../../selectors/foodsWithPages';
 
 export class FoodListDisplayFoods extends React.Component {
   handleClick = (food) => {

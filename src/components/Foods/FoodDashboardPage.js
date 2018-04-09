@@ -1,7 +1,7 @@
 import React from 'react';
-import FoodListDisplayFoods from '../FoodListDisplayFoods';
+import FoodListDisplayFoods from './FoodListDisplayFoods/FoodListDisplayFoods';
 import FoodListFilters from '../FoodListFilters';
-import FoodsDisplayTabs from '../FoodsDisplayTabs';
+import FoodsDisplayTabs from './FoodsDisplayTabs/FoodsDisplayTabs';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
 

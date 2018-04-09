@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodForm from './FoodForm';
-import { startEditFood, startRemoveFood } from '../actions/foods';
-import { removeCurrentFood } from '../actions/currentFood';
+import FoodForm from '../../../FoodForm';
+import { startEditFood, startRemoveFood } from '../../../../actions/foods';
+import { removeCurrentFood } from '../../../../actions/currentFood';
 
 export class EditFoodFormForFoods extends React.Component {
   handleSubmit = async (updates) => {
