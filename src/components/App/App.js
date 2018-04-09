@@ -2,16 +2,16 @@ import React from 'react';
 
 import './App.css';
 
-import AppRouter from './routers/AppRouter';
+import AppRouter from '../../routers/AppRouter';
 import { Provider } from 'react-redux';
-import { history } from './routers/AppRouter';
+import { history } from '../../routers/AppRouter';
 
-import configureStore from './store/configureStore';
-import { firebase } from './firebase/firebase';
+import configureStore from '../../store/configureStore';
+import { firebase } from '../../firebase/firebase';
 
-import { login, logout } from './actions/auth';
-import { startSetFoods } from './actions/foods';
-import { startSetLogs } from './actions/logs';
+import { login, logout } from '../../actions/auth';
+import { startSetFoods } from '../../actions/foods';
+import { startSetLogs } from '../../actions/logs';
 
 // import Playground from './playground/log';
 // import EditFood from './playground/editFood';
