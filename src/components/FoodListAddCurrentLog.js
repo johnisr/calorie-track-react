@@ -8,28 +8,46 @@ export class FoodListAddCurrentLog extends React.Component {
   handleClick = (food) => {
     this.props.addFoodToCurrentLogFromList(food);
   }
+  createTable = () => (
+    this.props.foods.map((food, index) => (
+      <div key={`div ${food.id}`}
+        className={index % 2 === 0 ? 
+          "listDisplay__list-table" : 
+          "listDisplay__list-table listDisplay__list-table--even"}
+      >
+        <FoodListItem 
+          key={`item ${food.id}`}
+          {...food}
+        />
+        <button
+          className="btn listDisplay__list-btn flex-right-end"
+          key={`button ${food.id}`} 
+          onClick={() => this.handleClick(food)}
+        >
+          Add
+        </button>
+      </div>
+    ))
+  )
   render() {
     return (
-      <div>
-        <h3>Add Food From Foods Database</h3>
+      <div className="listDisplay">
+        <h3 className="heading-secondary listDisplay__header">Add Food From Foods Database</h3>
         {
           this.props.foods.length === 0 ? (
-            <p>No Foods</p>
+            <p className="heading-secondary listDisplay__header">No Foods</p>
           ) : (
-            this.props.foods.map(food => (
-              <div key={`div ${food.id}`}>
-                <FoodListItem 
-                  key={`item ${food.id}`}
-                  {...food}
-                />
-                <button 
-                  key={`button ${food.id}`} 
-                  onClick={() => this.handleClick(food)}
-                >
-                  Add This
-                </button>
+            <div className="listDisplay__list">
+              <div className="listDisplay__list-header">
+                <p className="listDisplay__list-title">name</p>
+                <p className="listDisplay__list-title">amount</p>
+                <p className="listDisplay__list-title">carbs</p>
+                <p className="listDisplay__list-title">protein</p>
+                <p className="listDisplay__list-title">fat</p>
+                <p className="listDisplay__list-title">calories</p>
               </div>
-            ))
+              {this.createTable()}
+            </div>
           )
         }
       </div>

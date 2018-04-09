@@ -17,14 +17,14 @@ class EditLog extends React.Component {
             <Header history={history}/>
           </section>
           <section className="section__center-start-end">
-            <h1>EDIT FOOD</h1>
+            <h1 className="heading-secondary editLog__header">Edit Log</h1>
           </section>
         </div>
         {
           this.isEmpty(this.props.currentLog) ? (
             <div className="row">
               <section className="section__center-start-end">
-                <p>Select a Log from Log dashboard to edit</p>
+                <p className="heading-tertiary editLog__header">Select a Log from Log dashboard to edit</p>
               </section>
             </div>
           ) : (
@@ -32,7 +32,7 @@ class EditLog extends React.Component {
               <section className="section__center-start-end">
                 <CurrentLog history={history} />
               </section>
-              <section className="section__center-start-end">
+              <section className="section__center-start-end margin-bottom-large">
                 <EditLogTabs />
               </section>
             </div>

@@ -48,6 +48,14 @@
     }
   }
 
+  &--positive {
+    
+  }
+  
+  &--negative {
+    opacity: .6;
+  }
+
 
   &--page {
     padding: 0 .5rem;

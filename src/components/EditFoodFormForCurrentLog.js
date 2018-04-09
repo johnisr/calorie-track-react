@@ -17,27 +17,28 @@ export class EditFoodFormForCurrentLog extends React.Component {
   }
   render() {
     return (
-      <div>
-        <div className="page-header">
-          <div className="content-container">
-            <h1 className="page-header__title">Edit Food</h1>
-          </div>
-        </div>
-          {
-            (this.props.index !== undefined) ? (
-              <div className="content-container">
-                <FoodForm
-                  food={this.props.food}
-                  handleSubmit={this.handleSubmit}
-                />
-                <button onClick={this.handleRemove}>Remove</button>
-                <button onClick={this.handleExit}>Exit</button>
-                
+      <div className="pane">
+        <h1 className="pane__title">Edit Food</h1>
+        {
+          (this.props.index !== undefined) ? (
+            <div>
+              <FoodForm
+                food={this.props.food}
+                handleSubmit={this.handleSubmit}
+              />
+              <div className="pane__buttons">
+                <div>
+                  <button className="btn btn--form" onClick={this.handleRemove}>Remove</button>
+                </div>
+                <div>
+                  <button className="btn btn--form" onClick={this.handleExit}>Exit</button>
+                </div>
               </div>
-            ) : ( 
-              <p>Select from List above to Edit Item</p>
-            )
-          }
+            </div>
+          ) : ( 
+            <p className="pane__warning">Select from List above to Edit Item</p>
+          )
+        }
       </div>
     )
   }

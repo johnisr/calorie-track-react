@@ -13,7 +13,7 @@ export const LogDashboardPage = () => (
       <section className="section__center-start-end">
         <LogListFilters />
       </section>
-      <section className="section__center-6-start-end">
+      <section className="section__center-6-start-end margin-bottom-large">
         <LogList history={history}/>
       </section>
     </div>

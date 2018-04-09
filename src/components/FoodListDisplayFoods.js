@@ -17,7 +17,8 @@ export class FoodListDisplayFoods extends React.Component {
         key={`div ${food.id}`}
         className={index % 2 === 0 ? 
           "listDisplay__list-table" : 
-          "listDisplay__list-table listDisplay__list-table--even"}>
+          "listDisplay__list-table listDisplay__list-table--even"}
+      >
         <FoodListItem
           key={`item ${food.id}`}
           {...food}

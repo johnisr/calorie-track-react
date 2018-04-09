@@ -40,17 +40,17 @@ export class FoodListFilters extends React.Component {
       (foodsLength / maxFoodsShown) + 1;
     
     let start;
-    if (pagesNeeded - offset < 5) { // reaching end of results 
-      start = Math.max(0, pagesNeeded - 10);
+    if (pagesNeeded - offset < 3) { // reaching end of results 
+      start = Math.max(0, pagesNeeded - 6);
     } else { // Normal case
-      start = Math.max(0, offset - 5);
+      start = Math.max(0, offset - 3);
     }
 
     let end;
     if (start === 0) { // pages 1 .. (pagesNeeded or 10)
-      end = Math.min(pagesNeeded - 1, 10); // count starts from 0
+      end = Math.min(pagesNeeded - 1, 6); // count starts from 0
     } else { // Normal case
-      end = Math.min(offset + 5, pagesNeeded);
+      end = Math.min(offset + 3, pagesNeeded);
     }
 
     const pageButtons = [];
@@ -98,7 +98,6 @@ export class FoodListFilters extends React.Component {
             value={this.props.filters.maxFoodsShown} 
             onChange={this.handleMaxFoodPageChange}
           >
-            <option value={1}>1</option>
             <option value={10}>10</option>
             <option value={25}>25</option>
             <option value={50}>50</option>

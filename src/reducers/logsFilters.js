@@ -3,7 +3,7 @@ import moment from 'moment';
 const logsFiltersReducerDefaultState = {
   startDate: moment().startOf('week'),
   endDate: moment().endOf('week'),
-  sortBy: 'oldest',
+  sortBy: 'newest',
   maxLogsShown: 7,
   offset: 0,
 };
