@@ -1,8 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { DateRangePicker } from 'react-dates';
-import { setStartDate, setEndDate, sortByNewest, sortByOldest, setMaxLogsShown, setLogsOffset } from '../actions/logsFilters';
-import selectLogs from '../selectors/logs';
+import {
+  setStartDate,
+  setEndDate,
+  sortByNewest,
+  sortByOldest,
+  setMaxLogsShown,
+  setLogsOffset
+} from '../../../actions/logsFilters';
+import selectLogs from '../../../selectors/logs';
 
 export class FoodListFilters extends React.Component {
   state = {

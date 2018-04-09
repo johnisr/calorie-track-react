@@ -1,6 +1,6 @@
 import React from 'react';
-import LogList from '../LogList';
-import LogListFilters from '../LogListFilters';
+import LogList from './LogList/LogList';
+import LogListFilters from './LogListFilters/LogListFilters';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
 

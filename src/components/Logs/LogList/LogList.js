@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
 import moment from 'moment';
-import LogListItem from './LogListItem';
-import { addCurrentEditLog } from '../actions/currentLog';
-import { defaultLog, startAddLog } from '../actions/logs';
-import selectLogsWithPages from '../selectors/logsWithPages';
+import LogListItem from '../../LogListItem';
+import { addCurrentEditLog } from '../../../actions/currentLog';
+import { defaultLog, startAddLog } from '../../../actions/logs';
+import selectLogsWithPages from '../../../selectors/logsWithPages';
 
 export class LogList extends React.Component {
   constructor(props) {
