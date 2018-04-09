@@ -8,7 +8,7 @@ import PublicRoute from './PublicRoute';
 import FoodDashboardPage from '../components/Foods/FoodDashboardPage';
 import LogDashboardPage from '../components/Logs/LogDashboardPage';
 import NotFoundPage from '../components/NotFoundPage';
-import LoginPage from '../components/LoginPage';
+import LoginPage from '../components/Login/LoginPage';
 import EditLog from '../components/EditLog/EditLog';
 export const history = createHistory();
 
