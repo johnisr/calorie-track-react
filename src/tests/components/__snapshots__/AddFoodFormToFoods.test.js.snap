@@ -20,27 +20,16 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div
-          className="page-header"
+        <h1
+          className="pane__title"
 >
-          <div
-                    className="content-container"
-          >
-                    <h1
-                              className="page-header__title"
-                    >
-                              Add Food
-                    </h1>
-          </div>
-</div>,
-        <div
-          className="content-container"
->
-          <FoodForm
-                    handleSubmit={[Function]}
-          />
-</div>,
+          Add Food
+</h1>,
+        <FoodForm
+          handleSubmit={[Function]}
+/>,
       ],
+      "className": "pane",
     },
     "ref": null,
     "rendered": Array [
@@ -49,70 +38,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <div
-            className="content-container"
->
-            <h1
-                        className="page-header__title"
-            >
-                        Add Food
-            </h1>
-</div>,
-          "className": "page-header",
+          "children": "Add Food",
+          "className": "pane__title",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <h1
-              className="page-header__title"
->
-              Add Food
-</h1>,
-            "className": "content-container",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Add Food",
-              "className": "page-header__title",
-            },
-            "ref": null,
-            "rendered": "Add Food",
-            "type": "h1",
-          },
-          "type": "div",
-        },
-        "type": "div",
+        "rendered": "Add Food",
+        "type": "h1",
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
-          "children": <FoodForm
-            handleSubmit={[Function]}
-/>,
-          "className": "content-container",
+          "handleSubmit": [Function],
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "handleSubmit": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "div",
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -124,27 +66,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
-            className="page-header"
+          <h1
+            className="pane__title"
 >
-            <div
-                        className="content-container"
-            >
-                        <h1
-                                    className="page-header__title"
-                        >
-                                    Add Food
-                        </h1>
-            </div>
-</div>,
-          <div
-            className="content-container"
->
-            <FoodForm
-                        handleSubmit={[Function]}
-            />
-</div>,
+            Add Food
+</h1>,
+          <FoodForm
+            handleSubmit={[Function]}
+/>,
         ],
+        "className": "pane",
       },
       "ref": null,
       "rendered": Array [
@@ -153,70 +84,23 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <div
-              className="content-container"
->
-              <h1
-                            className="page-header__title"
-              >
-                            Add Food
-              </h1>
-</div>,
-            "className": "page-header",
+            "children": "Add Food",
+            "className": "pane__title",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <h1
-                className="page-header__title"
->
-                Add Food
-</h1>,
-              "className": "content-container",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Add Food",
-                "className": "page-header__title",
-              },
-              "ref": null,
-              "rendered": "Add Food",
-              "type": "h1",
-            },
-            "type": "div",
-          },
-          "type": "div",
+          "rendered": "Add Food",
+          "type": "h1",
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "class",
           "props": Object {
-            "children": <FoodForm
-              handleSubmit={[Function]}
-/>,
-            "className": "content-container",
+            "handleSubmit": [Function],
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "handleSubmit": [Function],
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "div",
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

@@ -67,10 +67,10 @@ export class LogList extends React.Component {
       >
         <LogListItem
           key={`item ${log.date}`}
-          totalCalories={this.calculateTotal(log.foods, 'calories')} 
-          totalProtein={this.calculateTotal(log.foods, 'protein')} 
-          totalCarbohydrates={this.calculateTotal(log.foods, 'carbohydrates')} 
-          totalFat={this.calculateTotal(log.foods, 'fat')} 
+          totalCalories={log.total.calories} 
+          totalProtein={log.total.protein} 
+          totalCarbohydrates={log.total.carbohydrates} 
+          totalFat={log.total.fat} 
           {...log}
         />
         <button className="btn logList__btn" key={`button ${log.date}`} onClick={() => this.handleEdit(log.date)}>Edit</button>

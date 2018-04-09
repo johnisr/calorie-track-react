@@ -5,8 +5,6 @@ import { startAddFood } from '../actions/foods';
 
 export class AddFoodFormToFoods extends React.Component {
   handleSubmit = (food) => {
-    console.log('Submitting to Foods');
-    console.log(food);
     this.props.startAddFood(food);
   }
   render() {

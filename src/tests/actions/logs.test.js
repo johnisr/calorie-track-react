@@ -62,6 +62,12 @@ describe('Asynchronous Actions With firebase', () => {
         foods[2],
         foods[0],
       ],
+      total: {
+        carbohydrates: 0,
+        fat: 0,
+        protein: 0,
+        calories: 0,
+      }
     };
     await store.dispatch(startAddLog(log));
     

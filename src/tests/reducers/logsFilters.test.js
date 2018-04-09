@@ -6,7 +6,7 @@ it('should setup default filter values', () => {
   expect(state).toEqual({
     startDate: moment().startOf('week'),
     endDate: moment().endOf('week'),
-    sortBy: 'oldest',
+    sortBy: 'newest',
     maxLogsShown: 7,
     offset: 0,
   });

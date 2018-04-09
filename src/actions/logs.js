@@ -6,6 +6,12 @@ export const defaultLog = {
   weight: 0,
   unit: 'lb',
   foods: [],
+  total: {
+    protein: 0,
+    carbohydrates: 0,
+    fat: 0,
+    calories: 0,
+  }
 };
 
 export const addLog = (log) => ({
@@ -21,8 +27,9 @@ export const startAddLog = (data = {}) => {
       unit = 'lb',
       foods = [],
       date = moment(),
+      total = { protein: 0, carbohydrates: 0, fat: 0, calories: 0 },
     } = data;
-    const log = { weight, unit, foods, date };
+    const log = { weight, unit, foods, date, total };
 
     try {
       await database.ref(`users/${uid}/logs/${date}`).set(log);
@@ -63,7 +70,8 @@ export const startEditLog = (date, updates) => {
       await database.ref(`users/${uid}/logs/${date}`).update(updates);
       dispatch(editLog(date, updates));
     } catch (e) {
-      
+      console.log(updates);
+      console.log(e);
     }
   };
 };
