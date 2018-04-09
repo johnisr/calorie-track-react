@@ -99,14 +99,15 @@ export class FoodListFilters extends React.Component {
             value={this.props.filters.sortBy} 
             onChange={this.handleSortChange}
           >
-            <option value="newest">newest</option>
-            <option value="oldest">oldest</option>
+            <option value="newest">new</option>
+            <option value="oldest">old</option>
           </select>
           <select
             className="logsFilter__select"
             value={this.props.filters.maxLogsShown} 
             onChange={this.handleMaxLogsPageChange}
           >
+            <option value={1}>1</option>
             <option value={7}>7</option>
             <option value={14}>14</option>
             <option value={31}>31</option>

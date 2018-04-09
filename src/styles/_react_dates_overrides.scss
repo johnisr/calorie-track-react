@@ -1,3 +1,9 @@
+.DateInput {
+  @media only screen and (max-width: $bp-medium) {
+    width: 100px;
+  }
+}
+
 .DateInput_input {
   padding: 0 1rem;
   font-size: $font-size-body;
@@ -5,10 +11,20 @@
   color: $color-grey-dark-1; 
   line-height: inherit;
   font-weight: 400;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
 }
 
 .DateInput_input__focused {
   border-bottom: 3px solid $color-grey-dark-3;
+}
+
+.DateRangePickerInput__showClearDates {
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
 }
 
 .DateRangePickerInput_clearDates {
