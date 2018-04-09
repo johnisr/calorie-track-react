@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodForm from '../../../FoodForm';
+import FoodForm from '../../../FoodForm/FoodForm';
 import { startAddFood } from '../../../../actions/foods';
 
 export class AddFoodFormToFoods extends React.Component {

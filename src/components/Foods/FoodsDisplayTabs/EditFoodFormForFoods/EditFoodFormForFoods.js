@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodForm from '../../../FoodForm';
+import FoodForm from '../../../FoodForm/FoodForm';
 import { startEditFood, startRemoveFood } from '../../../../actions/foods';
 import { removeCurrentFood } from '../../../../actions/currentFood';
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import FoodForm from '../../components/FoodForm';
-import foods from '../fixtures/foods';
+import FoodForm from './FoodForm';
+import foods from '../../tests/fixtures/foods';
 
 it('should render FoodForm correctly', () => {
   const wrapper = shallow(<FoodForm />);

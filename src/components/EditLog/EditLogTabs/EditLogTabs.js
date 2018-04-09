@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs';
+import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs/Tabs';
 import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog/AddFoodFormToCurrentLog';
 import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog/EditFoodFormForCurrentLog';
 import FoodListAddCurrentLog from './FoodListAddCurrentLog/FoodListAddCurrentLog';

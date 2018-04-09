@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodForm from '../../../FoodForm';
+import FoodForm from '../../../FoodForm/FoodForm';
 import { addFoodToCurrentLog } from '../../../../actions/currentLog';
 
 export class AddFoodFormToCurrentLog extends React.Component {

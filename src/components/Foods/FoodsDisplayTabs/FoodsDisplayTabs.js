@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs';
+import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs/Tabs';
 import EditFoodFormForFoods from './EditFoodFormForFoods/EditFoodFormForFoods';
 import AddFoodFormToFoods from './AddFoodFormToFoods/AddFoodFormToFoods';
 
