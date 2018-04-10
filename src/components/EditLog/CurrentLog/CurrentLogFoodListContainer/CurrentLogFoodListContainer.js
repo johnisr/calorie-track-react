@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodListDisplayCurrentLog from './FoodListDisplayCurrentLog';
+import CurrentLogFoodList from './CurrentLogFoodList/CurrentLogFoodList';
 import {
   removeFoodFromCurrentLog,
   editCurrentEditLog,
   editFoodFromCurrentLog
 } from '../../../../actions/currentLog';
 
-export class FoodListDisplayCurrentLogContainer extends React.Component {
+export class CurrentLogFoodListContainer extends React.Component {
   isNumeric = (n) => {
     return !isNaN(parseFloat(n)) && isFinite(n);
   }
@@ -54,7 +54,7 @@ export class FoodListDisplayCurrentLogContainer extends React.Component {
   
   render() {
     return (
-      <FoodListDisplayCurrentLog 
+      <CurrentLogFoodList 
         foods={this.props.foods}
         onMultiplierChange={(index, e) => this.handleMultiplierChange(index, e)}
         onEdit={(index) => this.handleEdit(index)}
@@ -74,4 +74,4 @@ const mapDispatchToProps = (dispatch) => ({
   editFoodFromCurrentLog: (index, updates) => dispatch(editFoodFromCurrentLog(index, updates)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FoodListDisplayCurrentLogContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(CurrentLogFoodListContainer);

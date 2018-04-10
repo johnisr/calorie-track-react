@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs/Tabs';
 import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog/AddFoodFormToCurrentLog';
 import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog/EditFoodFormForCurrentLog';
-import FoodListAddCurrentLogContainer from './FoodListAddCurrentLog/FoodListAddCurrentLogContainer';
+import CurrentLogAddFoodListContainer from './CurrentLogAddFoodListContainer/CurrentLogAddFoodListContainer';
 import FoodListFilters from '../../FoodListFilters';
 
 const EditLogTabs = (props) => (
@@ -17,7 +17,7 @@ const EditLogTabs = (props) => (
     <TabPanels>
       <TabPanel>
         <FoodListFilters />
-        <FoodListAddCurrentLogContainer />
+        <CurrentLogAddFoodListContainer />
       </TabPanel>
       <TabPanel>
         <AddFoodFormToCurrentLog />
