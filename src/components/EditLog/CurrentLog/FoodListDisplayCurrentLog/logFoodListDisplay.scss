@@ -1,9 +1,25 @@
+@import '../../../../styles/base';
+
 .logFoodListDisplay {
 
   &__header {
     color: $color-grey-dark-1;
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  &__item {
+    width: 80%;
+    display: grid;
+    grid-template-columns: minmax(10rem, 2fr)  repeat(5, minmax(6rem, 1fr));
+    
+  
+    &-text {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -65,5 +81,4 @@
       align-self: center;
     }
   }
-
 }

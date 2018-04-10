@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { editCurrentEditLog, removeCurrentEditLog } from '../../../actions/currentLog';
-import FoodListDisplayCurrentLog from './FoodListDisplayCurrentLog/FoodListDisplayCurrentLog';
+import FoodListDisplayCurrentLogContainer from './FoodListDisplayCurrentLog/FoodListDisplayCurrentLogContainer';
 import { startEditLog, startRemoveLog } from '../../../actions/logs';
 import { startEditFood } from '../../../actions/foods';
 
@@ -101,7 +101,7 @@ class CurrentLog extends React.Component {
     return (
       <div className="container">
         <div>
-          <FoodListDisplayCurrentLog />
+          <FoodListDisplayCurrentLogContainer />
         </div>
         <section className="section-center-6-start-end">
           <div className="currentLog">
