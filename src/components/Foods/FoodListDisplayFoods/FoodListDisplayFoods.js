@@ -45,7 +45,7 @@ const FoodListDisplayFoods = (props) => {
       key={`button ${food.id}`} 
       onClick={() => props.onClick(food)}
     >
-      Edit
+      {props.buttonText}
     </button>
   );
 

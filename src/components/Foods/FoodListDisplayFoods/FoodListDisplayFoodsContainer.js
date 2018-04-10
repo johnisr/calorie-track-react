@@ -16,6 +16,7 @@ export class FoodListDisplayFoodsContainer extends React.Component {
       <FoodListDisplayFoods
         foods={this.props.foods}
         onClick={(food) => this.handleClick(food)}
+        buttonText={'Edit'}
       />
     );
   }
