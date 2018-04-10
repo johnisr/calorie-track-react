@@ -1,5 +1,5 @@
 import React from 'react';
-import FoodListDisplayFoods from './FoodListDisplayFoods/FoodListDisplayFoods';
+import FoodListDisplayFoodsContainer from './FoodListDisplayFoods/FoodListDisplayFoodsContainer';
 import FoodListFilters from '../FoodListFilters';
 import FoodsDisplayTabs from './FoodsDisplayTabs/FoodsDisplayTabs';
 import Header from '../Header/Header';
@@ -15,7 +15,7 @@ const FoodDashboardPage = () => (
       <FoodListFilters />
     </section>
     <section className="section__center-6-start-end">
-      <FoodListDisplayFoods />
+      <FoodListDisplayFoodsContainer />
     </section>
     <section className="section__center-6-start-end margin-bottom-large">
       <FoodsDisplayTabs />

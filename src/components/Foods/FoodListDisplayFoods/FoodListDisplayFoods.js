@@ -1,72 +1,70 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import FoodListItem from '../../FoodListItem';
-import { addCurrentFood, removeCurrentFood } from '../../../actions/currentFood';
-import selectFoodsWithPages from '../../../selectors/foodsWithPages';
+import './FoodListDisplayFoods.css';
 
-export class FoodListDisplayFoods extends React.Component {
-  handleClick = (food) => {
-    if(this.props.currentFood.id !== '') {
-      this.props.removeCurrentFood(food);
-    }
-    this.props.addCurrentFood(food);
-  }
-  createTable = () => (
-    this.props.foods.map((food, index) => (
+const FoodListDisplayFoods = (props) => {
+  
+  const listHeader = () => (
+    <div className="foodListDisplayFoods__list-header">
+      <p className="foodListDisplayFoods__list-title">name</p>
+      <p className="foodListDisplayFoods__list-title">amount</p>
+      <p className="foodListDisplayFoods__list-title">carbs</p>
+      <p className="foodListDisplayFoods__list-title">protein</p>
+      <p className="foodListDisplayFoods__list-title">fat</p>
+      <p className="foodListDisplayFoods__list-title">calories</p>
+    </div>
+  );
+
+  const createTable = () => (
+    props.foods.map((food, index) => (
       <div 
         key={`div ${food.id}`}
         className={index % 2 === 0 ? 
-          "listDisplay__list-table" : 
-          "listDisplay__list-table listDisplay__list-table--even"}
+          "foodListDisplayFoods__list-table" : 
+          "foodListDisplayFoods__list-table foodListDisplayFoods__list-table--even"}
       >
-        <FoodListItem
-          key={`item ${food.id}`}
-          {...food}
-        />
-        <button
-          className="btn listDisplay__list-btn flex-right-end"
-          key={`button ${food.id}`} 
-          onClick={() => this.handleClick(food)}
-        >
-          Edit
-        </button>
+        {listItem(food)}
+        {listOption(food)}
       </div>
     ))
-  )
-  render() {
-    return (
-        <div className="listDisplay">
-          <h3 className="heading-secondary listDisplay__header">Foods in Database</h3>
-          {
-            this.props.foods.length === 0 ? (
-              <p className="heading-secondary listDisplay__header">No Foods</p>
-            ) : (
-            <div className="listDisplay__list">
-              <div className="listDisplay__list-header">
-                <p className="listDisplay__list-title">name</p>
-                <p className="listDisplay__list-title">amount</p>
-                <p className="listDisplay__list-title">carbs</p>
-                <p className="listDisplay__list-title">protein</p>
-                <p className="listDisplay__list-title">fat</p>
-                <p className="listDisplay__list-title">calories</p>
-              </div>
-              {this.createTable()}
-            </div>
-            )
-          }
+  );
+
+  const listItem = (food) => (
+    <div className="foodListDisplayFoods__item">
+      <p className="foodListDisplayFoods__item-text">{food.name}</p>
+      <p className="foodListDisplayFoods__item-text">{food.amount} {food.unit}</p>
+      <p className="foodListDisplayFoods__item-text">{food.carbohydrates}</p>
+      <p className="foodListDisplayFoods__item-text">{food.protein}</p>
+      <p className="foodListDisplayFoods__item-text">{food.fat}</p>
+      <p className="foodListDisplayFoods__item-text">{food.calories}</p>
+    </div>
+  );
+
+  const listOption = (food) => (
+    <button
+      className="btn foodListDisplayFoods__list-btn flex-right-end"
+      key={`button ${food.id}`} 
+      onClick={() => props.onClick(food)}
+    >
+      Edit
+    </button>
+  );
+
+  return (
+    <div className="foodListDisplayFoods">
+      <h3 className="heading-secondary foodListDisplayFoods__header">Foods in Database</h3>
+      {
+        props.foods.length === 0 ? (
+          <p className="heading-secondary foodListDisplayFoods__header">No Foods</p>
+        ) : (
+        <div className="foodListDisplayFoods__list">
+          {listHeader()}
+          {createTable()}
         </div>
-    );
-  }
+        )
+      }
+    </div>
+  );
 }
 
-const mapStateToProps = state => ({
-  foods: selectFoodsWithPages(state.foods, state.foodsFilters),
-  currentFood: state.currentFood,
-});
 
-const mapDispatchToProps = (dispatch) => ({
-  addCurrentFood: (food) => dispatch(addCurrentFood(food)),
-  removeCurrentFood: (food) => dispatch(removeCurrentFood(food)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(FoodListDisplayFoods);
+export default FoodListDisplayFoods;
