@@ -63,18 +63,24 @@ class CurrentLog extends React.Component {
   handleSubmit = async () => {
     const weight = this.props.currentLog.weight !== '' ? parseFloat(this.props.currentLog.weight, 10) : 0;
 
-    const total = this.props.currentLog.foods.reduce((prev, curr) => ({
-      protein: prev.protein + curr.protein,
-      carbohydrates: prev.carbohydrates + curr.carbohydrates,
-      fat: prev.fat + curr.fat,
-      calories: prev.calories + curr.calories,
-    }), {protein: 0, carbohydrates: 0, fat: 0, calories: 0});
+    const foods = this.props.currentLog.foods;
+
+    let total = { protein: 0, carbohydrates: 0, fat: 0, calories: 0 };
+    if (foods) {
+      total = foods.reduce((prev, curr) => ({
+        protein: prev.protein + curr.protein,
+        carbohydrates: prev.carbohydrates + curr.carbohydrates,
+        fat: prev.fat + curr.fat,
+        calories: prev.calories + curr.calories,
+      }), total);
+    }
+
     await this.props.editCurrentEditLog({ total });
 
     this.props.startEditLog(this.props.currentLog.date, {
       date: this.props.currentLog.date,
       unit: this.props.currentLog.unit,
-      foods: this.props.currentLog.foods,
+      foods: foods ? foods : [],
       weight,
       total: {
         carbohydrates: +(total.carbohydrates).toFixed(2),

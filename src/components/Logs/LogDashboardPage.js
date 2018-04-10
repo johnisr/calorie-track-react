@@ -1,5 +1,5 @@
 import React from 'react';
-import LogList from './LogList/LogList';
+import LogListContainer from './LogList/LogListContainer';
 import LogListFilters from './LogListFilters/LogListFilters';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
@@ -14,7 +14,7 @@ export const LogDashboardPage = () => (
         <LogListFilters />
       </section>
       <section className="section__center-6-start-end margin-bottom-large">
-        <LogList history={history}/>
+        <LogListContainer history={history}/>
       </section>
     </div>
   </div>

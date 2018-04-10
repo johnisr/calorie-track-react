@@ -1,14 +1,10 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import moment from 'moment';
 import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
-import moment from 'moment';
-import LogListItem from '../../LogListItem';
-import { addCurrentEditLog } from '../../../actions/currentLog';
-import { defaultLog, startAddLog } from '../../../actions/logs';
-import selectLogsWithPages from '../../../selectors/logsWithPages';
+import './logList.css';
 
-export class LogList extends React.Component {
+class LogList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -24,93 +20,64 @@ export class LogList extends React.Component {
   onFocusChange = ({ focused }) => { 
     this.setState(() => ({ calendarFocused: focused }));
   }
-  calculateTotal(foods = [], macro) {
-    if (macro === 'calories') {
-      return foods.reduce((prev, curr) => prev + curr.calories, 0);
-    } 
-    else if (macro === 'fat') {
-      return foods.reduce((prev, curr) => prev + curr.fat, 0);
-    } else if (macro === 'protein') {
-      return foods.reduce((prev, curr) => prev + curr.protein, 0);
-    } else if (macro === 'carbohydrates') {
-      return foods.reduce((prev, curr) => prev + curr.carbohydrates, 0);
-    }
-    return 0;
-  }
-  handleEdit = (date) => {
-    const log = this.props.logs.filter(log => log.date === date)[0];
-    this.props.addCurrentEditLog(log);
-    this.props.history.push('/editlog');
-  }
-  handleCreate = () => {
-    const date = this.state.date.startOf('day').valueOf();
-    const log = this.props.logs.filter(log => log.date === date)[0];
-    if (!log) {
-      const newLog = {
-        ...defaultLog,
-        date,
-      };
-      this.props.startAddLog(newLog);
-      this.props.addCurrentEditLog(newLog);
-    } else {
-      this.props.addCurrentEditLog(log);
-    }
-    this.props.history.push('/editlog');
-  }
-  createTable = () => (
-    this.props.logs.map((log, index) => (
-      <div 
-        key={`div ${log.date}`}
-        className={index % 2 === 0 ? 
-          "listDisplay__list-table" : 
-          "listDisplay__list-table listDisplay__list-table--even"}
-      >
-        <LogListItem
-          key={`item ${log.date}`}
-          totalCalories={log.total.calories} 
-          totalProtein={log.total.protein} 
-          totalCarbohydrates={log.total.carbohydrates} 
-          totalFat={log.total.fat} 
-          {...log}
-        />
-        <button className="btn logList__btn" key={`button ${log.date}`} onClick={() => this.handleEdit(log.date)}>Edit</button>
+
+  render () {
+    const listHeader = (
+      <div className="logList__list-header">
+        <p className="logList__list-title">Date</p>
+        <p className="logList__list-title">Weight</p>
+        <p className="logList__list-title">carbs</p>
+        <p className="logList__list-title">protein</p>
+        <p className="logList__list-title">fat</p>
+        <p className="logList__list-title">calories</p>
       </div>
-    ))
-  )
-  render() {
+    );
+
+    const createTable = () => (
+      this.props.logs.map((log, index) => (
+        <div 
+          key={`div ${log.date}`}
+          className={index % 2 === 0 ? 
+            "logList__list-table" : 
+            "logList__list-table logList__list-table--even"}
+        >
+          <div className="logList__item">
+            <p className="logList__item-text">{moment(log.date).format('MMMM Do, YYYY')}</p>
+            <p className="logList__item-text">{log.weight} {log.unit}</p>
+            <p className="logList__item-text">{log.total.carbohydrates}</p>
+            <p className="logList__item-text">{log.total.protein}</p>
+            <p className="logList__item-text">{log.total.fat}</p>
+            <p className="logList__item-text">{log.total.calories}</p>
+          </div>
+          <button className="btn logList__btn" key={`button ${log.date}`} onClick={() => this.props.onEdit(log.date)}>Edit</button>
+        </div>
+      ))
+    );
+
     return (
       <div>
         <div className="logList__header">
           <h1 className="heading-secondary logList__title">Log List</h1>
           <div className="logList__date">
             <SingleDatePicker
-                  date={this.state.date}
-                  onDateChange={this.onDateChange}
-                  focused={this.state.calendarFocused}
-                  onFocusChange={this.onFocusChange}
-                  numberOfMonths={1}
-                  isOutsideRange={() => false}
-                />
-            <button className="btn logList__btn" onClick={this.handleCreate}>Create</button>
-
+              date={this.state.date}
+              onDateChange={this.onDateChange}
+              focused={this.state.calendarFocused}
+              onFocusChange={this.onFocusChange}
+              numberOfMonths={1}
+              isOutsideRange={() => false}
+            />
+            <button className="btn logList__btn" onClick={() => this.props.onCreate(this.state.date)}>Create</button>
           </div>
-
         </div>
         {
           this.props.logs.length === 0 ? (
-            <p className="heading-secondary listDisplay__header">No logs</p>
+            <p className="heading-secondary logList__header">No logs</p>
           ) : (
             <div>
-              <div className="listDisplay__list">
-                <div className="listDisplay__list-header">
-                  <p className="listDisplay__list-title">Date</p>
-                  <p className="listDisplay__list-title">Weight</p>
-                  <p className="listDisplay__list-title">carbs</p>
-                  <p className="listDisplay__list-title">protein</p>
-                  <p className="listDisplay__list-title">fat</p>
-                  <p className="listDisplay__list-title">calories</p>
-                </div>
-                {this.createTable()}
+              <div className="logList__list">
+                {listHeader}
+                {createTable()}
               </div>
             </div>
           )
@@ -118,15 +85,6 @@ export class LogList extends React.Component {
       </div>
     );
   }
-}  
+};
 
-const mapStateToProps = (state) => ({
-  logs: selectLogsWithPages(state.logs, state.logsFilters),
-});
-
-const mapDispatchToProps = (dispatch) => ({
-  startAddLog: (log) => dispatch(startAddLog(log)),
-  addCurrentEditLog: (log) => dispatch(addCurrentEditLog(log)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(LogList);
+export default LogList;
