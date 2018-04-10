@@ -92,16 +92,16 @@ class CurrentLog extends React.Component {
     this.updateTimesUsed();
     
     this.props.removeCurrentEditLog();
-    this.props.history.push('/LogDashboard');
+    this.props.history.push('/Logs');
   }
   handleRemove = () => {
     this.props.startRemoveLog(this.props.currentLog.date);
     this.props.removeCurrentEditLog();
-    this.props.history.push('/LogDashboard');
+    this.props.history.push('/Logs');
   }
   handleExit = () => {
     this.props.removeCurrentEditLog();
-    this.props.history.push('/LogDashboard');
+    this.props.history.push('/Logs');
   }
   render() {
     return (

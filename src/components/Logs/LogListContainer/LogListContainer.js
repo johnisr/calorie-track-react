@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import LogList from './LogList';
+import LogList from './LogList/LogList';
 import { addCurrentEditLog } from '../../../actions/currentLog';
 import { defaultLog, startAddLog } from '../../../actions/logs';
 import selectLogsWithPages from '../../../selectors/logsWithPages';

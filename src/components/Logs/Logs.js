@@ -1,10 +1,10 @@
 import React from 'react';
-import LogListContainer from './LogList/LogListContainer';
+import LogListContainer from './LogListContainer/LogListContainer';
 import LogListFilters from './LogListFilters/LogListFilters';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
 
-export const LogDashboardPage = () => (
+export const Logs = () => (
   <div className="container">
     <div className="row">
       <section className="section__full-start-end">
@@ -20,4 +20,4 @@ export const LogDashboardPage = () => (
   </div>
 );
 
-export default LogDashboardPage;
+export default Logs;

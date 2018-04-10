@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 import 'react-dates/initialize';
 import { SingleDatePicker } from 'react-dates';
-import './logList.css';
+import './LogList.css';
 
 class LogList extends React.Component {
   constructor(props) {

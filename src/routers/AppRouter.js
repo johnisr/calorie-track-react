@@ -6,7 +6,7 @@ import PrivateRoute from './PrivateRoute';
 import PublicRoute from './PublicRoute';
 
 import Foods from '../components/Foods/Foods';
-import LogDashboardPage from '../components/Logs/LogDashboardPage';
+import Logs from '../components/Logs/Logs';
 import NotFoundPage from '../components/NotFoundPage';
 import LoginPage from '../components/Login/LoginPage';
 import EditLog from '../components/EditLog/EditLog';
@@ -18,7 +18,7 @@ const AppRouter = () => (
       <Switch> 
         <PublicRoute exact path="/" component={LoginPage} />
         <PrivateRoute path="/Foods" component={Foods} />
-        <PrivateRoute path="/LogDashboard" component={LogDashboardPage} />
+        <PrivateRoute path="/Logs" component={Logs} />
         <PrivateRoute path="/EditLog" component={EditLog} />
         <PrivateRoute component={NotFoundPage} />
       </Switch>
