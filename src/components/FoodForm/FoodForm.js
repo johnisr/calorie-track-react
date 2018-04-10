@@ -1,5 +1,6 @@
 import React from 'react';
 import moment from 'moment';
+import './FoodForm.css';
 
 class FoodForm extends React.Component {
   constructor(props) {
@@ -179,86 +180,97 @@ class FoodForm extends React.Component {
     const isInValidUnit = this.state.hasSelectedUnit && this.state.unit === '';
 
     const nameInput = (
-      <div className="form__group form__group--50" key="nameInput">
-        <input name="name" className={isInValidName ? "form__input form__input--invalid" : "form__input"} type="text" placeholder="Food" value={this.state.name} onChange={this.handleNameChange} onBlur={() => this.setState({hasSelectedName: true})} />
-        <label className="form__label" htmlFor="name">{this.state.labelErrorName}</label>
+      <div className="foodForm__group foodForm__group--50" key="nameInput">
+        <input name="name" className={isInValidName ? "foodForm__input foodForm__input--invalid" : "foodForm__input"} type="text" placeholder="Food" value={this.state.name} onChange={this.handleNameChange} onBlur={() => this.setState({hasSelectedName: true})} />
+        <label className="foodForm__label" htmlFor="name">{this.state.labelErrorName}</label>
       </div>
     );
     
     const amountUnitInput = (
-      <div className="form__group form__group--50" key="amountUnitInput">
-        <input type="text" name="amountWithUnits" placeholder="Amount" className="form__input" value={this.state.amountUnit} onChange={this.handleAmountUnitChange} onBlur={this.handleAmountUnitBlur} />
-        <label className="form__label" htmlFor="amountWithUnits">Amount</label>
+      <div className="foodForm__group foodForm__group--50" key="amountUnitInput">
+        <input type="text" name="amountWithUnits" placeholder="Amount" className="foodForm__input" value={this.state.amountUnit} onChange={this.handleAmountUnitChange} onBlur={this.handleAmountUnitBlur} />
+        <label className="foodForm__label" htmlFor="amountWithUnits">Amount</label>
       </div>
     );
 
     const amountInput = (
-      <div className="form__group form__group--25" key="amountInput">
-        <input type="text" name="amount" placeholder="Amount" className="form__input" value={this.state.amount} onChange={this.handleAmountChange} />
-        <label className="form__label" htmlFor="amount">{this.state.labelErrorAmount}</label>
+      <div className="foodForm__group foodForm__group--25" key="amountInput">
+        <input type="text" name="amount" placeholder="Amount" className="foodForm__input" value={this.state.amount} onChange={this.handleAmountChange} />
+        <label className="foodForm__label" htmlFor="amount">{this.state.labelErrorAmount}</label>
       </div>
     );
 
     const unitInput = (
-      <div className="form__group form__group--25" key="unitInput">
-        <input type="text" name="unit" placeholder="Unit" className={isInValidUnit ? "form__input form__input--invalid" : "form__input"} value={this.state.unit} onChange={this.handleUnitChange} onBlur={() => this.setState({hasSelectedUnit: true})} />
-        <label className="form__label" htmlFor="unit">{this.state.labelErrorUnit}</label>
+      <div className="foodForm__group foodForm__group--25" key="unitInput">
+        <input type="text" name="unit" placeholder="Unit" className={isInValidUnit ? "foodForm__input foodForm__input--invalid" : "foodForm__input"} value={this.state.unit} onChange={this.handleUnitChange} onBlur={() => this.setState({hasSelectedUnit: true})} />
+        <label className="foodForm__label" htmlFor="unit">{this.state.labelErrorUnit}</label>
       </div>
     );
 
     const macrosInput = (
-      <div className="form__group form__group--100" key="macrosInput">
-        <input name="macros" type="text" className="form__input" placeholder="Macros" value={this.state.macros} onChange={this.handleMacrosChange} onBlur={this.handleMacrosBlur} />
-        <label className="form__label" htmlFor="macros">Carbohydrates Protein Fat Calories (spaces in between)</label>
+      <div className="foodForm__group foodForm__group--100" key="macrosInput">
+        <input name="macros" type="text" className="foodForm__input" placeholder="Macros" value={this.state.macros} onChange={this.handleMacrosChange} onBlur={this.handleMacrosBlur} />
+        <label className="foodForm__label" htmlFor="macros">Carbohydrates Protein Fat Calories (spaces in between)</label>
       </div>
     )
     const carbohydratesInput = (
-      <div className="form__group form__group--25" key="carbohydratesInput">
-        <input name="carbohydrates" type="text" className="form__input" placeholder="Carbs" value={this.state.carbohydrates} onChange={this.handleCarbohydratesChange}/>
-        <label className="form__label" htmlFor="carbohydrates">{this.state.labelErrorCarbs}</label>
+      <div className="foodForm__group foodForm__group--25" key="carbohydratesInput">
+        <input name="carbohydrates" type="text" className="foodForm__input" placeholder="Carbs" value={this.state.carbohydrates} onChange={this.handleCarbohydratesChange}/>
+        <label className="foodForm__label" htmlFor="carbohydrates">{this.state.labelErrorCarbs}</label>
       </div>
     );
 
     const proteinInput = (
-      <div className="form__group form__group--25" key="proteinInput">
-        <input type="text" className="form__input" placeholder="Protein" value={this.state.protein} onChange={this.handleProteinChange} />
-        <label className="form__label" htmlFor="Protein">{this.state.labelErrorProtein}</label>
+      <div className="foodForm__group foodForm__group--25" key="proteinInput">
+        <input type="text" className="foodForm__input" placeholder="Protein" value={this.state.protein} onChange={this.handleProteinChange} />
+        <label className="foodForm__label" htmlFor="Protein">{this.state.labelErrorProtein}</label>
       </div>
     );
 
     const fatInput = (
-      <div className="form__group form__group--25" key="fatInput">
-        <input type="text" className="form__input" placeholder="Fat" value={this.state.fat} onChange={this.handleFatChange} />
-        <label className="form__label" htmlFor="Fat">{this.state.labelErrorFat}</label>
+      <div className="foodForm__group foodForm__group--25" key="fatInput">
+        <input type="text" className="foodForm__input" placeholder="Fat" value={this.state.fat} onChange={this.handleFatChange} />
+        <label className="foodForm__label" htmlFor="Fat">{this.state.labelErrorFat}</label>
       </div>
     );
 
     const caloriesInput = (
-      <div className="form__group form__group--25" key="caloriesInput">
-        <input type="text" className="form__input" placeholder="Calories" value={this.state.calories} onChange={this.handleCaloriesChange} />
-        <label className="form__label" htmlFor="Calories">{this.state.labelErrorCalories}</label>
+      <div className="foodForm__group foodForm__group--25" key="caloriesInput">
+        <input type="text" className="foodForm__input" placeholder="Calories" value={this.state.calories} onChange={this.handleCaloriesChange} />
+        <label className="foodForm__label" htmlFor="Calories">{this.state.labelErrorCalories}</label>
       </div>
     );
 
 
     return (
-      <form className="form" onSubmit={this.handleSubmit} >
-        <div className="form__row">
+      <form className="foodForm" onSubmit={this.handleSubmit} >
+        <h1 className="foodForm__title">{ this.props.title ? this.props.title : 'Form' }</h1>
+        <div className="foodForm__row">
           { [nameInput] }
           {
             this.state.showAmountUnit ? [amountUnitInput] : [amountInput, unitInput]
           }
 
         </div>
-        <div className="form__row">
+        <div className="foodForm__row">
           { 
             this.state.showMacros ? [macrosInput] :
             [carbohydratesInput, proteinInput, fatInput, caloriesInput]}
 
         </div>
-        <div className="form__row">
-          <div className="form__group--right">
-            <button className={isEnabled ? "btn btn--form" : "btn btn--form btn--disabled"} >Submit</button>
+        <div className="foodForm__row">
+          <div className="foodForm__group--right">
+            <button className={isEnabled ? "btn btn--form" : "btn btn--form btn--disabled"}>Submit</button>
+            <div>
+              {
+                this.props.onRemove &&
+                <button type="button" className="btn btn--form" onClick={this.props.onRemove}>Remove</button>
+              }
+            </div>
+            {
+              this.props.onExit &&
+              <button type="button" className="btn btn--form" onClick={this.props.onExit}>Exit</button>
+            }
           </div>
         </div>
       </form>

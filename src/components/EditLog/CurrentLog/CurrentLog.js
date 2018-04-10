@@ -115,13 +115,13 @@ class CurrentLog extends React.Component {
               <div>
                 <input 
                   name="weight"
-                  className="form__input"
+                  className="currentLog__input"
                   type="text"
                   placeholder="Weight"
                   value={this.props.currentLog.weight}
                   onChange={this.handleWeightChange} 
                 />
-                <label className="form__label" htmlFor="weight">Weight</label>
+                <label className="currentLog__label" htmlFor="weight">Weight</label>
               </div>
               <div className="currentLog__radio-group">
                 <input

@@ -9,7 +9,7 @@ export class EditFoodFormForFoods extends React.Component {
     await this.props.startEditFood(this.props.food.id, updates);
     this.props.removeCurrentFood();
   }
-  handleRemove = async (food) => {
+  handleRemove = async () => {
     await this.props.startRemoveFood(this.props.food);
     this.props.removeCurrentFood();
   }
@@ -17,32 +17,21 @@ export class EditFoodFormForFoods extends React.Component {
     this.props.removeCurrentFood();
   }
   render() {
+
+    if (this.props.food.id === '') {
+      return <p className="center-text margin-bottom-small">Select from List above to Edit Item</p>;
+    }
+
     return (
-      <div className="pane">
-          <h1 className="pane__title">Edit Food</h1>
-          {
-            (this.props.food.id !== '') ? (
-              <div>
-                <FoodForm
-                  food={this.props.food}
-                  handleSubmit={this.handleSubmit}
-                />
-                <div className="pane__buttons">
-                  <div>
-                    <button className="btn btn--form" onClick={this.handleRemove}>Remove</button>
-                  </div>
-                  <div>
-                    <button className="btn btn--form" onClick={this.handleExit}>Exit</button>
-                  </div>
-                </div>
-              </div>
-            ) : ( 
-              <p className="pane__warning">Select from List above to Edit Item</p>
-            )
-          }
-      </div>
-    )
-  }
+      <FoodForm
+        food={this.props.food}
+        handleSubmit={this.handleSubmit}
+        title={'Edit Food'}
+        onRemove={this.handleRemove}
+        onExit={this.handleExit}
+      />
+    );
+  };
 }
 
 

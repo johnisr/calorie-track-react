@@ -16,30 +16,19 @@ export class EditFoodFormForCurrentLog extends React.Component {
     this.props.editCurrentEditLog({ editFoodIndex: undefined });
   }
   render() {
+
+    if (this.props.index === undefined) {
+      return <p className="center-text margin-bottom-small">Select from List above to Edit Item</p>;
+    }
+
     return (
-      <div className="pane">
-        <h1 className="pane__title">Edit Food</h1>
-        {
-          (this.props.index !== undefined) ? (
-            <div>
-              <FoodForm
-                food={this.props.food}
-                handleSubmit={this.handleSubmit}
-              />
-              <div className="pane__buttons">
-                <div>
-                  <button className="btn btn--form" onClick={this.handleRemove}>Remove</button>
-                </div>
-                <div>
-                  <button className="btn btn--form" onClick={this.handleExit}>Exit</button>
-                </div>
-              </div>
-            </div>
-          ) : ( 
-            <p className="pane__warning">Select from List above to Edit Item</p>
-          )
-        }
-      </div>
+      <FoodForm
+        food={this.props.food}
+        handleSubmit={this.handleSubmit}
+        title={'Edit Food'}
+        onRemove={this.handleRemove}
+        onExit={this.handleExit}
+      />
     )
   }
 }

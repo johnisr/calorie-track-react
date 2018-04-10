@@ -9,12 +9,10 @@ export class AddFoodFormToCurrentLog extends React.Component {
   }
   render() {
     return (
-      <div>
-        <h1 className="pane__title">Add Food To Log</h1>
-        <FoodForm
-          handleSubmit={this.handleSubmit}
-        />
-      </div>
+      <FoodForm
+        handleSubmit={this.handleSubmit}
+        title={'Add Food To Log'}
+      />
     )
   }
 }
