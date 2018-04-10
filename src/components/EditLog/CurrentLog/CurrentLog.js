@@ -76,7 +76,12 @@ class CurrentLog extends React.Component {
       unit: this.props.currentLog.unit,
       foods: this.props.currentLog.foods,
       weight,
-      total
+      total: {
+        carbohydrates: +(total.carbohydrates).toFixed(2),
+        protein: +(total.protein).toFixed(2),
+        fat: +(total.fat).toFixed(2),
+        calories: +(total.calories).toFixed(2),
+      }
     });
     this.updateTimesUsed();
     
