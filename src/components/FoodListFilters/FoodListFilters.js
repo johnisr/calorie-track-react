@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setFoodNameFilter, sortByUsage, sortByDate, setMaxFoodsShown, setFoodsOffset } from '../actions/foodsFilters';
-import selectFoods from '../selectors/foods';
+import { setFoodNameFilter, sortByUsage, sortByDate, setMaxFoodsShown, setFoodsOffset } from '../../actions/foodsFilters';
+import selectFoods from '../../selectors/foods';
 
 export class FoodListFilters extends React.Component {
   handleNameChange = (e) => {

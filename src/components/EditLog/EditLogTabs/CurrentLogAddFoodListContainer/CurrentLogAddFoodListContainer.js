@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodList from '../../../Foods/FoodListContainer/FoodList/FoodList';
+import FoodList from '../../../FoodList/FoodList';
 import { addFoodToCurrentLogFromList } from '../../../../actions/currentLog';
 import selectFoodsWithPages from '../../../../selectors/foodsWithPages';
 

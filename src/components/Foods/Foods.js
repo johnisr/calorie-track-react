@@ -1,6 +1,6 @@
 import React from 'react';
 import FoodListContainer from './FoodListContainer/FoodListContainer';
-import FoodListFilters from '../FoodListFilters';
+import FoodListFilters from '../FoodListFilters/FoodListFilters';
 import FoodsDisplayTabs from './FoodsDisplayTabs/FoodsDisplayTabs';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';

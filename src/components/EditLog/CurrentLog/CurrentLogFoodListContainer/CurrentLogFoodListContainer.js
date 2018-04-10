@@ -56,7 +56,7 @@ export class CurrentLogFoodListContainer extends React.Component {
     return (
       <CurrentLogFoodList 
         foods={this.props.foods}
-        onMultiplierChange={(index, e) => this.handleMultiplierChange(index, e)}
+        onMultiplierChange={this.handleMultiplierChange}
         onEdit={(index) => this.handleEdit(index)}
         onRemove={(index) => this.handleRemove(index)}
       />

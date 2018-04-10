@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodList from './FoodList/FoodList';
+import FoodList from '../../FoodList/FoodList';
 import { addCurrentFood, removeCurrentFood } from '../../../actions/currentFood';
 import selectFoodsWithPages from '../../../selectors/foodsWithPages';
 
@@ -15,7 +15,7 @@ export class FoodListContainer extends React.Component {
     return (
       <FoodList
         foods={this.props.foods}
-        onClick={(food) => this.handleClick(food)}
+        onClick={this.handleClick}
         buttonText={'Edit'}
       />
     );

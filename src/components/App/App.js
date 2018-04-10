@@ -40,7 +40,7 @@ class App extends React.Component {
           ]);
           const path = history.location.pathname;
           if (path === '/') {
-            history.push('/FoodDashboard');
+            history.push('/Logs');
           }
           this.setState({ loading: false });
         } catch(e) {

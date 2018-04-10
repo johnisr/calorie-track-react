@@ -4,7 +4,7 @@ import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs/Tabs';
 import AddFoodFormToCurrentLog from './AddFoodFormToCurrentLog/AddFoodFormToCurrentLog';
 import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog/EditFoodFormForCurrentLog';
 import CurrentLogAddFoodListContainer from './CurrentLogAddFoodListContainer/CurrentLogAddFoodListContainer';
-import FoodListFilters from '../../FoodListFilters';
+import FoodListFilters from '../../FoodListFilters/FoodListFilters';
 
 const EditLogTabs = (props) => (
   <Tabs activeIndex={props.activeIndex}>
