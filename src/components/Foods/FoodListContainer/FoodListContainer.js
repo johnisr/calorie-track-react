@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodListDisplayFoods from './FoodListDisplayFoods';
+import FoodList from './FoodList/FoodList';
 import { addCurrentFood, removeCurrentFood } from '../../../actions/currentFood';
 import selectFoodsWithPages from '../../../selectors/foodsWithPages';
 
-export class FoodListDisplayFoodsContainer extends React.Component {
+export class FoodListContainer extends React.Component {
   handleClick = (food) => {
     if(this.props.currentFood.id !== '') {
       this.props.removeCurrentFood(food);
@@ -13,7 +13,7 @@ export class FoodListDisplayFoodsContainer extends React.Component {
   }
   render() {
     return (
-      <FoodListDisplayFoods
+      <FoodList
         foods={this.props.foods}
         onClick={(food) => this.handleClick(food)}
         buttonText={'Edit'}
@@ -32,4 +32,4 @@ const mapDispatchToProps = (dispatch) => ({
   removeCurrentFood: (food) => dispatch(removeCurrentFood(food)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FoodListDisplayFoodsContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(FoodListContainer);

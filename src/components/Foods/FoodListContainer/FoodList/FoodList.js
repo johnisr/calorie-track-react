@@ -1,7 +1,7 @@
 import React from 'react';
-import './FoodListDisplayFoods.css';
+import './FoodList.css';
 
-const FoodListDisplayFoods = (props) => {
+const FoodList = (props) => {
   
   const listHeader = () => (
     <div className="foodListDisplayFoods__list-header">
@@ -67,4 +67,4 @@ const FoodListDisplayFoods = (props) => {
 }
 
 
-export default FoodListDisplayFoods;
+export default FoodList;

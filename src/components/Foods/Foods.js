@@ -1,11 +1,11 @@
 import React from 'react';
-import FoodListDisplayFoodsContainer from './FoodListDisplayFoods/FoodListDisplayFoodsContainer';
+import FoodListContainer from './FoodListContainer/FoodListContainer';
 import FoodListFilters from '../FoodListFilters';
 import FoodsDisplayTabs from './FoodsDisplayTabs/FoodsDisplayTabs';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
 
-const FoodDashboardPage = () => (
+const Foods = () => (
   <div className="container">
   <div className="row">
     <section className="section__full-start-end">
@@ -15,7 +15,7 @@ const FoodDashboardPage = () => (
       <FoodListFilters />
     </section>
     <section className="section__center-6-start-end">
-      <FoodListDisplayFoodsContainer />
+      <FoodListContainer />
     </section>
     <section className="section__center-6-start-end margin-bottom-large">
       <FoodsDisplayTabs />
@@ -24,4 +24,4 @@ const FoodDashboardPage = () => (
   </div>
 );
 
-export default FoodDashboardPage;
+export default Foods;

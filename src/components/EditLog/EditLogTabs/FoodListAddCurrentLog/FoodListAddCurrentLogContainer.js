@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import FoodListDisplayfoods from '../../../Foods/FoodListDisplayFoods/FoodListDisplayFoods';
+import FoodList from '../../../Foods/FoodListContainer/FoodList/FoodList';
 import { addFoodToCurrentLogFromList } from '../../../../actions/currentLog';
 import selectFoodsWithPages from '../../../../selectors/foodsWithPages';
 
@@ -10,7 +10,7 @@ export class FoodListAddCurrentLogContainer extends React.Component {
   }
   render() {
     return (
-      <FoodListDisplayfoods 
+      <FoodList 
         foods={this.props.foods}
         onClick={(food) => this.handleClick(food)}
         buttonText={'Add'}
