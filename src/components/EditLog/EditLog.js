@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import CurrentLog from './CurrentLog/CurrentLog';
+import CurrentLogContainer from './CurrentLogContainer/CurrentLogContainer';
 import EditLogTabs from './EditLogTabs/EditLogTabs';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
@@ -17,20 +17,20 @@ class EditLog extends React.Component {
             <Header history={history}/>
           </section>
           <section className="section__center-start-end">
-            <h1 className="heading-secondary editLog__header">Edit Log</h1>
+            <h1 className="heading-secondary center-text margin-bottom-small">Edit Log</h1>
           </section>
         </div>
         {
           this.isEmpty(this.props.currentLog) ? (
             <div className="row">
               <section className="section__center-start-end">
-                <p className="heading-tertiary editLog__header">Select a Log from Log dashboard to edit</p>
+                <p className="heading-tertiary center-text margin-bottom-small">Select a Log from Log dashboard to edit</p>
               </section>
             </div>
           ) : (
             <div className="row">
               <section className="section__center-start-end">
-                <CurrentLog history={history} />
+                <CurrentLogContainer history={history} />
               </section>
               <section className="section__center-start-end margin-bottom-large">
                 <EditLogTabs />

@@ -4,8 +4,9 @@ import { editCurrentEditLog, removeCurrentEditLog } from '../../../actions/curre
 import CurrentLogFoodListContainer from './CurrentLogFoodListContainer/CurrentLogFoodListContainer';
 import { startEditLog, startRemoveLog } from '../../../actions/logs';
 import { startEditFood } from '../../../actions/foods';
+import CurrentLog from './CurrentLog/CurrentLog';
 
-class CurrentLog extends React.Component {
+class CurrentLogContainer extends React.Component {
   updateTimesUsed() {
     const foodUpdates = {};
     const oldLog = this.props.logs.filter(log => log.date === this.props.currentLog.date)[0];
@@ -110,60 +111,15 @@ class CurrentLog extends React.Component {
           <CurrentLogFoodListContainer />
         </div>
         <section className="section-center-6-start-end">
-          <div className="currentLog">
-            <div className="currentLog__weight">
-              <div>
-                <input 
-                  name="weight"
-                  className="currentLog__input"
-                  type="text"
-                  placeholder="Weight"
-                  value={this.props.currentLog.weight}
-                  onChange={this.handleWeightChange} 
-                />
-                <label className="currentLog__label" htmlFor="weight">Weight</label>
-              </div>
-              <div className="currentLog__radio-group">
-                <input
-                  className="currentLog__radio-input"
-                  type="radio"
-                  name="unit"
-                  id="lb"
-                  value="lbs"
-                  onChange={this.handleLbsSelected}
-                  checked={this.props.currentLog.unit === "lbs"}
-                />
-                <label htmlFor="lb" className="currentLog__radio-label">
-                  <span className="currentLog__radio-button"></span>
-                  lbs
-                </label>
-              </div>
-              <div className="currentLog__radio-group">
-              <input 
-                type="radio"
-                className="currentLog__radio-input"
-                name="unit"
-                value="kgs"
-                id="kg"
-                onChange={this.handleKgsSelected}
-                checked={this.props.currentLog.unit === "kgs"}
-              />
-                <label htmlFor="kg" className="currentLog__radio-label">
-                  <span className="currentLog__radio-button"></span>
-                  kgs
-                </label>
-              </div>
-            </div>
-            <div className="currentLog__btn">
-              <div>
-                <button className="btn btn--form btn--negative" onClick={this.handleRemove}>Remove</button>
-              </div>
-              <div>
-                <button className="btn btn--form btn--positive" onClick={this.handleSubmit}>Submit</button>
-              </div>
-            </div>
-          </div>
-          </section>
+          <CurrentLog
+            currentLog={this.props.currentLog}
+            onWeightChange={this.handleWeightChange}
+            onLbsSelected={this.handleLbsSelected}
+            onKgsSelected={this.handleKgsSelected}
+            onRemove={this.handleRemove}
+            onSubmit={this.handleSubmit}
+          />
+        </section>
       </div>
     );
   }
@@ -183,4 +139,4 @@ const mapDispatchToProps = (dispatch) => ({
   startRemoveLog: (date) => dispatch(startRemoveLog(date)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(CurrentLog);
+export default connect(mapStateToProps, mapDispatchToProps)(CurrentLogContainer);
