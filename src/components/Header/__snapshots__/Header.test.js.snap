@@ -29,7 +29,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="btn"
-          to="/FoodDashboard"
+          to="/Foods"
 >
           Foods
 </NavLink>,
@@ -37,7 +37,7 @@ ShallowWrapper {
           activeClassName="active"
           ariaCurrent="true"
           className="btn"
-          to="/LogDashboard"
+          to="/Logs"
 >
           Logs
 </NavLink>,
@@ -79,7 +79,7 @@ ShallowWrapper {
           "ariaCurrent": "true",
           "children": "Foods",
           "className": "btn",
-          "to": "/FoodDashboard",
+          "to": "/Foods",
         },
         "ref": null,
         "rendered": "Foods",
@@ -94,7 +94,7 @@ ShallowWrapper {
           "ariaCurrent": "true",
           "children": "Logs",
           "className": "btn",
-          "to": "/LogDashboard",
+          "to": "/Logs",
         },
         "ref": null,
         "rendered": "Logs",
@@ -145,7 +145,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="btn"
-            to="/FoodDashboard"
+            to="/Foods"
 >
             Foods
 </NavLink>,
@@ -153,7 +153,7 @@ ShallowWrapper {
             activeClassName="active"
             ariaCurrent="true"
             className="btn"
-            to="/LogDashboard"
+            to="/Logs"
 >
             Logs
 </NavLink>,
@@ -195,7 +195,7 @@ ShallowWrapper {
             "ariaCurrent": "true",
             "children": "Foods",
             "className": "btn",
-            "to": "/FoodDashboard",
+            "to": "/Foods",
           },
           "ref": null,
           "rendered": "Foods",
@@ -210,7 +210,7 @@ ShallowWrapper {
             "ariaCurrent": "true",
             "children": "Logs",
             "className": "btn",
-            "to": "/LogDashboard",
+            "to": "/Logs",
           },
           "ref": null,
           "rendered": "Logs",

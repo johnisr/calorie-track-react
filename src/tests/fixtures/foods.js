@@ -20,6 +20,13 @@ export default [{
   calories: 165,
   timesUsed: 1,
   createdAt: 1000,
+  base: {
+    amount: 100,
+    calories: 165,
+    carbohydrates: 0,
+    fat: 3.6,
+    protein: 31,
+  },
 }, {
   id: '3',
   name: 'Almonds',

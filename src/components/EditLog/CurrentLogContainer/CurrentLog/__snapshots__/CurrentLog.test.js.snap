@@ -1,0 +1,1038 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render currentLog 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <currentLog
+    currentLog={
+        Object {
+            "date": -86400000,
+            "foods": Array [
+              Object {
+                "amount": 24,
+                "calories": 163,
+                "carbohydrates": 2.5,
+                "createdAt": -1000,
+                "fat": 14,
+                "id": "3",
+                "name": "Almonds",
+                "protein": 6,
+                "timesUsed": 2,
+                "unit": "pieces",
+              },
+              Object {
+                "amount": 200,
+                "calories": 205,
+                "carbohydrates": 44,
+                "createdAt": 0,
+                "fat": 0.4,
+                "id": "1",
+                "name": "Rice (Jasmine)",
+                "protein": 4.2,
+                "timesUsed": 0,
+                "unit": "grams",
+              },
+              Object {
+                "amount": 100,
+                "calories": 165,
+                "carbohydrates": 0,
+                "createdAt": 1000,
+                "fat": 3.6,
+                "id": "2",
+                "name": "Chicken Breast",
+                "protein": 31,
+                "timesUsed": 1,
+                "unit": "grams",
+              },
+            ],
+            "total": Object {
+              "calories": 533,
+              "carbohydrates": 46.5,
+              "fat": 18,
+              "protein": 41.2,
+            },
+            "unit": "lb",
+            "weight": 202,
+          }
+    }
+    onKgsSelected={[Function]}
+    onLbsSelected={[Function]}
+    onRemove={[Function]}
+    onSubmit={[Function]}
+    onWeightChange={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="currentLog__weight"
+>
+          <div>
+                    <input
+                              className="currentLog__input"
+                              name="weight"
+                              onChange={[Function]}
+                              placeholder="Weight"
+                              type="text"
+                              value={202}
+                    />
+                    <label
+                              className="currentLog__label"
+                              htmlFor="weight"
+                    >
+                              Weight
+                    </label>
+          </div>
+          <div
+                    className="currentLog__radio-group"
+          >
+                    <input
+                              checked={false}
+                              className="currentLog__radio-input"
+                              id="lb"
+                              name="unit"
+                              onChange={[Function]}
+                              type="radio"
+                              value="lbs"
+                    />
+                    <label
+                              className="currentLog__radio-label"
+                              htmlFor="lb"
+                    >
+                              <span
+                                        className="currentLog__radio-button"
+                              />
+                              lbs
+                    </label>
+          </div>
+          <div
+                    className="currentLog__radio-group"
+          >
+                    <input
+                              checked={false}
+                              className="currentLog__radio-input"
+                              id="kg"
+                              name="unit"
+                              onChange={[Function]}
+                              type="radio"
+                              value="kgs"
+                    />
+                    <label
+                              className="currentLog__radio-label"
+                              htmlFor="kg"
+                    >
+                              <span
+                                        className="currentLog__radio-button"
+                              />
+                              kgs
+                    </label>
+          </div>
+</div>,
+        <div
+          className="currentLog__btn"
+>
+          <div>
+                    <button
+                              className="btn btn--form"
+                              onClick={[Function]}
+                              type="button"
+                    >
+                              Remove
+                    </button>
+          </div>
+          <div>
+                    <button
+                              className="btn btn--form btn--primary"
+                              onClick={[Function]}
+                    >
+                              Submit
+                    </button>
+          </div>
+</div>,
+      ],
+      "className": "currentLog",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <input
+                            className="currentLog__input"
+                            name="weight"
+                            onChange={[Function]}
+                            placeholder="Weight"
+                            type="text"
+                            value={202}
+              />
+              <label
+                            className="currentLog__label"
+                            htmlFor="weight"
+              >
+                            Weight
+              </label>
+</div>,
+            <div
+              className="currentLog__radio-group"
+>
+              <input
+                            checked={false}
+                            className="currentLog__radio-input"
+                            id="lb"
+                            name="unit"
+                            onChange={[Function]}
+                            type="radio"
+                            value="lbs"
+              />
+              <label
+                            className="currentLog__radio-label"
+                            htmlFor="lb"
+              >
+                            <span
+                                          className="currentLog__radio-button"
+                            />
+                            lbs
+              </label>
+</div>,
+            <div
+              className="currentLog__radio-group"
+>
+              <input
+                            checked={false}
+                            className="currentLog__radio-input"
+                            id="kg"
+                            name="unit"
+                            onChange={[Function]}
+                            type="radio"
+                            value="kgs"
+              />
+              <label
+                            className="currentLog__radio-label"
+                            htmlFor="kg"
+              >
+                            <span
+                                          className="currentLog__radio-button"
+                            />
+                            kgs
+              </label>
+</div>,
+          ],
+          "className": "currentLog__weight",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="currentLog__input"
+                  name="weight"
+                  onChange={[Function]}
+                  placeholder="Weight"
+                  type="text"
+                  value={202}
+/>,
+                <label
+                  className="currentLog__label"
+                  htmlFor="weight"
+>
+                  Weight
+</label>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "currentLog__input",
+                  "name": "weight",
+                  "onChange": [Function],
+                  "placeholder": "Weight",
+                  "type": "text",
+                  "value": 202,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Weight",
+                  "className": "currentLog__label",
+                  "htmlFor": "weight",
+                },
+                "ref": null,
+                "rendered": "Weight",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  checked={false}
+                  className="currentLog__radio-input"
+                  id="lb"
+                  name="unit"
+                  onChange={[Function]}
+                  type="radio"
+                  value="lbs"
+/>,
+                <label
+                  className="currentLog__radio-label"
+                  htmlFor="lb"
+>
+                  <span
+                                    className="currentLog__radio-button"
+                  />
+                  lbs
+</label>,
+              ],
+              "className": "currentLog__radio-group",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "checked": false,
+                  "className": "currentLog__radio-input",
+                  "id": "lb",
+                  "name": "unit",
+                  "onChange": [Function],
+                  "type": "radio",
+                  "value": "lbs",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="currentLog__radio-button"
+/>,
+                    "lbs",
+                  ],
+                  "className": "currentLog__radio-label",
+                  "htmlFor": "lb",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "currentLog__radio-button",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  "lbs",
+                ],
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  checked={false}
+                  className="currentLog__radio-input"
+                  id="kg"
+                  name="unit"
+                  onChange={[Function]}
+                  type="radio"
+                  value="kgs"
+/>,
+                <label
+                  className="currentLog__radio-label"
+                  htmlFor="kg"
+>
+                  <span
+                                    className="currentLog__radio-button"
+                  />
+                  kgs
+</label>,
+              ],
+              "className": "currentLog__radio-group",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "checked": false,
+                  "className": "currentLog__radio-input",
+                  "id": "kg",
+                  "name": "unit",
+                  "onChange": [Function],
+                  "type": "radio",
+                  "value": "kgs",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <span
+                      className="currentLog__radio-button"
+/>,
+                    "kgs",
+                  ],
+                  "className": "currentLog__radio-label",
+                  "htmlFor": "kg",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "currentLog__radio-button",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "span",
+                  },
+                  "kgs",
+                ],
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div>
+              <button
+                            className="btn btn--form"
+                            onClick={[Function]}
+                            type="button"
+              >
+                            Remove
+              </button>
+</div>,
+            <div>
+              <button
+                            className="btn btn--form btn--primary"
+                            onClick={[Function]}
+              >
+                            Submit
+              </button>
+</div>,
+          ],
+          "className": "currentLog__btn",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form"
+                onClick={[Function]}
+                type="button"
+>
+                Remove
+</button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Remove",
+                "className": "btn btn--form",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Remove",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form btn--primary"
+                onClick={[Function]}
+>
+                Submit
+</button>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "btn btn--form btn--primary",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="currentLog__weight"
+>
+            <div>
+                        <input
+                                    className="currentLog__input"
+                                    name="weight"
+                                    onChange={[Function]}
+                                    placeholder="Weight"
+                                    type="text"
+                                    value={202}
+                        />
+                        <label
+                                    className="currentLog__label"
+                                    htmlFor="weight"
+                        >
+                                    Weight
+                        </label>
+            </div>
+            <div
+                        className="currentLog__radio-group"
+            >
+                        <input
+                                    checked={false}
+                                    className="currentLog__radio-input"
+                                    id="lb"
+                                    name="unit"
+                                    onChange={[Function]}
+                                    type="radio"
+                                    value="lbs"
+                        />
+                        <label
+                                    className="currentLog__radio-label"
+                                    htmlFor="lb"
+                        >
+                                    <span
+                                                className="currentLog__radio-button"
+                                    />
+                                    lbs
+                        </label>
+            </div>
+            <div
+                        className="currentLog__radio-group"
+            >
+                        <input
+                                    checked={false}
+                                    className="currentLog__radio-input"
+                                    id="kg"
+                                    name="unit"
+                                    onChange={[Function]}
+                                    type="radio"
+                                    value="kgs"
+                        />
+                        <label
+                                    className="currentLog__radio-label"
+                                    htmlFor="kg"
+                        >
+                                    <span
+                                                className="currentLog__radio-button"
+                                    />
+                                    kgs
+                        </label>
+            </div>
+</div>,
+          <div
+            className="currentLog__btn"
+>
+            <div>
+                        <button
+                                    className="btn btn--form"
+                                    onClick={[Function]}
+                                    type="button"
+                        >
+                                    Remove
+                        </button>
+            </div>
+            <div>
+                        <button
+                                    className="btn btn--form btn--primary"
+                                    onClick={[Function]}
+                        >
+                                    Submit
+                        </button>
+            </div>
+</div>,
+        ],
+        "className": "currentLog",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <input
+                                className="currentLog__input"
+                                name="weight"
+                                onChange={[Function]}
+                                placeholder="Weight"
+                                type="text"
+                                value={202}
+                />
+                <label
+                                className="currentLog__label"
+                                htmlFor="weight"
+                >
+                                Weight
+                </label>
+</div>,
+              <div
+                className="currentLog__radio-group"
+>
+                <input
+                                checked={false}
+                                className="currentLog__radio-input"
+                                id="lb"
+                                name="unit"
+                                onChange={[Function]}
+                                type="radio"
+                                value="lbs"
+                />
+                <label
+                                className="currentLog__radio-label"
+                                htmlFor="lb"
+                >
+                                <span
+                                                className="currentLog__radio-button"
+                                />
+                                lbs
+                </label>
+</div>,
+              <div
+                className="currentLog__radio-group"
+>
+                <input
+                                checked={false}
+                                className="currentLog__radio-input"
+                                id="kg"
+                                name="unit"
+                                onChange={[Function]}
+                                type="radio"
+                                value="kgs"
+                />
+                <label
+                                className="currentLog__radio-label"
+                                htmlFor="kg"
+                >
+                                <span
+                                                className="currentLog__radio-button"
+                                />
+                                kgs
+                </label>
+</div>,
+            ],
+            "className": "currentLog__weight",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="currentLog__input"
+                    name="weight"
+                    onChange={[Function]}
+                    placeholder="Weight"
+                    type="text"
+                    value={202}
+/>,
+                  <label
+                    className="currentLog__label"
+                    htmlFor="weight"
+>
+                    Weight
+</label>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "currentLog__input",
+                    "name": "weight",
+                    "onChange": [Function],
+                    "placeholder": "Weight",
+                    "type": "text",
+                    "value": 202,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Weight",
+                    "className": "currentLog__label",
+                    "htmlFor": "weight",
+                  },
+                  "ref": null,
+                  "rendered": "Weight",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    checked={false}
+                    className="currentLog__radio-input"
+                    id="lb"
+                    name="unit"
+                    onChange={[Function]}
+                    type="radio"
+                    value="lbs"
+/>,
+                  <label
+                    className="currentLog__radio-label"
+                    htmlFor="lb"
+>
+                    <span
+                                        className="currentLog__radio-button"
+                    />
+                    lbs
+</label>,
+                ],
+                "className": "currentLog__radio-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "checked": false,
+                    "className": "currentLog__radio-input",
+                    "id": "lb",
+                    "name": "unit",
+                    "onChange": [Function],
+                    "type": "radio",
+                    "value": "lbs",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="currentLog__radio-button"
+/>,
+                      "lbs",
+                    ],
+                    "className": "currentLog__radio-label",
+                    "htmlFor": "lb",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "currentLog__radio-button",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    "lbs",
+                  ],
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    checked={false}
+                    className="currentLog__radio-input"
+                    id="kg"
+                    name="unit"
+                    onChange={[Function]}
+                    type="radio"
+                    value="kgs"
+/>,
+                  <label
+                    className="currentLog__radio-label"
+                    htmlFor="kg"
+>
+                    <span
+                                        className="currentLog__radio-button"
+                    />
+                    kgs
+</label>,
+                ],
+                "className": "currentLog__radio-group",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "checked": false,
+                    "className": "currentLog__radio-input",
+                    "id": "kg",
+                    "name": "unit",
+                    "onChange": [Function],
+                    "type": "radio",
+                    "value": "kgs",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <span
+                        className="currentLog__radio-button"
+/>,
+                      "kgs",
+                    ],
+                    "className": "currentLog__radio-label",
+                    "htmlFor": "kg",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "currentLog__radio-button",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "span",
+                    },
+                    "kgs",
+                  ],
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div>
+                <button
+                                className="btn btn--form"
+                                onClick={[Function]}
+                                type="button"
+                >
+                                Remove
+                </button>
+</div>,
+              <div>
+                <button
+                                className="btn btn--form btn--primary"
+                                onClick={[Function]}
+                >
+                                Submit
+                </button>
+</div>,
+            ],
+            "className": "currentLog__btn",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form"
+                  onClick={[Function]}
+                  type="button"
+>
+                  Remove
+</button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Remove",
+                  "className": "btn btn--form",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Remove",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form btn--primary"
+                  onClick={[Function]}
+>
+                  Submit
+</button>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "btn btn--form btn--primary",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

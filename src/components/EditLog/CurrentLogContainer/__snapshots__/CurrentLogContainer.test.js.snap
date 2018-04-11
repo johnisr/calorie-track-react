@@ -46,11 +46,201 @@ ShallowWrapper {
                 "unit": "pieces",
               },
             ],
+            "total": Object {
+              "calories": 533,
+              "carbohydrates": 46.5,
+              "fat": 18,
+              "protein": 41.2,
+            },
             "unit": "lb",
             "weight": 201,
           }
     }
-    editCurrentLog={[Function]}
+    editCurrentEditLog={[Function]}
+    foods={
+        Array [
+            Object {
+              "amount": 200,
+              "calories": 205,
+              "carbohydrates": 44,
+              "createdAt": 0,
+              "fat": 0.4,
+              "id": "1",
+              "name": "Rice (Jasmine)",
+              "protein": 4.2,
+              "timesUsed": 0,
+              "unit": "grams",
+            },
+            Object {
+              "amount": 100,
+              "calories": 165,
+              "carbohydrates": 0,
+              "createdAt": 1000,
+              "fat": 3.6,
+              "id": "2",
+              "name": "Chicken Breast",
+              "protein": 31,
+              "timesUsed": 1,
+              "unit": "grams",
+            },
+            Object {
+              "amount": 24,
+              "calories": 163,
+              "carbohydrates": 2.5,
+              "createdAt": -1000,
+              "fat": 14,
+              "id": "3",
+              "name": "Almonds",
+              "protein": 6,
+              "timesUsed": 2,
+              "unit": "pieces",
+            },
+          ]
+    }
+    history={
+        Object {
+            "push": [Function],
+          }
+    }
+    logs={
+        Array [
+            Object {
+              "date": -86400000,
+              "foods": Array [
+                Object {
+                  "amount": 24,
+                  "calories": 163,
+                  "carbohydrates": 2.5,
+                  "createdAt": -1000,
+                  "fat": 14,
+                  "id": "3",
+                  "name": "Almonds",
+                  "protein": 6,
+                  "timesUsed": 2,
+                  "unit": "pieces",
+                },
+                Object {
+                  "amount": 200,
+                  "calories": 205,
+                  "carbohydrates": 44,
+                  "createdAt": 0,
+                  "fat": 0.4,
+                  "id": "1",
+                  "name": "Rice (Jasmine)",
+                  "protein": 4.2,
+                  "timesUsed": 0,
+                  "unit": "grams",
+                },
+                Object {
+                  "amount": 100,
+                  "calories": 165,
+                  "carbohydrates": 0,
+                  "createdAt": 1000,
+                  "fat": 3.6,
+                  "id": "2",
+                  "name": "Chicken Breast",
+                  "protein": 31,
+                  "timesUsed": 1,
+                  "unit": "grams",
+                },
+              ],
+              "total": Object {
+                "calories": 533,
+                "carbohydrates": 46.5,
+                "fat": 18,
+                "protein": 41.2,
+              },
+              "unit": "lb",
+              "weight": 202,
+            },
+            Object {
+              "date": 0,
+              "foods": Array [
+                Object {
+                  "amount": 200,
+                  "calories": 205,
+                  "carbohydrates": 44,
+                  "createdAt": 0,
+                  "fat": 0.4,
+                  "id": "1",
+                  "name": "Rice (Jasmine)",
+                  "protein": 4.2,
+                  "timesUsed": 0,
+                  "unit": "grams",
+                },
+                Object {
+                  "amount": 200,
+                  "calories": 205,
+                  "carbohydrates": 44,
+                  "createdAt": 0,
+                  "fat": 0.4,
+                  "id": "1",
+                  "name": "Rice (Jasmine)",
+                  "protein": 4.2,
+                  "timesUsed": 0,
+                  "unit": "grams",
+                },
+              ],
+              "total": Object {
+                "calories": 410,
+                "carbohydrates": 88,
+                "fat": 0.8,
+                "protein": 8.4,
+              },
+              "unit": "lb",
+              "weight": 200,
+            },
+            Object {
+              "date": 86400000,
+              "foods": Array [
+                Object {
+                  "amount": 200,
+                  "calories": 205,
+                  "carbohydrates": 44,
+                  "createdAt": 0,
+                  "fat": 0.4,
+                  "id": "1",
+                  "name": "Rice (Jasmine)",
+                  "protein": 4.2,
+                  "timesUsed": 0,
+                  "unit": "grams",
+                },
+                Object {
+                  "amount": 100,
+                  "calories": 165,
+                  "carbohydrates": 0,
+                  "createdAt": 1000,
+                  "fat": 3.6,
+                  "id": "2",
+                  "name": "Chicken Breast",
+                  "protein": 31,
+                  "timesUsed": 1,
+                  "unit": "grams",
+                },
+                Object {
+                  "amount": 24,
+                  "calories": 163,
+                  "carbohydrates": 2.5,
+                  "createdAt": -1000,
+                  "fat": 14,
+                  "id": "3",
+                  "name": "Almonds",
+                  "protein": 6,
+                  "timesUsed": 2,
+                  "unit": "pieces",
+                },
+              ],
+              "total": Object {
+                "calories": 533,
+                "carbohydrates": 46.5,
+                "fat": 18,
+                "protein": 41.2,
+              },
+              "unit": "lb",
+              "weight": 201,
+            },
+          ]
+    }
     removeCurrentEditLog={[Function]}
     startEditFood={[Function]}
     startEditLog={[Function]}
@@ -117,6 +307,12 @@ ShallowWrapper {
                                             "unit": "pieces",
                                           },
                                         ],
+                                        "total": Object {
+                                          "calories": 533,
+                                          "carbohydrates": 46.5,
+                                          "fat": 18,
+                                          "protein": 41.2,
+                                        },
                                         "unit": "lb",
                                         "weight": 201,
                                       }
@@ -199,6 +395,12 @@ ShallowWrapper {
                                         "unit": "pieces",
                                       },
                                     ],
+                                    "total": Object {
+                                      "calories": 533,
+                                      "carbohydrates": 46.5,
+                                      "fat": 18,
+                                      "protein": 41.2,
+                                    },
                                     "unit": "lb",
                                     "weight": 201,
                                   }
@@ -257,6 +459,12 @@ ShallowWrapper {
                   "unit": "pieces",
                 },
               ],
+              "total": Object {
+                "calories": 533,
+                "carbohydrates": 46.5,
+                "fat": 18,
+                "protein": 41.2,
+              },
               "unit": "lb",
               "weight": 201,
             },
@@ -330,6 +538,12 @@ ShallowWrapper {
                                                     "unit": "pieces",
                                                   },
                                                 ],
+                                                "total": Object {
+                                                  "calories": 533,
+                                                  "carbohydrates": 46.5,
+                                                  "fat": 18,
+                                                  "protein": 41.2,
+                                                },
                                                 "unit": "lb",
                                                 "weight": 201,
                                               }
@@ -412,6 +626,12 @@ ShallowWrapper {
                                               "unit": "pieces",
                                             },
                                           ],
+                                          "total": Object {
+                                            "calories": 533,
+                                            "carbohydrates": 46.5,
+                                            "fat": 18,
+                                            "protein": 41.2,
+                                          },
                                           "unit": "lb",
                                           "weight": 201,
                                         }
@@ -470,6 +690,12 @@ ShallowWrapper {
                     "unit": "pieces",
                   },
                 ],
+                "total": Object {
+                  "calories": 533,
+                  "carbohydrates": 46.5,
+                  "fat": 18,
+                  "protein": 41.2,
+                },
                 "unit": "lb",
                 "weight": 201,
               },

@@ -91,7 +91,7 @@ export class CurrentLogContainer extends React.Component {
       }
     });
     this.updateTimesUsed();
-    
+
     this.props.removeCurrentEditLog();
     this.props.history.push('/Logs');
   }

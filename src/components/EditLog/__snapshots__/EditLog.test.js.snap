@@ -46,6 +46,12 @@ ShallowWrapper {
                 "unit": "pieces",
               },
             ],
+            "total": Object {
+              "calories": 533,
+              "carbohydrates": 46.5,
+              "fat": 18,
+              "protein": 41.2,
+            },
             "unit": "lb",
             "weight": 201,
           }

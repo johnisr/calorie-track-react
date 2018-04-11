@@ -10,6 +10,12 @@ export default [{
     foods[0],
     foods[1]
   ],
+  total: {
+    calories: 533,
+    carbohydrates: 46.5,
+    fat: 18,
+    protein: 41.2,
+  },
 }, {
   date: moment(0).valueOf(),
   weight: 200,
@@ -18,6 +24,12 @@ export default [{
     foods[0],
     foods[0]
   ],
+  total: {
+    calories: 410,
+    carbohydrates: 88,
+    fat: 0.8,
+    protein: 8.4,
+  },
 }, {
   date: moment(0).add(1, 'day').valueOf(),
   weight: 201,
@@ -27,4 +39,10 @@ export default [{
     foods[1],
     foods[2]
   ],
+  total: {
+    calories: 533,
+    carbohydrates: 46.5,
+    fat: 18,
+    protein: 41.2,
+  },
 }];

@@ -45,8 +45,8 @@ describe('Asynchronous Actions With firebase', () => {
 
   beforeEach((done) => {
     const logsData = {};
-    logs.forEach(({ date, weight, unit, foods }) => {
-      logsData[date] = { date, weight, unit, foods };
+    logs.forEach(({ date, weight, unit, foods, total }) => {
+      logsData[date] = { date, weight, unit, foods, total };
     });
     database.ref(`users/${uid}/logs`).set(logsData).then(() => done());
   });
