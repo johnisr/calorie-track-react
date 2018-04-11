@@ -10,8 +10,12 @@ const defaultAuthState = { auth: { uid } };
 
 beforeEach((done) => {
   const foodsData = {};
-  foods.forEach(({ id, name, amount, unit, carbohydrates, protein, fat, calories, createdAt, timesUsed }) => {
-    foodsData[id] = { name, amount, unit, carbohydrates, protein, fat, calories, createdAt, timesUsed };
+  foods.forEach(({ id, name, amount, unit, carbohydrates, protein, fat, calories, createdAt, timesUsed, base }) => {
+    if (base) {
+      foodsData[id] = { name, amount, unit, carbohydrates, protein, fat, calories, createdAt, timesUsed, base };
+    } else {
+      foodsData[id] = { name, amount, unit, carbohydrates, protein, fat, calories, createdAt, timesUsed };
+    }
   });
   database.ref(`users/${uid}/foods`).set(foodsData).then(() => done());
 });
@@ -68,7 +72,7 @@ it('should setup editFood action object with provided values', () => {
 
 it('should edit food from database and dispatch edit action to store', async () => {
   const store = createMockStore(defaultAuthState);
-  const { id } = foods[1];
+  const { id } = foods[0];
   const updates = { 
     name: 'beef',
     amount: 300,

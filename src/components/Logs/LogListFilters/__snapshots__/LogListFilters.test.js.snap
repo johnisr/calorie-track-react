@@ -1,0 +1,1138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LogListFilters
+    filters={
+        Object {
+            "endDate": "1970-01-01T00:00:01.000Z",
+            "maxLogsShown": 7,
+            "offset": 0,
+            "sortBy": "newest",
+            "startDate": "1970-01-01T00:00:00.000Z",
+          }
+    }
+    logsLength={3}
+    setEndDate={[Function]}
+    setLogsOffset={[Function]}
+    setMaxLogsShown={[Function]}
+    setStartDate={[Function]}
+    sortByNewest={[Function]}
+    sortByOldest={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <withStyles(DateRangePicker)
+          anchorDirection="left"
+          block={false}
+          calendarInfoPosition="bottom"
+          customArrowIcon={null}
+          customCloseIcon={null}
+          customInputIcon={null}
+          daySize={39}
+          disabled={false}
+          displayFormat={[Function]}
+          enableOutsideDays={false}
+          endDate={"1970-01-01T00:00:01.000Z"}
+          endDateId="endDate"
+          endDatePlaceholderText="End Date"
+          firstDayOfWeek={null}
+          focusedInput={null}
+          hideKeyboardShortcutsPanel={false}
+          horizontalMargin={0}
+          initialVisibleMonth={null}
+          inputIconPosition="before"
+          isDayBlocked={[Function]}
+          isDayHighlighted={[Function]}
+          isOutsideRange={[Function]}
+          isRTL={false}
+          keepFocusOnInput={false}
+          keepOpenOnDateSelect={false}
+          minimumNights={1}
+          monthFormat="MMMM YYYY"
+          navNext={null}
+          navPrev={null}
+          noBorder={false}
+          numberOfMonths={1}
+          onClose={[Function]}
+          onDatesChange={[Function]}
+          onFocusChange={[Function]}
+          onNextMonthClick={[Function]}
+          onPrevMonthClick={[Function]}
+          openDirection="down"
+          orientation="horizontal"
+          phrases={
+                    Object {
+                              "calendarLabel": "Calendar",
+                              "chooseAvailableEndDate": [Function],
+                              "chooseAvailableStartDate": [Function],
+                              "clearDates": "Clear Dates",
+                              "closeDatePicker": "Close",
+                              "dateIsSelected": [Function],
+                              "dateIsUnavailable": [Function],
+                              "enterKey": "Enter key",
+                              "escape": "Escape key",
+                              "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
+                              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                              "homeEnd": "Home and end keys",
+                              "jumpToNextMonth": "Move forward to switch to the next month.",
+                              "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                              "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+                      select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                              "keyboardShortcuts": "Keyboard Shortcuts",
+                              "leftArrowRightArrow": "Right and left arrow keys",
+                              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+                              "moveFocusByOneMonth": "Switch months.",
+                              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+                              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+                              "openThisPanel": "Open this panel.",
+                              "pageUpPageDown": "page up and page down keys",
+                              "questionMark": "Question mark",
+                              "returnFocusToInput": "Return to the date input field.",
+                              "selectFocusedDate": "Select the date in focus.",
+                              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                              "upArrowDownArrow": "up and down arrow keys",
+                            }
+          }
+          readOnly={false}
+          regular={false}
+          renderCalendarDay={undefined}
+          renderCalendarInfo={null}
+          renderDayContents={null}
+          renderMonth={null}
+          reopenPickerOnClearDates={false}
+          required={false}
+          screenReaderInputMessage=""
+          showClearDates={true}
+          showDefaultInputIcon={false}
+          small={false}
+          startDate={"1970-01-01T00:00:00.000Z"}
+          startDateId="startDate"
+          startDatePlaceholderText="Start Date"
+          transitionDuration={undefined}
+          verticalHeight={null}
+          verticalSpacing={22}
+          weekDayFormat="dd"
+          withFullScreenPortal={false}
+          withPortal={false}
+/>,
+        <div
+          className="logsListFilters__options"
+>
+          <select
+                    className="logsListFilters__select"
+                    onChange={[Function]}
+                    value="newest"
+          >
+                    <option
+                              value="newest"
+                    >
+                              new
+                    </option>
+                    <option
+                              value="oldest"
+                    >
+                              old
+                    </option>
+          </select>
+          <select
+                    className="logsListFilters__select"
+                    onChange={[Function]}
+                    value={7}
+          >
+                    <option
+                              value={1}
+                    >
+                              1
+                    </option>
+                    <option
+                              value={7}
+                    >
+                              7
+                    </option>
+                    <option
+                              value={14}
+                    >
+                              14
+                    </option>
+                    <option
+                              value={31}
+                    >
+                              31
+                    </option>
+          </select>
+</div>,
+        <div
+          className="logsListFilters__pages flex-right-end"
+>
+          <button
+                    className="btn btn--page btn--disabled"
+                    disabled={true}
+                    onClick={[Function]}
+          >
+                    Prev
+          </button>
+          <button
+                    className="btn btn--page btn--active"
+                    disabled={true}
+                    onClick={[Function]}
+          >
+                    1
+          </button>
+          <button
+                    className="btn btn--page btn--disabled"
+                    disabled={true}
+                    onClick={[Function]}
+          >
+                    Next
+          </button>
+</div>,
+      ],
+      "className": "logsListFilters",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "anchorDirection": "left",
+          "block": false,
+          "calendarInfoPosition": "bottom",
+          "customArrowIcon": null,
+          "customCloseIcon": null,
+          "customInputIcon": null,
+          "daySize": 39,
+          "disabled": false,
+          "displayFormat": [Function],
+          "enableOutsideDays": false,
+          "endDate": "1970-01-01T00:00:01.000Z",
+          "endDateId": "endDate",
+          "endDatePlaceholderText": "End Date",
+          "firstDayOfWeek": null,
+          "focusedInput": null,
+          "hideKeyboardShortcutsPanel": false,
+          "horizontalMargin": 0,
+          "initialVisibleMonth": null,
+          "inputIconPosition": "before",
+          "isDayBlocked": [Function],
+          "isDayHighlighted": [Function],
+          "isOutsideRange": [Function],
+          "isRTL": false,
+          "keepFocusOnInput": false,
+          "keepOpenOnDateSelect": false,
+          "minimumNights": 1,
+          "monthFormat": "MMMM YYYY",
+          "navNext": null,
+          "navPrev": null,
+          "noBorder": false,
+          "numberOfMonths": 1,
+          "onClose": [Function],
+          "onDatesChange": [Function],
+          "onFocusChange": [Function],
+          "onNextMonthClick": [Function],
+          "onPrevMonthClick": [Function],
+          "openDirection": "down",
+          "orientation": "horizontal",
+          "phrases": Object {
+            "calendarLabel": "Calendar",
+            "chooseAvailableEndDate": [Function],
+            "chooseAvailableStartDate": [Function],
+            "clearDates": "Clear Dates",
+            "closeDatePicker": "Close",
+            "dateIsSelected": [Function],
+            "dateIsUnavailable": [Function],
+            "enterKey": "Enter key",
+            "escape": "Escape key",
+            "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
+            "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+            "homeEnd": "Home and end keys",
+            "jumpToNextMonth": "Move forward to switch to the next month.",
+            "jumpToPrevMonth": "Move backward to switch to the previous month.",
+            "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+            "keyboardShortcuts": "Keyboard Shortcuts",
+            "leftArrowRightArrow": "Right and left arrow keys",
+            "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+            "moveFocusByOneMonth": "Switch months.",
+            "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+            "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+            "openThisPanel": "Open this panel.",
+            "pageUpPageDown": "page up and page down keys",
+            "questionMark": "Question mark",
+            "returnFocusToInput": "Return to the date input field.",
+            "selectFocusedDate": "Select the date in focus.",
+            "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+            "upArrowDownArrow": "up and down arrow keys",
+          },
+          "readOnly": false,
+          "regular": false,
+          "renderCalendarDay": undefined,
+          "renderCalendarInfo": null,
+          "renderDayContents": null,
+          "renderMonth": null,
+          "reopenPickerOnClearDates": false,
+          "required": false,
+          "screenReaderInputMessage": "",
+          "showClearDates": true,
+          "showDefaultInputIcon": false,
+          "small": false,
+          "startDate": "1970-01-01T00:00:00.000Z",
+          "startDateId": "startDate",
+          "startDatePlaceholderText": "Start Date",
+          "transitionDuration": undefined,
+          "verticalHeight": null,
+          "verticalSpacing": 22,
+          "weekDayFormat": "dd",
+          "withFullScreenPortal": false,
+          "withPortal": false,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <select
+              className="logsListFilters__select"
+              onChange={[Function]}
+              value="newest"
+>
+              <option
+                            value="newest"
+              >
+                            new
+              </option>
+              <option
+                            value="oldest"
+              >
+                            old
+              </option>
+</select>,
+            <select
+              className="logsListFilters__select"
+              onChange={[Function]}
+              value={7}
+>
+              <option
+                            value={1}
+              >
+                            1
+              </option>
+              <option
+                            value={7}
+              >
+                            7
+              </option>
+              <option
+                            value={14}
+              >
+                            14
+              </option>
+              <option
+                            value={31}
+              >
+                            31
+              </option>
+</select>,
+          ],
+          "className": "logsListFilters__options",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  value="newest"
+>
+                  new
+</option>,
+                <option
+                  value="oldest"
+>
+                  old
+</option>,
+              ],
+              "className": "logsListFilters__select",
+              "onChange": [Function],
+              "value": "newest",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "new",
+                  "value": "newest",
+                },
+                "ref": null,
+                "rendered": "new",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "old",
+                  "value": "oldest",
+                },
+                "ref": null,
+                "rendered": "old",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <option
+                  value={1}
+>
+                  1
+</option>,
+                <option
+                  value={7}
+>
+                  7
+</option>,
+                <option
+                  value={14}
+>
+                  14
+</option>,
+                <option
+                  value={31}
+>
+                  31
+</option>,
+              ],
+              "className": "logsListFilters__select",
+              "onChange": [Function],
+              "value": 7,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "1",
+                  "value": 1,
+                },
+                "ref": null,
+                "rendered": "1",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "7",
+                  "value": 7,
+                },
+                "ref": null,
+                "rendered": "7",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "14",
+                  "value": 14,
+                },
+                "ref": null,
+                "rendered": "14",
+                "type": "option",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "31",
+                  "value": 31,
+                },
+                "ref": null,
+                "rendered": "31",
+                "type": "option",
+              },
+            ],
+            "type": "select",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="btn btn--page btn--disabled"
+              disabled={true}
+              onClick={[Function]}
+>
+              Prev
+</button>,
+            Array [
+              <button
+                className="btn btn--page btn--active"
+                disabled={true}
+                onClick={[Function]}
+>
+                1
+</button>,
+            ],
+            <button
+              className="btn btn--page btn--disabled"
+              disabled={true}
+              onClick={[Function]}
+>
+              Next
+</button>,
+          ],
+          "className": "logsListFilters__pages flex-right-end",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Prev",
+              "className": "btn btn--page btn--disabled",
+              "disabled": true,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Prev",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": 1,
+              "className": "btn btn--page btn--active",
+              "disabled": true,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Next",
+              "className": "btn btn--page btn--disabled",
+              "disabled": true,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Next",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <withStyles(DateRangePicker)
+            anchorDirection="left"
+            block={false}
+            calendarInfoPosition="bottom"
+            customArrowIcon={null}
+            customCloseIcon={null}
+            customInputIcon={null}
+            daySize={39}
+            disabled={false}
+            displayFormat={[Function]}
+            enableOutsideDays={false}
+            endDate={"1970-01-01T00:00:01.000Z"}
+            endDateId="endDate"
+            endDatePlaceholderText="End Date"
+            firstDayOfWeek={null}
+            focusedInput={null}
+            hideKeyboardShortcutsPanel={false}
+            horizontalMargin={0}
+            initialVisibleMonth={null}
+            inputIconPosition="before"
+            isDayBlocked={[Function]}
+            isDayHighlighted={[Function]}
+            isOutsideRange={[Function]}
+            isRTL={false}
+            keepFocusOnInput={false}
+            keepOpenOnDateSelect={false}
+            minimumNights={1}
+            monthFormat="MMMM YYYY"
+            navNext={null}
+            navPrev={null}
+            noBorder={false}
+            numberOfMonths={1}
+            onClose={[Function]}
+            onDatesChange={[Function]}
+            onFocusChange={[Function]}
+            onNextMonthClick={[Function]}
+            onPrevMonthClick={[Function]}
+            openDirection="down"
+            orientation="horizontal"
+            phrases={
+                        Object {
+                                    "calendarLabel": "Calendar",
+                                    "chooseAvailableEndDate": [Function],
+                                    "chooseAvailableStartDate": [Function],
+                                    "clearDates": "Clear Dates",
+                                    "closeDatePicker": "Close",
+                                    "dateIsSelected": [Function],
+                                    "dateIsUnavailable": [Function],
+                                    "enterKey": "Enter key",
+                                    "escape": "Escape key",
+                                    "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
+                                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+                                    "homeEnd": "Home and end keys",
+                                    "jumpToNextMonth": "Move forward to switch to the next month.",
+                                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
+                                    "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+                          select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+                                    "keyboardShortcuts": "Keyboard Shortcuts",
+                                    "leftArrowRightArrow": "Right and left arrow keys",
+                                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+                                    "moveFocusByOneMonth": "Switch months.",
+                                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+                                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+                                    "openThisPanel": "Open this panel.",
+                                    "pageUpPageDown": "page up and page down keys",
+                                    "questionMark": "Question mark",
+                                    "returnFocusToInput": "Return to the date input field.",
+                                    "selectFocusedDate": "Select the date in focus.",
+                                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+                                    "upArrowDownArrow": "up and down arrow keys",
+                                  }
+            }
+            readOnly={false}
+            regular={false}
+            renderCalendarDay={undefined}
+            renderCalendarInfo={null}
+            renderDayContents={null}
+            renderMonth={null}
+            reopenPickerOnClearDates={false}
+            required={false}
+            screenReaderInputMessage=""
+            showClearDates={true}
+            showDefaultInputIcon={false}
+            small={false}
+            startDate={"1970-01-01T00:00:00.000Z"}
+            startDateId="startDate"
+            startDatePlaceholderText="Start Date"
+            transitionDuration={undefined}
+            verticalHeight={null}
+            verticalSpacing={22}
+            weekDayFormat="dd"
+            withFullScreenPortal={false}
+            withPortal={false}
+/>,
+          <div
+            className="logsListFilters__options"
+>
+            <select
+                        className="logsListFilters__select"
+                        onChange={[Function]}
+                        value="newest"
+            >
+                        <option
+                                    value="newest"
+                        >
+                                    new
+                        </option>
+                        <option
+                                    value="oldest"
+                        >
+                                    old
+                        </option>
+            </select>
+            <select
+                        className="logsListFilters__select"
+                        onChange={[Function]}
+                        value={7}
+            >
+                        <option
+                                    value={1}
+                        >
+                                    1
+                        </option>
+                        <option
+                                    value={7}
+                        >
+                                    7
+                        </option>
+                        <option
+                                    value={14}
+                        >
+                                    14
+                        </option>
+                        <option
+                                    value={31}
+                        >
+                                    31
+                        </option>
+            </select>
+</div>,
+          <div
+            className="logsListFilters__pages flex-right-end"
+>
+            <button
+                        className="btn btn--page btn--disabled"
+                        disabled={true}
+                        onClick={[Function]}
+            >
+                        Prev
+            </button>
+            <button
+                        className="btn btn--page btn--active"
+                        disabled={true}
+                        onClick={[Function]}
+            >
+                        1
+            </button>
+            <button
+                        className="btn btn--page btn--disabled"
+                        disabled={true}
+                        onClick={[Function]}
+            >
+                        Next
+            </button>
+</div>,
+        ],
+        "className": "logsListFilters",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "anchorDirection": "left",
+            "block": false,
+            "calendarInfoPosition": "bottom",
+            "customArrowIcon": null,
+            "customCloseIcon": null,
+            "customInputIcon": null,
+            "daySize": 39,
+            "disabled": false,
+            "displayFormat": [Function],
+            "enableOutsideDays": false,
+            "endDate": "1970-01-01T00:00:01.000Z",
+            "endDateId": "endDate",
+            "endDatePlaceholderText": "End Date",
+            "firstDayOfWeek": null,
+            "focusedInput": null,
+            "hideKeyboardShortcutsPanel": false,
+            "horizontalMargin": 0,
+            "initialVisibleMonth": null,
+            "inputIconPosition": "before",
+            "isDayBlocked": [Function],
+            "isDayHighlighted": [Function],
+            "isOutsideRange": [Function],
+            "isRTL": false,
+            "keepFocusOnInput": false,
+            "keepOpenOnDateSelect": false,
+            "minimumNights": 1,
+            "monthFormat": "MMMM YYYY",
+            "navNext": null,
+            "navPrev": null,
+            "noBorder": false,
+            "numberOfMonths": 1,
+            "onClose": [Function],
+            "onDatesChange": [Function],
+            "onFocusChange": [Function],
+            "onNextMonthClick": [Function],
+            "onPrevMonthClick": [Function],
+            "openDirection": "down",
+            "orientation": "horizontal",
+            "phrases": Object {
+              "calendarLabel": "Calendar",
+              "chooseAvailableEndDate": [Function],
+              "chooseAvailableStartDate": [Function],
+              "clearDates": "Clear Dates",
+              "closeDatePicker": "Close",
+              "dateIsSelected": [Function],
+              "dateIsUnavailable": [Function],
+              "enterKey": "Enter key",
+              "escape": "Escape key",
+              "focusStartDate": "Interact with the calendar and add the check-in date for your trip.",
+              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+              "homeEnd": "Home and end keys",
+              "jumpToNextMonth": "Move forward to switch to the next month.",
+              "jumpToPrevMonth": "Move backward to switch to the previous month.",
+              "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
+              "keyboardShortcuts": "Keyboard Shortcuts",
+              "leftArrowRightArrow": "Right and left arrow keys",
+              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+              "moveFocusByOneMonth": "Switch months.",
+              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+              "openThisPanel": "Open this panel.",
+              "pageUpPageDown": "page up and page down keys",
+              "questionMark": "Question mark",
+              "returnFocusToInput": "Return to the date input field.",
+              "selectFocusedDate": "Select the date in focus.",
+              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+              "upArrowDownArrow": "up and down arrow keys",
+            },
+            "readOnly": false,
+            "regular": false,
+            "renderCalendarDay": undefined,
+            "renderCalendarInfo": null,
+            "renderDayContents": null,
+            "renderMonth": null,
+            "reopenPickerOnClearDates": false,
+            "required": false,
+            "screenReaderInputMessage": "",
+            "showClearDates": true,
+            "showDefaultInputIcon": false,
+            "small": false,
+            "startDate": "1970-01-01T00:00:00.000Z",
+            "startDateId": "startDate",
+            "startDatePlaceholderText": "Start Date",
+            "transitionDuration": undefined,
+            "verticalHeight": null,
+            "verticalSpacing": 22,
+            "weekDayFormat": "dd",
+            "withFullScreenPortal": false,
+            "withPortal": false,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <select
+                className="logsListFilters__select"
+                onChange={[Function]}
+                value="newest"
+>
+                <option
+                                value="newest"
+                >
+                                new
+                </option>
+                <option
+                                value="oldest"
+                >
+                                old
+                </option>
+</select>,
+              <select
+                className="logsListFilters__select"
+                onChange={[Function]}
+                value={7}
+>
+                <option
+                                value={1}
+                >
+                                1
+                </option>
+                <option
+                                value={7}
+                >
+                                7
+                </option>
+                <option
+                                value={14}
+                >
+                                14
+                </option>
+                <option
+                                value={31}
+                >
+                                31
+                </option>
+</select>,
+            ],
+            "className": "logsListFilters__options",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value="newest"
+>
+                    new
+</option>,
+                  <option
+                    value="oldest"
+>
+                    old
+</option>,
+                ],
+                "className": "logsListFilters__select",
+                "onChange": [Function],
+                "value": "newest",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "new",
+                    "value": "newest",
+                  },
+                  "ref": null,
+                  "rendered": "new",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "old",
+                    "value": "oldest",
+                  },
+                  "ref": null,
+                  "rendered": "old",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <option
+                    value={1}
+>
+                    1
+</option>,
+                  <option
+                    value={7}
+>
+                    7
+</option>,
+                  <option
+                    value={14}
+>
+                    14
+</option>,
+                  <option
+                    value={31}
+>
+                    31
+</option>,
+                ],
+                "className": "logsListFilters__select",
+                "onChange": [Function],
+                "value": 7,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "1",
+                    "value": 1,
+                  },
+                  "ref": null,
+                  "rendered": "1",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "7",
+                    "value": 7,
+                  },
+                  "ref": null,
+                  "rendered": "7",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "14",
+                    "value": 14,
+                  },
+                  "ref": null,
+                  "rendered": "14",
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "31",
+                    "value": 31,
+                  },
+                  "ref": null,
+                  "rendered": "31",
+                  "type": "option",
+                },
+              ],
+              "type": "select",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <button
+                className="btn btn--page btn--disabled"
+                disabled={true}
+                onClick={[Function]}
+>
+                Prev
+</button>,
+              Array [
+                <button
+                  className="btn btn--page btn--active"
+                  disabled={true}
+                  onClick={[Function]}
+>
+                  1
+</button>,
+              ],
+              <button
+                className="btn btn--page btn--disabled"
+                disabled={true}
+                onClick={[Function]}
+>
+                Next
+</button>,
+            ],
+            "className": "logsListFilters__pages flex-right-end",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Prev",
+                "className": "btn btn--page btn--disabled",
+                "disabled": true,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Prev",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": 1,
+                "className": "btn btn--page btn--active",
+                "disabled": true,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Next",
+                "className": "btn btn--page btn--disabled",
+                "disabled": true,
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Next",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

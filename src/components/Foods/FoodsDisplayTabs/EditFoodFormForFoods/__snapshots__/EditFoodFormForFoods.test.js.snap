@@ -8,6 +8,13 @@ ShallowWrapper {
     food={
         Object {
             "amount": 100,
+            "base": Object {
+              "amount": 100,
+              "calories": 165,
+              "carbohydrates": 0,
+              "fat": 3.6,
+              "protein": 31,
+            },
             "calories": 165,
             "carbohydrates": 0,
             "createdAt": 1000,
@@ -37,6 +44,13 @@ ShallowWrapper {
     "props": Object {
       "food": Object {
         "amount": 100,
+        "base": Object {
+          "amount": 100,
+          "calories": 165,
+          "carbohydrates": 0,
+          "fat": 3.6,
+          "protein": 31,
+        },
         "calories": 165,
         "carbohydrates": 0,
         "createdAt": 1000,
@@ -64,6 +78,13 @@ ShallowWrapper {
       "props": Object {
         "food": Object {
           "amount": 100,
+          "base": Object {
+            "amount": 100,
+            "calories": 165,
+            "carbohydrates": 0,
+            "fat": 3.6,
+            "protein": 31,
+          },
           "calories": 165,
           "carbohydrates": 0,
           "createdAt": 1000,

@@ -30,8 +30,8 @@ export class LogListContainer extends React.Component {
     return (
       <LogList
         logs={this.props.logs}
-        onEdit={(date) => this.handleEdit(date)}
-        onCreate={(time) => this.handleCreate(time)}
+        onEdit={this.handleEdit}
+        onCreate={this.handleCreate}
       />
     );
   }

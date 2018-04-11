@@ -7,7 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <currentLog
     currentLog={
         Object {
-            "date": -86400000,
+            "date": -154800000,
             "foods": Array [
               Object {
                 "amount": 24,
@@ -35,6 +35,13 @@ ShallowWrapper {
               },
               Object {
                 "amount": 100,
+                "base": Object {
+                  "amount": 100,
+                  "calories": 165,
+                  "carbohydrates": 0,
+                  "fat": 3.6,
+                  "protein": 31,
+                },
                 "calories": 165,
                 "carbohydrates": 0,
                 "createdAt": 1000,

@@ -12,7 +12,7 @@ import {
 import selectLogs from '../../../selectors/logs';
 import './LogListFilters.css';
 
-export class FoodListFilters extends React.Component {
+export class LogListFilters extends React.Component {
   state = {
     calendarFocused: null,
   };
@@ -160,4 +160,4 @@ const mapDispatchToProps = (dispatch) => ({
   setLogsOffset: (offset) => dispatch(setLogsOffset(offset)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FoodListFilters);
+export default connect(mapStateToProps, mapDispatchToProps)(LogListFilters);

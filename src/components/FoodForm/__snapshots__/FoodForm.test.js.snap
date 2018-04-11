@@ -1,10 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render FoodForm correctly 1`] = `
+exports[`should render FoodForm correctly for AddFoodFormToCurrentLog 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FoodForm />,
+  Symbol(enzyme.__unrendered__): <FoodForm
+    handleSubmit={[Function]}
+    title="Add Food To Log"
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -21,7 +24,7 @@ ShallowWrapper {
         <h1
           className="foodForm__title"
 >
-          Form
+          Add Food To Log
 </h1>,
         <div
           className="foodForm__row"
@@ -119,11 +122,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Form",
+          "children": "Add Food To Log",
           "className": "foodForm__title",
         },
         "ref": null,
-        "rendered": "Form",
+        "rendered": "Add Food To Log",
         "type": "h1",
       },
       Object {
@@ -495,7 +498,7 @@ ShallowWrapper {
           <h1
             className="foodForm__title"
 >
-            Form
+            Add Food To Log
 </h1>,
           <div
             className="foodForm__row"
@@ -593,11 +596,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Form",
+            "children": "Add Food To Log",
             "className": "foodForm__title",
           },
           "ref": null,
-          "rendered": "Form",
+          "rendered": "Add Food To Log",
           "type": "h1",
         },
         Object {
@@ -970,6 +973,4675 @@ ShallowWrapper {
 }
 `;
 
+exports[`should render FoodForm correctly for AddFoodFormToFoods 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FoodForm
+    handleSubmit={[Function]}
+    title="Add Food"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="foodForm__title"
+>
+          Add Food
+</h1>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group foodForm__group--50"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="name"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder="Food"
+                              type="text"
+                              value=""
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="name"
+                    >
+                              Food
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--50"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="amountWithUnits"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder="Amount"
+                              type="text"
+                              value=""
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="amountWithUnits"
+                    >
+                              Amount
+                    </label>
+          </div>
+</div>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group foodForm__group--100"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="macros"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder="Macros"
+                              type="text"
+                              value=""
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="macros"
+                    >
+                              Carbohydrates Protein Fat Calories (spaces in between)
+                    </label>
+          </div>
+</div>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group--center-left"
+          />
+          <div
+                    className="foodForm__group--center-right"
+          />
+          <div
+                    className="foodForm__group--right"
+          >
+                    <button
+                              className="btn btn--form btn--primary btn--disabled"
+                    >
+                              Submit
+                    </button>
+          </div>
+          <div />
+</div>,
+      ],
+      "className": "foodForm",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Add Food",
+          "className": "foodForm__title",
+        },
+        "ref": null,
+        "rendered": "Add Food",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <div
+                className="foodForm__group foodForm__group--50"
+>
+                <input
+                                className="foodForm__input"
+                                name="name"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Food"
+                                type="text"
+                                value=""
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="name"
+                >
+                                Food
+                </label>
+</div>,
+            ],
+            Array [
+              <div
+                className="foodForm__group foodForm__group--50"
+>
+                <input
+                                className="foodForm__input"
+                                name="amountWithUnits"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Amount"
+                                type="text"
+                                value=""
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="amountWithUnits"
+                >
+                                Amount
+                </label>
+</div>,
+            ],
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "nameInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Food"
+                  type="text"
+                  value=""
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="name"
+>
+                  Food
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--50",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "name",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "Food",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Food",
+                  "className": "foodForm__label",
+                  "htmlFor": "name",
+                },
+                "ref": null,
+                "rendered": "Food",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "amountUnitInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="amountWithUnits"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Amount"
+                  type="text"
+                  value=""
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="amountWithUnits"
+>
+                  Amount
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--50",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "amountWithUnits",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "Amount",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Amount",
+                  "className": "foodForm__label",
+                  "htmlFor": "amountWithUnits",
+                },
+                "ref": null,
+                "rendered": "Amount",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="foodForm__group foodForm__group--100"
+>
+              <input
+                            className="foodForm__input"
+                            name="macros"
+                            onBlur={[Function]}
+                            onChange={[Function]}
+                            placeholder="Macros"
+                            type="text"
+                            value=""
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="macros"
+              >
+                            Carbohydrates Protein Fat Calories (spaces in between)
+              </label>
+</div>,
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "macrosInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="macros"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Macros"
+                  type="text"
+                  value=""
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="macros"
+>
+                  Carbohydrates Protein Fat Calories (spaces in between)
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--100",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "macros",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "Macros",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Carbohydrates Protein Fat Calories (spaces in between)",
+                  "className": "foodForm__label",
+                  "htmlFor": "macros",
+                },
+                "ref": null,
+                "rendered": "Carbohydrates Protein Fat Calories (spaces in between)",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="foodForm__group--center-left"
+/>,
+            <div
+              className="foodForm__group--center-right"
+/>,
+            <div
+              className="foodForm__group--right"
+>
+              <button
+                            className="btn btn--form btn--primary btn--disabled"
+              >
+                            Submit
+              </button>
+</div>,
+            <div />,
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "foodForm__group--center-left",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "foodForm__group--center-right",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form btn--primary btn--disabled"
+>
+                Submit
+</button>,
+              "className": "foodForm__group--right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "btn btn--form btn--primary btn--disabled",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="foodForm__title"
+>
+            Add Food
+</h1>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group foodForm__group--50"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="name"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Food"
+                                    type="text"
+                                    value=""
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="name"
+                        >
+                                    Food
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--50"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="amountWithUnits"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Amount"
+                                    type="text"
+                                    value=""
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="amountWithUnits"
+                        >
+                                    Amount
+                        </label>
+            </div>
+</div>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group foodForm__group--100"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="macros"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Macros"
+                                    type="text"
+                                    value=""
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="macros"
+                        >
+                                    Carbohydrates Protein Fat Calories (spaces in between)
+                        </label>
+            </div>
+</div>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group--center-left"
+            />
+            <div
+                        className="foodForm__group--center-right"
+            />
+            <div
+                        className="foodForm__group--right"
+            >
+                        <button
+                                    className="btn btn--form btn--primary btn--disabled"
+                        >
+                                    Submit
+                        </button>
+            </div>
+            <div />
+</div>,
+        ],
+        "className": "foodForm",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Add Food",
+            "className": "foodForm__title",
+          },
+          "ref": null,
+          "rendered": "Add Food",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <div
+                  className="foodForm__group foodForm__group--50"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="name"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Food"
+                                    type="text"
+                                    value=""
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="name"
+                  >
+                                    Food
+                  </label>
+</div>,
+              ],
+              Array [
+                <div
+                  className="foodForm__group foodForm__group--50"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="amountWithUnits"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Amount"
+                                    type="text"
+                                    value=""
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="amountWithUnits"
+                  >
+                                    Amount
+                  </label>
+</div>,
+              ],
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "nameInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="name"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="Food"
+                    type="text"
+                    value=""
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="name"
+>
+                    Food
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--50",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "name",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "Food",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Food",
+                    "className": "foodForm__label",
+                    "htmlFor": "name",
+                  },
+                  "ref": null,
+                  "rendered": "Food",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "amountUnitInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="amountWithUnits"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="Amount"
+                    type="text"
+                    value=""
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="amountWithUnits"
+>
+                    Amount
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--50",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "amountWithUnits",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "Amount",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Amount",
+                    "className": "foodForm__label",
+                    "htmlFor": "amountWithUnits",
+                  },
+                  "ref": null,
+                  "rendered": "Amount",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="foodForm__group foodForm__group--100"
+>
+                <input
+                                className="foodForm__input"
+                                name="macros"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Macros"
+                                type="text"
+                                value=""
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="macros"
+                >
+                                Carbohydrates Protein Fat Calories (spaces in between)
+                </label>
+</div>,
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "macrosInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="macros"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="Macros"
+                    type="text"
+                    value=""
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="macros"
+>
+                    Carbohydrates Protein Fat Calories (spaces in between)
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--100",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "macros",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "Macros",
+                    "type": "text",
+                    "value": "",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Carbohydrates Protein Fat Calories (spaces in between)",
+                    "className": "foodForm__label",
+                    "htmlFor": "macros",
+                  },
+                  "ref": null,
+                  "rendered": "Carbohydrates Protein Fat Calories (spaces in between)",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="foodForm__group--center-left"
+/>,
+              <div
+                className="foodForm__group--center-right"
+/>,
+              <div
+                className="foodForm__group--right"
+>
+                <button
+                                className="btn btn--form btn--primary btn--disabled"
+                >
+                                Submit
+                </button>
+</div>,
+              <div />,
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "foodForm__group--center-left",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "foodForm__group--center-right",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form btn--primary btn--disabled"
+>
+                  Submit
+</button>,
+                "className": "foodForm__group--right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "btn btn--form btn--primary btn--disabled",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render FoodForm correctly for EditFoodForCurrentLog 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FoodForm
+    food={
+        Object {
+            "amount": 100,
+            "base": Object {
+              "amount": 100,
+              "calories": 165,
+              "carbohydrates": 0,
+              "fat": 3.6,
+              "protein": 31,
+            },
+            "calories": 165,
+            "carbohydrates": 0,
+            "createdAt": 1000,
+            "fat": 3.6,
+            "id": "2",
+            "name": "Chicken Breast",
+            "protein": 31,
+            "timesUsed": 1,
+            "unit": "grams",
+          }
+    }
+    handleSubmit={[Function]}
+    onExit={[Function]}
+    onRemove={[Function]}
+    title="Edit Food"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="foodForm__title"
+>
+          Edit Food
+</h1>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group foodForm__group--50"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="name"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder="Food"
+                              type="text"
+                              value="Chicken Breast"
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="name"
+                    >
+                              Food
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="amount"
+                              onChange={[Function]}
+                              placeholder="Amount"
+                              type="text"
+                              value={100}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="amount"
+                    >
+                              Amount
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="unit"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder="Unit"
+                              type="text"
+                              value="grams"
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="unit"
+                    >
+                              Unit
+                    </label>
+          </div>
+</div>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="carbohydrates"
+                              onChange={[Function]}
+                              placeholder="Carbs"
+                              type="text"
+                              value={0}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="carbohydrates"
+                    >
+                              Carbs
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              onChange={[Function]}
+                              placeholder="Protein"
+                              type="text"
+                              value={31}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="Protein"
+                    >
+                              Protein
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              onChange={[Function]}
+                              placeholder="Fat"
+                              type="text"
+                              value={3.6}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="Fat"
+                    >
+                              Fat
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              onChange={[Function]}
+                              placeholder="Calories"
+                              type="text"
+                              value={165}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="Calories"
+                    >
+                              Calories
+                    </label>
+          </div>
+</div>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group--center-left"
+          >
+                    <button
+                              className="btn btn--form"
+                              onClick={[Function]}
+                              type="button"
+                    >
+                              Remove
+                    </button>
+          </div>
+          <div
+                    className="foodForm__group--center-right"
+          >
+                    <button
+                              className="btn btn--form"
+                              onClick={[Function]}
+                              type="button"
+                    >
+                              Exit
+                    </button>
+          </div>
+          <div
+                    className="foodForm__group--right"
+          >
+                    <button
+                              className="btn btn--form btn--primary"
+                    >
+                              Submit
+                    </button>
+          </div>
+          <div />
+</div>,
+      ],
+      "className": "foodForm",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Edit Food",
+          "className": "foodForm__title",
+        },
+        "ref": null,
+        "rendered": "Edit Food",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <div
+                className="foodForm__group foodForm__group--50"
+>
+                <input
+                                className="foodForm__input"
+                                name="name"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Food"
+                                type="text"
+                                value="Chicken Breast"
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="name"
+                >
+                                Food
+                </label>
+</div>,
+            ],
+            Array [
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                name="amount"
+                                onChange={[Function]}
+                                placeholder="Amount"
+                                type="text"
+                                value={100}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="amount"
+                >
+                                Amount
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                name="unit"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Unit"
+                                type="text"
+                                value="grams"
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="unit"
+                >
+                                Unit
+                </label>
+</div>,
+            ],
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "nameInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Food"
+                  type="text"
+                  value="Chicken Breast"
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="name"
+>
+                  Food
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--50",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "name",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "Food",
+                  "type": "text",
+                  "value": "Chicken Breast",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Food",
+                  "className": "foodForm__label",
+                  "htmlFor": "name",
+                },
+                "ref": null,
+                "rendered": "Food",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "amountInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="amount"
+                  onChange={[Function]}
+                  placeholder="Amount"
+                  type="text"
+                  value={100}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="amount"
+>
+                  Amount
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "amount",
+                  "onChange": [Function],
+                  "placeholder": "Amount",
+                  "type": "text",
+                  "value": 100,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Amount",
+                  "className": "foodForm__label",
+                  "htmlFor": "amount",
+                },
+                "ref": null,
+                "rendered": "Amount",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "unitInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="unit"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Unit"
+                  type="text"
+                  value="grams"
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="unit"
+>
+                  Unit
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "unit",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "Unit",
+                  "type": "text",
+                  "value": "grams",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Unit",
+                  "className": "foodForm__label",
+                  "htmlFor": "unit",
+                },
+                "ref": null,
+                "rendered": "Unit",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            name="carbohydrates"
+                            onChange={[Function]}
+                            placeholder="Carbs"
+                            type="text"
+                            value={0}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="carbohydrates"
+              >
+                            Carbs
+              </label>
+</div>,
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            onChange={[Function]}
+                            placeholder="Protein"
+                            type="text"
+                            value={31}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="Protein"
+              >
+                            Protein
+              </label>
+</div>,
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            onChange={[Function]}
+                            placeholder="Fat"
+                            type="text"
+                            value={3.6}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="Fat"
+              >
+                            Fat
+              </label>
+</div>,
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            onChange={[Function]}
+                            placeholder="Calories"
+                            type="text"
+                            value={165}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="Calories"
+              >
+                            Calories
+              </label>
+</div>,
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "carbohydratesInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="carbohydrates"
+                  onChange={[Function]}
+                  placeholder="Carbs"
+                  type="text"
+                  value={0}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="carbohydrates"
+>
+                  Carbs
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "carbohydrates",
+                  "onChange": [Function],
+                  "placeholder": "Carbs",
+                  "type": "text",
+                  "value": 0,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Carbs",
+                  "className": "foodForm__label",
+                  "htmlFor": "carbohydrates",
+                },
+                "ref": null,
+                "rendered": "Carbs",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "proteinInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  onChange={[Function]}
+                  placeholder="Protein"
+                  type="text"
+                  value={31}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="Protein"
+>
+                  Protein
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "onChange": [Function],
+                  "placeholder": "Protein",
+                  "type": "text",
+                  "value": 31,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Protein",
+                  "className": "foodForm__label",
+                  "htmlFor": "Protein",
+                },
+                "ref": null,
+                "rendered": "Protein",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "fatInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  onChange={[Function]}
+                  placeholder="Fat"
+                  type="text"
+                  value={3.6}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="Fat"
+>
+                  Fat
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "onChange": [Function],
+                  "placeholder": "Fat",
+                  "type": "text",
+                  "value": 3.6,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Fat",
+                  "className": "foodForm__label",
+                  "htmlFor": "Fat",
+                },
+                "ref": null,
+                "rendered": "Fat",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "caloriesInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  onChange={[Function]}
+                  placeholder="Calories"
+                  type="text"
+                  value={165}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="Calories"
+>
+                  Calories
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "onChange": [Function],
+                  "placeholder": "Calories",
+                  "type": "text",
+                  "value": 165,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Calories",
+                  "className": "foodForm__label",
+                  "htmlFor": "Calories",
+                },
+                "ref": null,
+                "rendered": "Calories",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="foodForm__group--center-left"
+>
+              <button
+                            className="btn btn--form"
+                            onClick={[Function]}
+                            type="button"
+              >
+                            Remove
+              </button>
+</div>,
+            <div
+              className="foodForm__group--center-right"
+>
+              <button
+                            className="btn btn--form"
+                            onClick={[Function]}
+                            type="button"
+              >
+                            Exit
+              </button>
+</div>,
+            <div
+              className="foodForm__group--right"
+>
+              <button
+                            className="btn btn--form btn--primary"
+              >
+                            Submit
+              </button>
+</div>,
+            <div />,
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form"
+                onClick={[Function]}
+                type="button"
+>
+                Remove
+</button>,
+              "className": "foodForm__group--center-left",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Remove",
+                "className": "btn btn--form",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Remove",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form"
+                onClick={[Function]}
+                type="button"
+>
+                Exit
+</button>,
+              "className": "foodForm__group--center-right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Exit",
+                "className": "btn btn--form",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Exit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form btn--primary"
+>
+                Submit
+</button>,
+              "className": "foodForm__group--right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "btn btn--form btn--primary",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="foodForm__title"
+>
+            Edit Food
+</h1>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group foodForm__group--50"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="name"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Food"
+                                    type="text"
+                                    value="Chicken Breast"
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="name"
+                        >
+                                    Food
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="amount"
+                                    onChange={[Function]}
+                                    placeholder="Amount"
+                                    type="text"
+                                    value={100}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="amount"
+                        >
+                                    Amount
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="unit"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Unit"
+                                    type="text"
+                                    value="grams"
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="unit"
+                        >
+                                    Unit
+                        </label>
+            </div>
+</div>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="carbohydrates"
+                                    onChange={[Function]}
+                                    placeholder="Carbs"
+                                    type="text"
+                                    value={0}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="carbohydrates"
+                        >
+                                    Carbs
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    onChange={[Function]}
+                                    placeholder="Protein"
+                                    type="text"
+                                    value={31}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="Protein"
+                        >
+                                    Protein
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    onChange={[Function]}
+                                    placeholder="Fat"
+                                    type="text"
+                                    value={3.6}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="Fat"
+                        >
+                                    Fat
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    onChange={[Function]}
+                                    placeholder="Calories"
+                                    type="text"
+                                    value={165}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="Calories"
+                        >
+                                    Calories
+                        </label>
+            </div>
+</div>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group--center-left"
+            >
+                        <button
+                                    className="btn btn--form"
+                                    onClick={[Function]}
+                                    type="button"
+                        >
+                                    Remove
+                        </button>
+            </div>
+            <div
+                        className="foodForm__group--center-right"
+            >
+                        <button
+                                    className="btn btn--form"
+                                    onClick={[Function]}
+                                    type="button"
+                        >
+                                    Exit
+                        </button>
+            </div>
+            <div
+                        className="foodForm__group--right"
+            >
+                        <button
+                                    className="btn btn--form btn--primary"
+                        >
+                                    Submit
+                        </button>
+            </div>
+            <div />
+</div>,
+        ],
+        "className": "foodForm",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Edit Food",
+            "className": "foodForm__title",
+          },
+          "ref": null,
+          "rendered": "Edit Food",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <div
+                  className="foodForm__group foodForm__group--50"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="name"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Food"
+                                    type="text"
+                                    value="Chicken Breast"
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="name"
+                  >
+                                    Food
+                  </label>
+</div>,
+              ],
+              Array [
+                <div
+                  className="foodForm__group foodForm__group--25"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="amount"
+                                    onChange={[Function]}
+                                    placeholder="Amount"
+                                    type="text"
+                                    value={100}
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="amount"
+                  >
+                                    Amount
+                  </label>
+</div>,
+                <div
+                  className="foodForm__group foodForm__group--25"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="unit"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Unit"
+                                    type="text"
+                                    value="grams"
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="unit"
+                  >
+                                    Unit
+                  </label>
+</div>,
+              ],
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "nameInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="name"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="Food"
+                    type="text"
+                    value="Chicken Breast"
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="name"
+>
+                    Food
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--50",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "name",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "Food",
+                    "type": "text",
+                    "value": "Chicken Breast",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Food",
+                    "className": "foodForm__label",
+                    "htmlFor": "name",
+                  },
+                  "ref": null,
+                  "rendered": "Food",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "amountInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="amount"
+                    onChange={[Function]}
+                    placeholder="Amount"
+                    type="text"
+                    value={100}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="amount"
+>
+                    Amount
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "amount",
+                    "onChange": [Function],
+                    "placeholder": "Amount",
+                    "type": "text",
+                    "value": 100,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Amount",
+                    "className": "foodForm__label",
+                    "htmlFor": "amount",
+                  },
+                  "ref": null,
+                  "rendered": "Amount",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "unitInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="unit"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="Unit"
+                    type="text"
+                    value="grams"
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="unit"
+>
+                    Unit
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "unit",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "Unit",
+                    "type": "text",
+                    "value": "grams",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Unit",
+                    "className": "foodForm__label",
+                    "htmlFor": "unit",
+                  },
+                  "ref": null,
+                  "rendered": "Unit",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                name="carbohydrates"
+                                onChange={[Function]}
+                                placeholder="Carbs"
+                                type="text"
+                                value={0}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="carbohydrates"
+                >
+                                Carbs
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                onChange={[Function]}
+                                placeholder="Protein"
+                                type="text"
+                                value={31}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="Protein"
+                >
+                                Protein
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                onChange={[Function]}
+                                placeholder="Fat"
+                                type="text"
+                                value={3.6}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="Fat"
+                >
+                                Fat
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                onChange={[Function]}
+                                placeholder="Calories"
+                                type="text"
+                                value={165}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="Calories"
+                >
+                                Calories
+                </label>
+</div>,
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "carbohydratesInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="carbohydrates"
+                    onChange={[Function]}
+                    placeholder="Carbs"
+                    type="text"
+                    value={0}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="carbohydrates"
+>
+                    Carbs
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "carbohydrates",
+                    "onChange": [Function],
+                    "placeholder": "Carbs",
+                    "type": "text",
+                    "value": 0,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Carbs",
+                    "className": "foodForm__label",
+                    "htmlFor": "carbohydrates",
+                  },
+                  "ref": null,
+                  "rendered": "Carbs",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "proteinInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    onChange={[Function]}
+                    placeholder="Protein"
+                    type="text"
+                    value={31}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="Protein"
+>
+                    Protein
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "onChange": [Function],
+                    "placeholder": "Protein",
+                    "type": "text",
+                    "value": 31,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Protein",
+                    "className": "foodForm__label",
+                    "htmlFor": "Protein",
+                  },
+                  "ref": null,
+                  "rendered": "Protein",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "fatInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    onChange={[Function]}
+                    placeholder="Fat"
+                    type="text"
+                    value={3.6}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="Fat"
+>
+                    Fat
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "onChange": [Function],
+                    "placeholder": "Fat",
+                    "type": "text",
+                    "value": 3.6,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Fat",
+                    "className": "foodForm__label",
+                    "htmlFor": "Fat",
+                  },
+                  "ref": null,
+                  "rendered": "Fat",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "caloriesInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    onChange={[Function]}
+                    placeholder="Calories"
+                    type="text"
+                    value={165}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="Calories"
+>
+                    Calories
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "onChange": [Function],
+                    "placeholder": "Calories",
+                    "type": "text",
+                    "value": 165,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Calories",
+                    "className": "foodForm__label",
+                    "htmlFor": "Calories",
+                  },
+                  "ref": null,
+                  "rendered": "Calories",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="foodForm__group--center-left"
+>
+                <button
+                                className="btn btn--form"
+                                onClick={[Function]}
+                                type="button"
+                >
+                                Remove
+                </button>
+</div>,
+              <div
+                className="foodForm__group--center-right"
+>
+                <button
+                                className="btn btn--form"
+                                onClick={[Function]}
+                                type="button"
+                >
+                                Exit
+                </button>
+</div>,
+              <div
+                className="foodForm__group--right"
+>
+                <button
+                                className="btn btn--form btn--primary"
+                >
+                                Submit
+                </button>
+</div>,
+              <div />,
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form"
+                  onClick={[Function]}
+                  type="button"
+>
+                  Remove
+</button>,
+                "className": "foodForm__group--center-left",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Remove",
+                  "className": "btn btn--form",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Remove",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form"
+                  onClick={[Function]}
+                  type="button"
+>
+                  Exit
+</button>,
+                "className": "foodForm__group--center-right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Exit",
+                  "className": "btn btn--form",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Exit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form btn--primary"
+>
+                  Submit
+</button>,
+                "className": "foodForm__group--right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "btn btn--form btn--primary",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`should render FoodForm correctly for EditFoodFormToFoods 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <FoodForm
+    food={
+        Object {
+            "amount": 100,
+            "base": Object {
+              "amount": 100,
+              "calories": 165,
+              "carbohydrates": 0,
+              "fat": 3.6,
+              "protein": 31,
+            },
+            "calories": 165,
+            "carbohydrates": 0,
+            "createdAt": 1000,
+            "fat": 3.6,
+            "id": "2",
+            "name": "Chicken Breast",
+            "protein": 31,
+            "timesUsed": 1,
+            "unit": "grams",
+          }
+    }
+    handleSubmit={[Function]}
+    onExit={[Function]}
+    onRemove={[Function]}
+    title="Edit Food"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1
+          className="foodForm__title"
+>
+          Edit Food
+</h1>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group foodForm__group--50"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="name"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder="Food"
+                              type="text"
+                              value="Chicken Breast"
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="name"
+                    >
+                              Food
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="amount"
+                              onChange={[Function]}
+                              placeholder="Amount"
+                              type="text"
+                              value={100}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="amount"
+                    >
+                              Amount
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="unit"
+                              onBlur={[Function]}
+                              onChange={[Function]}
+                              placeholder="Unit"
+                              type="text"
+                              value="grams"
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="unit"
+                    >
+                              Unit
+                    </label>
+          </div>
+</div>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              name="carbohydrates"
+                              onChange={[Function]}
+                              placeholder="Carbs"
+                              type="text"
+                              value={0}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="carbohydrates"
+                    >
+                              Carbs
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              onChange={[Function]}
+                              placeholder="Protein"
+                              type="text"
+                              value={31}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="Protein"
+                    >
+                              Protein
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              onChange={[Function]}
+                              placeholder="Fat"
+                              type="text"
+                              value={3.6}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="Fat"
+                    >
+                              Fat
+                    </label>
+          </div>
+          <div
+                    className="foodForm__group foodForm__group--25"
+          >
+                    <input
+                              className="foodForm__input"
+                              onChange={[Function]}
+                              placeholder="Calories"
+                              type="text"
+                              value={165}
+                    />
+                    <label
+                              className="foodForm__label"
+                              htmlFor="Calories"
+                    >
+                              Calories
+                    </label>
+          </div>
+</div>,
+        <div
+          className="foodForm__row"
+>
+          <div
+                    className="foodForm__group--center-left"
+          >
+                    <button
+                              className="btn btn--form"
+                              onClick={[Function]}
+                              type="button"
+                    >
+                              Remove
+                    </button>
+          </div>
+          <div
+                    className="foodForm__group--center-right"
+          >
+                    <button
+                              className="btn btn--form"
+                              onClick={[Function]}
+                              type="button"
+                    >
+                              Exit
+                    </button>
+          </div>
+          <div
+                    className="foodForm__group--right"
+          >
+                    <button
+                              className="btn btn--form btn--primary"
+                    >
+                              Submit
+                    </button>
+          </div>
+          <div />
+</div>,
+      ],
+      "className": "foodForm",
+      "onSubmit": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Edit Food",
+          "className": "foodForm__title",
+        },
+        "ref": null,
+        "rendered": "Edit Food",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            Array [
+              <div
+                className="foodForm__group foodForm__group--50"
+>
+                <input
+                                className="foodForm__input"
+                                name="name"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Food"
+                                type="text"
+                                value="Chicken Breast"
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="name"
+                >
+                                Food
+                </label>
+</div>,
+            ],
+            Array [
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                name="amount"
+                                onChange={[Function]}
+                                placeholder="Amount"
+                                type="text"
+                                value={100}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="amount"
+                >
+                                Amount
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                name="unit"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                placeholder="Unit"
+                                type="text"
+                                value="grams"
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="unit"
+                >
+                                Unit
+                </label>
+</div>,
+            ],
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "nameInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="name"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Food"
+                  type="text"
+                  value="Chicken Breast"
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="name"
+>
+                  Food
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--50",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "name",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "Food",
+                  "type": "text",
+                  "value": "Chicken Breast",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Food",
+                  "className": "foodForm__label",
+                  "htmlFor": "name",
+                },
+                "ref": null,
+                "rendered": "Food",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "amountInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="amount"
+                  onChange={[Function]}
+                  placeholder="Amount"
+                  type="text"
+                  value={100}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="amount"
+>
+                  Amount
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "amount",
+                  "onChange": [Function],
+                  "placeholder": "Amount",
+                  "type": "text",
+                  "value": 100,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Amount",
+                  "className": "foodForm__label",
+                  "htmlFor": "amount",
+                },
+                "ref": null,
+                "rendered": "Amount",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "unitInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="unit"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  placeholder="Unit"
+                  type="text"
+                  value="grams"
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="unit"
+>
+                  Unit
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "unit",
+                  "onBlur": [Function],
+                  "onChange": [Function],
+                  "placeholder": "Unit",
+                  "type": "text",
+                  "value": "grams",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Unit",
+                  "className": "foodForm__label",
+                  "htmlFor": "unit",
+                },
+                "ref": null,
+                "rendered": "Unit",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            name="carbohydrates"
+                            onChange={[Function]}
+                            placeholder="Carbs"
+                            type="text"
+                            value={0}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="carbohydrates"
+              >
+                            Carbs
+              </label>
+</div>,
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            onChange={[Function]}
+                            placeholder="Protein"
+                            type="text"
+                            value={31}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="Protein"
+              >
+                            Protein
+              </label>
+</div>,
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            onChange={[Function]}
+                            placeholder="Fat"
+                            type="text"
+                            value={3.6}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="Fat"
+              >
+                            Fat
+              </label>
+</div>,
+            <div
+              className="foodForm__group foodForm__group--25"
+>
+              <input
+                            className="foodForm__input"
+                            onChange={[Function]}
+                            placeholder="Calories"
+                            type="text"
+                            value={165}
+              />
+              <label
+                            className="foodForm__label"
+                            htmlFor="Calories"
+              >
+                            Calories
+              </label>
+</div>,
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "carbohydratesInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  name="carbohydrates"
+                  onChange={[Function]}
+                  placeholder="Carbs"
+                  type="text"
+                  value={0}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="carbohydrates"
+>
+                  Carbs
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "name": "carbohydrates",
+                  "onChange": [Function],
+                  "placeholder": "Carbs",
+                  "type": "text",
+                  "value": 0,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Carbs",
+                  "className": "foodForm__label",
+                  "htmlFor": "carbohydrates",
+                },
+                "ref": null,
+                "rendered": "Carbs",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "proteinInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  onChange={[Function]}
+                  placeholder="Protein"
+                  type="text"
+                  value={31}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="Protein"
+>
+                  Protein
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "onChange": [Function],
+                  "placeholder": "Protein",
+                  "type": "text",
+                  "value": 31,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Protein",
+                  "className": "foodForm__label",
+                  "htmlFor": "Protein",
+                },
+                "ref": null,
+                "rendered": "Protein",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "fatInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  onChange={[Function]}
+                  placeholder="Fat"
+                  type="text"
+                  value={3.6}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="Fat"
+>
+                  Fat
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "onChange": [Function],
+                  "placeholder": "Fat",
+                  "type": "text",
+                  "value": 3.6,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Fat",
+                  "className": "foodForm__label",
+                  "htmlFor": "Fat",
+                },
+                "ref": null,
+                "rendered": "Fat",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "caloriesInput",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <input
+                  className="foodForm__input"
+                  onChange={[Function]}
+                  placeholder="Calories"
+                  type="text"
+                  value={165}
+/>,
+                <label
+                  className="foodForm__label"
+                  htmlFor="Calories"
+>
+                  Calories
+</label>,
+              ],
+              "className": "foodForm__group foodForm__group--25",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "foodForm__input",
+                  "onChange": [Function],
+                  "placeholder": "Calories",
+                  "type": "text",
+                  "value": 165,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "input",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Calories",
+                  "className": "foodForm__label",
+                  "htmlFor": "Calories",
+                },
+                "ref": null,
+                "rendered": "Calories",
+                "type": "label",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="foodForm__group--center-left"
+>
+              <button
+                            className="btn btn--form"
+                            onClick={[Function]}
+                            type="button"
+              >
+                            Remove
+              </button>
+</div>,
+            <div
+              className="foodForm__group--center-right"
+>
+              <button
+                            className="btn btn--form"
+                            onClick={[Function]}
+                            type="button"
+              >
+                            Exit
+              </button>
+</div>,
+            <div
+              className="foodForm__group--right"
+>
+              <button
+                            className="btn btn--form btn--primary"
+              >
+                            Submit
+              </button>
+</div>,
+            <div />,
+          ],
+          "className": "foodForm__row",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form"
+                onClick={[Function]}
+                type="button"
+>
+                Remove
+</button>,
+              "className": "foodForm__group--center-left",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Remove",
+                "className": "btn btn--form",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Remove",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form"
+                onClick={[Function]}
+                type="button"
+>
+                Exit
+</button>,
+              "className": "foodForm__group--center-right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Exit",
+                "className": "btn btn--form",
+                "onClick": [Function],
+                "type": "button",
+              },
+              "ref": null,
+              "rendered": "Exit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form btn--primary"
+>
+                Submit
+</button>,
+              "className": "foodForm__group--right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "btn btn--form btn--primary",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1
+            className="foodForm__title"
+>
+            Edit Food
+</h1>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group foodForm__group--50"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="name"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Food"
+                                    type="text"
+                                    value="Chicken Breast"
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="name"
+                        >
+                                    Food
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="amount"
+                                    onChange={[Function]}
+                                    placeholder="Amount"
+                                    type="text"
+                                    value={100}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="amount"
+                        >
+                                    Amount
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="unit"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Unit"
+                                    type="text"
+                                    value="grams"
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="unit"
+                        >
+                                    Unit
+                        </label>
+            </div>
+</div>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    name="carbohydrates"
+                                    onChange={[Function]}
+                                    placeholder="Carbs"
+                                    type="text"
+                                    value={0}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="carbohydrates"
+                        >
+                                    Carbs
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    onChange={[Function]}
+                                    placeholder="Protein"
+                                    type="text"
+                                    value={31}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="Protein"
+                        >
+                                    Protein
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    onChange={[Function]}
+                                    placeholder="Fat"
+                                    type="text"
+                                    value={3.6}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="Fat"
+                        >
+                                    Fat
+                        </label>
+            </div>
+            <div
+                        className="foodForm__group foodForm__group--25"
+            >
+                        <input
+                                    className="foodForm__input"
+                                    onChange={[Function]}
+                                    placeholder="Calories"
+                                    type="text"
+                                    value={165}
+                        />
+                        <label
+                                    className="foodForm__label"
+                                    htmlFor="Calories"
+                        >
+                                    Calories
+                        </label>
+            </div>
+</div>,
+          <div
+            className="foodForm__row"
+>
+            <div
+                        className="foodForm__group--center-left"
+            >
+                        <button
+                                    className="btn btn--form"
+                                    onClick={[Function]}
+                                    type="button"
+                        >
+                                    Remove
+                        </button>
+            </div>
+            <div
+                        className="foodForm__group--center-right"
+            >
+                        <button
+                                    className="btn btn--form"
+                                    onClick={[Function]}
+                                    type="button"
+                        >
+                                    Exit
+                        </button>
+            </div>
+            <div
+                        className="foodForm__group--right"
+            >
+                        <button
+                                    className="btn btn--form btn--primary"
+                        >
+                                    Submit
+                        </button>
+            </div>
+            <div />
+</div>,
+        ],
+        "className": "foodForm",
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Edit Food",
+            "className": "foodForm__title",
+          },
+          "ref": null,
+          "rendered": "Edit Food",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <div
+                  className="foodForm__group foodForm__group--50"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="name"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Food"
+                                    type="text"
+                                    value="Chicken Breast"
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="name"
+                  >
+                                    Food
+                  </label>
+</div>,
+              ],
+              Array [
+                <div
+                  className="foodForm__group foodForm__group--25"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="amount"
+                                    onChange={[Function]}
+                                    placeholder="Amount"
+                                    type="text"
+                                    value={100}
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="amount"
+                  >
+                                    Amount
+                  </label>
+</div>,
+                <div
+                  className="foodForm__group foodForm__group--25"
+>
+                  <input
+                                    className="foodForm__input"
+                                    name="unit"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    placeholder="Unit"
+                                    type="text"
+                                    value="grams"
+                  />
+                  <label
+                                    className="foodForm__label"
+                                    htmlFor="unit"
+                  >
+                                    Unit
+                  </label>
+</div>,
+              ],
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "nameInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="name"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="Food"
+                    type="text"
+                    value="Chicken Breast"
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="name"
+>
+                    Food
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--50",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "name",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "Food",
+                    "type": "text",
+                    "value": "Chicken Breast",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Food",
+                    "className": "foodForm__label",
+                    "htmlFor": "name",
+                  },
+                  "ref": null,
+                  "rendered": "Food",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "amountInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="amount"
+                    onChange={[Function]}
+                    placeholder="Amount"
+                    type="text"
+                    value={100}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="amount"
+>
+                    Amount
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "amount",
+                    "onChange": [Function],
+                    "placeholder": "Amount",
+                    "type": "text",
+                    "value": 100,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Amount",
+                    "className": "foodForm__label",
+                    "htmlFor": "amount",
+                  },
+                  "ref": null,
+                  "rendered": "Amount",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "unitInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="unit"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    placeholder="Unit"
+                    type="text"
+                    value="grams"
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="unit"
+>
+                    Unit
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "unit",
+                    "onBlur": [Function],
+                    "onChange": [Function],
+                    "placeholder": "Unit",
+                    "type": "text",
+                    "value": "grams",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Unit",
+                    "className": "foodForm__label",
+                    "htmlFor": "unit",
+                  },
+                  "ref": null,
+                  "rendered": "Unit",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                name="carbohydrates"
+                                onChange={[Function]}
+                                placeholder="Carbs"
+                                type="text"
+                                value={0}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="carbohydrates"
+                >
+                                Carbs
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                onChange={[Function]}
+                                placeholder="Protein"
+                                type="text"
+                                value={31}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="Protein"
+                >
+                                Protein
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                onChange={[Function]}
+                                placeholder="Fat"
+                                type="text"
+                                value={3.6}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="Fat"
+                >
+                                Fat
+                </label>
+</div>,
+              <div
+                className="foodForm__group foodForm__group--25"
+>
+                <input
+                                className="foodForm__input"
+                                onChange={[Function]}
+                                placeholder="Calories"
+                                type="text"
+                                value={165}
+                />
+                <label
+                                className="foodForm__label"
+                                htmlFor="Calories"
+                >
+                                Calories
+                </label>
+</div>,
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "carbohydratesInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    name="carbohydrates"
+                    onChange={[Function]}
+                    placeholder="Carbs"
+                    type="text"
+                    value={0}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="carbohydrates"
+>
+                    Carbs
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "name": "carbohydrates",
+                    "onChange": [Function],
+                    "placeholder": "Carbs",
+                    "type": "text",
+                    "value": 0,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Carbs",
+                    "className": "foodForm__label",
+                    "htmlFor": "carbohydrates",
+                  },
+                  "ref": null,
+                  "rendered": "Carbs",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "proteinInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    onChange={[Function]}
+                    placeholder="Protein"
+                    type="text"
+                    value={31}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="Protein"
+>
+                    Protein
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "onChange": [Function],
+                    "placeholder": "Protein",
+                    "type": "text",
+                    "value": 31,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Protein",
+                    "className": "foodForm__label",
+                    "htmlFor": "Protein",
+                  },
+                  "ref": null,
+                  "rendered": "Protein",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "fatInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    onChange={[Function]}
+                    placeholder="Fat"
+                    type="text"
+                    value={3.6}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="Fat"
+>
+                    Fat
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "onChange": [Function],
+                    "placeholder": "Fat",
+                    "type": "text",
+                    "value": 3.6,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Fat",
+                    "className": "foodForm__label",
+                    "htmlFor": "Fat",
+                  },
+                  "ref": null,
+                  "rendered": "Fat",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "caloriesInput",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <input
+                    className="foodForm__input"
+                    onChange={[Function]}
+                    placeholder="Calories"
+                    type="text"
+                    value={165}
+/>,
+                  <label
+                    className="foodForm__label"
+                    htmlFor="Calories"
+>
+                    Calories
+</label>,
+                ],
+                "className": "foodForm__group foodForm__group--25",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "foodForm__input",
+                    "onChange": [Function],
+                    "placeholder": "Calories",
+                    "type": "text",
+                    "value": 165,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "input",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Calories",
+                    "className": "foodForm__label",
+                    "htmlFor": "Calories",
+                  },
+                  "ref": null,
+                  "rendered": "Calories",
+                  "type": "label",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="foodForm__group--center-left"
+>
+                <button
+                                className="btn btn--form"
+                                onClick={[Function]}
+                                type="button"
+                >
+                                Remove
+                </button>
+</div>,
+              <div
+                className="foodForm__group--center-right"
+>
+                <button
+                                className="btn btn--form"
+                                onClick={[Function]}
+                                type="button"
+                >
+                                Exit
+                </button>
+</div>,
+              <div
+                className="foodForm__group--right"
+>
+                <button
+                                className="btn btn--form btn--primary"
+                >
+                                Submit
+                </button>
+</div>,
+              <div />,
+            ],
+            "className": "foodForm__row",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form"
+                  onClick={[Function]}
+                  type="button"
+>
+                  Remove
+</button>,
+                "className": "foodForm__group--center-left",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Remove",
+                  "className": "btn btn--form",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Remove",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form"
+                  onClick={[Function]}
+                  type="button"
+>
+                  Exit
+</button>,
+                "className": "foodForm__group--center-right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Exit",
+                  "className": "btn btn--form",
+                  "onClick": [Function],
+                  "type": "button",
+                },
+                "ref": null,
+                "rendered": "Exit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form btn--primary"
+>
+                  Submit
+</button>,
+                "className": "foodForm__group--right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "btn btn--form btn--primary",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
 exports[`should render Foodfrom with food data 1`] = `
 ShallowWrapper {
   "length": 1,
@@ -978,6 +5650,13 @@ ShallowWrapper {
     food={
         Object {
             "amount": 100,
+            "base": Object {
+              "amount": 100,
+              "calories": 165,
+              "carbohydrates": 0,
+              "fat": 3.6,
+              "protein": 31,
+            },
             "calories": 165,
             "carbohydrates": 0,
             "createdAt": 1000,

@@ -3,8 +3,38 @@ import { shallow } from 'enzyme';
 import FoodForm from './FoodForm';
 import foods from '../../tests/fixtures/foods';
 
-it('should render FoodForm correctly', () => {
-  const wrapper = shallow(<FoodForm />);
+it('should render FoodForm correctly for AddFoodFormToFoods', () => {
+  const wrapper = shallow(<FoodForm title={'Add Food'} handleSubmit={jest.fn()}/>);
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('should render FoodForm correctly for EditFoodFormToFoods', () => {
+  const wrapper = shallow(<FoodForm
+    title={'Edit Food'}
+    handleSubmit={jest.fn()}
+    food={foods[1]}
+    onRemove={jest.fn()}
+    onExit={jest.fn()}
+  />);
+  expect(wrapper).toMatchSnapshot();
+});
+
+it('should render FoodForm correctly for AddFoodFormToCurrentLog', () => {
+  const wrapper = shallow(<FoodForm
+    title={'Add Food To Log'}
+    handleSubmit={jest.fn()}
+    />);
+    expect(wrapper).toMatchSnapshot();
+  });
+  
+it('should render FoodForm correctly for EditFoodForCurrentLog', () => {
+  const wrapper = shallow(<FoodForm
+    title={'Edit Food'}
+    food={foods[1]}
+    handleSubmit={jest.fn()}
+    onRemove={jest.fn()}
+    onExit={jest.fn()}
+  />);
   expect(wrapper).toMatchSnapshot();
 });
 

@@ -2,7 +2,7 @@ import moment from 'moment';
 import foods from './foods';
 
 export default [{
-  date: moment(0).subtract(1, 'day').valueOf(),
+  date: moment(0).subtract(1, 'day').startOf('day').valueOf(),
   weight: 202,
   unit: 'lb',
   foods: [

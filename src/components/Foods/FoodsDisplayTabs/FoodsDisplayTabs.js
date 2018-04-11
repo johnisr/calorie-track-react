@@ -4,7 +4,7 @@ import {Tabs, TabList, Tab, TabPanels, TabPanel} from '../../Tabs/Tabs';
 import EditFoodFormForFoods from './EditFoodFormForFoods/EditFoodFormForFoods';
 import AddFoodFormToFoods from './AddFoodFormToFoods/AddFoodFormToFoods';
 
-const FoodsDisplayTabs = (props) => (
+export const FoodsDisplayTabs = (props) => (
   <Tabs activeIndex={props.activeIndex}>
     <TabList>
       <Tab>Add</Tab>
