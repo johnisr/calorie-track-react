@@ -1,4 +1,5 @@
 import React from 'react';
+import './Tabs.css';
 
 export const TabList = (props) => {
   const { activeIndex } = props;

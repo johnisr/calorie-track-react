@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setFoodNameFilter, sortByUsage, sortByDate, setMaxFoodsShown, setFoodsOffset } from '../../actions/foodsFilters';
 import selectFoods from '../../selectors/foods';
+import './FoodsListFilters.css';
 
 export class FoodListFilters extends React.Component {
   handleNameChange = (e) => {
@@ -74,19 +75,19 @@ export class FoodListFilters extends React.Component {
     const isLastPage = (offset * maxFoodsShown) + maxFoodsShown >= foodsLength;
 
     return (
-      <div className="foodsFilter">
-        <div className="foodsFilter__search">
+      <div className="foodsListFilters">
+        <div className="foodsListFilters__search">
           <input 
-            className="foodsFilter__input"
+            className="foodsListFilters__input"
             type="text"
             placeholder="Search Foods"
             value={this.props.filters.name} 
             onChange={this.handleNameChange}
           />
         </div>
-        <div className="foodsFilter__options">
+        <div className="foodsListFilters__options">
           <select
-            className="foodsFilter__select"
+            className="foodsListFilters__select"
             value={this.props.filters.sortBy} 
             onChange={this.handleSortChange}
           >
@@ -94,7 +95,7 @@ export class FoodListFilters extends React.Component {
             <option value="date">Date</option>
           </select>
           <select
-            className="foodsFilter__select"
+            className="foodsListFilters__select"
             value={this.props.filters.maxFoodsShown} 
             onChange={this.handleMaxFoodPageChange}
           >
@@ -104,7 +105,7 @@ export class FoodListFilters extends React.Component {
             <option value={50}>50</option>
           </select>        
         </div>
-        <div className="foodsFilter__pages flex-right-end">
+        <div className="foodsListFilters__pages flex-right-end">
           <button
             className={offset <= 0 ? "btn btn--page btn--disabled" : "btn btn--page"}
             onClick={this.handlePrevPageChange}

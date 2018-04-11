@@ -6,6 +6,8 @@ import { defaultLog, startAddLog } from '../../actions/logs';
 import { addCurrentEditLog } from '../../actions/currentLog';
 import { startLogout } from '../../actions/auth';
 
+import './Header.css';
+
 
 export class Header extends React.Component {
   handleEdit = () => {

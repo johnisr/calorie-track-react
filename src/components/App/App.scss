@@ -1,11 +1,8 @@
 @import '../../styles/base';
 @import '../../styles/typography';
 @import '../../styles/utilities';
+
 @import '../../styles/react_dates_overrides';
-@import '../../styles/header';
-@import '../../styles/foodsFilter';
-@import '../../styles/logsFilter';
-@import '../../styles/logList';
-@import '../../styles/tabs';
-@import '../../styles/button';
 @import '../../../node_modules/react-dates/lib/css/_datepicker.css';
+
+@import '../../styles/button';

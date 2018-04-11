@@ -10,6 +10,7 @@ import {
   setLogsOffset
 } from '../../../actions/logsFilters';
 import selectLogs from '../../../selectors/logs';
+import './LogListFilters.css';
 
 export class FoodListFilters extends React.Component {
   state = {
@@ -65,7 +66,7 @@ export class FoodListFilters extends React.Component {
     } else { // Normal case
       end = Math.min(offset + 3, pagesNeeded);
     }
-
+    
     const pageButtons = [];
     for (let i = start; i < end; i++) {
       pageButtons.push(
@@ -87,7 +88,7 @@ export class FoodListFilters extends React.Component {
     const isLastPage = (offset * maxLogsShown) + maxLogsShown >= logsLength;
 
     return (
-      <div className="logsFilter">
+      <div className="logsListFilters">
         <DateRangePicker 
           startDate={this.props.filters.startDate}
           startDateId={'startDate'}
@@ -100,9 +101,9 @@ export class FoodListFilters extends React.Component {
           isOutsideRange={() => false}
           showClearDates={true}
         />
-        <div className="logsFilter__options">
+        <div className="logsListFilters__options">
           <select
-            className="logsFilter__select"
+            className="logsListFilters__select"
             value={this.props.filters.sortBy} 
             onChange={this.handleSortChange}
           >
@@ -110,7 +111,7 @@ export class FoodListFilters extends React.Component {
             <option value="oldest">old</option>
           </select>
           <select
-            className="logsFilter__select"
+            className="logsListFilters__select"
             value={this.props.filters.maxLogsShown} 
             onChange={this.handleMaxLogsPageChange}
           >
@@ -120,7 +121,7 @@ export class FoodListFilters extends React.Component {
             <option value={31}>31</option>
           </select>
         </div>
-        <div className="foodsFilter__pages flex-right-end">
+        <div className="logsListFilters__pages flex-right-end">
           <button
             className={offset <= 0 ? "btn btn--page btn--disabled" : "btn btn--page"}
             onClick={this.handlePrevPageChange}
