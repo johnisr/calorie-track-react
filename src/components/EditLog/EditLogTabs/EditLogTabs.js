@@ -6,7 +6,7 @@ import EditFoodFormForCurrentLog from './EditFoodFormForCurrentLog/EditFoodFormF
 import CurrentLogAddFoodListContainer from './CurrentLogAddFoodListContainer/CurrentLogAddFoodListContainer';
 import FoodListFilters from '../../FoodListFilters/FoodListFilters';
 
-const EditLogTabs = (props) => (
+export const EditLogTabs = (props) => (
   <Tabs activeIndex={props.activeIndex}>
     <TabList>
       <Tab>Add from database</Tab>

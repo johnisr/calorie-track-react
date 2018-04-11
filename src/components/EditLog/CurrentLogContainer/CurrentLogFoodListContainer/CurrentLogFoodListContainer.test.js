@@ -53,3 +53,28 @@ it('should handleMultiplierChange', () => {
     multiplier: '3',
   });  
 });
+
+it('should handleMultiplierChange with float (2 decimals)', () => {
+  const e = {target : { value: '3.25' }};
+  wrapper.find('CurrentLogFoodList').prop('onMultiplierChange')(1, e);
+  expect(editFoodFromCurrentLog).toHaveBeenLastCalledWith(1, {
+    amount: +(foods[1].amount * 3.25).toFixed(2),
+    carbohydrates: +(foods[1].carbohydrates * 3.25).toFixed(2),
+    protein: +(foods[1].protein * 3.25).toFixed(2),
+    fat: +(foods[1].fat * 3.25).toFixed(2),
+    calories: +(foods[1].calories * 3.25).toFixed(2),
+    multiplier: '3.25',
+  });  
+});
+
+it('should not handleMultiplierChange with float (3 decimals)', () => {
+  const e = {target : { value: '3.251' }};
+  wrapper.find('CurrentLogFoodList').prop('onMultiplierChange')(1, e);
+  expect(editFoodFromCurrentLog).not.toHaveBeenCalled();
+});
+
+it('should not handleMultiplierChange with non number', () => {
+  const e = {target : { value: 'abc' }};
+  wrapper.find('CurrentLogFoodList').prop('onMultiplierChange')(1, e);
+  expect(editFoodFromCurrentLog).not.toHaveBeenCalled();
+});

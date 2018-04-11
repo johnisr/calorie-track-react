@@ -23,6 +23,13 @@ ShallowWrapper {
               },
               Object {
                 "amount": 100,
+                "base": Object {
+                  "amount": 100,
+                  "calories": 165,
+                  "carbohydrates": 0,
+                  "fat": 3.6,
+                  "protein": 31,
+                },
                 "calories": 165,
                 "carbohydrates": 0,
                 "createdAt": 1000,
@@ -141,7 +148,7 @@ ShallowWrapper {
           <section
                     className="section__center-start-end margin-bottom-large"
           >
-                    <Connect(EditLogTabs) />
+                    <Connect(Component) />
           </section>
 </div>,
       ],
@@ -320,7 +327,7 @@ ShallowWrapper {
             <section
               className="section__center-start-end margin-bottom-large"
 >
-              <Connect(EditLogTabs) />
+              <Connect(Component) />
 </section>,
           ],
           "className": "row",
@@ -392,7 +399,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": <Connect(EditLogTabs) />,
+              "children": <Connect(Component) />,
               "className": "section__center-start-end margin-bottom-large",
             },
             "ref": null,
@@ -491,7 +498,7 @@ ShallowWrapper {
             <section
                         className="section__center-start-end margin-bottom-large"
             >
-                        <Connect(EditLogTabs) />
+                        <Connect(Component) />
             </section>
 </div>,
         ],
@@ -670,7 +677,7 @@ ShallowWrapper {
               <section
                 className="section__center-start-end margin-bottom-large"
 >
-                <Connect(EditLogTabs) />
+                <Connect(Component) />
 </section>,
             ],
             "className": "row",
@@ -742,7 +749,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <Connect(EditLogTabs) />,
+                "children": <Connect(Component) />,
                 "className": "section__center-start-end margin-bottom-large",
               },
               "ref": null,

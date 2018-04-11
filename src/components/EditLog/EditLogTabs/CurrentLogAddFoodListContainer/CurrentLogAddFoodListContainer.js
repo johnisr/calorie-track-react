@@ -4,7 +4,7 @@ import FoodList from '../../../FoodList/FoodList';
 import { addFoodToCurrentLogFromList } from '../../../../actions/currentLog';
 import selectFoodsWithPages from '../../../../selectors/foodsWithPages';
 
-export class FoodListAddCurrentLogContainer extends React.Component {
+export class CurrentLogAddFoodListContainer extends React.Component {
   handleClick = (food) => {
     this.props.addFoodToCurrentLogFromList(food);
   }
@@ -27,4 +27,4 @@ const mapDispatchToProps = (dispatch) => ({
   addFoodToCurrentLogFromList: (food) => dispatch(addFoodToCurrentLogFromList(food)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(FoodListAddCurrentLogContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(CurrentLogAddFoodListContainer);
