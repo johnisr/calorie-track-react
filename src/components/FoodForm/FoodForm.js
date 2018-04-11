@@ -259,18 +259,22 @@ class FoodForm extends React.Component {
 
         </div>
         <div className="foodForm__row">
-          <div className="foodForm__group--right">
-            <button className={isEnabled ? "btn btn--form" : "btn btn--form btn--disabled"}>Submit</button>
-            <div>
+            <div className="foodForm__group--center-left">
               {
                 this.props.onRemove &&
                 <button type="button" className="btn btn--form" onClick={this.props.onRemove}>Remove</button>
               }
             </div>
-            {
-              this.props.onExit &&
-              <button type="button" className="btn btn--form" onClick={this.props.onExit}>Exit</button>
-            }
+            <div className="foodForm__group--center-right">
+              {
+                this.props.onExit &&
+                <button type="button" className="btn btn--form" onClick={this.props.onExit}>Exit</button>
+              }
+            </div>
+          <div className="foodForm__group--right">
+            <button className={isEnabled ? "btn btn--form btn--primary" : "btn btn--form btn--primary btn--disabled"}>Submit</button>
+          </div>
+          <div>
           </div>
         </div>
       </form>

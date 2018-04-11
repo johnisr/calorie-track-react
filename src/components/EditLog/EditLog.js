@@ -5,7 +5,7 @@ import EditLogTabs from './EditLogTabs/EditLogTabs';
 import Header from '../Header/Header';
 import { history } from '../../routers/AppRouter';
 
-class EditLog extends React.Component {
+export class EditLog extends React.Component {
   isEmpty(obj) {
     return Object.keys(obj).length === 0;
   }

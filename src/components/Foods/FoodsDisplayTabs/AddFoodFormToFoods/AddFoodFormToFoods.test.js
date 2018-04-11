@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { AddFoodFormToFoods } from '../../components/AddFoodFormToFoods';
-import foods from '../fixtures/foods';
+import { AddFoodFormToFoods } from './AddFoodFormToFoods';
+import foods from '../../../../tests/fixtures/foods';
 
 let startAddFood, wrapper;
 beforeEach(() => {

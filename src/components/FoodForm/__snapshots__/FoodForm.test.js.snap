@@ -18,14 +18,19 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h1
+          className="foodForm__title"
+>
+          Form
+</h1>,
         <div
-          className="form__row"
+          className="foodForm__row"
 >
           <div
-                    className="form__group form__group--50"
+                    className="foodForm__group foodForm__group--50"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               name="name"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -34,17 +39,17 @@ ShallowWrapper {
                               value=""
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="name"
                     >
                               Food
                     </label>
           </div>
           <div
-                    className="form__group form__group--50"
+                    className="foodForm__group foodForm__group--50"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               name="amountWithUnits"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -53,7 +58,7 @@ ShallowWrapper {
                               value=""
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="amountWithUnits"
                     >
                               Amount
@@ -61,13 +66,13 @@ ShallowWrapper {
           </div>
 </div>,
         <div
-          className="form__row"
+          className="foodForm__row"
 >
           <div
-                    className="form__group form__group--100"
+                    className="foodForm__group foodForm__group--100"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               name="macros"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -76,7 +81,7 @@ ShallowWrapper {
                               value=""
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="macros"
                     >
                               Carbohydrates Protein Fat Calories (spaces in between)
@@ -84,20 +89,27 @@ ShallowWrapper {
           </div>
 </div>,
         <div
-          className="form__row"
+          className="foodForm__row"
 >
           <div
-                    className="form__group--right"
+                    className="foodForm__group--center-left"
+          />
+          <div
+                    className="foodForm__group--center-right"
+          />
+          <div
+                    className="foodForm__group--right"
           >
                     <button
-                              className="btn btn--form btn--disabled"
+                              className="btn btn--form btn--primary btn--disabled"
                     >
                               Submit
                     </button>
           </div>
+          <div />
 </div>,
       ],
-      "className": "form",
+      "className": "foodForm",
       "onSubmit": [Function],
     },
     "ref": null,
@@ -107,13 +119,25 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Form",
+          "className": "foodForm__title",
+        },
+        "ref": null,
+        "rendered": "Form",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
             Array [
               <div
-                className="form__group form__group--50"
+                className="foodForm__group foodForm__group--50"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 name="name"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -122,7 +146,7 @@ ShallowWrapper {
                                 value=""
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="name"
                 >
                                 Food
@@ -131,10 +155,10 @@ ShallowWrapper {
             ],
             Array [
               <div
-                className="form__group form__group--50"
+                className="foodForm__group foodForm__group--50"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 name="amountWithUnits"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -143,7 +167,7 @@ ShallowWrapper {
                                 value=""
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="amountWithUnits"
                 >
                                 Amount
@@ -151,7 +175,7 @@ ShallowWrapper {
 </div>,
             ],
           ],
-          "className": "form__row",
+          "className": "foodForm__row",
         },
         "ref": null,
         "rendered": Array [
@@ -162,7 +186,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   name="name"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -171,13 +195,13 @@ ShallowWrapper {
                   value=""
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="name"
 >
                   Food
 </label>,
               ],
-              "className": "form__group form__group--50",
+              "className": "foodForm__group foodForm__group--50",
             },
             "ref": null,
             "rendered": Array [
@@ -186,7 +210,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "name": "name",
                   "onBlur": [Function],
                   "onChange": [Function],
@@ -204,7 +228,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Food",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "name",
                 },
                 "ref": null,
@@ -221,7 +245,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   name="amountWithUnits"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -230,13 +254,13 @@ ShallowWrapper {
                   value=""
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="amountWithUnits"
 >
                   Amount
 </label>,
               ],
-              "className": "form__group form__group--50",
+              "className": "foodForm__group foodForm__group--50",
             },
             "ref": null,
             "rendered": Array [
@@ -245,7 +269,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "name": "amountWithUnits",
                   "onBlur": [Function],
                   "onChange": [Function],
@@ -263,7 +287,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Amount",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "amountWithUnits",
                 },
                 "ref": null,
@@ -283,10 +307,10 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="form__group form__group--100"
+              className="foodForm__group foodForm__group--100"
 >
               <input
-                            className="form__input"
+                            className="foodForm__input"
                             name="macros"
                             onBlur={[Function]}
                             onChange={[Function]}
@@ -295,14 +319,14 @@ ShallowWrapper {
                             value=""
               />
               <label
-                            className="form__label"
+                            className="foodForm__label"
                             htmlFor="macros"
               >
                             Carbohydrates Protein Fat Calories (spaces in between)
               </label>
 </div>,
           ],
-          "className": "form__row",
+          "className": "foodForm__row",
         },
         "ref": null,
         "rendered": Array [
@@ -313,7 +337,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   name="macros"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -322,13 +346,13 @@ ShallowWrapper {
                   value=""
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="macros"
 >
                   Carbohydrates Protein Fat Calories (spaces in between)
 </label>,
               ],
-              "className": "form__group form__group--100",
+              "className": "foodForm__group foodForm__group--100",
             },
             "ref": null,
             "rendered": Array [
@@ -337,7 +361,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "name": "macros",
                   "onBlur": [Function],
                   "onChange": [Function],
@@ -355,7 +379,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Carbohydrates Protein Fat Calories (spaces in between)",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "macros",
                 },
                 "ref": null,
@@ -373,45 +397,89 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <div
-            className="form__group--right"
+          "children": Array [
+            <div
+              className="foodForm__group--center-left"
+/>,
+            <div
+              className="foodForm__group--center-right"
+/>,
+            <div
+              className="foodForm__group--right"
 >
-            <button
-                        className="btn btn--form btn--disabled"
-            >
-                        Submit
-            </button>
+              <button
+                            className="btn btn--form btn--primary btn--disabled"
+              >
+                            Submit
+              </button>
 </div>,
-          "className": "form__row",
+            <div />,
+          ],
+          "className": "foodForm__row",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <button
-              className="btn btn--form btn--disabled"
->
-              Submit
-</button>,
-            "className": "form__group--right",
-          },
-          "ref": null,
-          "rendered": Object {
+        "rendered": Array [
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Submit",
-              "className": "btn btn--form btn--disabled",
+              "children": undefined,
+              "className": "foodForm__group--center-left",
             },
             "ref": null,
-            "rendered": "Submit",
-            "type": "button",
+            "rendered": null,
+            "type": "div",
           },
-          "type": "div",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "foodForm__group--center-right",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form btn--primary btn--disabled"
+>
+                Submit
+</button>,
+              "className": "foodForm__group--right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "btn btn--form btn--primary btn--disabled",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
         "type": "div",
       },
     ],
@@ -424,14 +492,19 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <h1
+            className="foodForm__title"
+>
+            Form
+</h1>,
           <div
-            className="form__row"
+            className="foodForm__row"
 >
             <div
-                        className="form__group form__group--50"
+                        className="foodForm__group foodForm__group--50"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="name"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -440,17 +513,17 @@ ShallowWrapper {
                                     value=""
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="name"
                         >
                                     Food
                         </label>
             </div>
             <div
-                        className="form__group form__group--50"
+                        className="foodForm__group foodForm__group--50"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="amountWithUnits"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -459,7 +532,7 @@ ShallowWrapper {
                                     value=""
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="amountWithUnits"
                         >
                                     Amount
@@ -467,13 +540,13 @@ ShallowWrapper {
             </div>
 </div>,
           <div
-            className="form__row"
+            className="foodForm__row"
 >
             <div
-                        className="form__group form__group--100"
+                        className="foodForm__group foodForm__group--100"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="macros"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -482,7 +555,7 @@ ShallowWrapper {
                                     value=""
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="macros"
                         >
                                     Carbohydrates Protein Fat Calories (spaces in between)
@@ -490,20 +563,27 @@ ShallowWrapper {
             </div>
 </div>,
           <div
-            className="form__row"
+            className="foodForm__row"
 >
             <div
-                        className="form__group--right"
+                        className="foodForm__group--center-left"
+            />
+            <div
+                        className="foodForm__group--center-right"
+            />
+            <div
+                        className="foodForm__group--right"
             >
                         <button
-                                    className="btn btn--form btn--disabled"
+                                    className="btn btn--form btn--primary btn--disabled"
                         >
                                     Submit
                         </button>
             </div>
+            <div />
 </div>,
         ],
-        "className": "form",
+        "className": "foodForm",
         "onSubmit": [Function],
       },
       "ref": null,
@@ -513,13 +593,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Form",
+            "className": "foodForm__title",
+          },
+          "ref": null,
+          "rendered": "Form",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
               Array [
                 <div
-                  className="form__group form__group--50"
+                  className="foodForm__group foodForm__group--50"
 >
                   <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="name"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -528,7 +620,7 @@ ShallowWrapper {
                                     value=""
                   />
                   <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="name"
                   >
                                     Food
@@ -537,10 +629,10 @@ ShallowWrapper {
               ],
               Array [
                 <div
-                  className="form__group form__group--50"
+                  className="foodForm__group foodForm__group--50"
 >
                   <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="amountWithUnits"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -549,7 +641,7 @@ ShallowWrapper {
                                     value=""
                   />
                   <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="amountWithUnits"
                   >
                                     Amount
@@ -557,7 +649,7 @@ ShallowWrapper {
 </div>,
               ],
             ],
-            "className": "form__row",
+            "className": "foodForm__row",
           },
           "ref": null,
           "rendered": Array [
@@ -568,7 +660,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     name="name"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -577,13 +669,13 @@ ShallowWrapper {
                     value=""
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="name"
 >
                     Food
 </label>,
                 ],
-                "className": "form__group form__group--50",
+                "className": "foodForm__group foodForm__group--50",
               },
               "ref": null,
               "rendered": Array [
@@ -592,7 +684,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "name": "name",
                     "onBlur": [Function],
                     "onChange": [Function],
@@ -610,7 +702,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Food",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "name",
                   },
                   "ref": null,
@@ -627,7 +719,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     name="amountWithUnits"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -636,13 +728,13 @@ ShallowWrapper {
                     value=""
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="amountWithUnits"
 >
                     Amount
 </label>,
                 ],
-                "className": "form__group form__group--50",
+                "className": "foodForm__group foodForm__group--50",
               },
               "ref": null,
               "rendered": Array [
@@ -651,7 +743,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "name": "amountWithUnits",
                     "onBlur": [Function],
                     "onChange": [Function],
@@ -669,7 +761,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Amount",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "amountWithUnits",
                   },
                   "ref": null,
@@ -689,10 +781,10 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="form__group form__group--100"
+                className="foodForm__group foodForm__group--100"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 name="macros"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -701,14 +793,14 @@ ShallowWrapper {
                                 value=""
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="macros"
                 >
                                 Carbohydrates Protein Fat Calories (spaces in between)
                 </label>
 </div>,
             ],
-            "className": "form__row",
+            "className": "foodForm__row",
           },
           "ref": null,
           "rendered": Array [
@@ -719,7 +811,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     name="macros"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -728,13 +820,13 @@ ShallowWrapper {
                     value=""
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="macros"
 >
                     Carbohydrates Protein Fat Calories (spaces in between)
 </label>,
                 ],
-                "className": "form__group form__group--100",
+                "className": "foodForm__group foodForm__group--100",
               },
               "ref": null,
               "rendered": Array [
@@ -743,7 +835,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "name": "macros",
                     "onBlur": [Function],
                     "onChange": [Function],
@@ -761,7 +853,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Carbohydrates Protein Fat Calories (spaces in between)",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "macros",
                   },
                   "ref": null,
@@ -779,45 +871,89 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <div
-              className="form__group--right"
+            "children": Array [
+              <div
+                className="foodForm__group--center-left"
+/>,
+              <div
+                className="foodForm__group--center-right"
+/>,
+              <div
+                className="foodForm__group--right"
 >
-              <button
-                            className="btn btn--form btn--disabled"
-              >
-                            Submit
-              </button>
+                <button
+                                className="btn btn--form btn--primary btn--disabled"
+                >
+                                Submit
+                </button>
 </div>,
-            "className": "form__row",
+              <div />,
+            ],
+            "className": "foodForm__row",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <button
-                className="btn btn--form btn--disabled"
->
-                Submit
-</button>,
-              "className": "form__group--right",
-            },
-            "ref": null,
-            "rendered": Object {
+          "rendered": Array [
+            Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Submit",
-                "className": "btn btn--form btn--disabled",
+                "children": undefined,
+                "className": "foodForm__group--center-left",
               },
               "ref": null,
-              "rendered": "Submit",
-              "type": "button",
+              "rendered": null,
+              "type": "div",
             },
-            "type": "div",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "foodForm__group--center-right",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form btn--primary btn--disabled"
+>
+                  Submit
+</button>,
+                "className": "foodForm__group--right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "btn btn--form btn--primary btn--disabled",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
       ],
@@ -867,14 +1003,19 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <h1
+          className="foodForm__title"
+>
+          Form
+</h1>,
         <div
-          className="form__row"
+          className="foodForm__row"
 >
           <div
-                    className="form__group form__group--50"
+                    className="foodForm__group foodForm__group--50"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               name="name"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -883,17 +1024,17 @@ ShallowWrapper {
                               value="Chicken Breast"
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="name"
                     >
                               Food
                     </label>
           </div>
           <div
-                    className="form__group form__group--25"
+                    className="foodForm__group foodForm__group--25"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               name="amount"
                               onChange={[Function]}
                               placeholder="Amount"
@@ -901,17 +1042,17 @@ ShallowWrapper {
                               value={100}
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="amount"
                     >
                               Amount
                     </label>
           </div>
           <div
-                    className="form__group form__group--25"
+                    className="foodForm__group foodForm__group--25"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               name="unit"
                               onBlur={[Function]}
                               onChange={[Function]}
@@ -920,7 +1061,7 @@ ShallowWrapper {
                               value="grams"
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="unit"
                     >
                               Unit
@@ -928,13 +1069,13 @@ ShallowWrapper {
           </div>
 </div>,
         <div
-          className="form__row"
+          className="foodForm__row"
 >
           <div
-                    className="form__group form__group--25"
+                    className="foodForm__group foodForm__group--25"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               name="carbohydrates"
                               onChange={[Function]}
                               placeholder="Carbs"
@@ -942,58 +1083,58 @@ ShallowWrapper {
                               value={0}
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="carbohydrates"
                     >
                               Carbs
                     </label>
           </div>
           <div
-                    className="form__group form__group--25"
+                    className="foodForm__group foodForm__group--25"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               onChange={[Function]}
                               placeholder="Protein"
                               type="text"
                               value={31}
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="Protein"
                     >
                               Protein
                     </label>
           </div>
           <div
-                    className="form__group form__group--25"
+                    className="foodForm__group foodForm__group--25"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               onChange={[Function]}
                               placeholder="Fat"
                               type="text"
                               value={3.6}
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="Fat"
                     >
                               Fat
                     </label>
           </div>
           <div
-                    className="form__group form__group--25"
+                    className="foodForm__group foodForm__group--25"
           >
                     <input
-                              className="form__input"
+                              className="foodForm__input"
                               onChange={[Function]}
                               placeholder="Calories"
                               type="text"
                               value={165}
                     />
                     <label
-                              className="form__label"
+                              className="foodForm__label"
                               htmlFor="Calories"
                     >
                               Calories
@@ -1001,20 +1142,27 @@ ShallowWrapper {
           </div>
 </div>,
         <div
-          className="form__row"
+          className="foodForm__row"
 >
           <div
-                    className="form__group--right"
+                    className="foodForm__group--center-left"
+          />
+          <div
+                    className="foodForm__group--center-right"
+          />
+          <div
+                    className="foodForm__group--right"
           >
                     <button
-                              className="btn btn--form"
+                              className="btn btn--form btn--primary"
                     >
                               Submit
                     </button>
           </div>
+          <div />
 </div>,
       ],
-      "className": "form",
+      "className": "foodForm",
       "onSubmit": [Function],
     },
     "ref": null,
@@ -1024,13 +1172,25 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "children": "Form",
+          "className": "foodForm__title",
+        },
+        "ref": null,
+        "rendered": "Form",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
           "children": Array [
             Array [
               <div
-                className="form__group form__group--50"
+                className="foodForm__group foodForm__group--50"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 name="name"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -1039,7 +1199,7 @@ ShallowWrapper {
                                 value="Chicken Breast"
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="name"
                 >
                                 Food
@@ -1048,10 +1208,10 @@ ShallowWrapper {
             ],
             Array [
               <div
-                className="form__group form__group--25"
+                className="foodForm__group foodForm__group--25"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 name="amount"
                                 onChange={[Function]}
                                 placeholder="Amount"
@@ -1059,17 +1219,17 @@ ShallowWrapper {
                                 value={100}
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="amount"
                 >
                                 Amount
                 </label>
 </div>,
               <div
-                className="form__group form__group--25"
+                className="foodForm__group foodForm__group--25"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 name="unit"
                                 onBlur={[Function]}
                                 onChange={[Function]}
@@ -1078,7 +1238,7 @@ ShallowWrapper {
                                 value="grams"
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="unit"
                 >
                                 Unit
@@ -1086,7 +1246,7 @@ ShallowWrapper {
 </div>,
             ],
           ],
-          "className": "form__row",
+          "className": "foodForm__row",
         },
         "ref": null,
         "rendered": Array [
@@ -1097,7 +1257,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   name="name"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1106,13 +1266,13 @@ ShallowWrapper {
                   value="Chicken Breast"
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="name"
 >
                   Food
 </label>,
               ],
-              "className": "form__group form__group--50",
+              "className": "foodForm__group foodForm__group--50",
             },
             "ref": null,
             "rendered": Array [
@@ -1121,7 +1281,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "name": "name",
                   "onBlur": [Function],
                   "onChange": [Function],
@@ -1139,7 +1299,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Food",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "name",
                 },
                 "ref": null,
@@ -1156,7 +1316,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   name="amount"
                   onChange={[Function]}
                   placeholder="Amount"
@@ -1164,13 +1324,13 @@ ShallowWrapper {
                   value={100}
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="amount"
 >
                   Amount
 </label>,
               ],
-              "className": "form__group form__group--25",
+              "className": "foodForm__group foodForm__group--25",
             },
             "ref": null,
             "rendered": Array [
@@ -1179,7 +1339,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "name": "amount",
                   "onChange": [Function],
                   "placeholder": "Amount",
@@ -1196,7 +1356,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Amount",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "amount",
                 },
                 "ref": null,
@@ -1213,7 +1373,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   name="unit"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -1222,13 +1382,13 @@ ShallowWrapper {
                   value="grams"
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="unit"
 >
                   Unit
 </label>,
               ],
-              "className": "form__group form__group--25",
+              "className": "foodForm__group foodForm__group--25",
             },
             "ref": null,
             "rendered": Array [
@@ -1237,7 +1397,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "name": "unit",
                   "onBlur": [Function],
                   "onChange": [Function],
@@ -1255,7 +1415,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Unit",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "unit",
                 },
                 "ref": null,
@@ -1275,10 +1435,10 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="form__group form__group--25"
+              className="foodForm__group foodForm__group--25"
 >
               <input
-                            className="form__input"
+                            className="foodForm__input"
                             name="carbohydrates"
                             onChange={[Function]}
                             placeholder="Carbs"
@@ -1286,65 +1446,65 @@ ShallowWrapper {
                             value={0}
               />
               <label
-                            className="form__label"
+                            className="foodForm__label"
                             htmlFor="carbohydrates"
               >
                             Carbs
               </label>
 </div>,
             <div
-              className="form__group form__group--25"
+              className="foodForm__group foodForm__group--25"
 >
               <input
-                            className="form__input"
+                            className="foodForm__input"
                             onChange={[Function]}
                             placeholder="Protein"
                             type="text"
                             value={31}
               />
               <label
-                            className="form__label"
+                            className="foodForm__label"
                             htmlFor="Protein"
               >
                             Protein
               </label>
 </div>,
             <div
-              className="form__group form__group--25"
+              className="foodForm__group foodForm__group--25"
 >
               <input
-                            className="form__input"
+                            className="foodForm__input"
                             onChange={[Function]}
                             placeholder="Fat"
                             type="text"
                             value={3.6}
               />
               <label
-                            className="form__label"
+                            className="foodForm__label"
                             htmlFor="Fat"
               >
                             Fat
               </label>
 </div>,
             <div
-              className="form__group form__group--25"
+              className="foodForm__group foodForm__group--25"
 >
               <input
-                            className="form__input"
+                            className="foodForm__input"
                             onChange={[Function]}
                             placeholder="Calories"
                             type="text"
                             value={165}
               />
               <label
-                            className="form__label"
+                            className="foodForm__label"
                             htmlFor="Calories"
               >
                             Calories
               </label>
 </div>,
           ],
-          "className": "form__row",
+          "className": "foodForm__row",
         },
         "ref": null,
         "rendered": Array [
@@ -1355,7 +1515,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   name="carbohydrates"
                   onChange={[Function]}
                   placeholder="Carbs"
@@ -1363,13 +1523,13 @@ ShallowWrapper {
                   value={0}
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="carbohydrates"
 >
                   Carbs
 </label>,
               ],
-              "className": "form__group form__group--25",
+              "className": "foodForm__group foodForm__group--25",
             },
             "ref": null,
             "rendered": Array [
@@ -1378,7 +1538,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "name": "carbohydrates",
                   "onChange": [Function],
                   "placeholder": "Carbs",
@@ -1395,7 +1555,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Carbs",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "carbohydrates",
                 },
                 "ref": null,
@@ -1412,20 +1572,20 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   onChange={[Function]}
                   placeholder="Protein"
                   type="text"
                   value={31}
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="Protein"
 >
                   Protein
 </label>,
               ],
-              "className": "form__group form__group--25",
+              "className": "foodForm__group foodForm__group--25",
             },
             "ref": null,
             "rendered": Array [
@@ -1434,7 +1594,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "onChange": [Function],
                   "placeholder": "Protein",
                   "type": "text",
@@ -1450,7 +1610,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Protein",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "Protein",
                 },
                 "ref": null,
@@ -1467,20 +1627,20 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   onChange={[Function]}
                   placeholder="Fat"
                   type="text"
                   value={3.6}
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="Fat"
 >
                   Fat
 </label>,
               ],
-              "className": "form__group form__group--25",
+              "className": "foodForm__group foodForm__group--25",
             },
             "ref": null,
             "rendered": Array [
@@ -1489,7 +1649,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "onChange": [Function],
                   "placeholder": "Fat",
                   "type": "text",
@@ -1505,7 +1665,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Fat",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "Fat",
                 },
                 "ref": null,
@@ -1522,20 +1682,20 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <input
-                  className="form__input"
+                  className="foodForm__input"
                   onChange={[Function]}
                   placeholder="Calories"
                   type="text"
                   value={165}
 />,
                 <label
-                  className="form__label"
+                  className="foodForm__label"
                   htmlFor="Calories"
 >
                   Calories
 </label>,
               ],
-              "className": "form__group form__group--25",
+              "className": "foodForm__group foodForm__group--25",
             },
             "ref": null,
             "rendered": Array [
@@ -1544,7 +1704,7 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "className": "form__input",
+                  "className": "foodForm__input",
                   "onChange": [Function],
                   "placeholder": "Calories",
                   "type": "text",
@@ -1560,7 +1720,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "Calories",
-                  "className": "form__label",
+                  "className": "foodForm__label",
                   "htmlFor": "Calories",
                 },
                 "ref": null,
@@ -1578,45 +1738,89 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <div
-            className="form__group--right"
+          "children": Array [
+            <div
+              className="foodForm__group--center-left"
+/>,
+            <div
+              className="foodForm__group--center-right"
+/>,
+            <div
+              className="foodForm__group--right"
 >
-            <button
-                        className="btn btn--form"
-            >
-                        Submit
-            </button>
+              <button
+                            className="btn btn--form btn--primary"
+              >
+                            Submit
+              </button>
 </div>,
-          "className": "form__row",
+            <div />,
+          ],
+          "className": "foodForm__row",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <button
-              className="btn btn--form"
->
-              Submit
-</button>,
-            "className": "form__group--right",
-          },
-          "ref": null,
-          "rendered": Object {
+        "rendered": Array [
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Submit",
-              "className": "btn btn--form",
+              "children": undefined,
+              "className": "foodForm__group--center-left",
             },
             "ref": null,
-            "rendered": "Submit",
-            "type": "button",
+            "rendered": null,
+            "type": "div",
           },
-          "type": "div",
-        },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "foodForm__group--center-right",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <button
+                className="btn btn--form btn--primary"
+>
+                Submit
+</button>,
+              "className": "foodForm__group--right",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Submit",
+                "className": "btn btn--form btn--primary",
+              },
+              "ref": null,
+              "rendered": "Submit",
+              "type": "button",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
         "type": "div",
       },
     ],
@@ -1629,14 +1833,19 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <h1
+            className="foodForm__title"
+>
+            Form
+</h1>,
           <div
-            className="form__row"
+            className="foodForm__row"
 >
             <div
-                        className="form__group form__group--50"
+                        className="foodForm__group foodForm__group--50"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="name"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -1645,17 +1854,17 @@ ShallowWrapper {
                                     value="Chicken Breast"
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="name"
                         >
                                     Food
                         </label>
             </div>
             <div
-                        className="form__group form__group--25"
+                        className="foodForm__group foodForm__group--25"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="amount"
                                     onChange={[Function]}
                                     placeholder="Amount"
@@ -1663,17 +1872,17 @@ ShallowWrapper {
                                     value={100}
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="amount"
                         >
                                     Amount
                         </label>
             </div>
             <div
-                        className="form__group form__group--25"
+                        className="foodForm__group foodForm__group--25"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="unit"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -1682,7 +1891,7 @@ ShallowWrapper {
                                     value="grams"
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="unit"
                         >
                                     Unit
@@ -1690,13 +1899,13 @@ ShallowWrapper {
             </div>
 </div>,
           <div
-            className="form__row"
+            className="foodForm__row"
 >
             <div
-                        className="form__group form__group--25"
+                        className="foodForm__group foodForm__group--25"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="carbohydrates"
                                     onChange={[Function]}
                                     placeholder="Carbs"
@@ -1704,58 +1913,58 @@ ShallowWrapper {
                                     value={0}
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="carbohydrates"
                         >
                                     Carbs
                         </label>
             </div>
             <div
-                        className="form__group form__group--25"
+                        className="foodForm__group foodForm__group--25"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     onChange={[Function]}
                                     placeholder="Protein"
                                     type="text"
                                     value={31}
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="Protein"
                         >
                                     Protein
                         </label>
             </div>
             <div
-                        className="form__group form__group--25"
+                        className="foodForm__group foodForm__group--25"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     onChange={[Function]}
                                     placeholder="Fat"
                                     type="text"
                                     value={3.6}
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="Fat"
                         >
                                     Fat
                         </label>
             </div>
             <div
-                        className="form__group form__group--25"
+                        className="foodForm__group foodForm__group--25"
             >
                         <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     onChange={[Function]}
                                     placeholder="Calories"
                                     type="text"
                                     value={165}
                         />
                         <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="Calories"
                         >
                                     Calories
@@ -1763,20 +1972,27 @@ ShallowWrapper {
             </div>
 </div>,
           <div
-            className="form__row"
+            className="foodForm__row"
 >
             <div
-                        className="form__group--right"
+                        className="foodForm__group--center-left"
+            />
+            <div
+                        className="foodForm__group--center-right"
+            />
+            <div
+                        className="foodForm__group--right"
             >
                         <button
-                                    className="btn btn--form"
+                                    className="btn btn--form btn--primary"
                         >
                                     Submit
                         </button>
             </div>
+            <div />
 </div>,
         ],
-        "className": "form",
+        "className": "foodForm",
         "onSubmit": [Function],
       },
       "ref": null,
@@ -1786,13 +2002,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "children": "Form",
+            "className": "foodForm__title",
+          },
+          "ref": null,
+          "rendered": "Form",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
             "children": Array [
               Array [
                 <div
-                  className="form__group form__group--50"
+                  className="foodForm__group foodForm__group--50"
 >
                   <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="name"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -1801,7 +2029,7 @@ ShallowWrapper {
                                     value="Chicken Breast"
                   />
                   <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="name"
                   >
                                     Food
@@ -1810,10 +2038,10 @@ ShallowWrapper {
               ],
               Array [
                 <div
-                  className="form__group form__group--25"
+                  className="foodForm__group foodForm__group--25"
 >
                   <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="amount"
                                     onChange={[Function]}
                                     placeholder="Amount"
@@ -1821,17 +2049,17 @@ ShallowWrapper {
                                     value={100}
                   />
                   <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="amount"
                   >
                                     Amount
                   </label>
 </div>,
                 <div
-                  className="form__group form__group--25"
+                  className="foodForm__group foodForm__group--25"
 >
                   <input
-                                    className="form__input"
+                                    className="foodForm__input"
                                     name="unit"
                                     onBlur={[Function]}
                                     onChange={[Function]}
@@ -1840,7 +2068,7 @@ ShallowWrapper {
                                     value="grams"
                   />
                   <label
-                                    className="form__label"
+                                    className="foodForm__label"
                                     htmlFor="unit"
                   >
                                     Unit
@@ -1848,7 +2076,7 @@ ShallowWrapper {
 </div>,
               ],
             ],
-            "className": "form__row",
+            "className": "foodForm__row",
           },
           "ref": null,
           "rendered": Array [
@@ -1859,7 +2087,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     name="name"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -1868,13 +2096,13 @@ ShallowWrapper {
                     value="Chicken Breast"
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="name"
 >
                     Food
 </label>,
                 ],
-                "className": "form__group form__group--50",
+                "className": "foodForm__group foodForm__group--50",
               },
               "ref": null,
               "rendered": Array [
@@ -1883,7 +2111,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "name": "name",
                     "onBlur": [Function],
                     "onChange": [Function],
@@ -1901,7 +2129,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Food",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "name",
                   },
                   "ref": null,
@@ -1918,7 +2146,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     name="amount"
                     onChange={[Function]}
                     placeholder="Amount"
@@ -1926,13 +2154,13 @@ ShallowWrapper {
                     value={100}
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="amount"
 >
                     Amount
 </label>,
                 ],
-                "className": "form__group form__group--25",
+                "className": "foodForm__group foodForm__group--25",
               },
               "ref": null,
               "rendered": Array [
@@ -1941,7 +2169,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "name": "amount",
                     "onChange": [Function],
                     "placeholder": "Amount",
@@ -1958,7 +2186,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Amount",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "amount",
                   },
                   "ref": null,
@@ -1975,7 +2203,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     name="unit"
                     onBlur={[Function]}
                     onChange={[Function]}
@@ -1984,13 +2212,13 @@ ShallowWrapper {
                     value="grams"
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="unit"
 >
                     Unit
 </label>,
                 ],
-                "className": "form__group form__group--25",
+                "className": "foodForm__group foodForm__group--25",
               },
               "ref": null,
               "rendered": Array [
@@ -1999,7 +2227,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "name": "unit",
                     "onBlur": [Function],
                     "onChange": [Function],
@@ -2017,7 +2245,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Unit",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "unit",
                   },
                   "ref": null,
@@ -2037,10 +2265,10 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="form__group form__group--25"
+                className="foodForm__group foodForm__group--25"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 name="carbohydrates"
                                 onChange={[Function]}
                                 placeholder="Carbs"
@@ -2048,65 +2276,65 @@ ShallowWrapper {
                                 value={0}
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="carbohydrates"
                 >
                                 Carbs
                 </label>
 </div>,
               <div
-                className="form__group form__group--25"
+                className="foodForm__group foodForm__group--25"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 onChange={[Function]}
                                 placeholder="Protein"
                                 type="text"
                                 value={31}
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="Protein"
                 >
                                 Protein
                 </label>
 </div>,
               <div
-                className="form__group form__group--25"
+                className="foodForm__group foodForm__group--25"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 onChange={[Function]}
                                 placeholder="Fat"
                                 type="text"
                                 value={3.6}
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="Fat"
                 >
                                 Fat
                 </label>
 </div>,
               <div
-                className="form__group form__group--25"
+                className="foodForm__group foodForm__group--25"
 >
                 <input
-                                className="form__input"
+                                className="foodForm__input"
                                 onChange={[Function]}
                                 placeholder="Calories"
                                 type="text"
                                 value={165}
                 />
                 <label
-                                className="form__label"
+                                className="foodForm__label"
                                 htmlFor="Calories"
                 >
                                 Calories
                 </label>
 </div>,
             ],
-            "className": "form__row",
+            "className": "foodForm__row",
           },
           "ref": null,
           "rendered": Array [
@@ -2117,7 +2345,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     name="carbohydrates"
                     onChange={[Function]}
                     placeholder="Carbs"
@@ -2125,13 +2353,13 @@ ShallowWrapper {
                     value={0}
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="carbohydrates"
 >
                     Carbs
 </label>,
                 ],
-                "className": "form__group form__group--25",
+                "className": "foodForm__group foodForm__group--25",
               },
               "ref": null,
               "rendered": Array [
@@ -2140,7 +2368,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "name": "carbohydrates",
                     "onChange": [Function],
                     "placeholder": "Carbs",
@@ -2157,7 +2385,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Carbs",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "carbohydrates",
                   },
                   "ref": null,
@@ -2174,20 +2402,20 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     onChange={[Function]}
                     placeholder="Protein"
                     type="text"
                     value={31}
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="Protein"
 >
                     Protein
 </label>,
                 ],
-                "className": "form__group form__group--25",
+                "className": "foodForm__group foodForm__group--25",
               },
               "ref": null,
               "rendered": Array [
@@ -2196,7 +2424,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "onChange": [Function],
                     "placeholder": "Protein",
                     "type": "text",
@@ -2212,7 +2440,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Protein",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "Protein",
                   },
                   "ref": null,
@@ -2229,20 +2457,20 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     onChange={[Function]}
                     placeholder="Fat"
                     type="text"
                     value={3.6}
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="Fat"
 >
                     Fat
 </label>,
                 ],
-                "className": "form__group form__group--25",
+                "className": "foodForm__group foodForm__group--25",
               },
               "ref": null,
               "rendered": Array [
@@ -2251,7 +2479,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "onChange": [Function],
                     "placeholder": "Fat",
                     "type": "text",
@@ -2267,7 +2495,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Fat",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "Fat",
                   },
                   "ref": null,
@@ -2284,20 +2512,20 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <input
-                    className="form__input"
+                    className="foodForm__input"
                     onChange={[Function]}
                     placeholder="Calories"
                     type="text"
                     value={165}
 />,
                   <label
-                    className="form__label"
+                    className="foodForm__label"
                     htmlFor="Calories"
 >
                     Calories
 </label>,
                 ],
-                "className": "form__group form__group--25",
+                "className": "foodForm__group foodForm__group--25",
               },
               "ref": null,
               "rendered": Array [
@@ -2306,7 +2534,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "className": "form__input",
+                    "className": "foodForm__input",
                     "onChange": [Function],
                     "placeholder": "Calories",
                     "type": "text",
@@ -2322,7 +2550,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "Calories",
-                    "className": "form__label",
+                    "className": "foodForm__label",
                     "htmlFor": "Calories",
                   },
                   "ref": null,
@@ -2340,45 +2568,89 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <div
-              className="form__group--right"
+            "children": Array [
+              <div
+                className="foodForm__group--center-left"
+/>,
+              <div
+                className="foodForm__group--center-right"
+/>,
+              <div
+                className="foodForm__group--right"
 >
-              <button
-                            className="btn btn--form"
-              >
-                            Submit
-              </button>
+                <button
+                                className="btn btn--form btn--primary"
+                >
+                                Submit
+                </button>
 </div>,
-            "className": "form__row",
+              <div />,
+            ],
+            "className": "foodForm__row",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <button
-                className="btn btn--form"
->
-                Submit
-</button>,
-              "className": "form__group--right",
-            },
-            "ref": null,
-            "rendered": Object {
+          "rendered": Array [
+            Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Submit",
-                "className": "btn btn--form",
+                "children": undefined,
+                "className": "foodForm__group--center-left",
               },
               "ref": null,
-              "rendered": "Submit",
-              "type": "button",
+              "rendered": null,
+              "type": "div",
             },
-            "type": "div",
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "foodForm__group--center-right",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <button
+                  className="btn btn--form btn--primary"
+>
+                  Submit
+</button>,
+                "className": "foodForm__group--right",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Submit",
+                  "className": "btn btn--form btn--primary",
+                },
+                "ref": null,
+                "rendered": "Submit",
+                "type": "button",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
       ],

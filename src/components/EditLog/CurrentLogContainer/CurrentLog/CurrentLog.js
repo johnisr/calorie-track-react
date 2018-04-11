@@ -48,10 +48,10 @@ const currentLog = (props) => (
     </div>
     <div className="currentLog__btn">
       <div>
-        <button type="button" className="btn btn--form btn--negative" onClick={props.onRemove}>Remove</button>
+        <button type="button" className="btn btn--form" onClick={props.onRemove}>Remove</button>
       </div>
       <div>
-        <button className="btn btn--form btn--positive" onClick={props.onSubmit}>Submit</button>
+        <button className="btn btn--form btn--primary" onClick={props.onSubmit}>Submit</button>
       </div>
     </div>
   </div>

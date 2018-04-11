@@ -6,7 +6,7 @@ import { startEditLog, startRemoveLog } from '../../../actions/logs';
 import { startEditFood } from '../../../actions/foods';
 import CurrentLog from './CurrentLog/CurrentLog';
 
-class CurrentLogContainer extends React.Component {
+export class CurrentLogContainer extends React.Component {
   updateTimesUsed() {
     const foodUpdates = {};
     const oldLog = this.props.logs.filter(log => log.date === this.props.currentLog.date)[0];
@@ -97,10 +97,6 @@ class CurrentLogContainer extends React.Component {
   }
   handleRemove = () => {
     this.props.startRemoveLog(this.props.currentLog.date);
-    this.props.removeCurrentEditLog();
-    this.props.history.push('/Logs');
-  }
-  handleExit = () => {
     this.props.removeCurrentEditLog();
     this.props.history.push('/Logs');
   }

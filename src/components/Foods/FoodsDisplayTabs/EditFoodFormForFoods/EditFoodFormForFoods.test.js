@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { EditFoodFormForFoods } from '../../components/EditFoodFormForFoods';
-import foods from '../fixtures/foods';
+import { EditFoodFormForFoods } from './EditFoodFormForFoods';
+import foods from '../../../../tests/fixtures/foods';
 
 let startEditFood, startRemoveFood, removeCurrentFood, wrapper;
 beforeEach(() => {
@@ -28,12 +28,12 @@ it('should handle startEditFood', () => {
 });
 
 it('should handle startRemoveFood', () => {
-  wrapper.find('button').at(0).simulate('click');
+  wrapper.find('FoodForm').prop('onRemove')();
   expect(startRemoveFood).toHaveBeenLastCalledWith(foods[1]);
 });
 
 it('should handle removeCurrentFood', () => {
-  wrapper.find('button').at(1).simulate('click');
+  wrapper.find('FoodForm').prop('onExit')();
   expect(removeCurrentFood).toHaveBeenCalled();
 });
 

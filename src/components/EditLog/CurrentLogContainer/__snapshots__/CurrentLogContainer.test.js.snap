@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render CurrentLogContainer 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CurrentLogContainer
+    currentLog={
+        Object {
+            "date": 86400000,
+            "foods": Array [
+              Object {
+                "amount": 200,
+                "calories": 205,
+                "carbohydrates": 44,
+                "createdAt": 0,
+                "fat": 0.4,
+                "id": "1",
+                "name": "Rice (Jasmine)",
+                "protein": 4.2,
+                "timesUsed": 0,
+                "unit": "grams",
+              },
+              Object {
+                "amount": 100,
+                "calories": 165,
+                "carbohydrates": 0,
+                "createdAt": 1000,
+                "fat": 3.6,
+                "id": "2",
+                "name": "Chicken Breast",
+                "protein": 31,
+                "timesUsed": 1,
+                "unit": "grams",
+              },
+              Object {
+                "amount": 24,
+                "calories": 163,
+                "carbohydrates": 2.5,
+                "createdAt": -1000,
+                "fat": 14,
+                "id": "3",
+                "name": "Almonds",
+                "protein": 6,
+                "timesUsed": 2,
+                "unit": "pieces",
+              },
+            ],
+            "unit": "lb",
+            "weight": 201,
+          }
+    }
+    editCurrentLog={[Function]}
+    removeCurrentEditLog={[Function]}
+    startEditFood={[Function]}
+    startEditLog={[Function]}
+    startRemoveLog={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div>
+          <Connect(CurrentLogFoodListContainer) />
+</div>,
+        <section
+          className="section-center-6-start-end"
+>
+          <currentLog
+                    currentLog={
+                              Object {
+                                        "date": 86400000,
+                                        "foods": Array [
+                                          Object {
+                                            "amount": 200,
+                                            "calories": 205,
+                                            "carbohydrates": 44,
+                                            "createdAt": 0,
+                                            "fat": 0.4,
+                                            "id": "1",
+                                            "name": "Rice (Jasmine)",
+                                            "protein": 4.2,
+                                            "timesUsed": 0,
+                                            "unit": "grams",
+                                          },
+                                          Object {
+                                            "amount": 100,
+                                            "calories": 165,
+                                            "carbohydrates": 0,
+                                            "createdAt": 1000,
+                                            "fat": 3.6,
+                                            "id": "2",
+                                            "name": "Chicken Breast",
+                                            "protein": 31,
+                                            "timesUsed": 1,
+                                            "unit": "grams",
+                                          },
+                                          Object {
+                                            "amount": 24,
+                                            "calories": 163,
+                                            "carbohydrates": 2.5,
+                                            "createdAt": -1000,
+                                            "fat": 14,
+                                            "id": "3",
+                                            "name": "Almonds",
+                                            "protein": 6,
+                                            "timesUsed": 2,
+                                            "unit": "pieces",
+                                          },
+                                        ],
+                                        "unit": "lb",
+                                        "weight": 201,
+                                      }
+                    }
+                    onKgsSelected={[Function]}
+                    onLbsSelected={[Function]}
+                    onRemove={[Function]}
+                    onSubmit={[Function]}
+                    onWeightChange={[Function]}
+          />
+</section>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Connect(CurrentLogFoodListContainer) />,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <currentLog
+            currentLog={
+                        Object {
+                                    "date": 86400000,
+                                    "foods": Array [
+                                      Object {
+                                        "amount": 200,
+                                        "calories": 205,
+                                        "carbohydrates": 44,
+                                        "createdAt": 0,
+                                        "fat": 0.4,
+                                        "id": "1",
+                                        "name": "Rice (Jasmine)",
+                                        "protein": 4.2,
+                                        "timesUsed": 0,
+                                        "unit": "grams",
+                                      },
+                                      Object {
+                                        "amount": 100,
+                                        "calories": 165,
+                                        "carbohydrates": 0,
+                                        "createdAt": 1000,
+                                        "fat": 3.6,
+                                        "id": "2",
+                                        "name": "Chicken Breast",
+                                        "protein": 31,
+                                        "timesUsed": 1,
+                                        "unit": "grams",
+                                      },
+                                      Object {
+                                        "amount": 24,
+                                        "calories": 163,
+                                        "carbohydrates": 2.5,
+                                        "createdAt": -1000,
+                                        "fat": 14,
+                                        "id": "3",
+                                        "name": "Almonds",
+                                        "protein": 6,
+                                        "timesUsed": 2,
+                                        "unit": "pieces",
+                                      },
+                                    ],
+                                    "unit": "lb",
+                                    "weight": 201,
+                                  }
+            }
+            onKgsSelected={[Function]}
+            onLbsSelected={[Function]}
+            onRemove={[Function]}
+            onSubmit={[Function]}
+            onWeightChange={[Function]}
+/>,
+          "className": "section-center-6-start-end",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentLog": Object {
+              "date": 86400000,
+              "foods": Array [
+                Object {
+                  "amount": 200,
+                  "calories": 205,
+                  "carbohydrates": 44,
+                  "createdAt": 0,
+                  "fat": 0.4,
+                  "id": "1",
+                  "name": "Rice (Jasmine)",
+                  "protein": 4.2,
+                  "timesUsed": 0,
+                  "unit": "grams",
+                },
+                Object {
+                  "amount": 100,
+                  "calories": 165,
+                  "carbohydrates": 0,
+                  "createdAt": 1000,
+                  "fat": 3.6,
+                  "id": "2",
+                  "name": "Chicken Breast",
+                  "protein": 31,
+                  "timesUsed": 1,
+                  "unit": "grams",
+                },
+                Object {
+                  "amount": 24,
+                  "calories": 163,
+                  "carbohydrates": 2.5,
+                  "createdAt": -1000,
+                  "fat": 14,
+                  "id": "3",
+                  "name": "Almonds",
+                  "protein": 6,
+                  "timesUsed": 2,
+                  "unit": "pieces",
+                },
+              ],
+              "unit": "lb",
+              "weight": 201,
+            },
+            "onKgsSelected": [Function],
+            "onLbsSelected": [Function],
+            "onRemove": [Function],
+            "onSubmit": [Function],
+            "onWeightChange": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "section",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div>
+            <Connect(CurrentLogFoodListContainer) />
+</div>,
+          <section
+            className="section-center-6-start-end"
+>
+            <currentLog
+                        currentLog={
+                                    Object {
+                                                "date": 86400000,
+                                                "foods": Array [
+                                                  Object {
+                                                    "amount": 200,
+                                                    "calories": 205,
+                                                    "carbohydrates": 44,
+                                                    "createdAt": 0,
+                                                    "fat": 0.4,
+                                                    "id": "1",
+                                                    "name": "Rice (Jasmine)",
+                                                    "protein": 4.2,
+                                                    "timesUsed": 0,
+                                                    "unit": "grams",
+                                                  },
+                                                  Object {
+                                                    "amount": 100,
+                                                    "calories": 165,
+                                                    "carbohydrates": 0,
+                                                    "createdAt": 1000,
+                                                    "fat": 3.6,
+                                                    "id": "2",
+                                                    "name": "Chicken Breast",
+                                                    "protein": 31,
+                                                    "timesUsed": 1,
+                                                    "unit": "grams",
+                                                  },
+                                                  Object {
+                                                    "amount": 24,
+                                                    "calories": 163,
+                                                    "carbohydrates": 2.5,
+                                                    "createdAt": -1000,
+                                                    "fat": 14,
+                                                    "id": "3",
+                                                    "name": "Almonds",
+                                                    "protein": 6,
+                                                    "timesUsed": 2,
+                                                    "unit": "pieces",
+                                                  },
+                                                ],
+                                                "unit": "lb",
+                                                "weight": 201,
+                                              }
+                        }
+                        onKgsSelected={[Function]}
+                        onLbsSelected={[Function]}
+                        onRemove={[Function]}
+                        onSubmit={[Function]}
+                        onWeightChange={[Function]}
+            />
+</section>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Connect(CurrentLogFoodListContainer) />,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <currentLog
+              currentLog={
+                            Object {
+                                          "date": 86400000,
+                                          "foods": Array [
+                                            Object {
+                                              "amount": 200,
+                                              "calories": 205,
+                                              "carbohydrates": 44,
+                                              "createdAt": 0,
+                                              "fat": 0.4,
+                                              "id": "1",
+                                              "name": "Rice (Jasmine)",
+                                              "protein": 4.2,
+                                              "timesUsed": 0,
+                                              "unit": "grams",
+                                            },
+                                            Object {
+                                              "amount": 100,
+                                              "calories": 165,
+                                              "carbohydrates": 0,
+                                              "createdAt": 1000,
+                                              "fat": 3.6,
+                                              "id": "2",
+                                              "name": "Chicken Breast",
+                                              "protein": 31,
+                                              "timesUsed": 1,
+                                              "unit": "grams",
+                                            },
+                                            Object {
+                                              "amount": 24,
+                                              "calories": 163,
+                                              "carbohydrates": 2.5,
+                                              "createdAt": -1000,
+                                              "fat": 14,
+                                              "id": "3",
+                                              "name": "Almonds",
+                                              "protein": 6,
+                                              "timesUsed": 2,
+                                              "unit": "pieces",
+                                            },
+                                          ],
+                                          "unit": "lb",
+                                          "weight": 201,
+                                        }
+              }
+              onKgsSelected={[Function]}
+              onLbsSelected={[Function]}
+              onRemove={[Function]}
+              onSubmit={[Function]}
+              onWeightChange={[Function]}
+/>,
+            "className": "section-center-6-start-end",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currentLog": Object {
+                "date": 86400000,
+                "foods": Array [
+                  Object {
+                    "amount": 200,
+                    "calories": 205,
+                    "carbohydrates": 44,
+                    "createdAt": 0,
+                    "fat": 0.4,
+                    "id": "1",
+                    "name": "Rice (Jasmine)",
+                    "protein": 4.2,
+                    "timesUsed": 0,
+                    "unit": "grams",
+                  },
+                  Object {
+                    "amount": 100,
+                    "calories": 165,
+                    "carbohydrates": 0,
+                    "createdAt": 1000,
+                    "fat": 3.6,
+                    "id": "2",
+                    "name": "Chicken Breast",
+                    "protein": 31,
+                    "timesUsed": 1,
+                    "unit": "grams",
+                  },
+                  Object {
+                    "amount": 24,
+                    "calories": 163,
+                    "carbohydrates": 2.5,
+                    "createdAt": -1000,
+                    "fat": 14,
+                    "id": "3",
+                    "name": "Almonds",
+                    "protein": 6,
+                    "timesUsed": 2,
+                    "unit": "pieces",
+                  },
+                ],
+                "unit": "lb",
+                "weight": 201,
+              },
+              "onKgsSelected": [Function],
+              "onLbsSelected": [Function],
+              "onRemove": [Function],
+              "onSubmit": [Function],
+              "onWeightChange": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
