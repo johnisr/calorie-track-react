@@ -8,6 +8,7 @@ import logsReducer from '../reducers/logs';
 import currentLogReducer from '../reducers/currentLog';
 import foodsFiltersReducer from '../reducers/foodsFilters';
 import logsFiltersReducer from '../reducers/logsFilters';
+import infoFiltersReducer from '../reducers/infoFilters';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -21,6 +22,7 @@ export default () => {
      logs: logsReducer,
      logsFilters: logsFiltersReducer,
      currentLog: currentLogReducer,
+     infoFilters: infoFiltersReducer,
    }),
    composeEnhancers(applyMiddleware(thunk))
  );

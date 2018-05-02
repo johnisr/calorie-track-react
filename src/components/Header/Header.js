@@ -32,6 +32,7 @@ export class Header extends React.Component {
         <h1 className="heading-primary header__title">Calorie-Track</h1>
         <NavLink className="btn" to='/Foods' >Foods</NavLink>
         <NavLink className="btn" to='/Logs' >Logs</NavLink>
+        <NavLink className="btn" to='/info' >Info</NavLink>
         <button className="btn" onClick={this.handleEdit}>Today</button>
         <button className="btn flex-right-end" onClick={this.props.startLogout}>Logout</button>
       </header>

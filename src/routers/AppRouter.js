@@ -10,6 +10,7 @@ import Logs from '../components/Logs/Logs';
 import NotFoundPage from '../components/NotFoundPage/NotFoundPage';
 import LoginPage from '../components/LoginPage/LoginPage';
 import EditLog from '../components/EditLog/EditLog';
+import Info from '../components/Info/Info';
 export const history = createHistory();
 
 const AppRouter = () => (
@@ -20,6 +21,7 @@ const AppRouter = () => (
         <PrivateRoute path="/Foods" component={Foods} />
         <PrivateRoute path="/Logs" component={Logs} />
         <PrivateRoute path="/EditLog" component={EditLog} />
+        <PrivateRoute path="/Info" component={Info} />
         <PrivateRoute component={NotFoundPage} />
       </Switch>
     </div>

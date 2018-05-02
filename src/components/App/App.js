@@ -21,6 +21,8 @@ import { startSetLogs } from '../../actions/logs';
 // import PlayForm from './playground/PlayForm';
 // import logs from './tests/fixtures/logs';
 // import { addLog } from './actions/logs';
+// import Graphs from '../../playground/Graphs';
+// import InfoFilter from '../../playground/InfoFilter';
 
 const store = configureStore();
 
