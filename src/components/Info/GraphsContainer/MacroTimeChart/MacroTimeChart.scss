@@ -1,0 +1,9 @@
+@import '../../../../styles/base';
+
+.MacroTimeChart {
+  margin: 2rem;
+  &__text {
+    text-align: center;
+    
+  }
+}

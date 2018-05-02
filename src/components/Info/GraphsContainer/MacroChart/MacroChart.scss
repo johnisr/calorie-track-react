@@ -1,0 +1,9 @@
+@import '../../../../styles/base';
+
+.MacroChart {
+  margin: 2rem;
+  &__text {
+    text-align: center;
+    
+  }
+}

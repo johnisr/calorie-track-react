@@ -1,0 +1,9 @@
+@import '../../../../styles/base';
+
+.WeightChart {
+  grid-column: center-start / center-end;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}

@@ -1,5 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import GraphInfo from './GraphInfo/GraphInfo';
+import InfoFilters from './InfoFilters/InfoFilters';
+import WeightChart from './WeightChart/WeightChart';
+import MacroChart from './MacroChart/MacroChart';
+import MacroTimeChart from './MacroTimeChart/MacroTimeChart';
+import { setDataFilter } from '../../../actions/infoFilters';
 
 function getAverage (data) {
   const total = data.reduce((prev, curr) => ({
@@ -49,7 +55,8 @@ function getTDEE(week) {
 
 class GraphsContainer extends React.Component {
   state = {
-
+    data: [],
+    selected: 'carbohydrates',
   };
   componentDidMount() {
     const data = [];
@@ -58,12 +65,63 @@ class GraphsContainer extends React.Component {
       const log = logsData[key];
       data.push({ date:log.date, weight: log.weight, ...log.total});
     });
-
+    this.setState(() => ({ data }))
+  }
+  dataFilterChange = (e) => {
+    const filter = e.target.value;
+    this.props.setDataFilter(filter);
+  }
+  onSelectedChange = (dataPoint, event) => {
+    const selected = dataPoint.label;
+    this.setState(() => ({ selected }));
   }
   render() {
+    const { selected, data } = this.state;
+    const { infoFilters } = this.props;
+
+    const filteredData = data.slice(infoFilters.dataFilter);
+    const {tdee, prevWeekWeight} = getTDEE(filteredData);
+    const tdeeRounded = Math.ceil(tdee / 5) * 5;
+    const weightLost = (prevWeekWeight[prevWeekWeight.length-1] - prevWeekWeight[0]).toFixed(2);
+    
+    const averageMacro = getAverage(filteredData);
+    const averageMacroData = [];
+    Object.keys(averageMacro).forEach(key => {
+      if (key !== 'calories' && key !== 'weight') {
+        const total = averageMacro.carbohydrates + averageMacro.protein + averageMacro.fat;
+        const dataObj = { label: key, value: averageMacro[key], subLabel: (averageMacro[key] / total * 100).toFixed(2) };
+        if (key === this.state.selected) dataObj.color = '#FF9833';
+        averageMacroData.push(dataObj);
+      }
+    });
+
+    const macroFilter = selected === 'protein' ? infoFilters.proteinFilter : 
+      selected === 'fat' ? infoFilters.fatFilter : infoFilters.carbohydratesFilter;
+
+    if (filteredData.length === 0) {
+      return null;
+    }
+
     return (
       <div>
-        Graphs Container
+        <InfoFilters
+          dataFilterValue={this.props.infoFilters.dataFilter}
+          onDataFilterChange={this.dataFilterChange}
+          selected={selected}
+          macroFilter={macroFilter}
+          />
+        <GraphInfo tdee={tdeeRounded} weightLost={weightLost} />
+        <WeightChart data={filteredData}/>
+        <MacroChart
+          averageMacroData={averageMacroData}
+          onSelectedChange={this.onSelectedChange}
+          />
+        <MacroTimeChart
+          data={filteredData}
+          prevWeekWeight={prevWeekWeight}
+          selected={selected}
+          macroFilter={macroFilter}
+        />
       </div>
     );
   }
@@ -74,5 +132,8 @@ const mapStateToProps = state => ({
   infoFilters: state.infoFilters,
 });
 
+const mapDispatchToProps = dispatch => ({
+  setDataFilter: (filter) => dispatch(setDataFilter(filter)),
+});
 
-export default connect(mapStateToProps)(GraphsContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(GraphsContainer);
