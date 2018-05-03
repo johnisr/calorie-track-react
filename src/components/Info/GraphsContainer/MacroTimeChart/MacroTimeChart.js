@@ -21,7 +21,7 @@ class MacroTimeChart extends React.Component {
         <FlexibleWidthXYPlot height={400} animation getX={d => d.date} getY={d => d[selected]} xType='time' yPadding={20} >
         <VerticalGridLines />
           <HorizontalGridLines />
-          <XAxis />
+          <XAxis tickLabelAngle={-45}/>
           <YAxis tickFormat={d => `${d}g`} />
           {
             this.state.data[selected] !== undefined &&

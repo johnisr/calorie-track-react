@@ -86,7 +86,7 @@ export const startSetFoods = () => {
       });
       dispatch(setFoods(foods));
     } catch (e) {
-
+      console.log(e);
     }
   };
 };

@@ -11,6 +11,19 @@ export const startLogin = () => {
   };
 };
 
+export const startDemo = () => {
+  return () => {
+    console.log('hello');
+    let answer;
+    try {
+      answer = firebase.auth().signInWithEmailAndPassword('demo@example.com', 'demopass');
+    } catch(e) {
+      console.log(e);
+    }
+    return answer;
+  };
+};
+
 export const logout = () => ({
   type: 'LOGOUT',
 });
