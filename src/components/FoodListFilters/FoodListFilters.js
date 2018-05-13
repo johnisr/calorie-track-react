@@ -37,8 +37,8 @@ export class FoodListFilters extends React.Component {
     const maxFoodsShown = this.props.filters.maxFoodsShown;
 
     const pagesNeeded = foodsLength % maxFoodsShown === 0 ?
-      foodsLength / maxFoodsShown :
-      (foodsLength / maxFoodsShown) + 1;
+      Math.floor(foodsLength / maxFoodsShown) :
+      Math.floor(foodsLength / maxFoodsShown) + 1;
     
     let start;
     if (pagesNeeded - offset < 3) { // reaching end of results 
@@ -49,7 +49,7 @@ export class FoodListFilters extends React.Component {
 
     let end;
     if (start === 0) { // pages 1 .. (pagesNeeded or 10)
-      end = Math.min(pagesNeeded - 1, 6); // count starts from 0
+      end = Math.min(pagesNeeded, 6); // count starts from 0
     } else { // Normal case
       end = Math.min(offset + 3, pagesNeeded);
     }

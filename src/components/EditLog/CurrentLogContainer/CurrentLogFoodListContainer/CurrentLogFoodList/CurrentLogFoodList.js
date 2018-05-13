@@ -13,6 +13,39 @@ const CurrentLogFoodList = (props) => {
       <p className="currentLogFoodList__list-title">calories</p>
     </div>
   );
+  const getTotal = () => {
+    const { foods } = props;
+    let total = { protein: 0, carbohydrates: 0, fat: 0, calories: 0 };
+    if (foods) {
+      total = foods.reduce((prev, curr) => ({
+        protein: prev.protein + curr.protein,
+        carbohydrates: prev.carbohydrates + curr.carbohydrates,
+        fat: prev.fat + curr.fat,
+        calories: prev.calories + curr.calories,
+      }), total);
+    };
+    return {
+      protein: (total.protein).toFixed(2),
+      carbohydrates:  (total.carbohydrates).toFixed(2),
+      fat: (total.fat).toFixed(2),
+      calories: (total.calories).toFixed(2),
+    };
+  }
+
+  const listTotal = () => {
+    const { carbohydrates, protein, fat, calories } = getTotal();
+    console.log(carbohydrates, protein, fat, calories);
+    return (
+      <div className="currentLogFoodList__item">
+        <p className="currentLogFoodList__item-text">{'TOTAL'}</p>
+        <p className="currentLogFoodList__item-text">{''}</p>
+        <p className="currentLogFoodList__item-text">{carbohydrates}</p>
+        <p className="currentLogFoodList__item-text">{protein}</p>
+        <p className="currentLogFoodList__item-text">{fat}</p>
+        <p className="currentLogFoodList__item-text">{calories}</p>
+      </div>
+    );
+}
 
   const createTable = () => (
     props.foods.map((food, index) => (
@@ -79,6 +112,7 @@ const CurrentLogFoodList = (props) => {
           <div className="currentLogFoodList__list">
             {header()}
             {createTable()}
+            {listTotal()}
           </div>
         )
       }
